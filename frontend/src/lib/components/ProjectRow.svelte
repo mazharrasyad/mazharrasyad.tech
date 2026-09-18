@@ -3,7 +3,12 @@
 	import Icon from './Icon.svelte';
 	import type { Project } from '$lib/types';
 
-	let { project, index }: { project: Project; index: number } = $props();
+	let {
+		project,
+		index,
+		year,
+		digits = 2
+	}: { project: Project; index: number; year?: number; digits?: number } = $props();
 
 	let expanded = $state(false);
 	let gallery: HTMLDivElement | undefined = $state();
@@ -25,7 +30,7 @@
 				? 'text-blue-400'
 				: 'text-slate-700 group-hover/row:text-blue-500/70'}"
 		>
-			{String(index).padStart(2, '0')}
+			{String(index).padStart(digits, '0')}
 		</span>
 
 		<div class="flex-1 min-w-0">
@@ -37,6 +42,11 @@
 				>
 					{project.title}
 				</h3>
+				{#if year}
+					<span class="bg-white/5 text-slate-400 text-[10px] px-2 py-0.5 rounded-full font-bold whitespace-nowrap border border-white/10">
+						{year}
+					</span>
+				{/if}
 				<span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">
 					{project.category}
 				</span>

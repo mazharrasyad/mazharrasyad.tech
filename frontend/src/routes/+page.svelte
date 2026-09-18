@@ -1,14 +1,29 @@
 <script lang="ts">
 	import Icon from '$lib/components/Icon.svelte';
+	import ProjectRow from '$lib/components/ProjectRow.svelte';
 	import yearsData from '$lib/data/projects.json';
 	import scholarData from '$lib/data/scholar.json';
 	import type { YearData, ScholarData } from '$lib/types';
 
 	const years = yearsData as YearData[];
 	const totalProjects = years.reduce((sum, y) => sum + y.projects.length, 0);
+	const allProjects = years.flatMap((y) => y.projects.map((project) => ({ project, year: y.year })));
 	const scholar = scholarData as ScholarData;
 
 	let imgError = $state(false);
+	let search = $state('');
+
+	let filteredProjects = $derived.by(() => {
+		const q = search.trim().toLowerCase();
+		if (!q) return allProjects;
+		return allProjects.filter(
+			({ project, year }) =>
+				project.title.toLowerCase().includes(q) ||
+				project.category.toLowerCase().includes(q) ||
+				project.tools.toLowerCase().includes(q) ||
+				String(year).includes(q)
+		);
+	});
 
 	const title = 'Muhammad Azhar Rasyad - Software Engineer';
 	const description = `Software Engineer with 8+ years of experience (2018–present). Portfolio of ${totalProjects}+ projects across web development, blockchain, and data engineering. Based in Jakarta, Indonesia.`;
@@ -161,23 +176,34 @@
 			</div>
 		</section>
 
-		<!-- Years -->
+		<!-- Projects -->
 		<section>
-			<div class="flex justify-between items-center mb-5">
-				<h2 class="text-sm font-bold text-slate-400 uppercase tracking-widest">Browse Projects by Year</h2>
+			<div class="flex justify-between items-center mb-5 gap-4 flex-wrap">
+				<h2 class="text-sm font-bold text-slate-400 uppercase tracking-widest">All Projects</h2>
 				<span class="text-xs bg-blue-500/10 border border-blue-500/20 text-blue-400 px-3 py-1 rounded-full font-bold">
 					{totalProjects}+ Projects
 				</span>
 			</div>
 
-			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
-				{#each years as y (y.year)}
-					<a href="/projects/{y.year}" class="year-link p-5 rounded-2xl text-center flex flex-col justify-center items-center gap-1">
-						<span class="text-xl font-bold">{y.year}</span>
-						<span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">{y.projects.length} Projects</span>
-					</a>
-				{/each}
+			<div class="relative mb-5">
+				<Icon name="search" class="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-slate-500" />
+				<input
+					type="text"
+					bind:value={search}
+					placeholder="Search by title, category, tools, or year..."
+					class="w-full bg-white/5 border border-white/10 rounded-xl pl-11 pr-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-blue-500/50 focus:bg-white/[0.07] transition-colors"
+				/>
 			</div>
+
+			{#if filteredProjects.length > 0}
+				<div class="card-glass rounded-2xl px-3 md:px-4 divide-y divide-white/5">
+					{#each filteredProjects as { project, year }, i (project.title + year)}
+						<ProjectRow {project} {year} index={i + 1} digits={3} />
+					{/each}
+				</div>
+			{:else}
+				<p class="text-center text-slate-500 text-sm py-12">No projects match "{search}".</p>
+			{/if}
 		</section>
 
 		<!-- Publications -->
