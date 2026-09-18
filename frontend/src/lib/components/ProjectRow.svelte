@@ -51,7 +51,7 @@
 			{#if project.images.length > 0}
 				<div class="relative group/gallery mt-3 mb-3">
 					<div bind:this={gallery} class="flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar">
-						{#each project.images as src (src)}
+						{#each project.images as src, i (src + '-' + i)}
 							<img {src} class="snap-center h-44 md:h-52 rounded-xl border border-white/10 shadow-lg" alt={project.title} loading="lazy" />
 						{/each}
 					</div>

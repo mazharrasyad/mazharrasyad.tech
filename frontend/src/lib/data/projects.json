@@ -1469,7 +1469,6 @@
         "title": "Learn Django",
         "category": "Web Dev",
         "images": [
-          "/projects/2019/p17/1.png",
           "/projects/2019/p17/1.png"
         ],
         "description": "Open class Django adalah hasil penerapan pembelajaran mengenai framework web django, mulai dari pengenalan, views, template, apps, URL, variabel, hingga tag.",
