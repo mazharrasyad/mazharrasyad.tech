@@ -26,31 +26,32 @@
 		}
 	}
 
-	// Education gets its own dedicated slide (right after Home) instead of
-	// being interleaved into whichever year it started, so it isn't split
-	// piecemeal across the timeline.
-	type Milestone =
-		| { kind: 'experience'; sortKey: number; data: Experience }
-		| { kind: 'publication'; sortKey: number; data: Publication };
+	// Education and Experience each get their own dedicated slide (right
+	// after Home) instead of being interleaved into whichever year they
+	// started, so a multi-year degree/job isn't split piecemeal across the
+	// timeline.
+	type Milestone = { kind: 'publication'; sortKey: number; data: Publication };
 
-	// Publications only carry a year, so they're placed mid-year (like undated
-	// projects) to interleave sensibly with month-precise experience entries.
-	const milestones: Milestone[] = [
-		...experience.map((data) => ({ kind: 'experience' as const, sortKey: data.sortKey, data })),
-		...scholar.publications.map((data) => ({
-			kind: 'publication' as const,
-			sortKey: data.year * 100 + 6,
-			data
-		}))
-	];
+	// Publications only carry a year, so they're placed mid-year (like
+	// undated projects) within a year slide.
+	const milestones: Milestone[] = scholar.publications.map((data) => ({
+		kind: 'publication' as const,
+		sortKey: data.year * 100 + 6,
+		data
+	}));
 
 	const educationSlide = {
 		kind: 'education' as const,
 		entries: [...education].sort((a, b) => b.sortKey - a.sortKey)
 	};
 
+	const experienceSlide = {
+		kind: 'experience' as const,
+		entries: [...experience].sort((a, b) => b.sortKey - a.sortKey)
+	};
+
 	type YearSlide = { kind: 'year'; year: number; milestones: Milestone[]; projects: Project[] };
-	type Slide = { kind: 'profile' } | typeof educationSlide | YearSlide;
+	type Slide = { kind: 'profile' } | typeof educationSlide | typeof experienceSlide | YearSlide;
 
 	const allYears = new Set<number>();
 	for (const m of milestones) allYears.add(Math.floor(m.sortKey / 100));
@@ -67,7 +68,7 @@
 			projects: chronoYears.find((y) => y.year === year)?.projects ?? []
 		}));
 
-	const slides: Slide[] = [{ kind: 'profile' }, educationSlide, ...yearSlides];
+	const slides: Slide[] = [{ kind: 'profile' }, educationSlide, experienceSlide, ...yearSlides];
 
 	let track: HTMLDivElement | undefined = $state();
 	let activeIndex = $state(0);
@@ -270,58 +271,59 @@
 								</div>
 							{/each}
 						</div>
+					{:else if slide.kind === 'experience'}
+						<div class="max-w-3xl mx-auto w-full flex flex-col gap-4 md:gap-5">
+							<h2 class="text-4xl md:text-6xl font-black text-white">Experience</h2>
+
+							{#each slide.entries as exp (exp.sortKey)}
+								<div class="card-glass rounded-2xl p-4 md:p-5">
+									<span class="text-xs font-bold text-blue-400 tabular-nums">{exp.period}</span>
+									<h3 class="text-base md:text-lg font-bold text-white leading-snug">{exp.title}</h3>
+									<p class="text-xs text-slate-500 mt-1">
+										{exp.company} <span class="text-slate-700 mx-1">·</span>
+										{exp.type}
+									</p>
+									<ul class="mt-2.5 space-y-1">
+										{#each exp.bullets as b (b)}
+											<li class="text-xs text-slate-500 flex gap-2">
+												<span class="text-slate-700 shrink-0">•</span>
+												<span>{b}</span>
+											</li>
+										{/each}
+									</ul>
+								</div>
+							{/each}
+						</div>
 					{:else}
 						<div class="max-w-3xl mx-auto w-full flex flex-col gap-4 md:gap-5">
 							<h2 class="text-4xl md:text-6xl font-black text-white tabular-nums">{slide.year}</h2>
 
-							{#each slide.milestones as m, mi (m.kind + '-' + m.sortKey + '-' + mi)}
+							{#each slide.milestones as m, mi (m.sortKey + '-' + mi)}
 								<div class="card-glass rounded-2xl p-4 md:p-5">
-									{#if m.kind === 'publication'}
-										<div class="flex items-center gap-2 mb-1.5 flex-wrap">
-											<span class="text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-sky-500/15 text-sky-400">
-												Journal
+									<div class="flex items-center gap-2 mb-1.5 flex-wrap">
+										<span class="text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-sky-500/15 text-sky-400">
+											Journal
+										</span>
+										{#if m.data.citations !== null}
+											<span class="text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-indigo-500/15 text-indigo-300">
+												{m.data.citations} {m.data.citations === 1 ? 'Citation' : 'Citations'}
 											</span>
-											{#if m.data.citations !== null}
-												<span class="text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-indigo-500/15 text-indigo-300">
-													{m.data.citations} {m.data.citations === 1 ? 'Citation' : 'Citations'}
-												</span>
-											{/if}
-										</div>
-										<a
-											href={m.data.url}
-											target="_blank"
-											rel="noopener noreferrer"
-											class="group/pub inline-flex items-start gap-1.5 text-base md:text-lg font-bold text-white leading-snug hover:text-blue-300 transition-colors"
-										>
-											<span>{m.data.title}</span>
-											<Icon
-												name="external-link"
-												class="w-3 h-3 mt-1.5 shrink-0 text-slate-600 group-hover/pub:text-blue-400 transition-colors"
-											/>
-										</a>
-										<p class="text-xs text-slate-500 mt-1">{m.data.authors}</p>
-										<p class="text-xs text-slate-600 italic mt-0.5">{m.data.venue}</p>
-									{:else}
-										<div class="flex items-center gap-2 mb-1.5 flex-wrap">
-											<span class="text-xs font-bold text-blue-400 tabular-nums">{m.data.period}</span>
-											<span class="text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-blue-500/15 text-blue-400">
-												Experience
-											</span>
-										</div>
-										<h3 class="text-base md:text-lg font-bold text-white leading-snug">{m.data.title}</h3>
-										<p class="text-xs text-slate-500 mt-1">
-											{m.data.company} <span class="text-slate-700 mx-1">·</span>
-											{m.data.type}
-										</p>
-										<ul class="mt-2.5 space-y-1">
-											{#each m.data.bullets as b (b)}
-												<li class="text-xs text-slate-500 flex gap-2">
-													<span class="text-slate-700 shrink-0">•</span>
-													<span>{b}</span>
-												</li>
-											{/each}
-										</ul>
-									{/if}
+										{/if}
+									</div>
+									<a
+										href={m.data.url}
+										target="_blank"
+										rel="noopener noreferrer"
+										class="group/pub inline-flex items-start gap-1.5 text-base md:text-lg font-bold text-white leading-snug hover:text-blue-300 transition-colors"
+									>
+										<span>{m.data.title}</span>
+										<Icon
+											name="external-link"
+											class="w-3 h-3 mt-1.5 shrink-0 text-slate-600 group-hover/pub:text-blue-400 transition-colors"
+										/>
+									</a>
+									<p class="text-xs text-slate-500 mt-1">{m.data.authors}</p>
+									<p class="text-xs text-slate-600 italic mt-0.5">{m.data.venue}</p>
 								</div>
 							{/each}
 
@@ -376,13 +378,25 @@
 			<button
 				type="button"
 				onclick={() => goToSlide(i)}
-				aria-label={slide.kind === 'year' ? String(slide.year) : slide.kind === 'profile' ? 'Home' : 'Education'}
+				aria-label={slide.kind === 'year'
+					? String(slide.year)
+					: slide.kind === 'profile'
+						? 'Home'
+						: slide.kind === 'education'
+							? 'Education'
+							: 'Experience'}
 				class="shrink-0 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider tabular-nums transition-all {activeIndex ===
 				i
 					? 'bg-blue-500 text-white'
 					: 'bg-white/5 text-slate-500 hover:bg-white/10 hover:text-slate-300'}"
 			>
-				{slide.kind === 'year' ? slide.year : slide.kind === 'profile' ? 'Home' : 'Education'}
+				{slide.kind === 'year'
+					? slide.year
+					: slide.kind === 'profile'
+						? 'Home'
+						: slide.kind === 'education'
+							? 'Education'
+							: 'Experience'}
 			</button>
 		{/each}
 	</div>
