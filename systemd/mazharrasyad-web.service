@@ -1,0 +1,43 @@
+# mazharrasyad.tech web service: serves the SvelteKit build and its
+# read-only JSON API. Listens on 127.0.0.1:8090 only; nginx (see
+# /etc/nginx/sites-available/mazharrasyad.tech) terminates TLS and
+# reverse-proxies to it.
+#
+# Install: copy to /etc/systemd/system/, then
+#   systemctl daemon-reload
+#   systemctl enable --now mazharrasyad-web.service
+[Unit]
+Description=mazharrasyad.tech web server
+After=network.target
+
+[Service]
+Type=simple
+User=mazharrasyad
+Group=mazharrasyad
+WorkingDirectory=/opt/mazharrasyad.tech/backend
+ExecStart=/opt/mazharrasyad.tech/bin/server
+Environment=LISTEN_ADDR=127.0.0.1:8090
+Environment=STATIC_DIR=/opt/mazharrasyad.tech/frontend/build
+Environment=DATA_DIR=/opt/mazharrasyad.tech/data
+Restart=on-failure
+RestartSec=2
+
+# Hardening: this process only reads the static build and project data --
+# no writes anywhere, so the whole filesystem can stay read-only for it.
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+RestrictNamespaces=true
+LockPersonality=true
+MemoryDenyWriteExecute=true
+CapabilityBoundingSet=
+AmbientCapabilities=
+
+[Install]
+WantedBy=multi-user.target

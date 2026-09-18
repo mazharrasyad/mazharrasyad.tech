@@ -1,0 +1,7 @@
+# Build output
+/bin/
+
+# Runtime data: contact-submissions.jsonl contains visitor PII, and
+# projects.json here is just a staged copy of frontend's (build.sh copies it).
+/data/*
+!/data/.gitkeep

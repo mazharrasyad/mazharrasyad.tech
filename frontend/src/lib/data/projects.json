@@ -1,0 +1,1814 @@
+[
+  {
+    "year": 2026,
+    "projects": [
+      {
+        "title": "Betawi Academia",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Educational resource repository and community learning network dedicated to Betawi culture studies.",
+        "tools": "Laravel, Tailwind CSS, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/herakarmila19/betawi_academia"
+      },
+      {
+        "title": "Sudinsos Portal",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Public social affairs and relief request portal for the South Jakarta Social Sub-department.",
+        "tools": "Laravel, Livewire, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/herakarmila19/sudinsos"
+      },
+      {
+        "title": "Blockchain Benchmark Raft HLF",
+        "category": "Blockchain",
+        "images": [],
+        "description": "Performance benchmarking suites analyzing transaction throughput and latency on Raft-based Hyperledger Fabric networks.",
+        "tools": "Go, Raft, Hyperledger Fabric, Caliper",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/blockchain-benchmark-raft-hlf"
+      },
+      {
+        "title": "Putra Jasa V2",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Updated vehicle rental and transport service management system with booking automation and pricing calculators.",
+        "tools": "PHP, Laravel, Bootstrap",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/febrianmosii/putrajasa-v2"
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "projects": [
+      {
+        "title": "E-Kinerja PJLP Pasar Minggu",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Activity recording and performance monitoring system tailored for Pasar Minggu PJLP staff.",
+        "tools": "PHP, Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/herakarmila19/ekinpjlp"
+      },
+      {
+        "title": "SINOMARI",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Integrated information system serving localized municipal and civic administration tasks.",
+        "tools": "Laravel, Livewire, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/herakarmila19/sinomari"
+      },
+      {
+        "title": "Arsip",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Digital archive repository engineered for highly secure and indexed document storage for South Jakarta ASTIK.",
+        "tools": "Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/astikjaksel/arsip"
+      },
+      {
+        "title": "SIPETRUK",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Municipal task tracker and project reporting interface designed to improve operational accountability.",
+        "tools": "Laravel, Livewire, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/astikjaksel/sipetruk"
+      },
+      {
+        "title": "E-RKBU",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Electronic submission portal for corporate or regional material procurement plans.",
+        "tools": "Laravel, Alpine.js, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/astikjaksel/e-rkbu"
+      },
+      {
+        "title": "Waris",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Digital calculation and recording assistant for hereditary inheritance distribution according to applicable regulations.",
+        "tools": "Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/astikjaksel/waris"
+      },
+      {
+        "title": "Penataan",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Regional zoning and urban layout monitoring platform allowing officers to input structural surveys.",
+        "tools": "Laravel, Livewire, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/astikjaksel/penataan"
+      },
+      {
+        "title": "Sistem Kost",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Boarding house management system tracking room vacancies, rental invoices, and check-in dates.",
+        "tools": "Laravel, Vue.js, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/astikjaksel/sistem-kost"
+      },
+      {
+        "title": "SIPERA",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Integrated data portal supporting general community planning and local program participation.",
+        "tools": "Laravel, Livewire, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/astikjaksel/sipera"
+      },
+      {
+        "title": "E-Contract",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Digital contract drafting and signing flow portal tracking vendor agreement progressions.",
+        "tools": "Laravel, Alpine.js, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/astikjaksel/e-kontrack"
+      },
+      {
+        "title": "E-Kinerja PJLP Wilayah Jaksel",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Unified performance scoring system for contract workers across all South Jakarta regional offices.",
+        "tools": "PHP, Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/astikjaksel/ekinpjlp-wilayah"
+      },
+      {
+        "title": "Metagov JS Care",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Social and environmental assistance portal monitoring community care actions and relief distributions.",
+        "tools": "Laravel, Bootstrap, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/astikjaksel/metagov-js-care"
+      },
+      {
+        "title": "DBD",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Dengue Fever monitoring platform mapping health cases and eradication campaigns.",
+        "tools": "Laravel, Chart.js, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/astikjaksel/dbd"
+      },
+      {
+        "title": "PAMOR",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Public reporting system for regional infrastructure and services monitoring.",
+        "tools": "Laravel, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/astikjaksel/pamor"
+      },
+      {
+        "title": "SIP",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Consolidated public licensing and permit application tracker.",
+        "tools": "Laravel, Livewire, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/astikjaksel/sip"
+      },
+      {
+        "title": "E-Kinerja PJLP Kominfo Part 2",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Enhanced performance tracking portal for Kominfo contract workers featuring improved reporting workflows.",
+        "tools": "Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/astikjaksel/ekinerja-pjlp-kominfo"
+      },
+      {
+        "title": "Serambi 06",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Neighborhood civic dashboard (RT/RW) supporting digitized local administration and community announcements.",
+        "tools": "Laravel, Bootstrap, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/serambi-06"
+      },
+      {
+        "title": "E-Kinerja Wilayah",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Regional workforce planning and monthly milestone tracking portal.",
+        "tools": "PHP, Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/ekin-wilayah"
+      },
+      {
+        "title": "Posyandu",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Maternal and infant healthcare log system recording child growth charts and immunization cycles.",
+        "tools": "Laravel, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/posyandu"
+      },
+      {
+        "title": "E-Kinerja PJLP Kominfo Part 1",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Core workflow and initial logging module for Kominfo contract worker performance reporting.",
+        "tools": "PHP, Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/ekinerja-pjlp"
+      },
+      {
+        "title": "Daxtro",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Central dashboard system for digital asset tracking and log integration.",
+        "tools": "Laravel, Alpine.js, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/daxtro"
+      },
+      {
+        "title": "Blockchain Node Python",
+        "category": "Blockchain",
+        "images": [],
+        "description": "Independent blockchain node implementation featuring ledger consensus, transaction pooling, and node API.",
+        "tools": "Python, Flask, Cryptography",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/blockchain-node-python"
+      },
+      {
+        "title": "Blockchain SHM",
+        "category": "Blockchain",
+        "images": [],
+        "description": "Secured smart contract architecture for land certification storage on Hyperledger blockchain.",
+        "tools": "Go, Hyperledger Fabric, Docker",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/blockchain-shm"
+      },
+      {
+        "title": "GeoJSON Boundary 2021",
+        "category": "Data",
+        "images": [],
+        "description": "Structured GIS geo-location repository containing Indonesia's regional administrative boundaries.",
+        "tools": "GeoJSON, GIS, JavaScript",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/indonesia-geojson-batas-admin-2021"
+      },
+      {
+        "title": "Blockchain SVM AI",
+        "category": "Blockchain",
+        "images": [],
+        "description": "Machine learning integrated blockchain consensus assistant classifying consensus priorities via SVM.",
+        "tools": "Python, AI, Scikit-learn, Web3",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/blockchain-svm-ai"
+      },
+      {
+        "title": "Blockchain SVM Web",
+        "category": "Blockchain",
+        "images": [],
+        "description": "User dashboard and front-end management console visualizing blockchain-SVM parameters.",
+        "tools": "React.js, Node.js, Tailwind CSS",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/blockchain-svm-web"
+      },
+      {
+        "title": "Blockchain SVM Chaincode",
+        "category": "Blockchain",
+        "images": [],
+        "description": "Chaincode implementation for decentralized consensus rules governed by SVM metrics.",
+        "tools": "Go, Smart Contract, Hyperledger",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/blockchain-svm-chaincode"
+      },
+      {
+        "title": "Tripa Sysfo",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Official landing and product catalog portal for Tripa Systems Information services.",
+        "tools": "Laravel, Tailwind CSS, Nuxt.js",
+        "visibility": "Public",
+        "sourceUrl": "https://tripasysfo.com/"
+      },
+      {
+        "title": "Tensindo (Internal)",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Internal ERP and operations tracking dashboard for Tensindo operations.",
+        "tools": "Laravel, Alpine.js, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://tripasysfo.com/tensindo"
+      },
+      {
+        "title": "Folio POS",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Modern and responsive Point of Sale (POS) application designed for local retail and business inventory management.",
+        "tools": "React.js, Laravel, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/febrianmosii/foliopos_app"
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "projects": [
+      {
+        "title": "Balkot Farm",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Urban farming management system built to record and visualize crops, harvests, and agricultural data.",
+        "tools": "PHP, Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/herakarmila19/balkotfarm"
+      },
+      {
+        "title": "ESETKO PJLP",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Performance evaluation and reporting system developed for general PJLP contract workers.",
+        "tools": "PHP, Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/herakarmila19/esetko-pjlp"
+      },
+      {
+        "title": "PPID",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Public information and documentation service portal (PPID) supporting governmental transparency standards.",
+        "tools": "Laravel, Livewire, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/herakarmila19/ppid"
+      },
+      {
+        "title": "Jaringan Suara Indonesia",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Web platform built for polling, voter network coordination, and statistical election progress tracking.",
+        "tools": "Laravel, Livewire, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/jaringansuaraindonesia"
+      },
+      {
+        "title": "Lentera Cendikia",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Educational platform and learning portal created for managing course content, student databases, and schedules.",
+        "tools": "PHP, Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/lenteracendikia"
+      },
+      {
+        "title": "Subanpenda",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Regional tax and revenue monitoring platform designed to aggregate data for administrative evaluation.",
+        "tools": "Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/subanpenda"
+      },
+      {
+        "title": "Web Eskul",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Extracurricular activities management portal for schools, allowing students to register and track achievements.",
+        "tools": "PHP, Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/webeskul"
+      },
+      {
+        "title": "Absen",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Mobile-friendly employee attendance system with geolocation and automated check-in/check-out logs.",
+        "tools": "Laravel, JavaScript, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/absen"
+      },
+      {
+        "title": "BantuTani",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Farming assistance system offering information, agricultural tips, and resources for local farming communities.",
+        "tools": "PHP, Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/bantutani"
+      },
+      {
+        "title": "Rumah Baca",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Digital library and reading community platform for organizing book inventories, borrowing records, and events.",
+        "tools": "PHP, CodeIgniter, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/rumahbaca"
+      },
+      {
+        "title": "Particulate Matter Monitoring",
+        "category": "IoT / Data",
+        "images": [],
+        "description": "Environmental air quality monitoring system reading particulate matter values via sensors and plotting historical data.",
+        "tools": "Python, IoT, Raspberry Pi",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/particulate-matter"
+      },
+      {
+        "title": "Pendaftaran PJLP Kominfo",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Centralized recruitment and application portal for candidate contract workers (PJLP) at the Kominfo Department.",
+        "tools": "Laravel, Alpine.js, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/pendaftaran-pjlp"
+      },
+      {
+        "title": "Pasar Minggu Sinobi",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Localized administrative and community service portal tailored for Pasar Minggu village services.",
+        "tools": "Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/pasar-minggu-sinobi"
+      },
+      {
+        "title": "KKPP",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Corporate and institutional performance index tracking tool utilizing collaborative key metrics reporting.",
+        "tools": "Laravel, Livewire, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/kkpp"
+      },
+      {
+        "title": "SINOLI",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Integrated information system facilitating corporate logistics, registration, and inventory planning.",
+        "tools": "Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/sinoli"
+      },
+      {
+        "title": "PSN",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Mosquito nest eradication monitoring portal allowing health officers to file data logs directly from the field.",
+        "tools": "Laravel, Alpine.js, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/psn"
+      },
+      {
+        "title": "SIDANRU",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Meeting room allocation and facility reservation scheduler with automated conflict prevention.",
+        "tools": "Laravel, Livewire, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/sidanru"
+      },
+      {
+        "title": "SIPP",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Centralized project proposals management platform enabling simple submissions, reviews, and progression logs.",
+        "tools": "Laravel, Bootstrap, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/sipp"
+      },
+      {
+        "title": "Jurnal",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Academic or activity logging dashboard built for creating and cataloging daily work summaries.",
+        "tools": "Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/jurnal"
+      },
+      {
+        "title": "SIARIS",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Public archive management and records indexing application designed for municipal entities.",
+        "tools": "PHP, Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/siaris"
+      },
+      {
+        "title": "Layanan",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Public services dashboard centralizing various citizen request modules and trackable forms.",
+        "tools": "Laravel, Alpine.js, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/layanan"
+      },
+      {
+        "title": "SINERBAST",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Handover administration portal (Berita Acara Serah Terima) ensuring verifiable records for organizational assets.",
+        "tools": "Laravel, Livewire, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/sinerbast"
+      },
+      {
+        "title": "Insight Hub",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Analytical data dashboard providing comprehensive visual insights and charts for business performance.",
+        "tools": "Laravel, Chart.js, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/insighthub"
+      },
+      {
+        "title": "SIVERJAB",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Verification system for job applications and contract positions, automating background checks and document audits.",
+        "tools": "Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/siverjab"
+      },
+      {
+        "title": "UMKM",
+        "category": "Web Dev",
+        "images": [],
+        "description": "E-commerce directory and promotion platform built for local micro, small, and medium enterprises (MSMEs).",
+        "tools": "Laravel, Livewire, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/umkm"
+      },
+      {
+        "title": "KAHMI Jaya",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Official portal for the KAHMI Jaya community, featuring news, registration panels, and member directories.",
+        "tools": "PHP, Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/kahmijaya"
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "projects": [
+      {
+        "title": "Go Rakamin",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Educational assignment and system implementation in Go language developed under the Rakamin Academy program.",
+        "tools": "Go, Gin, PostgreSQL",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/go-rakamin"
+      },
+      {
+        "title": "Go Digitalent",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Go-based projects and practice files created for the Digitalent training program.",
+        "tools": "Go, Gin, MySQL",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/go-digitalent"
+      },
+      {
+        "title": "Caleg Yasdar",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Information system designed for managing and monitoring legislative candidates and election volunteer coordination.",
+        "tools": "PHP, Laravel, MySQL",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/caleg-yasdar"
+      },
+      {
+        "title": "CV Bahrullah Akbar",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Professional personal curriculum vitae website showcasing Bahrullah Akbar's career profile and publications.",
+        "tools": "HTML, CSS, JavaScript",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/cv-bahrullah-akbar"
+      },
+      {
+        "title": "Horison Ultima Bandung",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Official hotel website for Horison Ultima Bandung, featuring room booking information, banquet facilities, and services.",
+        "tools": "WordPress, Elementor, PHP",
+        "visibility": "Private",
+        "sourceUrl": "https://www.horisonultimabandung.com/"
+      },
+      {
+        "title": "Recerva",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Comprehensive hotel property management and booking engine platform supporting multiple tenant hotel schemas.",
+        "tools": "Laravel, Vue.js, Tailwind CSS",
+        "visibility": "Public",
+        "sourceUrl": "https://tripasysfo.com/recerva"
+      },
+      {
+        "title": "AOC (Internal)",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Administrative Operations Center (AOC) backend platform for managing Recerva hotel instances, payments, and reporting.",
+        "tools": "Laravel, Vue.js, Tailwind CSS",
+        "visibility": "Private",
+        "sourceUrl": "https://tripasysfo.com/aoc"
+      },
+      {
+        "title": "Proxima",
+        "category": "Web Dev",
+        "images": [],
+        "description": "Unified service management and administrative tool developed for hotel system integration.",
+        "tools": "Laravel, Tailwind CSS, API",
+        "visibility": "Public",
+        "sourceUrl": "https://tripasysfo.com/proxima"
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "projects": [
+      {
+        "title": "PKK E-Report",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2022/p47/1.png",
+          "/projects/2022/p47/2.png",
+          "/projects/2022/p47/3.png",
+          "/projects/2022/p47/4.png",
+          "/projects/2022/p47/5.png",
+          "/projects/2022/p47/6.png",
+          "/projects/2022/p47/7.png"
+        ],
+        "description": "PKK E-Report is a website designed for documenting PKK activities at the South Jakarta Administrative City level. Available features include creating, editing, viewing, deleting, and downloading reports.",
+        "tools": "Codeigniter PHP Framework, MySQL",
+        "updated": "25 May 2022",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/ereport"
+      },
+      {
+        "title": "Apache Log Convert To CSV",
+        "category": "Programming",
+        "images": [
+          "/projects/2022/p48/1.png",
+          "/projects/2022/p48/2.png"
+        ],
+        "description": "This application is used to convert log files generated by the Apache service into CSV format using Python programming.",
+        "tools": "Python",
+        "updated": "23 Jun 2022",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/apache-log-convert-to-csv"
+      },
+      {
+        "title": "Learn Midtrans",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2022/p49/1.jpeg",
+          "/projects/2022/p49/2.jpeg",
+          "/projects/2022/p49/3.jpeg",
+          "/projects/2022/p49/4.jpeg",
+          "/projects/2022/p49/5.jpeg",
+          "/projects/2022/p49/6.jpeg"
+        ],
+        "description": "Learn Midtrans explores how to integrate features of Midtrans, a Payment Gateway system, using its API.",
+        "tools": "Midtrans PHP",
+        "updated": "24 Jun 2022",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/web-learn-midtrans"
+      },
+      {
+        "title": "SINOBI-DATIN",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2022/p50/1.png",
+          "/projects/2022/p50/2.png",
+          "/projects/2022/p50/3.png",
+          "/projects/2022/p50/4.png",
+          "/projects/2022/p50/5.png",
+          "/projects/2022/p50/6.png",
+          "/projects/2022/p50/7.png",
+          "/projects/2022/p50/8.png"
+        ],
+        "description": "SINOBI-DATIN (One Big Data Integrated Information System) is a program from Pasar Minggu Village used as a centralized service portal via a website. Features range from public information, news, online services, contacts, to access to related resources about Pasar Minggu Village in the South Jakarta Administrative City.",
+        "tools": "Codeigniter PHP Framework, MySQL",
+        "updated": "05 Aug 2022",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/sinobi-datin"
+      },
+      {
+        "title": "SITEMAN-NIB",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2022/p51/1.png",
+          "/projects/2022/p51/2.png",
+          "/projects/2022/p51/3.png",
+          "/projects/2022/p51/4.png",
+          "/projects/2022/p51/5.png",
+          "/projects/2022/p51/6.png",
+          "/projects/2022/p51/7.png",
+          "/projects/2022/p51/8.png",
+          "/projects/2022/p51/9.png"
+        ],
+        "description": "SITEMAN-NIB (Risk-Based Business Identification Number Licensing Service Integration System) is designed for business owners in the Pondok Labu area, South Jakarta. Features include assistance services, information services, licensing big data, NIB regulations, FAQs, and more.",
+        "tools": "Codeigniter PHP Framework, MySQL",
+        "updated": "15 Aug 2022",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/siteman-nib"
+      },
+      {
+        "title": "SILOTANG",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2022/p52/1.png"
+        ],
+        "description": "SILOTANG is an automated reporting system designed to convert structured files into a web-based display, making it easy to manage and process into data.",
+        "tools": "Codeigniter PHP Framework, MySQL",
+        "updated": "22 Aug 2022",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/silotang"
+      },
+      {
+        "title": "Learn Web Pemrograman Dasar",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2022/p53/1.png",
+          "/projects/2022/p53/2.png"
+        ],
+        "description": "Re-learning the fundamentals of web application programming, covering HTML, CSS, and JavaScript step-by-step.",
+        "tools": "HTML, CSS, JavaScript",
+        "updated": "27 Aug 2022",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/web-pemrograman-dasar"
+      },
+      {
+        "title": "Learn Frontend Dasar",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2022/p54/1.png",
+          "/projects/2022/p54/2.png"
+        ],
+        "description": "Learning the basic frontend concepts of web applications, focusing on the interaction between users and the web system, such as real-time UI changes and saving modifications made by the user.",
+        "tools": "HTML, CSS, JavaScript",
+        "updated": "27 Aug 2022",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/web-pemrograman-dasar"
+      },
+      {
+        "title": "TerbaikTUFJ",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2022/p55/1.jpeg",
+          "/projects/2022/p55/2.jpeg",
+          "/projects/2022/p55/3.jpeg",
+          "/projects/2022/p55/4.jpeg"
+        ],
+        "description": "TerbaikTUFJ is an urban farming e-commerce web platform initiated by the South Jakarta KPKP Sub-department. Responsibilities included web maintenance such as table content fixes, custom slideshows, video embedding, and integrating a new GoSend delivery feature.",
+        "tools": "Codeigniter PHP Framework, MySQL",
+        "updated": "31 Aug 2022",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/terbaiktufj"
+      },
+      {
+        "title": "UP3D Setiabudi",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2022/p56/1.png",
+          "/projects/2022/p56/2.png",
+          "/projects/2022/p56/3.png",
+          "/projects/2022/p56/4.png",
+          "/projects/2022/p56/5.png",
+          "/projects/2022/p56/6.png"
+        ],
+        "description": "UP3D Setiabudi is a service provided by the Setiabudi district, South Jakarta, to the community, including information dissemination, registration, application tracking, and FAQs.",
+        "tools": "Codeigniter PHP Framework, MySQL",
+        "updated": "31 Aug 2022",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/up3dsetiabudi"
+      },
+      {
+        "title": "Sisirteco",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2022/p57/1.png",
+          "/projects/2022/p57/2.png",
+          "/projects/2022/p57/3.png",
+          "/projects/2022/p57/4.png",
+          "/projects/2022/p57/5.png"
+        ],
+        "description": "Sisirteco is a system designed to inspect vehicles entering Tebet Eco Park, South Jakarta. It was developed to address parking capacity issues that disrupt surrounding residents during entry and exit.",
+        "tools": "Codeigniter PHP Framework, MySQL",
+        "updated": "19 Sep 2022",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/sisirteco"
+      },
+      {
+        "title": "Sudinbud",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2022/p58/1.png",
+          "/projects/2022/p58/2.png",
+          "/projects/2022/p58/3.png",
+          "/projects/2022/p58/4.png",
+          "/projects/2022/p58/5.png"
+        ],
+        "description": "Sudinbud is a news portal dedicated to the Cultural Sub-department of the South Jakarta Administrative City.",
+        "tools": "Codeigniter PHP Framework, MySQL",
+        "updated": "25 Sep 2022",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/sudinbud"
+      },
+      {
+        "title": "Germor Sedekah",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2022/p59/1.png",
+          "/projects/2022/p59/2.png"
+        ],
+        "description": "Germor Sedekah is a South Jakarta Administrative City Government program aimed at improving community welfare by distributing donated goods.",
+        "tools": "Codeigniter PHP Framework, MySQL",
+        "updated": "31 Oct 2022",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/germor-sedekah"
+      },
+      {
+        "title": "SI UCI",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2022/p60/1.png",
+          "/projects/2022/p60/2.png",
+          "/projects/2022/p60/3.png",
+          "/projects/2022/p60/4.png"
+        ],
+        "description": "SI UCI (Primary Customer Information System) is a 24-hour information provider about the South Jakarta Administrative City powered by a Chatbot.",
+        "tools": "Codeigniter PHP Framework, MySQL",
+        "updated": "11 Nov 2022",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/siuci"
+      },
+      {
+        "title": "Pencatatan HI",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2022/p61/1.png",
+          "/projects/2022/p61/2.png",
+          "/projects/2022/p61/3.png",
+          "/projects/2022/p61/4.png",
+          "/projects/2022/p61/5.png"
+        ],
+        "description": "Industrial Relations (HI) Recording is a public service for individuals facing employment issues, including grievance logging, report tracking, and coordinating between both parties.",
+        "tools": "Codeigniter PHP Framework, MySQL",
+        "updated": "14 Nov 2022",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/pencatatan_hi"
+      },
+      {
+        "title": "Situs Resmi Web Jakarta Selatan",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2022/p62/1.png",
+          "/projects/2022/p62/2.png",
+          "/projects/2022/p62/3.png",
+          "/projects/2022/p62/4.png",
+          "/projects/2022/p62/5.png",
+          "/projects/2022/p62/6.png",
+          "/projects/2022/p62/7.png",
+          "/projects/2022/p62/8.png",
+          "/projects/2022/p62/9.png",
+          "/projects/2022/p62/10.png",
+          "/projects/2022/p62/11.png",
+          "/projects/2022/p62/12.png",
+          "/projects/2022/p62/13.png",
+          "/projects/2022/p62/14.png",
+          "/projects/2022/p62/15.png"
+        ],
+        "description": "The official website of South Jakarta, providing a wide range of information including the latest news, videos, events, profiles, official directories, regional data, public document access (PPID), and public services.",
+        "tools": "Codeigniter PHP Framework, MySQL",
+        "updated": "12 Dec 2022",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/selatan.jakarta.go.id"
+      },
+      {
+        "title": "IPTM",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2022/p63/1.png",
+          "/projects/2022/p63/2.png",
+          "/projects/2022/p63/3.png",
+          "/projects/2022/p63/4.png",
+          "/projects/2022/p63/5.png"
+        ],
+        "description": "IPTM (Tomb Land Use Permit) is a Tangerang Regency government service assisting the community in obtaining permits for utilizing public cemeteries.",
+        "tools": "Laravel PHP Framework, MySQL",
+        "updated": "23 Dec 2022",
+        "visibility": "Private",
+        "sourceUrl": "https://gitlab.com/heva-repo/iptm"
+      },
+      {
+        "title": "mazharrasyad.github.io",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2022/p64/1.png",
+          "/projects/2022/p64/2.png",
+          "/projects/2022/p64/3.png",
+          "/projects/2022/p64/4.png",
+          "/projects/2022/p64/5.png",
+          "/projects/2022/p64/6.png",
+          "/projects/2022/p64/7.png",
+          "/projects/2022/p64/8.png",
+          "/projects/2022/p64/9.png",
+          "/projects/2022/p64/10.png",
+          "/projects/2022/p64/11.png"
+        ],
+        "description": "mazharrasyad.github.io is the web-based portfolio of Muhammad Azhar Rasyad.",
+        "tools": "AdminLTE, HTML, CSS, Javascript",
+        "updated": "27 Dec 2022",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/mazharrasyad.github.io"
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "projects": [
+      {
+        "title": "Angkutan Umum Bandung",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2021/p35/1.png",
+          "/projects/2021/p35/2.png",
+          "/projects/2021/p35/3.png",
+          "/projects/2021/p35/4.png",
+          "/projects/2021/p35/5.png",
+          "/projects/2021/p35/6.png",
+          "/projects/2021/p35/7.png",
+          "/projects/2021/p35/8.png",
+          "/projects/2021/p35/9.png",
+          "/projects/2021/p35/10.png"
+        ],
+        "description": "Bandung public transportation is a website of the Bandung City Transportation Agency which is used as data for information on public transportation such as angkot, taxis, buses, and damri. There are important data including vehicle number, owner, vehicle test number, brand, type, and status.",
+        "tools": "Laravel PHP Framework, MySQL",
+        "updated": "23 Jan 2021",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/web-angkutan-umum-bandung"
+      },
+      {
+        "title": "Covid-19 Prediction",
+        "category": "Data Science",
+        "images": [
+          "/projects/2021/p36/1.png",
+          "/projects/2021/p36/2.png",
+          "/projects/2021/p36/3.png",
+          "/projects/2021/p36/4.png",
+          "/projects/2021/p36/5.png",
+          "/projects/2021/p36/6.png",
+          "/projects/2021/p36/7.png",
+          "/projects/2021/p36/8.png",
+          "/projects/2021/p36/9.png",
+          "/projects/2021/p36/10.png"
+        ],
+        "description": "Covid-19 Prediction is a study conducted to predict Covid-19 cases in Indonesia from available datasets within a certain period of time.",
+        "tools": "Python, Google Colab, Jupyter Notebook",
+        "updated": "24 Jan 2021",
+        "visibility": "Private",
+        "sourceUrl": "https://colab.research.google.com/drive/1kwGQfWOINsSBR37JhkdstCGfOF81F13p?usp=sharing"
+      },
+      {
+        "title": "Pemira",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2021/p37/1.png",
+          "/projects/2021/p37/2.png",
+          "/projects/2021/p37/3.png",
+          "/projects/2021/p37/4.png",
+          "/projects/2021/p37/5.png",
+          "/projects/2021/p37/6.png",
+          "/projects/2021/p37/7.png",
+          "/projects/2021/p37/8.png",
+          "/projects/2021/p37/9.png"
+        ],
+        "description": "Pemira is a website for the election of the president and vice president of the student executive body at STT-NF.",
+        "tools": "PHP, MySQL, Bootstrap",
+        "updated": "27 Jan 2021",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/web-pemira"
+      },
+      {
+        "title": "Retech",
+        "category": "Data Science",
+        "images": [
+          "/projects/2021/p38/1.png",
+          "/projects/2021/p38/2.png",
+          "/projects/2021/p38/3.png",
+          "/projects/2021/p38/4.png",
+          "/projects/2021/p38/5.png",
+          "/projects/2021/p38/6.png",
+          "/projects/2021/p38/7.png",
+          "/projects/2021/p38/8.png",
+          "/projects/2021/p38/9.png",
+          "/projects/2021/p38/10.png",
+          "/projects/2021/p38/11.png",
+          "/projects/2021/p38/12.png",
+          "/projects/2021/p38/13.png",
+          "/projects/2021/p38/14.png",
+          "/projects/2021/p38/15.png",
+          "/projects/2021/p38/16.png",
+          "/projects/2021/p38/17.png",
+          "/projects/2021/p38/18.png",
+          "/projects/2021/p38/19.png",
+          "/projects/2021/p38/20.png",
+          "/projects/2021/p38/21.png",
+          "/projects/2021/p38/22.png",
+          "/projects/2021/p38/23.png",
+          "/projects/2021/p38/24.png",
+          "/projects/2021/p38/25.png",
+          "/projects/2021/p38/26.png",
+          "/projects/2021/p38/27.png",
+          "/projects/2021/p38/28.png",
+          "/projects/2021/p38/29.png",
+          "/projects/2021/p38/30.png",
+          "/projects/2021/p38/31.png",
+          "/projects/2021/p38/32.png",
+          "/projects/2021/p38/33.png",
+          "/projects/2021/p38/34.png"
+        ],
+        "description": "Retech is a data analysis of retech company product data and Bandung city public transportation data. The analysis is carried out in order to obtain information that will be used as a basis for improving development that will be carried out in the future.",
+        "tools": "Yellowfin BI",
+        "updated": "22 Feb 2021",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/document-internship"
+      },
+      {
+        "title": "Learn Kotlin",
+        "category": "Programming",
+        "images": [
+          "/projects/2021/p39/1.png"
+        ],
+        "description": "Learn Kotlin is the result of learning the Kotlin programming language starting from control flow, coroutines, data classes, collections, functional, generics, fundamentals, and object oriented.",
+        "tools": "Kotlin",
+        "updated": "08 Mar 2021",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/program-learn-kotlin"
+      },
+      {
+        "title": "Learn Android Kotlin",
+        "category": "Android Development",
+        "images": [
+          "/projects/2021/p40/1.png",
+          "/projects/2021/p40/2.png"
+        ],
+        "description": "Learn android kotlin is the result of learning that is carried out including the material for Activity, Intent, Views, ViewGroup, Style, Theme, and Recycler View.",
+        "tools": "Android Studio, Kotlin",
+        "updated": "08 Mar 2021",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/android-kotlin-learn"
+      },
+      {
+        "title": "StayUp",
+        "category": "Android Development",
+        "images": [
+          "/projects/2021/p41/1.png",
+          "/projects/2021/p41/2.png"
+        ],
+        "description": "StayUp is an example of an application that contains a list of startups in Indonesia.",
+        "tools": "Android Studio, Kotlin",
+        "updated": "11 Mar 2021",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/android-stayup-sample"
+      },
+      {
+        "title": "Learn Android Flutter",
+        "category": "Android Development",
+        "images": [
+          "/projects/2021/p42/1.png",
+          "/projects/2021/p42/2.png",
+          "/projects/2021/p42/3.png",
+          "/projects/2021/p42/4.png",
+          "/projects/2021/p42/5.png"
+        ],
+        "description": "Learn android flutter is the result of learning done in developing android applications using Flutter by implementing several things including Widget, Navigation, Routing, ConstrainedBox, Row, Column, State Management, HTTP, and Shared Preferences.",
+        "tools": "Android Studio, Flutter",
+        "updated": "15 Apr 2021",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/android-flutter-learn"
+      },
+      {
+        "title": "Github Clone",
+        "category": "Android Development",
+        "images": [
+          "/projects/2021/p43/1.png",
+          "/projects/2021/p43/2.png"
+        ],
+        "description": "Github Clone is the result of learning taken from Github application references by implementing Intent, Activity, Parcelable, RecyclerView, ConstraintLayout, SearchView, TabLayout, Retrofit network requests, API, SQLite, Room, and DataStore.",
+        "tools": "Android Studio, Kotlin, SQLite",
+        "updated": "07 Jun 2021",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/android-github-clone"
+      },
+      {
+        "title": "Jetpack Movie",
+        "category": "Android Development",
+        "images": [
+          "/projects/2021/p44/1.png",
+          "/projects/2021/p44/2.png"
+        ],
+        "description": "Jetpack Movie is the result of learning that applies ViewModel, library testing, repository pattern, LiveData, Idling Resources, Room, and Pagination.",
+        "tools": "Android Studio, Kotlin, SQLite",
+        "updated": "20 Jun 2021",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/android-jetpack-movie"
+      },
+      {
+        "title": "Capstone Expert",
+        "category": "Android Development",
+        "images": [
+          "/projects/2021/p45/1.png",
+          "/projects/2021/p45/2.png"
+        ],
+        "description": "Capstone expert is the result of learning that applies Clean Architecture, Coroutine Flow, Coins, Android Library, Dynamic Features, Continuous Integration, Leak Canary, obfuscation, encryption, and certificate pinning.",
+        "tools": "Android Studio, Kotlin, SQLite",
+        "updated": "24 Jun 2021",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/android-capstone-expert"
+      },
+      {
+        "title": "Link-Match STT-NF",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2021/p46/1.png",
+          "/projects/2021/p46/2.jpg",
+          "/projects/2021/p46/3.jpg",
+          "/projects/2021/p46/4.jpg",
+          "/projects/2021/p46/5.jpg",
+          "/projects/2021/p46/6.jpg",
+          "/projects/2021/p46/7.jpg",
+          "/projects/2021/p46/8.jpg",
+          "/projects/2021/p46/9.jpg",
+          "/projects/2021/p46/10.jpg",
+          "/projects/2021/p46/11.jpg",
+          "/projects/2021/p46/12.jpg",
+          "/projects/2021/p46/13.jpg",
+          "/projects/2021/p46/14.jpg",
+          "/projects/2021/p46/15.jpg",
+          "/projects/2021/p46/16.jpg",
+          "/projects/2021/p46/17.jpg",
+          "/projects/2021/p46/18.jpg",
+          "/projects/2021/p46/19.jpg",
+          "/projects/2021/p46/20.jpg",
+          "/projects/2021/p46/21.jpg",
+          "/projects/2021/p46/22.jpg",
+          "/projects/2021/p46/23.jpg",
+          "/projects/2021/p46/24.jpg",
+          "/projects/2021/p46/25.jpg",
+          "/projects/2021/p46/26.jpg",
+          "/projects/2021/p46/27.jpg",
+          "/projects/2021/p46/28.jpg",
+          "/projects/2021/p46/29.jpg",
+          "/projects/2021/p46/30.jpg",
+          "/projects/2021/p46/31.jpg",
+          "/projects/2021/p46/32.jpg",
+          "/projects/2021/p46/33.jpg",
+          "/projects/2021/p46/34.jpg",
+          "/projects/2021/p46/35.jpg",
+          "/projects/2021/p46/36.jpg",
+          "/projects/2021/p46/37.jpg",
+          "/projects/2021/p46/38.jpg",
+          "/projects/2021/p46/39.png",
+          "/projects/2021/p46/40.jpg",
+          "/projects/2021/p46/41.jpg"
+        ],
+        "description": "Link-Match STT-NF is a website that is used to perform project management using the Scrum method given by the product owner to students at STT-NF. There are five related roles including Administrator, Lecturer, Scrum Master, Student, and Product Owner. The available features include CRUD on the User, Team, Team Member, Value Team Member, Project, and Sprint tables.",
+        "tools": "Laravel PHP Framework, PostgreSQL",
+        "updated": "06 Jul 2021",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/Link-Match-STT-NF"
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "projects": [
+      {
+        "title": "Link-Match Modul Project",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2020/p27/1.png",
+          "/projects/2020/p27/2.png",
+          "/projects/2020/p27/3.png",
+          "/projects/2020/p27/4.png",
+          "/projects/2020/p27/5.png",
+          "/projects/2020/p27/6.png",
+          "/projects/2020/p27/7.png",
+          "/projects/2020/p27/8.png",
+          "/projects/2020/p27/9.png",
+          "/projects/2020/p27/10.png",
+          "/projects/2020/p27/11.png",
+          "/projects/2020/p27/12.png",
+          "/projects/2020/p27/13.png",
+          "/projects/2020/p27/14.png",
+          "/projects/2020/p27/15.png",
+          "/projects/2020/p27/16.png",
+          "/projects/2020/p27/17.png"
+        ],
+        "description": "Link-Match Project Module is one part of the Link-Match STT-NF project design in web form. The project module is devoted to handling project management, starting from managing the project, team, members, and minimum viable product.",
+        "tools": "Laravel PHP Framework, MySQL",
+        "updated": "06 Feb 2020",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/web-lima-modul-project"
+      },
+      {
+        "title": "Learn Data Security",
+        "category": "Programming",
+        "images": [
+          "/projects/2020/p28/1.png",
+          "/projects/2020/p28/2.png",
+          "/projects/2020/p28/3.png",
+          "/projects/2020/p28/4.png"
+        ],
+        "description": "Learn data security is the result of learning at the Technofair event and produces several techniques for securing data. Some of the techniques studied include caesarean, substitution, vigenere, and xor cipher.",
+        "tools": "Python",
+        "updated": "15 Mar 2020",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/program-learn-data-security"
+      },
+      {
+        "title": "Learn Data Science",
+        "category": "Data Science",
+        "images": [
+          "/projects/2020/p29/1.png"
+        ],
+        "description": "Learn data science is the result of bootcamp training on python and data science. The main material taught is basic python, pandas, visualization, and machine learning. In basic python material, learn about python lists, dictionaries, methods, and functions. In pandas material, we learn about data access/indexing, data transformation, data reshaping, data grouping, and data merging. The visualization material covers matplotlib, custom visualization, multiple plots, and quantitative comparisons. The last material is machine learning about sciki learning, data preprocessing, model selection, and performance evaluation models.",
+        "tools": "Python, IPython Notebook, Google Colab",
+        "updated": "08 June 2020",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/data-science-learn"
+      },
+      {
+        "title": "Learn Data Visualization",
+        "category": "Data Science",
+        "images": [
+          "/projects/2020/p30/1.png"
+        ],
+        "description": "Learn data visualization is the result of learning to train how to visualize data properly. The exercises include introduction to data, data visualization, basic mathematics and statistics, basic spreadsheets, transformation of data to diagrams, common errors in data visualization, to data documentation.",
+        "tools": "Spreadsheet",
+        "updated": "16 June 2020",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/data-visualization-learn"
+      },
+      {
+        "title": "Visualisasi Gempa Bumi",
+        "category": "Data Science",
+        "images": [
+          "/projects/2020/p31/1.png",
+          "/projects/2020/p31/2.png",
+          "/projects/2020/p31/3.png",
+          "/projects/2020/p31/4.png",
+          "/projects/2020/p31/5.png",
+          "/projects/2020/p31/6.png",
+          "/projects/2020/p31/7.png",
+          "/projects/2020/p31/8.png",
+          "/projects/2020/p31/9.png",
+          "/projects/2020/p31/10.png",
+          "/projects/2020/p31/11.png",
+          "/projects/2020/p31/12.png",
+          "/projects/2020/p31/13.png",
+          "/projects/2020/p31/14.png",
+          "/projects/2020/p31/15.png"
+        ],
+        "description": "Earthquake Visualization is the result of research to describe the frequency and magnitude of earthquakes in a certain period of time using publicly published data.",
+        "tools": "Python, Scrum, Google Drive, Hadoop, Hive, Linux, ELK, Jupyter Notebook",
+        "updated": "15 Jul 2020",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/data-visualisasi-gempa-bumi"
+      },
+      {
+        "title": "Prediction Titanic",
+        "category": "Data Science",
+        "images": [
+          "/projects/2020/p32/1.png"
+        ],
+        "description": "Titanic prediction is a challenge to predict how many people will survive the titanic incident using machine learning from the data that has been provided.",
+        "tools": "Python, Jupyter Notebook, Google Colab, CSV",
+        "updated": "12 Sep 2020",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/data-prediction-titanic"
+      },
+      {
+        "title": "UI Login",
+        "category": "Android Development",
+        "images": [
+          "/projects/2020/p33/1.png"
+        ],
+        "description": "UI Login is a simple android application that focuses on displaying the user interface on a login form.",
+        "tools": "Java, Android Studio",
+        "updated": "05 Dec 2020",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/android-ui-login"
+      },
+      {
+        "title": "UI/UX Design ClickData",
+        "category": "UI/UX Design",
+        "images": [
+          "/projects/2020/p34/1.png",
+          "/projects/2020/p34/2.png",
+          "/projects/2020/p34/3.png",
+          "/projects/2020/p34/4.png",
+          "/projects/2020/p34/5.png",
+          "/projects/2020/p34/6.png",
+          "/projects/2020/p34/7.png",
+          "/projects/2020/p34/8.png",
+          "/projects/2020/p34/9.png",
+          "/projects/2020/p34/10.png",
+          "/projects/2020/p34/11.png",
+          "/projects/2020/p34/12.png",
+          "/projects/2020/p34/13.png",
+          "/projects/2020/p34/14.png"
+        ],
+        "description": "ClickData is a UI/UX Design as a design for a dataset provider application, the available displays include a splash screen, login form, homepage display, discussion forum, data request form, and profile view.",
+        "tools": "Figma",
+        "updated": "16 Dec 2020",
+        "visibility": "Private",
+        "sourceUrl": "https://www.figma.com/proto/UiYyh89goQnRVtVySceQ1y/MengAlir?node-id=281%3A335&starting-point-node-id=281%3A335&scaling=scale-down"
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "projects": [
+      {
+        "title": "Design DB Olahraga",
+        "category": "Data Science",
+        "images": [
+          "/projects/2019/p8/1.png"
+        ],
+        "description": "The sports database design is an illustration before being implemented into an application that has several functions including transfer, ordering, canceling, and completing bookings.",
+        "tools": "PostgreSQL, MySQL Workbench",
+        "updated": "11 Jan 2019",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/data-design-db-olahraga"
+      },
+      {
+        "title": "Pencarian Kata",
+        "category": "Programming",
+        "images": [
+          "/projects/2019/p9/1.png",
+          "/projects/2019/p9/2.png",
+          "/projects/2019/p9/3.png",
+          "/projects/2019/p9/4.png",
+          "/projects/2019/p9/5.png"
+        ],
+        "description": "Word search is a program that is used to search for a word in a file, there are several options available including searching by using arguments, arrays, conditions, or just one file.",
+        "tools": "Java",
+        "updated": "21 Jan 2019",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/program-pencarian-kata"
+      },
+      {
+        "title": "Design DB Perpustakaan",
+        "category": "Data Science",
+        "images": [
+          "/projects/2019/p10/1.png"
+        ],
+        "description": "The library database design is an illustration before being implemented into an application that contains features such as borrowing, returning, and inventory.",
+        "tools": "PostgreSQL, MySQL Workbench",
+        "updated": "29 Jan 2019",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/data-design-db-perpustakaan"
+      },
+      {
+        "title": "Design DB Mushola",
+        "category": "Data Science",
+        "images": [
+          "/projects/2019/p11/1.png"
+        ],
+        "description": "The design of the prayer room database is an illustration before it is implemented into an application that has features such as inventory, lending, donations, and reporting.",
+        "tools": "PostgreSQL, MySQL Workbench",
+        "updated": "29 Jan 2019",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/data-design-db-mushola"
+      },
+      {
+        "title": "Design DB Kursus",
+        "category": "Data Science",
+        "images": [
+          "/projects/2019/p12/1.png"
+        ],
+        "description": "The course database design is an overview before being implemented into an application that has features such as registration, payment, commission, add participants, and course completion.",
+        "tools": "PostgreSQL, MySQL Workbench",
+        "updated": "29 Jan 2019",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/data-design-db-kursus"
+      },
+      {
+        "title": "BaseNF",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2019/p13/1.png",
+          "/projects/2019/p13/2.png",
+          "/projects/2019/p13/3.png",
+          "/projects/2019/p13/4.png",
+          "/projects/2019/p13/5.png",
+          "/projects/2019/p13/6.png",
+          "/projects/2019/p13/7.png",
+          "/projects/2019/p13/8.png",
+          "/projects/2019/p13/9.png",
+          "/projects/2019/p13/10.png"
+        ],
+        "description": "BaseNF is a web prototype that is used to inform the workload of lecturers at STT-NF, there is information related to lecturers, teaching, research, PKM, positions, and contacts.",
+        "tools": "HTML, CSS, JavaScript, PHP, Bootstrap, PostgreSQL",
+        "updated": "29 Jan 2019",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/web-basenf"
+      },
+      {
+        "title": "Aritmatika Jam",
+        "category": "Programming",
+        "images": [
+          "/projects/2019/p14/1.png"
+        ],
+        "description": "Clock arithmetic is a program to perform calculations using units of hours, minutes, and seconds. Only calculations are available for addition and subtraction, in addition if an error occurs it will display an error message.",
+        "tools": "Java",
+        "updated": "29 Jan 2019",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/program-aritmatika-jam"
+      },
+      {
+        "title": "Tiket Pesawat",
+        "category": "Programming",
+        "images": [
+          "/projects/2019/p15/1.png"
+        ],
+        "description": "Airline ticket is a program to test the validity of the form filled in by the user in booking airplane tickets, whether it is in accordance with the format or not so as to avoid human error.",
+        "tools": "Java",
+        "updated": "30 Jan 2019",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/program-tiket-pesawat"
+      },
+      {
+        "title": "Game S.O.S",
+        "category": "Programming",
+        "images": [
+          "/projects/2019/p16/1.png",
+          "/projects/2019/p16/2.png",
+          "/projects/2019/p16/3.png",
+          "/projects/2019/p16/4.png",
+          "/projects/2019/p16/5.png"
+        ],
+        "description": "Game S.O.S is a program that implements S.O.S games on a computer. There are options available, namely choosing boards from 3x3, 5x5, 7x7, to custom. In addition, we can choose whether to fight players or computers that have been given simple artificial intelligence.",
+        "tools": "Java",
+        "updated": "31 Jan 2019",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/program-game-sos"
+      },
+      {
+        "title": "Learn Django",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2019/p17/1.png",
+          "/projects/2019/p17/1.png"
+        ],
+        "description": "Open class Django is the result of implementing learning about the web django framework, starting from the introduction, views, templates, apps, URLs, variables, and tags.",
+        "tools": "Django Python Framework",
+        "updated": "03 Feb 2019",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/web-learn-django"
+      },
+      {
+        "title": "Learn Laravel",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2019/p18/1.png"
+        ],
+        "description": "Learn laravel is the result of implementing learning about the laravel web framework, starting from installation, making CRUD, implementing databases, and deploying.",
+        "tools": "Laravel PHP Framework",
+        "updated": "22 Feb 2019",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/web-learn-laravel"
+      },
+      {
+        "title": "KNRP Depok",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2019/p19/1.png",
+          "/projects/2019/p19/2.png",
+          "/projects/2019/p19/3.png",
+          "/projects/2019/p19/4.png",
+          "/projects/2019/p19/5.png",
+          "/projects/2019/p19/6.png"
+        ],
+        "description": "KNRP Depok is an information web that is planned to be used by the KNRP organization in Depok as its official website. There is some information available such as news, about ID cards, donations, social media, and the feature of managing news as an admin.",
+        "tools": "Laravel PHP Framework, MySQL",
+        "updated": "10 Mar 2019",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/mazharrasyad/web-knrp-depok"
+      },
+      {
+        "title": "Basmalah",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2019/p20/1.png",
+          "/projects/2019/p20/2.png",
+          "/projects/2019/p20/3.png",
+          "/projects/2019/p20/4.png",
+          "/projects/2019/p20/5.png",
+          "/projects/2019/p20/6.png",
+          "/projects/2019/p20/7.png",
+          "/projects/2019/p20/8.png",
+          "/projects/2019/p20/9.png",
+          "/projects/2019/p20/10.png",
+          "/projects/2019/p20/11.png",
+          "/projects/2019/p20/12.png",
+          "/projects/2019/p20/13.png",
+          "/projects/2019/p20/14.png",
+          "/projects/2019/p20/15.png",
+          "/projects/2019/p20/16.png",
+          "/projects/2019/p20/17.png",
+          "/projects/2019/p20/18.png",
+          "/projects/2019/p20/19.png",
+          "/projects/2019/p20/20.png",
+          "/projects/2019/p20/21.png",
+          "/projects/2019/p20/22.png",
+          "/projects/2019/p20/23.png"
+        ],
+        "description": "Basmalah is a web that is used to cope with poor families by providing material by teachers through the mosque's prosperity council. There are registration features for DKM, teachers, and unemployed, other features in the form of donations to reports. In auth there are three roles including administrator, DKM, and teacher.",
+        "tools": "Laravel PHP Framework, MySQL",
+        "updated": "14 Jun 2019",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/web-basmalah"
+      },
+      {
+        "title": "Ranah Guru",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2019/p21/1.png",
+          "/projects/2019/p21/2.png",
+          "/projects/2019/p21/3.png",
+          "/projects/2019/p21/4.png",
+          "/projects/2019/p21/5.png",
+          "/projects/2019/p21/6.png",
+          "/projects/2019/p21/7.png",
+          "/projects/2019/p21/8.png"
+        ],
+        "description": "Ranah Guru is a job vacancy website specifically for teachers and schools. The vacancies contain the subjects required by the school for the teachers who will teach.",
+        "tools": "Yii PHP Framework, MySQL",
+        "updated": "24 Jul 2019",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/web-ranah-guru"
+      },
+      {
+        "title": "UI/UX Design Ops...",
+        "category": "UI/UX Design",
+        "images": [
+          "/projects/2019/p22/1.png",
+          "/projects/2019/p22/2.png",
+          "/projects/2019/p22/3.png",
+          "/projects/2019/p22/4.png",
+          "/projects/2019/p22/5.png",
+          "/projects/2019/p22/6.png",
+          "/projects/2019/p22/7.png"
+        ],
+        "description": "Ops... is a UI/UX design for Android as a place for organic material e-commerce. The available displays are splash screen, main page, product details, ordering, cart, and payment.",
+        "tools": "Figma",
+        "updated": "25 Jul 2019",
+        "visibility": "Private",
+        "sourceUrl": "https://www.figma.com/proto/H4WFK2PrzGr8hvAkYfcN8yXi/Techno?node-id=39%3A3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=39%3A3"
+      },
+      {
+        "title": "Hystech",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2019/p23/1.png",
+          "/projects/2019/p23/2.png",
+          "/projects/2019/p23/3.png",
+          "/projects/2019/p23/4.png",
+          "/projects/2019/p23/5.png",
+          "/projects/2019/p23/6.png"
+        ],
+        "description": "Hystech is an activity scheduling web prototype specifically for Jamkrindo companies, there are authentication, calendar, event submission, edit, and delete features.",
+        "tools": "Easyappoinment PHP Framework, MySQL",
+        "updated": "25 Jul 2019",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/web-hystech"
+      },
+      {
+        "title": "UI/UX Design StayUp",
+        "category": "UI/UX Design",
+        "images": [
+          "/projects/2019/p24/1.png",
+          "/projects/2019/p24/2.png",
+          "/projects/2019/p24/3.png",
+          "/projects/2019/p24/4.png",
+          "/projects/2019/p24/5.png",
+          "/projects/2019/p24/6.png",
+          "/projects/2019/p24/7.png",
+          "/projects/2019/p24/8.png",
+          "/projects/2019/p24/9.png",
+          "/projects/2019/p24/10.png",
+          "/projects/2019/p24/11.png",
+          "/projects/2019/p24/12.png",
+          "/projects/2019/p24/13.png",
+          "/projects/2019/p24/14.png",
+          "/projects/2019/p24/15.png",
+          "/projects/2019/p24/16.png",
+          "/projects/2019/p24/17.png",
+          "/projects/2019/p24/18.png",
+          "/projects/2019/p24/19.png",
+          "/projects/2019/p24/20.png",
+          "/projects/2019/p24/21.png"
+        ],
+        "description": "StayUp is a UI/UX Design in the form of android for designing startup investment applications.",
+        "tools": "Figma",
+        "updated": "25 Oct 2019",
+        "visibility": "Private",
+        "sourceUrl": "https://www.figma.com/proto/vpH2zgrdWy4UfUzFM0TfP2/StayUp?node-id=165%3A2736&scaling=scale-down&page-id=165%3A0&starting-point-node-id=165%3A2736"
+      },
+      {
+        "title": "UI/UX Design tapSehat",
+        "category": "UI/UX Design",
+        "images": [
+          "/projects/2019/p25/1.png",
+          "/projects/2019/p25/2.png",
+          "/projects/2019/p25/3.png",
+          "/projects/2019/p25/4.png",
+          "/projects/2019/p25/5.png",
+          "/projects/2019/p25/6.png",
+          "/projects/2019/p25/7.png",
+          "/projects/2019/p25/8.png",
+          "/projects/2019/p25/9.png",
+          "/projects/2019/p25/10.png",
+          "/projects/2019/p25/11.png",
+          "/projects/2019/p25/12.png",
+          "/projects/2019/p25/13.png",
+          "/projects/2019/p25/14.png",
+          "/projects/2019/p25/15.png",
+          "/projects/2019/p25/16.png",
+          "/projects/2019/p25/17.png"
+        ],
+        "description": "tapSehat is a UI/UX Design in the form of an android for designing hospital service applications.",
+        "tools": "Figma",
+        "updated": "11 Dec 2019",
+        "visibility": "Private",
+        "sourceUrl": "https://www.figma.com/proto/GVq8ZgQ9b5rQGCeXrBBbDJ/tapSehat?node-id=57%3A8&scaling=scale-down"
+      },
+      {
+        "title": "U-VEST",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2019/p26/1.png",
+          "/projects/2019/p26/2.png",
+          "/projects/2019/p26/3.png",
+          "/projects/2019/p26/4.png",
+          "/projects/2019/p26/5.png",
+          "/projects/2019/p26/6.png",
+          "/projects/2019/p26/7.png",
+          "/projects/2019/p26/8.png",
+          "/projects/2019/p26/9.png",
+          "/projects/2019/p26/10.png",
+          "/projects/2019/p26/11.png",
+          "/projects/2019/p26/12.png",
+          "/projects/2019/p26/13.png",
+          "/projects/2019/p26/14.png"
+        ],
+        "description": "U-VEST is a web prototype used for business investment by customers and investors.",
+        "tools": "Laravel PHP Framework, MySQL",
+        "updated": "14 Dec 2019",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/web-u-vest"
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "projects": [
+      {
+        "title": "PBB Euclidean",
+        "category": "Programming",
+        "images": [
+          "/projects/2018/p1/1.png",
+          "/projects/2018/p1/2.png",
+          "/projects/2018/p1/3.png"
+        ],
+        "description": "In discrete mathematics there is a Euclidean algorithm that aims to find the greatest common divisor of two integers. This program is made to make it easier to calculate the Euclidean algorithm by only entering two integers then the results will be known and there is an option to see the steps or not. (Reference).",
+        "tools": "C++",
+        "updated": "27 Oct 2018",
+        "visibility": "Private",
+        "sourceUrl": "https://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2015-2016/Teori%20Bilangan%20(2015).pdf"
+      },
+      {
+        "title": "4 Pemulung",
+        "category": "Programming",
+        "images": [
+          "/projects/2018/p2/1.png",
+          "/projects/2018/p2/2.png",
+          "/projects/2018/p2/3.png",
+          "/projects/2018/p2/4.png",
+          "/projects/2018/p2/5.png",
+          "/projects/2018/p2/6.png",
+          "/projects/2018/p2/7.png",
+          "/projects/2018/p2/8.png",
+          "/projects/2018/p2/9.png",
+          "/projects/2018/p2/10.png",
+          "/projects/2018/p2/11.png",
+          "/projects/2018/p2/12.png",
+          "/projects/2018/p2/13.png",
+          "/projects/2018/p2/14.png"
+        ],
+        "description": "4 Pemulung is a program for collecting data and transactions aimed at scavengers. There are several features available including registering, searching, sorting, calculating, and information.",
+        "tools": "C++",
+        "updated": "27 Oct 2018",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/program-4-pemulung"
+      },
+      {
+        "title": "Design DB Pasar",
+        "category": "Data Science",
+        "images": [
+          "/projects/2018/p3/1.png"
+        ],
+        "description": "The market database design aims to provide an overview before being implemented into an application and there are features of orders and transactions using a trigger.",
+        "tools": "PostgreSQL, MySQL Workbench",
+        "updated": "27 Oct 2018",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/data-design-db-pasar"
+      },
+      {
+        "title": "Learn Web Security",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2018/p4/1.png"
+        ],
+        "description": "Web security is a program carried out to ensure the security of a website is protected from threats or hacking.",
+        "tools": "Linux, Web Programming",
+        "updated": "30 Oct 2018",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/program-learn-web-security"
+      },
+      {
+        "title": "TourlevarT",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2018/p5/1.png",
+          "/projects/2018/p5/2.png",
+          "/projects/2018/p5/3.png",
+          "/projects/2018/p5/4.png",
+          "/projects/2018/p5/5.png"
+        ],
+        "description": "TourlevarT is an assignment in a web programming course that applies HTML, CSS, and JavaScript. There are several features available to implement these uses, starting from the landing page, login form, rupiah exchange rate, image picker, and form validation.",
+        "tools": "HTML, CSS, JavaScript",
+        "updated": "31 Oct 2018",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/web-tourlevart"
+      },
+      {
+        "title": "StikLe",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2018/p6/1.png",
+          "/projects/2018/p6/2.png",
+          "/projects/2018/p6/3.png",
+          "/projects/2018/p6/4.png",
+          "/projects/2018/p6/5.png",
+          "/projects/2018/p6/6.png",
+          "/projects/2018/p6/7.png",
+          "/projects/2018/p6/8.png",
+          "/projects/2018/p6/9.png",
+          "/projects/2018/p6/10.png",
+          "/projects/2018/p6/11.png"
+        ],
+        "description": "StikLe is a web design that is intended to assess and display personal characters, in which there are features of personal rating, displaying, comparing, ranking, and grouping (not yet available).",
+        "tools": "HTML, CSS, JavaScript, PHP, Bootstrap",
+        "updated": "02 Dec 2018",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/web-stikle"
+      },
+      {
+        "title": "Dot",
+        "category": "Web Dev",
+        "images": [
+          "/projects/2018/p7/1.png",
+          "/projects/2018/p7/2.png",
+          "/projects/2018/p7/3.png",
+          "/projects/2018/p7/4.png",
+          "/projects/2018/p7/5.png",
+          "/projects/2018/p7/6.png",
+          "/projects/2018/p7/7.png",
+          "/projects/2018/p7/8.png",
+          "/projects/2018/p7/9.png",
+          "/projects/2018/p7/10.png",
+          "/projects/2018/p7/11.png",
+          "/projects/2018/p7/12.png"
+        ],
+        "description": "Dot is a web prototype used for food distribution, in which there are 2 roles including food contributor and administrator. Contributors act as people who will provide food to the regions for distribution, while administrators play a role in monitoring activities between food contributors.",
+        "tools": "Yii PHP Framework, MySQL",
+        "updated": "12 Dec 2018",
+        "visibility": "Public",
+        "sourceUrl": "https://github.com/mazharrasyad/web-dot"
+      }
+    ]
+  }
+]
