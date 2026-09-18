@@ -130,7 +130,7 @@
 
 <svelte:window onkeydown={onKeydown} />
 
-<main class="flex-1 w-full flex flex-col">
+<main class="w-full flex flex-col">
 	<div class="relative w-full h-[72vh] md:h-[78vh]">
 		<div
 			bind:this={track}

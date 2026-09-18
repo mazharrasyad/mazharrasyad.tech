@@ -17,9 +17,7 @@
 
 <svelte:window onscroll={onScroll} />
 
-<div class="flex flex-col min-h-screen">
-	{@render children()}
-</div>
+{@render children()}
 
 {#if showBackToTop}
 	<button
