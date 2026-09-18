@@ -5,7 +5,7 @@
 		"degree": "High School Diploma",
 		"institution": "SMKN 1 Cibinong",
 		"year": "2014 - 2017",
-		"highlights": []
+		"highlights": ["Developing a plugin application for multiposting on WordPress as a final project"]
 	},
 	{
 		"sortKey": 201708,
@@ -14,10 +14,11 @@
 		"institution": "Sekolah Tinggi Teknologi Terpadu Nurul Fikri",
 		"year": "2017 - 2021",
 		"highlights": [
-			"2nd and 3rd place, Smart City Web Development at STTNF",
-			"3rd place, Web Design at Astro STTNF",
-			"Finalist, Hackathon Web Development at Jamkrindo",
-			"1st place, Hackathon Web Development at Astro II STTNF"
+			"2nd and 3rd place in Smart City Web Development at STTNF",
+			"3rd place in Web Design at Astro STTNF",
+			"Finalist in Hackathon Web Development at Jamkrindo",
+			"1st place in Hackathon Web Development at Astro II STTNF",
+			"Developing a project management website for students and lecturers at STTNF as a final project"
 		]
 	},
 	{
@@ -27,10 +28,10 @@
 		"institution": "Universitas Budi Luhur",
 		"year": "2024 - 2026",
 		"highlights": [
-			"Pemodelan Data Lanjutan dengan Metodologi Kimball — Systematic Literature Review, dipublikasikan di Jurnal Sosial dan Teknologi (SOSTECH)",
-			"Kesenjangan dan solusi implementasi Enterprise Architecture untuk digitalisasi fasilitas kesehatan di Indonesia, dipublikasikan di DIJEMSS",
-			"Model klasifikasi arsip digital menggunakan SVM terintegrasi dengan blockchain Hyperledger Fabric, dipublikasikan di Jurnal Inovtek Polbeng",
-			"Tesis: analisis performa komparatif algoritma konsensus Raft dan SmartBFT pada Hyperledger Fabric"
+			"Explored Advanced Data Modeling with Kimball Methodology through a Systematic Literature Review, published in Jurnal Sosial dan Teknologi (SOSTECH)",
+			"Identified gaps and solutions in Enterprise Architecture implementation for healthcare facility digitalization in Indonesia, published in DIJEMSS",
+			"Developed a digital record classification model using SVM integrated with Hyperledger Fabric blockchain, published in Jurnal Inovtek Polbeng",
+			"Analyzed and compared the performance of Raft and SmartBFT consensus algorithms in Hyperledger Fabric as a thesis research"
 		]
 	}
 ]

@@ -3,25 +3,27 @@
 		"sortKey": 201609,
 		"title": "Junior Software Engineer",
 		"company": "CV Himalaya Teknologi",
-		"type": "Internship",
+		"type": "Internship · On-site",
 		"period": "09/2016 - 10/2016",
 		"bullets": [
 			"Responsible for web development and maintenance using WordPress",
 			"Created and published digital content for Amazon Affiliate marketing",
 			"Optimized web content through SEO strategies to improve search engine ranking",
-			"Identified and resolved bugs to ensure stable website performance"
+			"Identified and resolved bugs to ensure stable website performance",
+			"Analyzed website visitor behavior and performance metrics via web traffic monitoring"
 		]
 	},
 	{
 		"sortKey": 201909,
 		"title": "Assistant Lecturer",
 		"company": "STT Terpadu Nurul Fikri",
-		"type": "Part-time",
+		"type": "Part-time · On-site",
 		"period": "09/2019 - 06/2021",
 		"bullets": [
 			"Taught foundational programming concepts and logical thinking",
 			"Guided students in understanding OOP principles and algorithm process flow",
 			"Explained the advantages of RDBMS implementation in application development",
+			"Introduced the application of Big Data across various domains",
 			"Acted as Scrum Master in the SDLC process of software development"
 		]
 	},
@@ -29,12 +31,13 @@
 		"sortKey": 202010,
 		"title": "Junior Web Developer",
 		"company": "PT Absolut Data Indonesia",
-		"type": "Internship",
+		"type": "Internship · Remote",
 		"period": "10/2020 - 01/2021",
 		"bullets": [
-			"Developed a web dashboard for Bandung city public transportation system",
-			"Implemented CRUD operations for managing public transportation data",
-			"Integrated data visualizations from Yellowfin BI tools into the web dashboard",
+			"Responsible for developing a web dashboard for Bandung city public transportation system",
+			"Implemented CRUD operations for managing public transportation data of Bandung city",
+			"Integrated and embedded data visualizations from Yellowfin BI tools into the web dashboard",
+			"Optimized web performance to handle large volumes of incoming data efficiently",
 			"Developed real-time graphs and charts based on data integrated from the database"
 		]
 	},
@@ -42,61 +45,64 @@
 		"sortKey": 202201,
 		"title": "Software Engineering Specialist",
 		"company": "Sudin Kominfotik Jakarta Selatan",
-		"type": "Full-time",
+		"type": "Full-time · On-site",
 		"period": "01/2022 - 12/2022",
 		"bullets": [
-			"Developed and maintained multiple government web information systems across 7 projects",
-			"Built TerbaikTUFJ, an urban farming e-commerce platform, with Gosend API shipping integration",
-			"Developed Sisirteco, a vehicle data management system with role-based authentication",
-			"Built SI UCI, a chatbot-based virtual assistant with QnA database management"
+			"Developed and maintained multiple government web information systems across 7 projects, including CRUD operations, role-based authentication, and data management features",
+			"Built and maintained TerbaikTUFJ, an urban farming e-commerce platform, with additional feature development and Gosend API shipping integration",
+			"Developed Sisirteco, a vehicle data management system with inbound and outbound tracking and role-based authentication for Kecamatan, Kelurahan, and field officers",
+			"Built SI UCI, a chatbot-based virtual assistant web application with QnA database management and optimized conversation algorithm",
+			"Built a labor dispute tracking system with public case submission and mediation progress tracking"
 		]
 	},
 	{
 		"sortKey": 202301,
 		"title": "Software Engineer",
 		"company": "Freelancer",
-		"type": "Freelance",
+		"type": "Freelance · Remote",
 		"period": "01/2023 - Present",
 		"bullets": [
-			"Developed 50+ web-based projects covering government, e-commerce, education, health, and public service platforms",
-			"Built government systems including attendance management, posyandu tracking, UMKM directories, DBD monitoring, e-kinerja, and PPID portals",
-			"Developed public service platforms such as electronic performance tracking, social service management, and archive systems"
+			"Developed 50+ web-based projects covering government information systems, e-commerce, education, health, and public service platforms over 3 years",
+			"Built various government systems including attendance management, posyandu tracking, UMKM directories, DBD monitoring, e-kinerja, PPID portals, and regional administrative systems",
+			"Developed public service platforms such as electronic performance tracking, social service management, archive systems, contract management, and community health monitoring"
 		]
 	},
 	{
 		"sortKey": 202302,
 		"title": "Junior Software Engineer",
 		"company": "Tripasysfo Techno Development",
-		"type": "Full-time",
+		"type": "Full-time · On-site",
 		"period": "02/2023 - 02/2025",
 		"bullets": [
-			"Developed a company profile website for Tripasysfo using Laravel",
-			"Built a web-based room booking system for PT Megapolitan Development",
-			"Developed a hotel booking platform for Horison Ultima Bandung with Faspay payment gateway integration"
+			"Developed a company profile website for Tripasysfo to strengthen online brand presence using Laravel",
+			"Built a web-based room booking system for PT Megapolitan Development with online scheduling and responsive interface using Laravel",
+			"Developed a hotel booking platform for Horison Ultima Bandung with online reservation, hotel facilities details, and Faspay payment gateway integration using Laravel and MySQL"
 		]
 	},
 	{
 		"sortKey": 202502,
 		"title": "Intermediate Software Engineer",
 		"company": "Tripasysfo Techno Development",
-		"type": "Full-time",
+		"type": "Full-time · Remote",
 		"period": "02/2025 - Present",
 		"bullets": [
-			"Built a web-based accounting system for Tripasysfo Proxima using Laravel, Vue.js, and PostgreSQL",
-			"Developed a hotel reservation platform for Tripasysfo Recerva with Doku payment gateway integration",
-			"Built a project management website for Tensindo MST Group's construction services"
+			"Built a web-based accounting system for Tripasysfo Proxima supporting financial transaction management and digital reporting using Laravel, Vue.js, and PostgreSQL",
+			"Developed a comprehensive hotel reservation platform for Tripasysfo Recerva with booking engine, hotel profile management, rate and promo settings, back office management, and Doku payment gateway integration",
+			"Built a project management website for Tensindo MST Group to manage construction services including post-tensioning, bridge erection, and formwork using Laravel"
 		]
 	},
 	{
 		"sortKey": 202512,
 		"title": "Software Engineer",
 		"company": "Join PKS",
-		"type": "Part-time",
+		"type": "Part-time · Remote",
 		"period": "12/2025 - Present",
 		"bullets": [
-			"Developed a scalable volunteer management platform serving members across 38 provinces in Indonesia using Golang and Svelte",
-			"Designed RESTful APIs supporting centralized volunteer data management from provincial to village level",
-			"Built a system architecture targeting 1M+ active users with optimized database design and caching"
+			"Developed and maintained a scalable volunteer management platform serving PKS members and volunteers across 38 provinces in Indonesia using Golang for backend services and Svelte for frontend development",
+			"Designed and implemented RESTful APIs to support web and mobile applications, enabling centralized volunteer data management from provincial to village (kelurahan) levels",
+			"Built a scalable system architecture targeting more than 1 million active users with optimized database design, caching strategies, and service performance improvements",
+			"Implemented CI/CD pipelines and containerized deployment using Docker to streamline development, testing, and production release processes",
+			"Developed volunteer registration, profiling, regional hierarchy management, and reporting features to support community outreach and volunteer coordination activities"
 		]
 	}
 ]
