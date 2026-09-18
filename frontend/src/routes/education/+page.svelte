@@ -1,4 +1,5 @@
 <script lang="ts">
+	import TimelineEntry from '$lib/components/TimelineEntry.svelte';
 	import educationData from '$lib/data/education.json';
 	import type { Education } from '$lib/types';
 
@@ -33,11 +34,10 @@
 	<main class="max-w-3xl mx-auto w-full flex-1 pt-4 md:pt-8">
 		<h1 class="text-4xl md:text-6xl font-black text-white mb-8">Education</h1>
 
-		<div class="flex flex-col gap-4 md:gap-5">
-			{#each entries as edu (edu.institution)}
-				<div class="card-glass rounded-2xl p-4 md:p-5">
-					<span class="text-sm font-bold text-emerald-400 tabular-nums">{edu.year}</span>
-					<h2 class="text-lg md:text-xl font-bold text-white leading-snug mt-1.5">{edu.field}</h2>
+		<div>
+			{#each entries as edu, i (edu.institution)}
+				<TimelineEntry period={edu.year} accent="emerald" last={i === entries.length - 1}>
+					<h2 class="text-lg md:text-xl font-bold text-white leading-snug">{edu.field}</h2>
 					<p class="text-sm text-slate-300 mt-1">
 						{edu.institution} <span class="text-slate-500 mx-1">·</span>
 						{edu.degree}
@@ -52,7 +52,7 @@
 							{/each}
 						</ul>
 					{/if}
-				</div>
+				</TimelineEntry>
 			{/each}
 		</div>
 	</main>

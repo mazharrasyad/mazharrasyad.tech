@@ -1,4 +1,5 @@
 <script lang="ts">
+	import TimelineEntry from '$lib/components/TimelineEntry.svelte';
 	import experienceData from '$lib/data/experience.json';
 	import type { Experience } from '$lib/types';
 
@@ -33,10 +34,9 @@
 	<main class="max-w-3xl mx-auto w-full flex-1 pt-4 md:pt-8">
 		<h1 class="text-4xl md:text-6xl font-black text-white mb-8">Experience</h1>
 
-		<div class="flex flex-col gap-4 md:gap-5">
-			{#each entries as exp (exp.sortKey)}
-				<div class="card-glass rounded-2xl p-4 md:p-5">
-					<span class="text-sm font-bold text-blue-400 tabular-nums">{exp.period}</span>
+		<div>
+			{#each entries as exp, i (exp.sortKey)}
+				<TimelineEntry period={exp.period} accent="blue" last={i === entries.length - 1}>
 					<h2 class="text-lg md:text-xl font-bold text-white leading-snug">{exp.title}</h2>
 					<p class="text-sm text-slate-300 mt-1">
 						{exp.company} <span class="text-slate-500 mx-1">·</span>
@@ -50,7 +50,7 @@
 							</li>
 						{/each}
 					</ul>
-				</div>
+				</TimelineEntry>
 			{/each}
 		</div>
 	</main>
