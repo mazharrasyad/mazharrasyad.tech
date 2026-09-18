@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects 2024 - Muhammad Azhar Rasyad</title>
+
+  <link rel="shortcut icon" href="logo/favicon.png" type="image/x-icon">
+  <link rel="icon" href="logo/favicon.png" type="image/x-icon">
+
+  <script>
+    const tailwindWarn = console.warn;
+    console.warn = function(...args) {
+      if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+      tailwindWarn.apply(console, args);
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%); }
+    .card-glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); transition: all 0.3s ease; }
+    .card-glass:hover { background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.15); transform: translateY(-2px); }
+    .link-btn { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; border-radius: 12px; font-size: 0.875rem; font-weight: 600; background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.1); color: #e2e8f0; text-decoration: none; transition: all 0.2s ease; }
+    .link-btn:hover { background: rgba(255, 255, 255, 0.12); transform: translateY(-1px); color: #fff; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 3px; }
+  </style>
+</head>
+
+<body class="gradient-bg min-h-screen text-white flex flex-col p-4 md:p-8">
+
+  <header class="max-w-5xl mx-auto w-full mb-8 flex justify-between items-center">
+    <a href="index.html" class="link-btn">
+      <i class="fas fa-arrow-left"></i> <span>Projects</span>
+    </a>
+  </header>
+
+  <main class="max-w-5xl mx-auto w-full flex-1">
+    <h2 class="text-xl font-bold mb-8 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <span class="px-3 py-1 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-400 text-sm font-bold">2024</span>
+        <span>Project List</span>
+      </div>
+      <span class="text-xs bg-white/5 border border-white/10 text-slate-400 px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">
+        26 Projects
+      </span>
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- 1. Balkot Farm -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">1. Balkot Farm</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Urban farming management system built to record and visualize crops, harvests, and agricultural data.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">PHP, Laravel, MySQL</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/herakarmila19/balkotfarm" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. ESETKO PJLP -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">2. ESETKO PJLP</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Performance evaluation and reporting system developed for general PJLP contract workers.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">PHP, Laravel, MySQL</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/herakarmila19/esetko-pjlp" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. PPID -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">3. PPID</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Public information and documentation service portal (PPID) supporting governmental transparency standards.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Laravel, Livewire, MySQL</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/herakarmila19/ppid" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Jaringan Suara Indonesia -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">4. Jaringan Suara Indonesia</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Web platform built for polling, voter network coordination, and statistical election progress tracking.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Laravel, Livewire, Tailwind CSS</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/jaringansuaraindonesia" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Lentera Cendikia -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">5. Lentera Cendikia</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Educational platform and learning portal created for managing course content, student databases, and schedules.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">PHP, Laravel, MySQL</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/lenteracendikia" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Subanpenda -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">6. Subanpenda</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Regional tax and revenue monitoring platform designed to aggregate data for administrative evaluation.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Laravel, MySQL</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/subanpenda" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Web Eskul -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">7. Web Eskul</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Extracurricular activities management portal for schools, allowing students to register and track achievements.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">PHP, Laravel, MySQL</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/webeskul" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. Absen -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">8. Absen</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Mobile-friendly employee attendance system with geolocation and automated check-in/check-out logs.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Laravel, JavaScript, MySQL</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/absen" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. BantuTani -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">9. BantuTani</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Farming assistance system offering information, agricultural tips, and resources for local farming communities.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">PHP, Laravel, MySQL</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/bantutani" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10. Rumah Baca -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">10. Rumah Baca</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Digital library and reading community platform for organizing book inventories, borrowing records, and events.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">PHP, CodeIgniter, MySQL</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/rumahbaca" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11. Particulate Matter Monitoring -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">11. Particulate Matter Monitoring</h3>
+          <span class="bg-teal-500/20 text-teal-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">IoT / Data</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Environmental air quality monitoring system reading particulate matter values via sensors and plotting historical data.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Python, IoT, Raspberry Pi</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/particulate-matter" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12. Pendaftaran PJLP Kominfo -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">12. Pendaftaran PJLP Kominfo</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Centralized recruitment and application portal for candidate contract workers (PJLP) at the Kominfo Department.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Laravel, Alpine.js, Tailwind CSS</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/pendaftaran-pjlp" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 13. Pasar Minggu Sinobi -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">13. Pasar Minggu Sinobi</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Localized administrative and community service portal tailored for Pasar Minggu village services.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Laravel, MySQL</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/pasar-minggu-sinobi" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 14. KKPP -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">14. KKPP</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Corporate and institutional performance index tracking tool utilizing collaborative key metrics reporting.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Laravel, Livewire, Tailwind CSS</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/kkpp" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 15. SINOLI -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">15. SINOLI</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Integrated information system facilitating corporate logistics, registration, and inventory planning.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Laravel, MySQL</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/sinoli" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 16. PSN -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">16. PSN</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Mosquito nest eradication monitoring portal allowing health officers to file data logs directly from the field.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Laravel, Alpine.js, Tailwind CSS</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/psn" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 17. SIDANRU -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">17. SIDANRU</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Meeting room allocation and facility reservation scheduler with automated conflict prevention.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Laravel, Livewire, Tailwind CSS</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/sidanru" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 18. SIPP -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">18. SIPP</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Centralized project proposals management platform enabling simple submissions, reviews, and progression logs.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Laravel, Bootstrap, MySQL</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/sipp" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 19. Jurnal -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">19. Jurnal</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Academic or activity logging dashboard built for creating and cataloging daily work summaries.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Laravel, MySQL</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/jurnal" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 20. SIARIS -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">20. SIARIS</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Public archive management and records indexing application designed for municipal entities.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">PHP, Laravel, MySQL</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/siaris" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 21. Layanan -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">21. Layanan</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Public services dashboard centralizing various citizen request modules and trackable forms.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Laravel, Alpine.js, Tailwind CSS</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/layanan" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 22. SINERBAST -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">22. SINERBAST</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Handover administration portal (Berita Acara Serah Terima) ensuring verifiable records for organizational assets.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Laravel, Livewire, Tailwind CSS</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/sinerbast" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 23. Insight Hub -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">23. Insight Hub</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Analytical data dashboard providing comprehensive visual insights and charts for business performance.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Laravel, Chart.js, Tailwind CSS</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/insighthub" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 24. SIVERJAB -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">24. SIVERJAB</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Verification system for job applications and contract positions, automating background checks and document audits.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Laravel, MySQL</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/siverjab" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 25. UMKM -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">25. UMKM</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          E-commerce directory and promotion platform built for local micro, small, and medium enterprises (MSMEs).
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Laravel, Livewire, Tailwind CSS</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/umkm" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 26. KAHMI Jaya -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">26. KAHMI Jaya</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Official portal for the KAHMI Jaya community, featuring news, registration panels, and member directories.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">PHP, Laravel, MySQL</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/mazharrasyad/kahmijaya" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="text-center py-10 mt-10">
+    <p class="text-slate-600 text-xs">&copy; 2026 Muhammad Azhar Rasyad</p>
+  </footer>
+
+</body>
+</html>

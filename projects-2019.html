@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects 2019 - Muhammad Azhar Rasyad</title>
+
+  <link rel="shortcut icon" href="logo/favicon.png" type="image/x-icon">
+  <link rel="icon" href="logo/favicon.png" type="image/x-icon">
+
+  <script>
+    const tailwindWarn = console.warn;
+    console.warn = function(...args) {
+      if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+      tailwindWarn.apply(console, args);
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%); }
+    .card-glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+    .link-btn { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; border-radius: 12px; font-size: 0.875rem; font-weight: 600; background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.1); color: #e2e8f0; text-decoration: none; transition: all 0.2s ease; }
+    .link-btn:hover { background: rgba(255, 255, 255, 0.12); transform: translateY(-1px); color: #fff; }
+    .nav-link-year { padding: 8px 16px; border-radius: 10px; font-size: 0.75rem; font-weight: 600; color: #94a3b8; transition: all 0.2s; border: 1px solid transparent; }
+    .nav-link-year:hover { color: #fff; background: rgba(255, 255, 255, 0.05); }
+    .nav-link-year.active { background: rgba(59, 130, 246, 0.1); border-color: rgba(59, 130, 246, 0.3); color: #3b82f6; }
+    .hide-scrollbar::-webkit-scrollbar { display: none; }
+    .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 3px; }
+  </style>
+</head>
+
+<body class="gradient-bg min-h-screen text-white flex flex-col p-4 md:p-8">
+
+  <header class="max-w-5xl mx-auto w-full mb-8 flex justify-between items-center">
+    <a href="index.html" class="link-btn">
+      <i class="fas fa-arrow-left"></i> <span>Projects</span>
+    </a>
+  </header>
+
+  <main class="max-w-5xl mx-auto w-full flex-1">
+    <h2 class="text-xl font-bold mb-8 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <span class="px-3 py-1 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-400 text-sm font-bold">2019</span>
+        <span>Project List</span>
+      </div>
+      <span class="text-xs bg-white/5 border border-white/10 text-slate-400 px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">
+        19 Projects
+      </span>
+    </h2>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+      <!-- 1. Design DB Olahraga -->
+      <div class="card-glass rounded-2xl overflow-hidden flex flex-col">
+        <div class="p-6 pb-0 flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">1. Design DB Olahraga</h3>
+          <span class="bg-fuchsia-500/20 text-fuchsia-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Data Science</span>
+        </div>
+        <div class="relative group">
+          <div class="px-6 flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar mb-4">
+            <img src="projects/2019/p8/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Design DB Olahraga">
+          </div>
+        </div>
+        <div class="px-6 text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          The sports database design is an illustration before being implemented into an application that has several functions including transfer, ordering, canceling, and completing bookings.
+        </div>
+        <div class="p-6 pt-4 border-t border-white/5 bg-white/2 mt-auto">
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+              <span class="text-xs text-slate-300 font-semibold">PostgreSQL, MySQL Workbench</span>
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Updated</span>
+              <span class="text-xs text-slate-300">11 Jan 2019</span>
+            </div>
+          </div>
+          <a href="https://github.com/mazharrasyad/data-design-db-olahraga" target="_blank" class="link-btn w-full">
+            <span>View Source</span> <span class="bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ml-1">Public</span> <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 2. Pencarian Kata -->
+      <div class="card-glass rounded-2xl overflow-hidden flex flex-col">
+        <div class="p-6 pb-0 flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">2. Pencarian Kata</h3>
+          <span class="bg-blue-500/20 text-blue-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Programming</span>
+        </div>
+        <div class="relative group">
+          <div class="px-6 flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar mb-4">
+            <img src="projects/2019/p9/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Pencarian Kata">
+            <img src="projects/2019/p9/2.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Pencarian Kata">
+            <img src="projects/2019/p9/3.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Pencarian Kata">
+            <img src="projects/2019/p9/4.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Pencarian Kata">
+            <img src="projects/2019/p9/5.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Pencarian Kata">
+          </div>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: -200, behavior: 'smooth'})" class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-left text-xs"></i>
+          </button>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: 200, behavior: 'smooth'})" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-right text-xs"></i>
+          </button>
+        </div>
+        <div class="px-6 text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Word search is a program that is used to search for a word in a file, there are several options available including searching by using arguments, arrays, conditions, or just one file.
+        </div>
+        <div class="p-6 pt-4 border-t border-white/5 bg-white/2 mt-auto">
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+              <span class="text-xs text-slate-300 font-semibold">Java</span>
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Updated</span>
+              <span class="text-xs text-slate-300">21 Jan 2019</span>
+            </div>
+          </div>
+          <a href="https://github.com/mazharrasyad/program-pencarian-kata" target="_blank" class="link-btn w-full">
+            <span>View Source</span> <span class="bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ml-1">Public</span> <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 3. Design DB Perpustakaan -->
+      <div class="card-glass rounded-2xl overflow-hidden flex flex-col">
+        <div class="p-6 pb-0 flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">3. Design DB Perpustakaan</h3>
+          <span class="bg-fuchsia-500/20 text-fuchsia-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Data Science</span>
+        </div>
+        <div class="relative group">
+          <div class="px-6 flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar mb-4">
+            <img src="projects/2019/p10/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Design DB Perpustakaan">
+          </div>
+        </div>
+        <div class="px-6 text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          The library database design is an illustration before being implemented into an application that contains features such as borrowing, returning, and inventory.
+        </div>
+        <div class="p-6 pt-4 border-t border-white/5 bg-white/2 mt-auto">
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+              <span class="text-xs text-slate-300 font-semibold">PostgreSQL, MySQL Workbench</span>
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Updated</span>
+              <span class="text-xs text-slate-300">29 Jan 2019</span>
+            </div>
+          </div>
+          <a href="https://github.com/mazharrasyad/data-design-db-perpustakaan" target="_blank" class="link-btn w-full">
+            <span>View Source</span> <span class="bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ml-1">Public</span> <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 4. Design DB Mushola -->
+      <div class="card-glass rounded-2xl overflow-hidden flex flex-col">
+        <div class="p-6 pb-0 flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">4. Design DB Mushola</h3>
+          <span class="bg-fuchsia-500/20 text-fuchsia-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Data Science</span>
+        </div>
+        <div class="relative group">
+          <div class="px-6 flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar mb-4">
+            <img src="projects/2019/p11/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Design DB Mushola">
+          </div>
+        </div>
+        <div class="px-6 text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          The design of the prayer room database is an illustration before it is implemented into an application that has features such as inventory, lending, donations, and reporting.
+        </div>
+        <div class="p-6 pt-4 border-t border-white/5 bg-white/2 mt-auto">
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+              <span class="text-xs text-slate-300 font-semibold">PostgreSQL, MySQL Workbench</span>
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Updated</span>
+              <span class="text-xs text-slate-300">29 Jan 2019</span>
+            </div>
+          </div>
+          <a href="https://github.com/mazharrasyad/data-design-db-mushola" target="_blank" class="link-btn w-full">
+            <span>View Source</span> <span class="bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ml-1">Public</span> <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 5. Design DB Kursus -->
+      <div class="card-glass rounded-2xl overflow-hidden flex flex-col">
+        <div class="p-6 pb-0 flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">5. Design DB Kursus</h3>
+          <span class="bg-fuchsia-500/20 text-fuchsia-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Data Science</span>
+        </div>
+        <div class="relative group">
+          <div class="px-6 flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar mb-4">
+            <img src="projects/2019/p12/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Design DB Kursus">
+          </div>
+        </div>
+        <div class="px-6 text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          The course database design is an overview before being implemented into an application that has features such as registration, payment, commission, add participants, and course completion.
+        </div>
+        <div class="p-6 pt-4 border-t border-white/5 bg-white/2 mt-auto">
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+              <span class="text-xs text-slate-300 font-semibold">PostgreSQL, MySQL Workbench</span>
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Updated</span>
+              <span class="text-xs text-slate-300">29 Jan 2019</span>
+            </div>
+          </div>
+          <a href="https://github.com/mazharrasyad/data-design-db-kursus" target="_blank" class="link-btn w-full">
+            <span>View Source</span> <span class="bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ml-1">Public</span> <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 6. BaseNF -->
+      <div class="card-glass rounded-2xl overflow-hidden flex flex-col">
+        <div class="p-6 pb-0 flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">6. BaseNF</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <div class="relative group">
+          <div class="px-6 flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar mb-4">
+            <img src="projects/2019/p13/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="BaseNF">
+            <img src="projects/2019/p13/2.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="BaseNF">
+            <img src="projects/2019/p13/3.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="BaseNF">
+            <img src="projects/2019/p13/4.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="BaseNF">
+            <img src="projects/2019/p13/5.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="BaseNF">
+            <img src="projects/2019/p13/6.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="BaseNF">
+            <img src="projects/2019/p13/7.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="BaseNF">
+            <img src="projects/2019/p13/8.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="BaseNF">
+            <img src="projects/2019/p13/9.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="BaseNF">
+            <img src="projects/2019/p13/10.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="BaseNF">
+          </div>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: -200, behavior: 'smooth'})" class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-left text-xs"></i>
+          </button>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: 200, behavior: 'smooth'})" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-right text-xs"></i>
+          </button>
+        </div>
+        <div class="px-6 text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          BaseNF is a web prototype that is used to inform the workload of lecturers at STT-NF, there is information related to lecturers, teaching, research, PKM, positions, and contacts.
+        </div>
+        <div class="p-6 pt-4 border-t border-white/5 bg-white/2 mt-auto">
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+              <span class="text-xs text-slate-300 font-semibold">HTML, CSS, JavaScript, PHP, Bootstrap, PostgreSQL</span>
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Updated</span>
+              <span class="text-xs text-slate-300">29 Jan 2019</span>
+            </div>
+          </div>
+          <a href="https://github.com/mazharrasyad/web-basenf" target="_blank" class="link-btn w-full">
+            <span>View Source</span> <span class="bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ml-1">Public</span> <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 7. Aritmatika Jam -->
+      <div class="card-glass rounded-2xl overflow-hidden flex flex-col">
+        <div class="p-6 pb-0 flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">7. Aritmatika Jam</h3>
+          <span class="bg-blue-500/20 text-blue-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Programming</span>
+        </div>
+        <div class="relative group">
+          <div class="px-6 flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar mb-4">
+            <img src="projects/2019/p14/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Aritmatika Jam">
+          </div>
+        </div>
+        <div class="px-6 text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Clock arithmetic is a program to perform calculations using units of hours, minutes, and seconds. Only calculations are available for addition and subtraction, in addition if an error occurs it will display an error message.
+        </div>
+        <div class="p-6 pt-4 border-t border-white/5 bg-white/2 mt-auto">
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+              <span class="text-xs text-slate-300 font-semibold">Java</span>
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Updated</span>
+              <span class="text-xs text-slate-300">29 Jan 2019</span>
+            </div>
+          </div>
+          <a href="https://github.com/mazharrasyad/program-aritmatika-jam" target="_blank" class="link-btn w-full">
+            <span>View Source</span> <span class="bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ml-1">Public</span> <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 8. Tiket Pesawat -->
+      <div class="card-glass rounded-2xl overflow-hidden flex flex-col">
+        <div class="p-6 pb-0 flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">8. Tiket Pesawat</h3>
+          <span class="bg-blue-500/20 text-blue-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Programming</span>
+        </div>
+        <div class="relative group">
+          <div class="px-6 flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar mb-4">
+            <img src="projects/2019/p15/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Tiket Pesawat">
+          </div>
+        </div>
+        <div class="px-6 text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Airline ticket is a program to test the validity of the form filled in by the user in booking airplane tickets, whether it is in accordance with the format or not so as to avoid human error.
+        </div>
+        <div class="p-6 pt-4 border-t border-white/5 bg-white/2 mt-auto">
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+              <span class="text-xs text-slate-300 font-semibold">Java</span>
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Updated</span>
+              <span class="text-xs text-slate-300">30 Jan 2019</span>
+            </div>
+          </div>
+          <a href="https://github.com/mazharrasyad/program-tiket-pesawat" target="_blank" class="link-btn w-full">
+            <span>View Source</span> <span class="bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ml-1">Public</span> <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 9. Game S.O.S -->
+      <div class="card-glass rounded-2xl overflow-hidden flex flex-col">
+        <div class="p-6 pb-0 flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">9. Game S.O.S</h3>
+          <span class="bg-blue-500/20 text-blue-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Programming</span>
+        </div>
+        <div class="relative group">
+          <div class="px-6 flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar mb-4">
+            <img src="projects/2019/p16/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Game S.O.S">
+            <img src="projects/2019/p16/2.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Game S.O.S">
+            <img src="projects/2019/p16/3.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Game S.O.S">
+            <img src="projects/2019/p16/4.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Game S.O.S">
+            <img src="projects/2019/p16/5.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Game S.O.S">
+          </div>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: -200, behavior: 'smooth'})" class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-left text-xs"></i>
+          </button>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: 200, behavior: 'smooth'})" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-right text-xs"></i>
+          </button>
+        </div>
+        <div class="px-6 text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Game S.O.S is a program that implements S.O.S games on a computer. There are options available, namely choosing boards from 3x3, 5x5, 7x7, to custom. In addition, we can choose whether to fight players or computers that have been given simple artificial intelligence.
+        </div>
+        <div class="p-6 pt-4 border-t border-white/5 bg-white/2 mt-auto">
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+              <span class="text-xs text-slate-300 font-semibold">Java</span>
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Updated</span>
+              <span class="text-xs text-slate-300">31 Jan 2019</span>
+            </div>
+          </div>
+          <a href="https://github.com/mazharrasyad/program-game-sos" target="_blank" class="link-btn w-full">
+            <span>View Source</span> <span class="bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ml-1">Public</span> <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 10. Learn Django -->
+      <div class="card-glass rounded-2xl overflow-hidden flex flex-col">
+        <div class="p-6 pb-0 flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">10. Learn Django</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <div class="relative group">
+          <div class="px-6 flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar mb-4">
+            <img src="projects/2019/p17/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Learn Django">
+            <img src="projects/2019/p17/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Learn Django">
+          </div>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: -200, behavior: 'smooth'})" class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-left text-xs"></i>
+          </button>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: 200, behavior: 'smooth'})" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-right text-xs"></i>
+          </button>
+        </div>
+        <div class="px-6 text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Open class Django is the result of implementing learning about the web django framework, starting from the introduction, views, templates, apps, URLs, variables, and tags.
+        </div>
+        <div class="p-6 pt-4 border-t border-white/5 bg-white/2 mt-auto">
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+              <span class="text-xs text-slate-300 font-semibold">Django Python Framework</span>
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Updated</span>
+              <span class="text-xs text-slate-300">03 Feb 2019</span>
+            </div>
+          </div>
+          <a href="https://github.com/mazharrasyad/web-learn-django" target="_blank" class="link-btn w-full">
+            <span>View Source</span> <span class="bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ml-1">Public</span> <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 11. Learn Laravel -->
+      <div class="card-glass rounded-2xl overflow-hidden flex flex-col">
+        <div class="p-6 pb-0 flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">11. Learn Laravel</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <div class="relative group">
+          <div class="px-6 flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar mb-4">
+            <img src="projects/2019/p18/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Learn Laravel">
+          </div>
+        </div>
+        <div class="px-6 text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Learn laravel is the result of implementing learning about the laravel web framework, starting from installation, making CRUD, implementing databases, and deploying.
+        </div>
+        <div class="p-6 pt-4 border-t border-white/5 bg-white/2 mt-auto">
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+              <span class="text-xs text-slate-300 font-semibold">Laravel PHP Framework</span>
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Updated</span>
+              <span class="text-xs text-slate-300">22 Feb 2019</span>
+            </div>
+          </div>
+          <a href="https://github.com/mazharrasyad/web-learn-laravel" target="_blank" class="link-btn w-full">
+            <span>View Source</span> <span class="bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ml-1">Public</span> <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 12. KNRP Depok -->
+      <div class="card-glass rounded-2xl overflow-hidden flex flex-col">
+        <div class="p-6 pb-0 flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">12. KNRP Depok</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <div class="relative group">
+          <div class="px-6 flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar mb-4">
+            <img src="projects/2019/p19/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="KNRP Depok">
+            <img src="projects/2019/p19/2.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="KNRP Depok">
+            <img src="projects/2019/p19/3.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="KNRP Depok">
+            <img src="projects/2019/p19/4.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="KNRP Depok">
+            <img src="projects/2019/p19/5.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="KNRP Depok">
+            <img src="projects/2019/p19/6.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="KNRP Depok">
+          </div>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: -200, behavior: 'smooth'})" class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-left text-xs"></i>
+          </button>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: 200, behavior: 'smooth'})" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-right text-xs"></i>
+          </button>
+        </div>
+        <div class="px-6 text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          KNRP Depok is an information web that is planned to be used by the KNRP organization in Depok as its official website. There is some information available such as news, about ID cards, donations, social media, and the feature of managing news as an admin.
+        </div>
+        <div class="p-6 pt-4 border-t border-white/5 bg-white/2 mt-auto">
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+              <span class="text-xs text-slate-300 font-semibold">Laravel PHP Framework, MySQL</span>
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Updated</span>
+              <span class="text-xs text-slate-300">10 Mar 2019</span>
+            </div>
+          </div>
+          <a href="https://github.com/mazharrasyad/web-knrp-depok" target="_blank" class="link-btn w-full">
+            <span>View Source</span> <span class="bg-rose-500/20 text-rose-400 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ml-1">Private</span> <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 13. Basmalah -->
+      <div class="card-glass rounded-2xl overflow-hidden flex flex-col">
+        <div class="p-6 pb-0 flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">13. Basmalah</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <div class="relative group">
+          <div class="px-6 flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar mb-4">
+            <img src="projects/2019/p20/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/2.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/3.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/4.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/5.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/6.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/7.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/8.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/9.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/10.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/11.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/12.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/13.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/14.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/15.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/16.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/17.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/18.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/19.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/20.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/21.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/22.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+            <img src="projects/2019/p20/23.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Basmalah">
+          </div>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: -200, behavior: 'smooth'})" class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-left text-xs"></i>
+          </button>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: 200, behavior: 'smooth'})" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-right text-xs"></i>
+          </button>
+        </div>
+        <div class="px-6 text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Basmalah is a web that is used to cope with poor families by providing material by teachers through the mosque's prosperity council. There are registration features for DKM, teachers, and unemployed, other features in the form of donations to reports. In auth there are three roles including administrator, DKM, and teacher.
+        </div>
+        <div class="p-6 pt-4 border-t border-white/5 bg-white/2 mt-auto">
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+              <span class="text-xs text-slate-300 font-semibold">Laravel PHP Framework, MySQL</span>
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Updated</span>
+              <span class="text-xs text-slate-300">14 Jun 2019</span>
+            </div>
+          </div>
+          <a href="https://github.com/mazharrasyad/web-basmalah" target="_blank" class="link-btn w-full">
+            <span>View Source</span> <span class="bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ml-1">Public</span> <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 14. Ranah Guru -->
+      <div class="card-glass rounded-2xl overflow-hidden flex flex-col">
+        <div class="p-6 pb-0 flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">14. Ranah Guru</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <div class="relative group">
+          <div class="px-6 flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar mb-4">
+            <img src="projects/2019/p21/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Ranah Guru">
+            <img src="projects/2019/p21/2.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Ranah Guru">
+            <img src="projects/2019/p21/3.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Ranah Guru">
+            <img src="projects/2019/p21/4.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Ranah Guru">
+            <img src="projects/2019/p21/5.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Ranah Guru">
+            <img src="projects/2019/p21/6.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Ranah Guru">
+            <img src="projects/2019/p21/7.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Ranah Guru">
+            <img src="projects/2019/p21/8.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Ranah Guru">
+          </div>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: -200, behavior: 'smooth'})" class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-left text-xs"></i>
+          </button>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: 200, behavior: 'smooth'})" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-right text-xs"></i>
+          </button>
+        </div>
+        <div class="px-6 text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Ranah Guru is a job vacancy website specifically for teachers and schools. The vacancies contain the subjects required by the school for the teachers who will teach.
+        </div>
+        <div class="p-6 pt-4 border-t border-white/5 bg-white/2 mt-auto">
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+              <span class="text-xs text-slate-300 font-semibold">Yii PHP Framework, MySQL</span>
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Updated</span>
+              <span class="text-xs text-slate-300">24 Jul 2019</span>
+            </div>
+          </div>
+          <a href="https://github.com/mazharrasyad/web-ranah-guru" target="_blank" class="link-btn w-full">
+            <span>View Source</span> <span class="bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ml-1">Public</span> <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 15. UI/UX Design Ops... -->
+      <div class="card-glass rounded-2xl overflow-hidden flex flex-col">
+        <div class="p-6 pb-0 flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">15. UI/UX Design Ops...</h3>
+          <span class="bg-purple-500/20 text-purple-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">UI/UX Design</span>
+        </div>
+        <div class="relative group">
+          <div class="px-6 flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar mb-4">
+            <img src="projects/2019/p22/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design Ops...">
+            <img src="projects/2019/p22/2.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design Ops...">
+            <img src="projects/2019/p22/3.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design Ops...">
+            <img src="projects/2019/p22/4.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design Ops...">
+            <img src="projects/2019/p22/5.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design Ops...">
+            <img src="projects/2019/p22/6.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design Ops...">
+            <img src="projects/2019/p22/7.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design Ops...">
+          </div>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: -200, behavior: 'smooth'})" class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-left text-xs"></i>
+          </button>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: 200, behavior: 'smooth'})" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-right text-xs"></i>
+          </button>
+        </div>
+        <div class="px-6 text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Ops... is a UI/UX design for Android as a place for organic material e-commerce. The available displays are splash screen, main page, product details, ordering, cart, and payment.
+        </div>
+        <div class="p-6 pt-4 border-t border-white/5 bg-white/2 mt-auto">
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+              <span class="text-xs text-slate-300 font-semibold">Figma</span>
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Updated</span>
+              <span class="text-xs text-slate-300">25 Jul 2019</span>
+            </div>
+          </div>
+          <a href="https://www.figma.com/proto/H4WFK2PrzGr8hvAkYfcN8yXi/Techno?node-id=39%3A3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=39%3A3" target="_blank" class="link-btn w-full">
+            <span>View Design</span> <span class="bg-rose-500/20 text-rose-400 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ml-1">Private</span> <i class="fas fa-palette"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 16. Hystech -->
+      <div class="card-glass rounded-2xl overflow-hidden flex flex-col">
+        <div class="p-6 pb-0 flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">16. Hystech</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <div class="relative group">
+          <div class="px-6 flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar mb-4">
+            <img src="projects/2019/p23/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Hystech">
+            <img src="projects/2019/p23/2.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Hystech">
+            <img src="projects/2019/p23/3.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Hystech">
+            <img src="projects/2019/p23/4.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Hystech">
+            <img src="projects/2019/p23/5.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Hystech">
+            <img src="projects/2019/p23/6.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="Hystech">
+          </div>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: -200, behavior: 'smooth'})" class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-left text-xs"></i>
+          </button>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: 200, behavior: 'smooth'})" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-right text-xs"></i>
+          </button>
+        </div>
+        <div class="px-6 text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Hystech is an activity scheduling web prototype specifically for Jamkrindo companies, there are authentication, calendar, event submission, edit, and delete features.
+        </div>
+        <div class="p-6 pt-4 border-t border-white/5 bg-white/2 mt-auto">
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+              <span class="text-xs text-slate-300 font-semibold">Easyappoinment PHP Framework, MySQL</span>
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Updated</span>
+              <span class="text-xs text-slate-300">25 Jul 2019</span>
+            </div>
+          </div>
+          <a href="https://github.com/mazharrasyad/web-hystech" target="_blank" class="link-btn w-full">
+            <span>View Source</span> <span class="bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ml-1">Public</span> <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 17. UI/UX Design StayUp -->
+      <div class="card-glass rounded-2xl overflow-hidden flex flex-col">
+        <div class="p-6 pb-0 flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">17. UI/UX Design StayUp</h3>
+          <span class="bg-purple-500/20 text-purple-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">UI/UX Design</span>
+        </div>
+        <div class="relative group">
+          <div class="px-6 flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar mb-4">
+            <img src="projects/2019/p24/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/2.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/3.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/4.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/5.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/6.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/7.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/8.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/9.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/10.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/11.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/12.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/13.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/14.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/15.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/16.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/17.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/18.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/19.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/20.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+            <img src="projects/2019/p24/21.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design StayUp">
+          </div>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: -200, behavior: 'smooth'})" class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-left text-xs"></i>
+          </button>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: 200, behavior: 'smooth'})" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-right text-xs"></i>
+          </button>
+        </div>
+        <div class="px-6 text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          StayUp is a UI/UX Design in the form of android for designing startup investment applications.
+        </div>
+        <div class="p-6 pt-4 border-t border-white/5 bg-white/2 mt-auto">
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+              <span class="text-xs text-slate-300 font-semibold">Figma</span>
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Updated</span>
+              <span class="text-xs text-slate-300">25 Oct 2019</span>
+            </div>
+          </div>
+          <a href="https://www.figma.com/proto/vpH2zgrdWy4UfUzFM0TfP2/StayUp?node-id=165%3A2736&scaling=scale-down&page-id=165%3A0&starting-point-node-id=165%3A2736" target="_blank" class="link-btn w-full">
+            <span>View Design</span> <span class="bg-rose-500/20 text-rose-400 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ml-1">Private</span> <i class="fas fa-palette"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 18. UI/UX Design tapSehat -->
+      <div class="card-glass rounded-2xl overflow-hidden flex flex-col">
+        <div class="p-6 pb-0 flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">18. UI/UX Design tapSehat</h3>
+          <span class="bg-purple-500/20 text-purple-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">UI/UX Design</span>
+        </div>
+        <div class="relative group">
+          <div class="px-6 flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar mb-4">
+            <img src="projects/2019/p25/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design tapSehat">
+            <img src="projects/2019/p25/2.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design tapSehat">
+            <img src="projects/2019/p25/3.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design tapSehat">
+            <img src="projects/2019/p25/4.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design tapSehat">
+            <img src="projects/2019/p25/5.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design tapSehat">
+            <img src="projects/2019/p25/6.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design tapSehat">
+            <img src="projects/2019/p25/7.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design tapSehat">
+            <img src="projects/2019/p25/8.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design tapSehat">
+            <img src="projects/2019/p25/9.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design tapSehat">
+            <img src="projects/2019/p25/10.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design tapSehat">
+            <img src="projects/2019/p25/11.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design tapSehat">
+            <img src="projects/2019/p25/12.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design tapSehat">
+            <img src="projects/2019/p25/13.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design tapSehat">
+            <img src="projects/2019/p25/14.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design tapSehat">
+            <img src="projects/2019/p25/15.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design tapSehat">
+            <img src="projects/2019/p25/16.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design tapSehat">
+            <img src="projects/2019/p25/17.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="UI/UX Design tapSehat">
+          </div>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: -200, behavior: 'smooth'})" class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-left text-xs"></i>
+          </button>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: 200, behavior: 'smooth'})" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-right text-xs"></i>
+          </button>
+        </div>
+        <div class="px-6 text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          tapSehat is a UI/UX Design in the form of an android for designing hospital service applications.
+        </div>
+        <div class="p-6 pt-4 border-t border-white/5 bg-white/2 mt-auto">
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+              <span class="text-xs text-slate-300 font-semibold">Figma</span>
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Updated</span>
+              <span class="text-xs text-slate-300">11 Dec 2019</span>
+            </div>
+          </div>
+          <a href="https://www.figma.com/proto/GVq8ZgQ9b5rQGCeXrBBbDJ/tapSehat?node-id=57%3A8&scaling=scale-down" target="_blank" class="link-btn w-full">
+            <span>View Design</span> <span class="bg-rose-500/20 text-rose-400 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ml-1">Private</span> <i class="fas fa-palette"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 19. U-VEST -->
+      <div class="card-glass rounded-2xl overflow-hidden flex flex-col">
+        <div class="p-6 pb-0 flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">19. U-VEST</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <div class="relative group">
+          <div class="px-6 flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar mb-4">
+            <img src="projects/2019/p26/1.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="U-VEST">
+            <img src="projects/2019/p26/2.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="U-VEST">
+            <img src="projects/2019/p26/3.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="U-VEST">
+            <img src="projects/2019/p26/4.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="U-VEST">
+            <img src="projects/2019/p26/5.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="U-VEST">
+            <img src="projects/2019/p26/6.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="U-VEST">
+            <img src="projects/2019/p26/7.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="U-VEST">
+            <img src="projects/2019/p26/8.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="U-VEST">
+            <img src="projects/2019/p26/9.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="U-VEST">
+            <img src="projects/2019/p26/10.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="U-VEST">
+            <img src="projects/2019/p26/11.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="U-VEST">
+            <img src="projects/2019/p26/12.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="U-VEST">
+            <img src="projects/2019/p26/13.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="U-VEST">
+            <img src="projects/2019/p26/14.png" class="snap-center h-40 rounded-xl border border-white/10 shadow-lg" alt="U-VEST">
+          </div>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: -200, behavior: 'smooth'})" class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-left text-xs"></i>
+          </button>
+          <button onclick="this.parentNode.querySelector('.overflow-x-auto').scrollBy({left: 200, behavior: 'smooth'})" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="fas fa-chevron-right text-xs"></i>
+          </button>
+        </div>
+        <div class="px-6 text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          U-VEST is a web prototype used for business investment by customers and investors.
+        </div>
+        <div class="p-6 pt-4 border-t border-white/5 bg-white/2 mt-auto">
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+              <span class="text-xs text-slate-300 font-semibold">Laravel PHP Framework, MySQL</span>
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Updated</span>
+              <span class="text-xs text-slate-300">14 Dec 2019</span>
+            </div>
+          </div>
+          <a href="https://github.com/mazharrasyad/web-u-vest" target="_blank" class="link-btn w-full">
+            <span>View Source</span> <span class="bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ml-1">Public</span> <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      </div>
+  </main>
+
+  <footer class="text-center py-10 mt-10">
+    <p class="text-slate-600 text-xs">&copy; 2026 Muhammad Azhar Rasyad</p>
+  </footer>
+
+  <!-- Image Lightbox Modal -->
+  <div id="lightboxModal" class="fixed inset-0 bg-black/90 backdrop-blur-md z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300" onclick="closeLightbox()">
+    <button class="absolute top-6 right-6 text-white/70 hover:text-white text-3xl focus:outline-none" onclick="closeLightbox()">&times;</button>
+    <img id="lightboxImg" class="max-w-[90%] max-h-[85vh] rounded-xl object-contain shadow-2xl scale-95 transition-transform duration-300" src="" alt="Enlarged view">
+  </div>
+
+  <script>
+    // Initialize image gallery helpers
+    document.addEventListener('DOMContentLoaded', () => {
+      // Add cursor-pointer and click handlers to gallery images
+      const images = document.querySelectorAll('.overflow-x-auto img');
+      images.forEach(img => {
+        img.classList.add('cursor-pointer', 'hover:opacity-90', 'transition-opacity');
+        img.addEventListener('click', () => openLightbox(img.src));
+      });
+    });
+
+    function openLightbox(src) {
+      const modal = document.getElementById('lightboxModal');
+      const img = document.getElementById('lightboxImg');
+      img.src = src;
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modal.classList.remove('opacity-0');
+        img.classList.remove('scale-95');
+      }, 50);
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('lightboxModal');
+      const img = document.getElementById('lightboxImg');
+      modal.classList.add('opacity-0');
+      img.classList.add('scale-95');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 300);
+    }
+  </script>
+</body>
+</html>

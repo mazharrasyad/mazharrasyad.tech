@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects 2026 - Muhammad Azhar Rasyad</title>
+
+  <link rel="shortcut icon" href="logo/favicon.png" type="image/x-icon">
+  <link rel="icon" href="logo/favicon.png" type="image/x-icon">
+
+  <script>
+    const tailwindWarn = console.warn;
+    console.warn = function(...args) {
+      if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+      tailwindWarn.apply(console, args);
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%); }
+    .card-glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); transition: all 0.3s ease; }
+    .card-glass:hover { background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.15); transform: translateY(-2px); }
+    .link-btn { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; border-radius: 12px; font-size: 0.875rem; font-weight: 600; background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.1); color: #e2e8f0; text-decoration: none; transition: all 0.2s ease; }
+    .link-btn:hover { background: rgba(255, 255, 255, 0.12); transform: translateY(-1px); color: #fff; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 3px; }
+  </style>
+</head>
+
+<body class="gradient-bg min-h-screen text-white flex flex-col p-4 md:p-8">
+
+  <header class="max-w-5xl mx-auto w-full mb-8 flex justify-between items-center">
+    <a href="index.html" class="link-btn">
+      <i class="fas fa-arrow-left"></i> <span>Projects</span>
+    </a>
+  </header>
+
+  <main class="max-w-5xl mx-auto w-full flex-1">
+    <h2 class="text-xl font-bold mb-8 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <span class="px-3 py-1 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-400 text-sm font-bold">2026</span>
+        <span>Project List</span>
+      </div>
+      <span class="text-xs bg-white/5 border border-white/10 text-slate-400 px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">
+        4 Projects
+      </span>
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- 1. Betawi Academia -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">1. Betawi Academia</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Educational resource repository and community learning network dedicated to Betawi culture studies.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Laravel, Tailwind CSS, MySQL</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/herakarmila19/betawi_academia" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Sudinsos Portal -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">2. Sudinsos Portal</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Public social affairs and relief request portal for the South Jakarta Social Sub-department.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Laravel, Livewire, Tailwind CSS</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/herakarmila19/sudinsos" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Blockchain Benchmark Raft HLF -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">3. Blockchain Benchmark Raft HLF</h3>
+          <span class="bg-violet-500/20 text-violet-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Blockchain</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Performance benchmarking suites analyzing transaction throughput and latency on Raft-based Hyperledger Fabric networks.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">Go, Raft, Hyperledger Fabric, Caliper</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-emerald-500/10 text-emerald-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Public</span>
+            <a href="https://github.com/mazharrasyad/blockchain-benchmark-raft-hlf" target="_blank" class="text-blue-400 hover:text-blue-300 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Putra Jasa V2 -->
+      <div class="card-glass rounded-2xl p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-lg font-bold text-white">4. Putra Jasa V2</h3>
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">Web Dev</span>
+        </div>
+        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+          Updated vehicle rental and transport service management system with booking automation and pricing calculators.
+        </p>
+        <div class="pt-4 border-t border-white/5 flex justify-between items-center mt-auto">
+          <div class="flex flex-col">
+            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">Tools</span>
+            <span class="text-xs text-slate-300 font-semibold">PHP, Laravel, Bootstrap</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Private</span>
+            <a href="https://github.com/febrianmosii/putrajasa-v2" target="_blank" class="text-slate-500 hover:text-slate-400 text-xs font-bold flex items-center gap-1">
+              View Source <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="text-center py-10 mt-10">
+    <p class="text-slate-600 text-xs">&copy; 2026 Muhammad Azhar Rasyad</p>
+  </footer>
+
+</body>
+</html>
