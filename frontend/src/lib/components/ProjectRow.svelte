@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { slide } from 'svelte/transition';
 	import Icon from './Icon.svelte';
 	import type { Project } from '$lib/types';
 
@@ -10,7 +9,6 @@
 		digits = 2
 	}: { project: Project; index: number; year?: number; digits?: number } = $props();
 
-	let expanded = $state(false);
 	let gallery: HTMLDivElement | undefined = $state();
 
 	function scroll(dir: -1 | 1) {
@@ -18,28 +16,15 @@
 	}
 </script>
 
-<div class="group/row">
-	<button
-		type="button"
-		onclick={() => (expanded = !expanded)}
-		aria-expanded={expanded}
-		class="w-full flex items-center gap-4 md:gap-6 py-5 px-3 -mx-3 rounded-xl text-left transition-colors hover:bg-white/[0.04] cursor-pointer"
-	>
-		<span
-			class="text-2xl md:text-3xl font-black tabular-nums w-10 md:w-14 shrink-0 transition-colors {expanded
-				? 'text-blue-400'
-				: 'text-slate-700 group-hover/row:text-blue-500/70'}"
-		>
+<div class="card-glass rounded-2xl p-4 md:p-5 [content-visibility:auto] [contain-intrinsic-size:auto_180px]">
+	<div class="flex items-start gap-4 md:gap-6">
+		<span class="text-2xl md:text-3xl font-black tabular-nums w-10 md:w-14 shrink-0 text-slate-700">
 			{String(index).padStart(digits, '0')}
 		</span>
 
 		<div class="flex-1 min-w-0">
 			<div class="flex items-center gap-2 flex-wrap">
-				<h3
-					class="text-base md:text-lg font-bold truncate transition-colors {expanded
-						? 'text-blue-300'
-						: 'text-white group-hover/row:text-blue-300'}"
-				>
+				<h3 class="text-base md:text-lg font-bold text-white leading-snug">
 					{project.title}
 				</h3>
 				{#if year}
@@ -57,27 +42,14 @@
 				>
 					{project.visibility}
 				</span>
+				{#if project.updated}
+					<span class="text-xs text-slate-500">{project.updated}</span>
+				{/if}
 			</div>
-			<p class="text-xs text-slate-500 mt-1 truncate">{project.tools}</p>
-		</div>
+			<p class="text-xs text-slate-500 mt-1">{project.tools}</p>
 
-		{#if project.updated}
-			<span class="hidden sm:block text-xs text-slate-500 shrink-0">{project.updated}</span>
-		{/if}
-
-		<span
-			class="w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-all {expanded
-				? 'bg-blue-500/20 text-blue-400 rotate-90'
-				: 'bg-white/5 text-slate-500 group-hover/row:bg-white/10 group-hover/row:text-slate-300'}"
-		>
-			<Icon name="chevron-right" class="w-3.5 h-3.5" />
-		</span>
-	</button>
-
-	{#if expanded}
-		<div transition:slide={{ duration: 250 }} class="pb-6 pl-14 md:pl-[4.75rem] pr-3">
 			{#if project.images.length > 0}
-				<div class="relative group/gallery mb-4">
+				<div class="relative group/gallery mt-3 mb-3">
 					<div bind:this={gallery} class="flex overflow-x-auto gap-3 snap-x scroll-smooth hide-scrollbar">
 						{#each project.images as src (src)}
 							<img {src} class="snap-center h-44 md:h-52 rounded-xl border border-white/10 shadow-lg" alt={project.title} loading="lazy" />
@@ -102,7 +74,7 @@
 				</div>
 			{/if}
 
-			<p class="text-slate-400 text-sm leading-relaxed mb-4 max-w-2xl">
+			<p class="text-slate-400 text-sm leading-relaxed mt-2 max-w-2xl">
 				{project.description}
 			</p>
 
@@ -110,11 +82,11 @@
 				href={project.sourceUrl}
 				target="_blank"
 				rel="noopener noreferrer"
-				class="link-btn inline-flex w-auto px-5"
+				class="link-btn inline-flex w-auto px-5 mt-4"
 			>
 				<span>View Source</span>
 				<Icon name="external-link" class="w-3.5 h-3.5" />
 			</a>
 		</div>
-	{/if}
+	</div>
 </div>

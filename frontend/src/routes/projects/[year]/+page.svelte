@@ -49,7 +49,7 @@
 			</span>
 		</h1>
 
-		<div class="card-glass rounded-2xl px-3 md:px-4 divide-y divide-white/5">
+		<div class="flex flex-col gap-3">
 			{#each data.projects as project, i (project.title)}
 				<ProjectRow {project} index={i + 1} />
 			{/each}

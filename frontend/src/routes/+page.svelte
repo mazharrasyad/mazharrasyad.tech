@@ -6,7 +6,7 @@
 	import scholarData from '$lib/data/scholar.json';
 	import educationData from '$lib/data/education.json';
 	import experienceData from '$lib/data/experience.json';
-	import type { YearData, ScholarData, Education, Experience, Project } from '$lib/types';
+	import type { YearData, ScholarData, Education, Experience, Project, Publication } from '$lib/types';
 
 	const years = yearsData as YearData[];
 	const totalProjects = years.reduce((sum, y) => sum + y.projects.length, 0);
@@ -14,8 +14,8 @@
 	const education = educationData as Education[];
 	const experience = experienceData as Experience[];
 
-	// Oldest first, so scrolling down mirrors moving forward through time.
-	const chronoYears = [...years].sort((a, b) => a.year - b.year);
+	// Newest first, so scrolling down moves back through time.
+	const chronoYears = [...years].sort((a, b) => b.year - a.year);
 
 	let projectCounter = 0;
 	const projectIndex = new Map<Project, number>();
@@ -28,12 +28,20 @@
 
 	type Milestone =
 		| { kind: 'education'; sortKey: number; data: Education }
-		| { kind: 'experience'; sortKey: number; data: Experience };
+		| { kind: 'experience'; sortKey: number; data: Experience }
+		| { kind: 'publication'; sortKey: number; data: Publication };
 
+	// Publications only carry a year, so they're placed mid-year (like undated
+	// projects) to interleave sensibly with month-precise education/experience entries.
 	const milestones: Milestone[] = [
 		...education.map((data) => ({ kind: 'education' as const, sortKey: data.sortKey, data })),
-		...experience.map((data) => ({ kind: 'experience' as const, sortKey: data.sortKey, data }))
-	].sort((a, b) => a.sortKey - b.sortKey);
+		...experience.map((data) => ({ kind: 'experience' as const, sortKey: data.sortKey, data })),
+		...scholar.publications.map((data) => ({
+			kind: 'publication' as const,
+			sortKey: data.year * 100 + 6,
+			data
+		}))
+	].sort((a, b) => b.sortKey - a.sortKey);
 
 	type StoryItem =
 		| { kind: 'milestone'; sortKey: number; milestone: Milestone }
@@ -42,24 +50,12 @@
 	const story: StoryItem[] = [
 		...milestones.map((m) => ({ kind: 'milestone' as const, sortKey: m.sortKey, milestone: m })),
 		...chronoYears.map((y) => ({ kind: 'projects' as const, sortKey: y.year * 100 + 6, yearData: y }))
-	].sort((a, b) => a.sortKey - b.sortKey);
+	].sort((a, b) => b.sortKey - a.sortKey);
 
 	let imgError = $state(false);
-	let search = $state('');
-
-	function matchingProjects(y: YearData) {
-		const q = search.trim().toLowerCase();
-		if (!q) return y.projects;
-		return y.projects.filter(
-			(p) =>
-				p.title.toLowerCase().includes(q) ||
-				p.category.toLowerCase().includes(q) ||
-				p.tools.toLowerCase().includes(q)
-		);
-	}
 
 	const title = 'Muhammad Azhar Rasyad - Software Engineer';
-	const description = `Software Engineer with 8+ years of experience (2018–present). Portfolio of ${totalProjects}+ projects across web development, blockchain, and data engineering. Based in Jakarta, Indonesia.`;
+	const description = `Software Engineer dengan 8+ tahun pengalaman (2018–sekarang). Portofolio ${totalProjects}+ proyek di bidang pengembangan web, blockchain, dan rekayasa data. Berbasis di Jakarta, Indonesia.`;
 	const url = 'https://mazharrasyad.tech/';
 	const image = 'https://mazharrasyad.tech/logo.png';
 
@@ -140,8 +136,9 @@
 				<Icon name="map-pin" class="w-3 h-3 text-blue-500/70" /> Jakarta, Indonesia
 			</p>
 			<p class="text-slate-500 text-xs max-w-md mb-7 leading-relaxed">
-				The story of how a vocational-school student in Cibinong became a software engineer with {totalProjects}+
-				shipped projects. Scroll down to follow the journey, year by year.
+				{totalProjects}+ shipped projects built alongside a Computer Science education, from a
+				vocational high school in Cibinong to a Master's degree in progress. Scroll down to follow
+				the journey, year by year.
 			</p>
 
 			<div class="flex flex-wrap items-center justify-center gap-3">
@@ -205,17 +202,6 @@
 			</div>
 		</section>
 
-		<!-- Search (filters the project rows further down without breaking the timeline) -->
-		<div class="relative -mb-8" use:reveal>
-			<Icon name="search" class="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-slate-500" />
-			<input
-				type="text"
-				bind:value={search}
-				placeholder="Looking for a specific project? Search by title, category, or tools..."
-				class="w-full bg-white/5 border border-white/10 rounded-xl pl-11 pr-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-blue-500/50 focus:bg-white/[0.07] transition-colors"
-			/>
-		</div>
-
 		<!-- Timeline -->
 		<section class="relative">
 			<div class="timeline-line absolute left-[7px] md:left-[9px] top-2 bottom-2 w-px"></div>
@@ -228,10 +214,38 @@
 								class="absolute left-0 top-1.5 w-[15px] h-[15px] md:w-[19px] md:h-[19px] rounded-full border-4 border-[#0f172a] {item
 									.milestone.kind === 'education'
 									? 'bg-emerald-500'
-									: 'bg-blue-500'}"
+									: item.milestone.kind === 'publication'
+										? 'bg-sky-500'
+										: 'bg-blue-500'}"
 							></span>
 
-							{#if item.milestone.kind === 'education'}
+							{#if item.milestone.kind === 'publication'}
+								<div class="flex items-center gap-2 mb-1.5 flex-wrap">
+									<span class="text-xs font-bold text-sky-400 tabular-nums">{item.milestone.data.year}</span>
+									<span class="text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-sky-500/15 text-sky-400">
+										Journal
+									</span>
+									{#if item.milestone.data.citations !== null}
+										<span class="text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-indigo-500/15 text-indigo-300">
+											{item.milestone.data.citations} {item.milestone.data.citations === 1 ? 'Citation' : 'Citations'}
+										</span>
+									{/if}
+								</div>
+								<a
+									href={item.milestone.data.url}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="group/pub inline-flex items-start gap-1.5 text-base md:text-lg font-bold text-white leading-snug hover:text-blue-300 transition-colors"
+								>
+									<span>{item.milestone.data.title}</span>
+									<Icon
+										name="external-link"
+										class="w-3 h-3 mt-1.5 shrink-0 text-slate-600 group-hover/pub:text-blue-400 transition-colors"
+									/>
+								</a>
+								<p class="text-xs text-slate-500 mt-1">{item.milestone.data.authors}</p>
+								<p class="text-xs text-slate-600 italic mt-0.5">{item.milestone.data.venue}</p>
+							{:else if item.milestone.kind === 'education'}
 								<div class="flex items-center gap-2 mb-1.5 flex-wrap">
 									<span class="text-xs font-bold text-emerald-400 tabular-nums">{item.milestone.data.year}</span>
 									<span class="text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-emerald-500/15 text-emerald-400">
@@ -275,7 +289,6 @@
 								</ul>
 							{/if}
 						{:else}
-							{@const list = matchingProjects(item.yearData)}
 							<span
 								class="absolute left-0 top-1.5 w-[15px] h-[15px] md:w-[19px] md:h-[19px] rounded-full border-4 border-[#0f172a] bg-indigo-500"
 							></span>
@@ -288,70 +301,16 @@
 								</span>
 							</div>
 
-							{#if list.length > 0}
-								<div class="card-glass rounded-2xl px-3 md:px-4 divide-y divide-white/5">
-									{#each list as project (project.title)}
-										<ProjectRow {project} index={projectIndex.get(project) ?? 0} digits={3} />
-									{/each}
-								</div>
-							{:else}
-								<p class="text-xs text-slate-600 italic">No {item.yearData.year} projects match "{search}".</p>
-							{/if}
+							<div class="flex flex-col gap-3">
+								{#each item.yearData.projects as project (project.title)}
+									<ProjectRow {project} index={projectIndex.get(project) ?? 0} digits={3} />
+								{/each}
+							</div>
 						{/if}
 					</div>
 				{/each}
 			</div>
 		</section>
 
-		<!-- Publications: the current chapter -->
-		<section use:reveal>
-			<div class="flex justify-between items-center mb-2 gap-3 flex-wrap">
-				<h2 class="text-sm font-bold text-slate-400 uppercase tracking-widest">Now: Research & Publications</h2>
-				<a
-					href={scholar.profileUrl}
-					target="_blank"
-					rel="noopener noreferrer"
-					class="text-xs bg-sky-500/10 border border-sky-500/20 text-sky-400 px-3 py-1 rounded-full font-bold hover:bg-sky-500/20 transition-colors flex items-center gap-1.5"
-				>
-					<Icon name="google-scholar" class="w-3 h-3" />
-					<span>Google Scholar</span>
-				</a>
-			</div>
-			<p class="text-xs text-slate-500 mb-5">
-				{scholar.citations} Citations <span class="text-slate-700 mx-1">·</span> h-index {scholar.hIndex}
-				<span class="text-slate-700 mx-1">·</span> i10-index {scholar.i10Index}
-			</p>
-
-			<div class="card-glass rounded-2xl px-4 md:px-6 divide-y divide-white/5">
-				{#each scholar.publications as pub (pub.title)}
-					<div class="py-4 md:py-5 flex flex-col md:flex-row md:items-start gap-2 md:gap-6">
-						<span class="text-xs font-bold text-slate-500 shrink-0 md:w-12 tabular-nums">{pub.year}</span>
-						<div class="flex-1 min-w-0">
-							<a
-								href={pub.url}
-								target="_blank"
-								rel="noopener noreferrer"
-								class="group/pub inline-flex items-start gap-1.5 text-sm md:text-base font-bold text-white leading-snug hover:text-blue-300 transition-colors"
-							>
-								<span>{pub.title}</span>
-								<Icon
-									name="external-link"
-									class="w-3 h-3 mt-1 shrink-0 text-slate-600 group-hover/pub:text-blue-400 transition-colors"
-								/>
-							</a>
-							<p class="text-xs text-slate-500 mt-1">{pub.authors}</p>
-							<p class="text-xs text-slate-600 italic mt-0.5">{pub.venue}</p>
-						</div>
-						{#if pub.citations !== null}
-							<span
-								class="shrink-0 w-fit text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider bg-indigo-500/20 text-indigo-300"
-							>
-								{pub.citations} {pub.citations === 1 ? 'Citation' : 'Citations'}
-							</span>
-						{/if}
-					</div>
-				{/each}
-			</div>
-		</section>
 	</div>
 </main>

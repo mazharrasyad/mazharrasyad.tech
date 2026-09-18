@@ -27,10 +27,10 @@
 		"institution": "Universitas Budi Luhur",
 		"year": "2024 - 2026",
 		"highlights": [
-			"Advanced Data Modeling with Kimball Methodology — Systematic Literature Review, published in Jurnal Sosial dan Teknologi (SOSTECH)",
-			"Gaps and solutions in Enterprise Architecture implementation for healthcare facility digitalization in Indonesia, published in DIJEMSS",
-			"Digital record classification model using SVM integrated with Hyperledger Fabric blockchain, published in Jurnal Inovtek Polbeng",
-			"Thesis: comparative performance analysis of Raft and SmartBFT consensus algorithms in Hyperledger Fabric"
+			"Pemodelan Data Lanjutan dengan Metodologi Kimball — Systematic Literature Review, dipublikasikan di Jurnal Sosial dan Teknologi (SOSTECH)",
+			"Kesenjangan dan solusi implementasi Enterprise Architecture untuk digitalisasi fasilitas kesehatan di Indonesia, dipublikasikan di DIJEMSS",
+			"Model klasifikasi arsip digital menggunakan SVM terintegrasi dengan blockchain Hyperledger Fabric, dipublikasikan di Jurnal Inovtek Polbeng",
+			"Tesis: analisis performa komparatif algoritma konsensus Raft dan SmartBFT pada Hyperledger Fabric"
 		]
 	}
 ]
