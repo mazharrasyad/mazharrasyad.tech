@@ -20,6 +20,7 @@ export interface Publication {
 	venue: string;
 	year: number;
 	citations: number | null;
+	url: string;
 }
 
 export interface ScholarData {

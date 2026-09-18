@@ -204,7 +204,18 @@
 					<div class="py-4 md:py-5 flex flex-col md:flex-row md:items-start gap-2 md:gap-6">
 						<span class="text-xs font-bold text-slate-500 shrink-0 md:w-12 tabular-nums">{pub.year}</span>
 						<div class="flex-1 min-w-0">
-							<h3 class="text-sm md:text-base font-bold text-white leading-snug">{pub.title}</h3>
+							<a
+								href={pub.url}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="group/pub inline-flex items-start gap-1.5 text-sm md:text-base font-bold text-white leading-snug hover:text-blue-300 transition-colors"
+							>
+								<span>{pub.title}</span>
+								<Icon
+									name="external-link"
+									class="w-3 h-3 mt-1 shrink-0 text-slate-600 group-hover/pub:text-blue-400 transition-colors"
+								/>
+							</a>
 							<p class="text-xs text-slate-500 mt-1">{pub.authors}</p>
 							<p class="text-xs text-slate-600 italic mt-0.5">{pub.venue}</p>
 						</div>

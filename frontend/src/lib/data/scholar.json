@@ -9,28 +9,32 @@
 			"authors": "Muhammad Azhar Rasyad, Widdy Chandra Permana",
 			"venue": "INOVTEK Polbeng - Seri Informatika, 10",
 			"year": 2025,
-			"citations": 1
+			"citations": 1,
+			"url": "https://jurnal.polbeng.ac.id/index.php/ISI/article/view/1264"
 		},
 		{
 			"title": "Systematic Literature Review: Gaps and Solutions in the Implementation of Enterprise Architecture in the Digitalization of Healthcare Facilities in Indonesia",
 			"authors": "Widdy Chandra Permana, Muhammad Azhar Rasyad, Imelda",
 			"venue": "Dinasti International Journal of Education Management and Social Science",
 			"year": 2025,
-			"citations": null
+			"citations": null,
+			"url": "https://dinastipub.org/DIJEMSS/article/view/4405"
 		},
 		{
 			"title": "Advanced Data Modeling dengan Metodologi Kimball: Systematic Literature Review",
 			"authors": "NA Halim, NA Alhazmy, Muhammad Azhar Rasyad",
 			"venue": "Jurnal Sosial Teknologi, 4(8), 639-650",
 			"year": 2024,
-			"citations": 5
+			"citations": 5,
+			"url": "https://sostech.greenvest.co.id/index.php/sostech/article/view/1369"
 		},
 		{
 			"title": "Rancang Bangun Aplikasi Link-Match STT-NF Modul Dosen Berbasis Web Menggunakan Framework Laravel",
 			"authors": "Muhammad Azhar Rasyad",
 			"venue": "Sekolah Tinggi Teknologi Terpadu Nurul Fikri",
 			"year": 2021,
-			"citations": 1
+			"citations": 1,
+			"url": "https://repository.nurulfikri.ac.id/id/eprint/71/"
 		}
 	]
 }
