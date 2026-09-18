@@ -11,6 +11,9 @@ export const GET: RequestHandler = () => {
 
 	const urls = [
 		{ loc: `${SITE}/`, priority: '1.0' },
+		{ loc: `${SITE}/education`, priority: '0.8' },
+		{ loc: `${SITE}/experience`, priority: '0.8' },
+		{ loc: `${SITE}/timeline`, priority: '0.8' },
 		...years.map((y) => ({ loc: `${SITE}/projects/${y.year}`, priority: '0.7' }))
 	];
 
