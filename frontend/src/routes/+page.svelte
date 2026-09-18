@@ -26,15 +26,16 @@
 		}
 	}
 
+	// Education gets its own dedicated slide (right after Home) instead of
+	// being interleaved into whichever year it started, so it isn't split
+	// piecemeal across the timeline.
 	type Milestone =
-		| { kind: 'education'; sortKey: number; data: Education }
 		| { kind: 'experience'; sortKey: number; data: Experience }
 		| { kind: 'publication'; sortKey: number; data: Publication };
 
 	// Publications only carry a year, so they're placed mid-year (like undated
-	// projects) to interleave sensibly with month-precise education/experience entries.
+	// projects) to interleave sensibly with month-precise experience entries.
 	const milestones: Milestone[] = [
-		...education.map((data) => ({ kind: 'education' as const, sortKey: data.sortKey, data })),
 		...experience.map((data) => ({ kind: 'experience' as const, sortKey: data.sortKey, data })),
 		...scholar.publications.map((data) => ({
 			kind: 'publication' as const,
@@ -43,8 +44,13 @@
 		}))
 	];
 
+	const educationSlide = {
+		kind: 'education' as const,
+		entries: [...education].sort((a, b) => b.sortKey - a.sortKey)
+	};
+
 	type YearSlide = { kind: 'year'; year: number; milestones: Milestone[]; projects: Project[] };
-	type Slide = { kind: 'profile' } | YearSlide;
+	type Slide = { kind: 'profile' } | typeof educationSlide | YearSlide;
 
 	const allYears = new Set<number>();
 	for (const m of milestones) allYears.add(Math.floor(m.sortKey / 100));
@@ -61,7 +67,7 @@
 			projects: chronoYears.find((y) => y.year === year)?.projects ?? []
 		}));
 
-	const slides: Slide[] = [{ kind: 'profile' }, ...yearSlides];
+	const slides: Slide[] = [{ kind: 'profile' }, educationSlide, ...yearSlides];
 
 	let track: HTMLDivElement | undefined = $state();
 	let activeIndex = $state(0);
@@ -137,7 +143,7 @@
 			onscroll={onTrackScroll}
 			class="h-full w-full flex overflow-x-auto snap-x snap-mandatory scroll-smooth hide-scrollbar"
 		>
-			{#each slides as slide (slide.kind === 'profile' ? 'profile' : slide.year)}
+			{#each slides as slide (slide.kind === 'year' ? slide.year : slide.kind)}
 				<section
 					class="w-full h-full shrink-0 snap-center overflow-y-auto [content-visibility:auto] px-4 md:px-8 py-8 md:py-12"
 				>
@@ -239,6 +245,31 @@
 								<Icon name="chevron-right" class="w-4 h-4" />
 							</div>
 						</div>
+					{:else if slide.kind === 'education'}
+						<div class="max-w-3xl mx-auto w-full flex flex-col gap-4 md:gap-5">
+							<h2 class="text-4xl md:text-6xl font-black text-white">Education</h2>
+
+							{#each slide.entries as edu (edu.institution)}
+								<div class="card-glass rounded-2xl p-4 md:p-5">
+									<span class="text-xs font-bold text-emerald-400 tabular-nums">{edu.year}</span>
+									<h3 class="text-base md:text-lg font-bold text-white leading-snug mt-1.5">{edu.field}</h3>
+									<p class="text-xs text-slate-500 mt-1">
+										{edu.institution} <span class="text-slate-700 mx-1">·</span>
+										{edu.degree}
+									</p>
+									{#if edu.highlights.length > 0}
+										<ul class="mt-2.5 space-y-1">
+											{#each edu.highlights as h (h)}
+												<li class="text-xs text-slate-500 flex gap-2">
+													<span class="text-slate-700 shrink-0">•</span>
+													<span>{h}</span>
+												</li>
+											{/each}
+										</ul>
+									{/if}
+								</div>
+							{/each}
+						</div>
 					{:else}
 						<div class="max-w-3xl mx-auto w-full flex flex-col gap-4 md:gap-5">
 							<h2 class="text-4xl md:text-6xl font-black text-white tabular-nums">{slide.year}</h2>
@@ -270,25 +301,6 @@
 										</a>
 										<p class="text-xs text-slate-500 mt-1">{m.data.authors}</p>
 										<p class="text-xs text-slate-600 italic mt-0.5">{m.data.venue}</p>
-									{:else if m.kind === 'education'}
-										<span class="text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-emerald-500/15 text-emerald-400">
-											Education
-										</span>
-										<h3 class="text-base md:text-lg font-bold text-white leading-snug mt-1.5">{m.data.field}</h3>
-										<p class="text-xs text-slate-500 mt-1">
-											{m.data.institution} <span class="text-slate-700 mx-1">·</span>
-											{m.data.degree}
-										</p>
-										{#if m.data.highlights.length > 0}
-											<ul class="mt-2.5 space-y-1">
-												{#each m.data.highlights as h (h)}
-													<li class="text-xs text-slate-500 flex gap-2">
-														<span class="text-slate-700 shrink-0">•</span>
-														<span>{h}</span>
-													</li>
-												{/each}
-											</ul>
-										{/if}
 									{:else}
 										<div class="flex items-center gap-2 mb-1.5 flex-wrap">
 											<span class="text-xs font-bold text-blue-400 tabular-nums">{m.data.period}</span>
@@ -360,17 +372,17 @@
 	<div
 		class="fixed bottom-0 inset-x-0 z-40 min-h-14 flex items-center justify-start md:justify-center gap-1.5 overflow-x-auto hide-scrollbar px-4 bg-[#0f172a]/95 backdrop-blur-md border-t border-white/10 [padding-bottom:env(safe-area-inset-bottom)]"
 	>
-		{#each slides as slide, i (slide.kind === 'profile' ? 'profile' : slide.year)}
+		{#each slides as slide, i (slide.kind === 'year' ? slide.year : slide.kind)}
 			<button
 				type="button"
 				onclick={() => goToSlide(i)}
-				aria-label={slide.kind === 'profile' ? 'Home' : String(slide.year)}
+				aria-label={slide.kind === 'year' ? String(slide.year) : slide.kind === 'profile' ? 'Home' : 'Education'}
 				class="shrink-0 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider tabular-nums transition-all {activeIndex ===
 				i
 					? 'bg-blue-500 text-white'
 					: 'bg-white/5 text-slate-500 hover:bg-white/10 hover:text-slate-300'}"
 			>
-				{slide.kind === 'profile' ? 'Home' : slide.year}
+				{slide.kind === 'year' ? slide.year : slide.kind === 'profile' ? 'Home' : 'Education'}
 			</button>
 		{/each}
 	</div>
