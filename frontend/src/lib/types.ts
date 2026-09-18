@@ -13,3 +13,19 @@ export interface YearData {
 	year: number;
 	projects: Project[];
 }
+
+export interface Publication {
+	title: string;
+	authors: string;
+	venue: string;
+	year: number;
+	citations: number | null;
+}
+
+export interface ScholarData {
+	profileUrl: string;
+	citations: number;
+	hIndex: number;
+	i10Index: number;
+	publications: Publication[];
+}

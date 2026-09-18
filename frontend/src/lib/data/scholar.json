@@ -1,0 +1,36 @@
+{
+	"profileUrl": "https://scholar.google.co.id/citations?user=TQn1C8IAAAAJ&hl=id",
+	"citations": 7,
+	"hIndex": 1,
+	"i10Index": 0,
+	"publications": [
+		{
+			"title": "Digital Record Classification Using SVM on Permissioned Blockchain Hyperledger Fabric for Regional Status Visualization",
+			"authors": "Muhammad Azhar Rasyad, Widdy Chandra Permana",
+			"venue": "INOVTEK Polbeng - Seri Informatika, 10",
+			"year": 2025,
+			"citations": 1
+		},
+		{
+			"title": "Systematic Literature Review: Gaps and Solutions in the Implementation of Enterprise Architecture in the Digitalization of Healthcare Facilities in Indonesia",
+			"authors": "Widdy Chandra Permana, Muhammad Azhar Rasyad, Imelda",
+			"venue": "Dinasti International Journal of Education Management and Social Science",
+			"year": 2025,
+			"citations": null
+		},
+		{
+			"title": "Advanced Data Modeling dengan Metodologi Kimball: Systematic Literature Review",
+			"authors": "NA Halim, NA Alhazmy, Muhammad Azhar Rasyad",
+			"venue": "Jurnal Sosial Teknologi, 4(8), 639-650",
+			"year": 2024,
+			"citations": 5
+		},
+		{
+			"title": "Rancang Bangun Aplikasi Link-Match STT-NF Modul Dosen Berbasis Web Menggunakan Framework Laravel",
+			"authors": "Muhammad Azhar Rasyad",
+			"venue": "Sekolah Tinggi Teknologi Terpadu Nurul Fikri",
+			"year": 2021,
+			"citations": 1
+		}
+	]
+}

@@ -1,10 +1,12 @@
 <script lang="ts">
 	import Icon from '$lib/components/Icon.svelte';
 	import yearsData from '$lib/data/projects.json';
-	import type { YearData } from '$lib/types';
+	import scholarData from '$lib/data/scholar.json';
+	import type { YearData, ScholarData } from '$lib/types';
 
 	const years = yearsData as YearData[];
 	const totalProjects = years.reduce((sum, y) => sum + y.projects.length, 0);
+	const scholar = scholarData as ScholarData;
 
 	let imgError = $state(false);
 
@@ -174,6 +176,46 @@
 						<span class="text-xl font-bold">{y.year}</span>
 						<span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">{y.projects.length} Projects</span>
 					</a>
+				{/each}
+			</div>
+		</section>
+
+		<!-- Publications -->
+		<section>
+			<div class="flex justify-between items-center mb-2">
+				<h2 class="text-sm font-bold text-slate-400 uppercase tracking-widest">Research & Publications</h2>
+				<a
+					href={scholar.profileUrl}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="text-xs bg-sky-500/10 border border-sky-500/20 text-sky-400 px-3 py-1 rounded-full font-bold hover:bg-sky-500/20 transition-colors flex items-center gap-1.5"
+				>
+					<Icon name="google-scholar" class="w-3 h-3" />
+					<span>Google Scholar</span>
+				</a>
+			</div>
+			<p class="text-xs text-slate-500 mb-5">
+				{scholar.citations} Citations <span class="text-slate-700 mx-1">·</span> h-index {scholar.hIndex}
+				<span class="text-slate-700 mx-1">·</span> i10-index {scholar.i10Index}
+			</p>
+
+			<div class="card-glass rounded-2xl px-4 md:px-6 divide-y divide-white/5">
+				{#each scholar.publications as pub (pub.title)}
+					<div class="py-4 md:py-5 flex flex-col md:flex-row md:items-start gap-2 md:gap-6">
+						<span class="text-xs font-bold text-slate-500 shrink-0 md:w-12 tabular-nums">{pub.year}</span>
+						<div class="flex-1 min-w-0">
+							<h3 class="text-sm md:text-base font-bold text-white leading-snug">{pub.title}</h3>
+							<p class="text-xs text-slate-500 mt-1">{pub.authors}</p>
+							<p class="text-xs text-slate-600 italic mt-0.5">{pub.venue}</p>
+						</div>
+						{#if pub.citations !== null}
+							<span
+								class="shrink-0 w-fit text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider bg-indigo-500/20 text-indigo-300"
+							>
+								{pub.citations} {pub.citations === 1 ? 'Citation' : 'Citations'}
+							</span>
+						{/if}
+					</div>
 				{/each}
 			</div>
 		</section>
