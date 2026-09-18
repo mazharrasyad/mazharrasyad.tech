@@ -18,7 +18,7 @@
 
 <div class="card-glass rounded-2xl p-4 md:p-5 [content-visibility:auto] [contain-intrinsic-size:auto_180px]">
 	<div class="flex items-start gap-4 md:gap-6">
-		<span class="text-2xl md:text-3xl font-black tabular-nums w-10 md:w-14 shrink-0 text-slate-700">
+		<span class="text-2xl md:text-3xl font-black tabular-nums w-10 md:w-14 shrink-0 text-slate-500">
 			{String(index).padStart(digits, '0')}
 		</span>
 
@@ -28,7 +28,7 @@
 					{project.title}
 				</h3>
 				{#if year}
-					<span class="bg-white/5 text-slate-400 text-[10px] px-2 py-0.5 rounded-full font-bold whitespace-nowrap border border-white/10">
+					<span class="bg-white/5 text-slate-300 text-[10px] px-2 py-0.5 rounded-full font-bold whitespace-nowrap border border-white/10">
 						{year}
 					</span>
 				{/if}
@@ -43,10 +43,10 @@
 					{project.visibility}
 				</span>
 				{#if project.updated}
-					<span class="text-xs text-slate-500">{project.updated}</span>
+					<span class="text-xs text-slate-300">{project.updated}</span>
 				{/if}
 			</div>
-			<p class="text-xs text-slate-500 mt-1">{project.tools}</p>
+			<p class="text-xs text-slate-300 mt-1">{project.tools}</p>
 
 			{#if project.images.length > 0}
 				<div class="relative group/gallery mt-3 mb-3">
@@ -82,7 +82,7 @@
 				</div>
 			{/if}
 
-			<p class="text-slate-400 text-sm leading-relaxed mt-2 max-w-2xl">
+			<p class="text-slate-300 text-sm leading-relaxed mt-2 max-w-2xl">
 				{project.description}
 			</p>
 

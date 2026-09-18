@@ -86,8 +86,8 @@
 		>
 			Muhammad Azhar Rasyad
 		</h1>
-		<p class="text-slate-400 text-sm font-medium mb-7 flex items-center gap-2">
-			Software Engineer <span class="text-slate-600">|</span>
+		<p class="text-slate-300 text-sm font-medium mb-7 flex items-center gap-2">
+			Software Engineer <span class="text-slate-400">|</span>
 			<Icon name="map-pin" class="w-3 h-3 text-blue-500/70" /> Jakarta, Indonesia
 		</p>
 		<div class="flex flex-wrap items-center justify-center gap-3">

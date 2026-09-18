@@ -102,7 +102,7 @@
 				aria-label={String(slide.year)}
 				class="shrink-0 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider tabular-nums transition-all {activeIndex === i
 					? 'bg-blue-500 text-white'
-					: 'bg-white/5 text-slate-500 hover:bg-white/10 hover:text-slate-300'}"
+					: 'bg-white/5 text-slate-300 hover:bg-white/10 hover:text-white'}"
 			>
 				{slide.year}
 			</button>
@@ -143,11 +143,11 @@
 									<span>{m.data.title}</span>
 									<Icon
 										name="external-link"
-										class="w-3 h-3 mt-1.5 shrink-0 text-slate-600 group-hover/pub:text-blue-400 transition-colors"
+										class="w-3 h-3 mt-1.5 shrink-0 text-slate-400 group-hover/pub:text-blue-400 transition-colors"
 									/>
 								</a>
-								<p class="text-xs text-slate-500 mt-1">{m.data.authors}</p>
-								<p class="text-xs text-slate-600 italic mt-0.5">{m.data.venue}</p>
+								<p class="text-xs text-slate-300 mt-1">{m.data.authors}</p>
+								<p class="text-xs text-slate-400 italic mt-0.5">{m.data.venue}</p>
 							</div>
 						{/each}
 
@@ -166,7 +166,7 @@
 						{/if}
 
 						{#if slide.milestones.length === 0 && slide.projects.length === 0}
-							<p class="text-slate-600 italic text-sm">Nothing recorded for {slide.year} yet.</p>
+							<p class="text-slate-400 italic text-sm">Nothing recorded for {slide.year} yet.</p>
 						{/if}
 					</div>
 				</section>

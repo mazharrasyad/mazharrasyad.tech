@@ -28,7 +28,7 @@
 				link.href
 			)
 				? 'bg-blue-500 text-white'
-				: 'bg-white/5 text-slate-500 hover:bg-white/10 hover:text-slate-300'}"
+				: 'bg-white/5 text-slate-300 hover:bg-white/10 hover:text-white'}"
 		>
 			{link.label}
 		</a>

@@ -38,15 +38,15 @@
 				<div class="card-glass rounded-2xl p-4 md:p-5">
 					<span class="text-xs font-bold text-emerald-400 tabular-nums">{edu.year}</span>
 					<h2 class="text-base md:text-lg font-bold text-white leading-snug mt-1.5">{edu.field}</h2>
-					<p class="text-xs text-slate-500 mt-1">
-						{edu.institution} <span class="text-slate-700 mx-1">·</span>
+					<p class="text-xs text-slate-300 mt-1">
+						{edu.institution} <span class="text-slate-500 mx-1">·</span>
 						{edu.degree}
 					</p>
 					{#if edu.highlights.length > 0}
 						<ul class="mt-2.5 space-y-1">
 							{#each edu.highlights as h (h)}
-								<li class="text-xs text-slate-500 flex gap-2">
-									<span class="text-slate-700 shrink-0">•</span>
+								<li class="text-xs text-slate-300 flex gap-2">
+									<span class="text-slate-500 shrink-0">•</span>
 									<span>{h}</span>
 								</li>
 							{/each}

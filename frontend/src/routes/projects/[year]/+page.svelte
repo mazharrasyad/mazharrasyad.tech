@@ -44,7 +44,7 @@
 				</span>
 				<span>Project List</span>
 			</div>
-			<span class="text-xs bg-white/5 border border-white/10 text-slate-400 px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">
+			<span class="text-xs bg-white/5 border border-white/10 text-slate-300 px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">
 				{data.projects.length} Projects
 			</span>
 		</h1>
