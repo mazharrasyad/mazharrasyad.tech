@@ -179,12 +179,6 @@
 								Software Engineer <span class="text-slate-600">|</span>
 								<Icon name="map-pin" class="w-3 h-3 text-blue-500/70" /> Jakarta, Indonesia
 							</p>
-							<p class="text-slate-500 text-xs max-w-md mb-7 leading-relaxed">
-								{totalProjects}+ shipped projects built alongside a Computer Science education, from a
-								vocational high school in Cibinong to a Master's degree in progress. Swipe to follow
-								the journey, year by year.
-							</p>
-
 							<div class="flex flex-wrap items-center justify-center gap-3">
 								<a
 									href="https://github.com/mazharrasyad"
