@@ -2,7 +2,7 @@
 	import { page } from '$app/state';
 
 	const links = [
-		{ href: '/', label: 'Home' },
+		{ href: '/', label: 'Profile' },
 		{ href: '/education', label: 'Education' },
 		{ href: '/experience', label: 'Experience' },
 		{ href: '/timeline', label: 'Timeline' }
