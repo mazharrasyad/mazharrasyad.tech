@@ -368,12 +368,13 @@
 			<button
 				type="button"
 				onclick={() => goToSlide(i)}
-				aria-label={slide.kind === 'profile' ? 'Profile' : String(slide.year)}
-				class="shrink-0 px-2.5 py-1 rounded-full text-[10px] font-bold tabular-nums transition-all {activeIndex === i
+				aria-label={slide.kind === 'profile' ? 'Home' : String(slide.year)}
+				class="shrink-0 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider tabular-nums transition-all {activeIndex ===
+				i
 					? 'bg-blue-500 text-white'
 					: 'bg-white/5 text-slate-500 hover:bg-white/10 hover:text-slate-300'}"
 			>
-				{slide.kind === 'profile' ? '●' : slide.year}
+				{slide.kind === 'profile' ? 'Home' : slide.year}
 			</button>
 		{/each}
 	</div>
