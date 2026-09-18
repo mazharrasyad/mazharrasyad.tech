@@ -22,7 +22,11 @@
 		image,
 		email: 'mailto:muhazharrasyad@gmail.com',
 		address: { '@type': 'PostalAddress', addressLocality: 'Jakarta', addressCountry: 'ID' },
-		sameAs: ['https://www.linkedin.com/in/mazharrasyad', 'https://github.com/mazharrasyad']
+		sameAs: [
+			'https://www.linkedin.com/in/mazharrasyad',
+			'https://github.com/mazharrasyad',
+			'https://scholar.google.co.id/citations?user=TQn1C8IAAAAJ&hl=id'
+		]
 	};
 </script>
 
@@ -116,6 +120,15 @@
 						class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-300 hover:bg-white/10 hover:scale-110 transition-all border border-white/10"
 					>
 						<Icon name="github" class="w-4 h-4" />
+					</a>
+					<a
+						href="https://scholar.google.co.id/citations?user=TQn1C8IAAAAJ&hl=id"
+						target="_blank"
+						rel="noopener noreferrer"
+						title="Google Scholar"
+						class="w-10 h-10 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 hover:bg-sky-500/20 hover:scale-110 transition-all border border-sky-500/20"
+					>
+						<Icon name="google-scholar" class="w-4 h-4" />
 					</a>
 					<a
 						href="https://wa.me/+6281290351971"
