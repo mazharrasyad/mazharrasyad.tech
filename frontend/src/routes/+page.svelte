@@ -5,8 +5,6 @@
 
 	const years = yearsData as YearData[];
 	const totalProjects = years.reduce((sum, y) => sum + y.projects.length, 0);
-	const totalYears = years.length;
-	const totalCategories = new Set(years.flatMap((y) => y.projects.map((p) => p.category))).size;
 
 	let imgError = $state(false);
 
@@ -145,22 +143,6 @@
 						<span>View CV</span>
 					</a>
 				</div>
-			</div>
-		</section>
-
-		<!-- Stats -->
-		<section class="grid grid-cols-3 gap-3 md:gap-5">
-			<div class="card-glass rounded-2xl p-4 md:p-6 text-center">
-				<div class="text-2xl md:text-4xl font-black text-white mb-1">{totalProjects}+</div>
-				<div class="text-[10px] md:text-xs text-slate-500 font-bold uppercase tracking-widest">Projects</div>
-			</div>
-			<div class="card-glass rounded-2xl p-4 md:p-6 text-center">
-				<div class="text-2xl md:text-4xl font-black text-white mb-1">{totalYears}</div>
-				<div class="text-[10px] md:text-xs text-slate-500 font-bold uppercase tracking-widest">Years Active</div>
-			</div>
-			<div class="card-glass rounded-2xl p-4 md:p-6 text-center">
-				<div class="text-2xl md:text-4xl font-black text-white mb-1">{totalCategories}</div>
-				<div class="text-[10px] md:text-xs text-slate-500 font-bold uppercase tracking-widest">Disciplines</div>
 			</div>
 		</section>
 
