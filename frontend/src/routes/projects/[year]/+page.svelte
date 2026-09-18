@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Icon from '$lib/components/Icon.svelte';
-	import ProjectCard from '$lib/components/ProjectCard.svelte';
+	import ProjectRow from '$lib/components/ProjectRow.svelte';
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
@@ -49,9 +49,9 @@
 			</span>
 		</h1>
 
-		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+		<div class="card-glass rounded-2xl px-3 md:px-4 divide-y divide-white/5">
 			{#each data.projects as project, i (project.title)}
-				<ProjectCard {project} index={i + 1} />
+				<ProjectRow {project} index={i + 1} />
 			{/each}
 		</div>
 	</main>
