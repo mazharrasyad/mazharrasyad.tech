@@ -52,7 +52,7 @@
 	{@html `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, '\\u003c')}</script>`}
 </svelte:head>
 
-<main class="w-full h-[calc(100dvh-3.5rem-env(safe-area-inset-bottom))] overflow-y-auto px-4 md:px-8 py-8 md:py-12">
+<main class="w-full h-[calc(100dvh-3.5rem)] overflow-y-auto px-4 md:px-8 py-8 md:py-12">
 	<div
 		class="max-w-md mx-auto w-full min-h-full flex flex-col items-center justify-center text-center"
 		use:reveal

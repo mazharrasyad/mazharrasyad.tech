@@ -92,7 +92,7 @@
 
 <svelte:window onkeydown={onKeydown} />
 
-<main class="w-full flex flex-col h-[calc(100dvh-3.5rem-env(safe-area-inset-bottom))]">
+<main class="w-full flex flex-col h-[calc(100dvh-3.5rem)]">
 	<!-- Year indicators -->
 	<div class="shrink-0 flex items-center justify-start md:justify-center gap-1.5 overflow-x-auto hide-scrollbar px-4 py-3 border-b border-white/10">
 		{#each slides as slide, i (slide.year)}

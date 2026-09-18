@@ -18,7 +18,7 @@
 
 <nav
 	aria-label="Main"
-	class="fixed bottom-0 inset-x-0 z-40 min-h-14 flex items-center justify-start md:justify-center gap-1.5 overflow-x-auto hide-scrollbar px-4 bg-[#0f172a]/95 backdrop-blur-md border-t border-white/10 [padding-bottom:env(safe-area-inset-bottom)]"
+	class="sticky top-0 z-40 h-14 shrink-0 flex items-center justify-start md:justify-center gap-1.5 overflow-x-auto hide-scrollbar px-4 bg-[#0f172a]/95 backdrop-blur-md border-b border-white/10"
 >
 	{#each links as link (link.href)}
 		<a
