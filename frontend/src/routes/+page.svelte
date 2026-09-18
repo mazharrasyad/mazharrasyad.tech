@@ -1,40 +1,62 @@
 <script lang="ts">
 	import Icon from '$lib/components/Icon.svelte';
 	import ProjectRow from '$lib/components/ProjectRow.svelte';
+	import { reveal } from '$lib/actions/reveal';
 	import yearsData from '$lib/data/projects.json';
 	import scholarData from '$lib/data/scholar.json';
 	import educationData from '$lib/data/education.json';
-	import type { YearData, ScholarData, Education } from '$lib/types';
+	import experienceData from '$lib/data/experience.json';
+	import type { YearData, ScholarData, Education, Experience, Project } from '$lib/types';
 
 	const years = yearsData as YearData[];
 	const totalProjects = years.reduce((sum, y) => sum + y.projects.length, 0);
-	const allProjects = years.flatMap((y) => y.projects.map((project) => ({ project, year: y.year })));
 	const scholar = scholarData as ScholarData;
 	const education = educationData as Education[];
+	const experience = experienceData as Experience[];
 
-	const categoryCounts = allProjects.reduce<Record<string, number>>((acc, { project }) => {
-		acc[project.category] = (acc[project.category] ?? 0) + 1;
-		return acc;
-	}, {});
-	const categories = ['All', ...Object.keys(categoryCounts).sort((a, b) => categoryCounts[b] - categoryCounts[a])];
+	// Oldest first, so scrolling down mirrors moving forward through time.
+	const chronoYears = [...years].sort((a, b) => a.year - b.year);
+
+	let projectCounter = 0;
+	const projectIndex = new Map<Project, number>();
+	for (const y of chronoYears) {
+		for (const p of y.projects) {
+			projectCounter += 1;
+			projectIndex.set(p, projectCounter);
+		}
+	}
+
+	type Milestone =
+		| { kind: 'education'; sortKey: number; data: Education }
+		| { kind: 'experience'; sortKey: number; data: Experience };
+
+	const milestones: Milestone[] = [
+		...education.map((data) => ({ kind: 'education' as const, sortKey: data.sortKey, data })),
+		...experience.map((data) => ({ kind: 'experience' as const, sortKey: data.sortKey, data }))
+	].sort((a, b) => a.sortKey - b.sortKey);
+
+	type StoryItem =
+		| { kind: 'milestone'; sortKey: number; milestone: Milestone }
+		| { kind: 'projects'; sortKey: number; yearData: YearData };
+
+	const story: StoryItem[] = [
+		...milestones.map((m) => ({ kind: 'milestone' as const, sortKey: m.sortKey, milestone: m })),
+		...chronoYears.map((y) => ({ kind: 'projects' as const, sortKey: y.year * 100 + 6, yearData: y }))
+	].sort((a, b) => a.sortKey - b.sortKey);
 
 	let imgError = $state(false);
 	let search = $state('');
-	let activeCategory = $state('All');
 
-	let filteredProjects = $derived.by(() => {
+	function matchingProjects(y: YearData) {
 		const q = search.trim().toLowerCase();
-		return allProjects.filter(({ project, year }) => {
-			if (activeCategory !== 'All' && project.category !== activeCategory) return false;
-			if (!q) return true;
-			return (
-				project.title.toLowerCase().includes(q) ||
-				project.category.toLowerCase().includes(q) ||
-				project.tools.toLowerCase().includes(q) ||
-				String(year).includes(q)
-			);
-		});
-	});
+		if (!q) return y.projects;
+		return y.projects.filter(
+			(p) =>
+				p.title.toLowerCase().includes(q) ||
+				p.category.toLowerCase().includes(q) ||
+				p.tools.toLowerCase().includes(q)
+		);
+	}
 
 	const title = 'Muhammad Azhar Rasyad - Software Engineer';
 	const description = `Software Engineer with 8+ years of experience (2018–present). Portfolio of ${totalProjects}+ projects across web development, blockchain, and data engineering. Based in Jakarta, Indonesia.`;
@@ -80,43 +102,17 @@
 	{@html `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, '\\u003c')}</script>`}
 </svelte:head>
 
-<main class="flex-1 w-full px-4 md:px-8 py-12">
-	<div class="max-w-6xl mx-auto w-full flex flex-col gap-10 md:gap-12">
-		<!-- Education -->
-		<section>
-			<h2 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-5">Education</h2>
-			<div class="card-glass rounded-2xl px-4 md:px-6 divide-y divide-white/5">
-				{#each education as edu (edu.institution + edu.year)}
-					<div class="py-4 md:py-5 flex flex-col md:flex-row md:items-start gap-2 md:gap-6">
-						<span class="text-xs font-bold text-slate-500 shrink-0 md:w-28 tabular-nums">{edu.year}</span>
-						<div class="flex-1 min-w-0">
-							<h3 class="text-sm md:text-base font-bold text-white leading-snug">{edu.field}</h3>
-							<p class="text-xs text-slate-500 mt-1">{edu.institution} <span class="text-slate-700 mx-1">·</span> {edu.degree}</p>
-							{#if edu.highlights.length > 0}
-								<ul class="mt-2 space-y-1">
-									{#each edu.highlights as h (h)}
-										<li class="text-xs text-slate-500 flex gap-2">
-											<span class="text-slate-700 shrink-0">•</span>
-											<span>{h}</span>
-										</li>
-									{/each}
-								</ul>
-							{/if}
-						</div>
-					</div>
-				{/each}
-			</div>
-		</section>
-
-		<!-- Hero -->
-		<section class="flex flex-col md:flex-row md:items-center gap-8 md:gap-10">
-			<div class="relative shrink-0 mx-auto md:mx-0">
+<main class="flex-1 w-full px-4 md:px-8 py-12 md:py-16">
+	<div class="max-w-3xl mx-auto w-full flex flex-col gap-16 md:gap-20">
+		<!-- Cover -->
+		<section class="text-center flex flex-col items-center" use:reveal>
+			<div class="relative mb-6">
 				<div
-					class="w-28 h-28 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 p-[3px] shadow-2xl shadow-blue-500/30"
+					class="w-24 h-24 md:w-28 md:h-28 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 p-[3px] shadow-2xl shadow-blue-500/30"
 				>
 					{#if imgError}
 						<div class="w-full h-full rounded-full bg-slate-700 flex items-center justify-center">
-							<span class="text-3xl font-bold text-blue-400">AR</span>
+							<span class="text-2xl font-bold text-blue-400">AR</span>
 						</div>
 					{:else}
 						<img
@@ -134,135 +130,183 @@
 				</span>
 			</div>
 
-			<div class="flex-1 text-center md:text-left pt-3 md:pt-0">
-				<h1
-					class="text-3xl md:text-5xl font-black mb-3 bg-gradient-to-r from-white via-white to-blue-200 bg-clip-text text-transparent"
+			<h1
+				class="text-3xl md:text-5xl font-black mb-3 bg-gradient-to-r from-white via-white to-blue-200 bg-clip-text text-transparent"
+			>
+				Muhammad Azhar Rasyad
+			</h1>
+			<p class="text-slate-400 text-sm font-medium mb-1 flex items-center gap-2">
+				Software Engineer <span class="text-slate-600">|</span>
+				<Icon name="map-pin" class="w-3 h-3 text-blue-500/70" /> Jakarta, Indonesia
+			</p>
+			<p class="text-slate-500 text-xs max-w-md mb-7 leading-relaxed">
+				The story of how a vocational-school student in Cibinong became a software engineer with {totalProjects}+
+				shipped projects. Scroll down to follow the journey, year by year.
+			</p>
+
+			<div class="flex flex-wrap items-center justify-center gap-3">
+				<a
+					href="https://www.linkedin.com/in/mazharrasyad"
+					target="_blank"
+					rel="noopener noreferrer"
+					title="LinkedIn"
+					class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 hover:bg-blue-500/20 hover:scale-110 transition-all border border-blue-500/20"
 				>
-					Muhammad Azhar Rasyad
-				</h1>
+					<Icon name="linkedin" class="w-4 h-4" />
+				</a>
+				<a
+					href="https://github.com/mazharrasyad"
+					target="_blank"
+					rel="noopener noreferrer"
+					title="GitHub"
+					class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-300 hover:bg-white/10 hover:scale-110 transition-all border border-white/10"
+				>
+					<Icon name="github" class="w-4 h-4" />
+				</a>
+				<a
+					href="https://scholar.google.co.id/citations?user=TQn1C8IAAAAJ&hl=id"
+					target="_blank"
+					rel="noopener noreferrer"
+					title="Google Scholar"
+					class="w-10 h-10 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 hover:bg-sky-500/20 hover:scale-110 transition-all border border-sky-500/20"
+				>
+					<Icon name="google-scholar" class="w-4 h-4" />
+				</a>
+				<a
+					href="https://wa.me/+6281290351971"
+					target="_blank"
+					rel="noopener noreferrer"
+					title="WhatsApp"
+					class="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center text-green-400 hover:bg-green-500/20 hover:scale-110 transition-all border border-green-500/20"
+				>
+					<Icon name="whatsapp" class="w-4 h-4" />
+				</a>
+				<a
+					href="mailto:muhazharrasyad@gmail.com"
+					title="Email"
+					class="w-10 h-10 rounded-xl bg-rose-500/10 flex items-center justify-center text-rose-400 hover:bg-rose-500/20 hover:scale-110 transition-all border border-rose-500/20"
+				>
+					<Icon name="mail" class="w-4 h-4" />
+				</a>
+				<a
+					href="/cv.pdf"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="link-btn px-5 py-2.5 shadow-md shadow-blue-500/5 rounded-xl text-xs uppercase tracking-wider font-bold"
+				>
+					<Icon name="file-text" class="w-4 h-4 text-rose-400" />
+					<span>View CV</span>
+				</a>
+			</div>
 
-				<div class="flex flex-col md:flex-row md:items-center gap-2 md:gap-3 mb-3 justify-center md:justify-start">
-					<span
-						class="w-fit mx-auto md:mx-0 px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-xs font-bold uppercase tracking-widest"
-					>
-						Software Engineer
-					</span>
-					<p class="text-slate-400 text-sm font-medium">
-						8+ Years Experience <span class="text-slate-600 mx-1">|</span> 2018 - Present
-					</p>
-				</div>
-
-				<p class="text-slate-500 text-xs flex items-center justify-center md:justify-start gap-1 mb-6">
-					<Icon name="map-pin" class="w-3 h-3 text-blue-500/70" />
-					Jakarta, Indonesia
-				</p>
-
-				<div class="flex flex-wrap items-center justify-center md:justify-start gap-3">
-					<a
-						href="https://www.linkedin.com/in/mazharrasyad"
-						target="_blank"
-						rel="noopener noreferrer"
-						title="LinkedIn"
-						class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 hover:bg-blue-500/20 hover:scale-110 transition-all border border-blue-500/20"
-					>
-						<Icon name="linkedin" class="w-4 h-4" />
-					</a>
-					<a
-						href="https://github.com/mazharrasyad"
-						target="_blank"
-						rel="noopener noreferrer"
-						title="GitHub"
-						class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-300 hover:bg-white/10 hover:scale-110 transition-all border border-white/10"
-					>
-						<Icon name="github" class="w-4 h-4" />
-					</a>
-					<a
-						href="https://scholar.google.co.id/citations?user=TQn1C8IAAAAJ&hl=id"
-						target="_blank"
-						rel="noopener noreferrer"
-						title="Google Scholar"
-						class="w-10 h-10 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 hover:bg-sky-500/20 hover:scale-110 transition-all border border-sky-500/20"
-					>
-						<Icon name="google-scholar" class="w-4 h-4" />
-					</a>
-					<a
-						href="https://wa.me/+6281290351971"
-						target="_blank"
-						rel="noopener noreferrer"
-						title="WhatsApp"
-						class="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center text-green-400 hover:bg-green-500/20 hover:scale-110 transition-all border border-green-500/20"
-					>
-						<Icon name="whatsapp" class="w-4 h-4" />
-					</a>
-					<a
-						href="mailto:muhazharrasyad@gmail.com"
-						title="Email"
-						class="w-10 h-10 rounded-xl bg-rose-500/10 flex items-center justify-center text-rose-400 hover:bg-rose-500/20 hover:scale-110 transition-all border border-rose-500/20"
-					>
-						<Icon name="mail" class="w-4 h-4" />
-					</a>
-					<a
-						href="/cv.pdf"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="link-btn px-5 py-2.5 shadow-md shadow-blue-500/5 rounded-xl text-xs uppercase tracking-wider font-bold"
-					>
-						<Icon name="file-text" class="w-4 h-4 text-rose-400" />
-						<span>View CV</span>
-					</a>
-				</div>
+			<div class="mt-10 flex flex-col items-center gap-1 text-slate-600 animate-bounce">
+				<span class="text-[10px] uppercase tracking-widest font-bold">Scroll to begin</span>
+				<Icon name="chevron-right" class="w-4 h-4 rotate-90" />
 			</div>
 		</section>
 
-		<!-- Projects -->
-		<section>
-			<div class="flex justify-between items-center mb-5 gap-4 flex-wrap">
-				<h2 class="text-sm font-bold text-slate-400 uppercase tracking-widest">All Projects</h2>
-				<span class="text-xs bg-blue-500/10 border border-blue-500/20 text-blue-400 px-3 py-1 rounded-full font-bold">
-					{totalProjects}+ Projects
-				</span>
-			</div>
+		<!-- Search (filters the project rows further down without breaking the timeline) -->
+		<div class="relative -mb-8" use:reveal>
+			<Icon name="search" class="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-slate-500" />
+			<input
+				type="text"
+				bind:value={search}
+				placeholder="Looking for a specific project? Search by title, category, or tools..."
+				class="w-full bg-white/5 border border-white/10 rounded-xl pl-11 pr-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-blue-500/50 focus:bg-white/[0.07] transition-colors"
+			/>
+		</div>
 
-			<div class="flex gap-2 overflow-x-auto hide-scrollbar mb-4 pb-1">
-				{#each categories as cat (cat)}
-					<button
-						type="button"
-						onclick={() => (activeCategory = cat)}
-						class="shrink-0 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all border {activeCategory === cat
-							? 'bg-blue-500/20 text-blue-300 border-blue-500/40'
-							: 'bg-white/5 text-slate-400 border-white/10 hover:bg-white/10 hover:text-slate-200'}"
-					>
-						{cat}
-						<span class="opacity-60">{cat === 'All' ? totalProjects : categoryCounts[cat]}</span>
-					</button>
+		<!-- Timeline -->
+		<section class="relative">
+			<div class="timeline-line absolute left-[7px] md:left-[9px] top-2 bottom-2 w-px"></div>
+
+			<div class="flex flex-col gap-14 md:gap-16">
+				{#each story as item, i (item.kind + '-' + item.sortKey + '-' + i)}
+					<div class="relative pl-8 md:pl-10" use:reveal>
+						{#if item.kind === 'milestone'}
+							<span
+								class="absolute left-0 top-1.5 w-[15px] h-[15px] md:w-[19px] md:h-[19px] rounded-full border-4 border-[#0f172a] {item
+									.milestone.kind === 'education'
+									? 'bg-emerald-500'
+									: 'bg-blue-500'}"
+							></span>
+
+							{#if item.milestone.kind === 'education'}
+								<div class="flex items-center gap-2 mb-1.5 flex-wrap">
+									<span class="text-xs font-bold text-emerald-400 tabular-nums">{item.milestone.data.year}</span>
+									<span class="text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-emerald-500/15 text-emerald-400">
+										Education
+									</span>
+								</div>
+								<h3 class="text-base md:text-lg font-bold text-white leading-snug">{item.milestone.data.field}</h3>
+								<p class="text-xs text-slate-500 mt-1">
+									{item.milestone.data.institution} <span class="text-slate-700 mx-1">·</span>
+									{item.milestone.data.degree}
+								</p>
+								{#if item.milestone.data.highlights.length > 0}
+									<ul class="mt-2.5 space-y-1">
+										{#each item.milestone.data.highlights as h (h)}
+											<li class="text-xs text-slate-500 flex gap-2">
+												<span class="text-slate-700 shrink-0">•</span>
+												<span>{h}</span>
+											</li>
+										{/each}
+									</ul>
+								{/if}
+							{:else}
+								<div class="flex items-center gap-2 mb-1.5 flex-wrap">
+									<span class="text-xs font-bold text-blue-400 tabular-nums">{item.milestone.data.period}</span>
+									<span class="text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-blue-500/15 text-blue-400">
+										Experience
+									</span>
+								</div>
+								<h3 class="text-base md:text-lg font-bold text-white leading-snug">{item.milestone.data.title}</h3>
+								<p class="text-xs text-slate-500 mt-1">
+									{item.milestone.data.company} <span class="text-slate-700 mx-1">·</span>
+									{item.milestone.data.type}
+								</p>
+								<ul class="mt-2.5 space-y-1">
+									{#each item.milestone.data.bullets as b (b)}
+										<li class="text-xs text-slate-500 flex gap-2">
+											<span class="text-slate-700 shrink-0">•</span>
+											<span>{b}</span>
+										</li>
+									{/each}
+								</ul>
+							{/if}
+						{:else}
+							{@const list = matchingProjects(item.yearData)}
+							<span
+								class="absolute left-0 top-1.5 w-[15px] h-[15px] md:w-[19px] md:h-[19px] rounded-full border-4 border-[#0f172a] bg-indigo-500"
+							></span>
+
+							<div class="flex items-center gap-2 mb-3 flex-wrap">
+								<span class="text-xs font-bold text-indigo-400 tabular-nums">{item.yearData.year}</span>
+								<span class="text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-indigo-500/15 text-indigo-300">
+									{item.yearData.projects.length}
+									{item.yearData.projects.length === 1 ? 'Project' : 'Projects'} Shipped
+								</span>
+							</div>
+
+							{#if list.length > 0}
+								<div class="card-glass rounded-2xl px-3 md:px-4 divide-y divide-white/5">
+									{#each list as project (project.title)}
+										<ProjectRow {project} index={projectIndex.get(project) ?? 0} digits={3} />
+									{/each}
+								</div>
+							{:else}
+								<p class="text-xs text-slate-600 italic">No {item.yearData.year} projects match "{search}".</p>
+							{/if}
+						{/if}
+					</div>
 				{/each}
 			</div>
-
-			<div class="relative mb-5">
-				<Icon name="search" class="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-slate-500" />
-				<input
-					type="text"
-					bind:value={search}
-					placeholder="Search by title, category, tools, or year..."
-					class="w-full bg-white/5 border border-white/10 rounded-xl pl-11 pr-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-blue-500/50 focus:bg-white/[0.07] transition-colors"
-				/>
-			</div>
-
-			{#if filteredProjects.length > 0}
-				<div class="card-glass rounded-2xl px-3 md:px-4 divide-y divide-white/5">
-					{#each filteredProjects as { project, year }, i (project.title + year)}
-						<ProjectRow {project} {year} index={i + 1} digits={3} />
-					{/each}
-				</div>
-			{:else}
-				<p class="text-center text-slate-500 text-sm py-12">No projects match "{search}".</p>
-			{/if}
 		</section>
 
-		<!-- Publications -->
-		<section>
-			<div class="flex justify-between items-center mb-2">
-				<h2 class="text-sm font-bold text-slate-400 uppercase tracking-widest">Research & Publications</h2>
+		<!-- Publications: the current chapter -->
+		<section use:reveal>
+			<div class="flex justify-between items-center mb-2 gap-3 flex-wrap">
+				<h2 class="text-sm font-bold text-slate-400 uppercase tracking-widest">Now: Research & Publications</h2>
 				<a
 					href={scholar.profileUrl}
 					target="_blank"

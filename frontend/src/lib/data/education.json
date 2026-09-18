@@ -1,17 +1,14 @@
 [
 	{
-		"field": "Computer Science",
-		"degree": "Master of Computer Science",
-		"institution": "Universitas Budi Luhur",
-		"year": "2024 - 2026",
-		"highlights": [
-			"Advanced Data Modeling with Kimball Methodology — Systematic Literature Review, published in Jurnal Sosial dan Teknologi (SOSTECH)",
-			"Gaps and solutions in Enterprise Architecture implementation for healthcare facility digitalization in Indonesia, published in DIJEMSS",
-			"Digital record classification model using SVM integrated with Hyperledger Fabric blockchain, published in Jurnal Inovtek Polbeng",
-			"Thesis: comparative performance analysis of Raft and SmartBFT consensus algorithms in Hyperledger Fabric"
-		]
+		"sortKey": 201408,
+		"field": "Computer Software Engineering",
+		"degree": "High School Diploma",
+		"institution": "SMKN 1 Cibinong",
+		"year": "2014 - 2017",
+		"highlights": []
 	},
 	{
+		"sortKey": 201708,
 		"field": "Information Technology",
 		"degree": "Bachelor of Computer Science",
 		"institution": "Sekolah Tinggi Teknologi Terpadu Nurul Fikri",
@@ -24,10 +21,16 @@
 		]
 	},
 	{
-		"field": "Computer Software Engineering",
-		"degree": "High School Diploma",
-		"institution": "SMKN 1 Cibinong",
-		"year": "2014 - 2017",
-		"highlights": []
+		"sortKey": 202408,
+		"field": "Computer Science",
+		"degree": "Master of Computer Science",
+		"institution": "Universitas Budi Luhur",
+		"year": "2024 - 2026",
+		"highlights": [
+			"Advanced Data Modeling with Kimball Methodology — Systematic Literature Review, published in Jurnal Sosial dan Teknologi (SOSTECH)",
+			"Gaps and solutions in Enterprise Architecture implementation for healthcare facility digitalization in Indonesia, published in DIJEMSS",
+			"Digital record classification model using SVM integrated with Hyperledger Fabric blockchain, published in Jurnal Inovtek Polbeng",
+			"Thesis: comparative performance analysis of Raft and SmartBFT consensus algorithms in Hyperledger Fabric"
+		]
 	}
 ]

@@ -32,9 +32,19 @@ export interface ScholarData {
 }
 
 export interface Education {
+	sortKey: number;
 	field: string;
 	degree: string;
 	institution: string;
 	year: string;
 	highlights: string[];
+}
+
+export interface Experience {
+	sortKey: number;
+	title: string;
+	company: string;
+	type: string;
+	period: string;
+	bullets: string[];
 }
