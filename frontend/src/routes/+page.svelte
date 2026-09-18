@@ -131,7 +131,7 @@
 <svelte:window onkeydown={onKeydown} />
 
 <main class="w-full flex flex-col">
-	<div class="relative w-full h-[72vh] md:h-[78vh]">
+	<div class="relative w-full h-[calc(100dvh-3.5rem)]">
 		<div
 			bind:this={track}
 			onscroll={onTrackScroll}
@@ -356,8 +356,10 @@
 		</button>
 	</div>
 
-	<!-- Slide indicators -->
-	<div class="flex items-center justify-center gap-1.5 py-4 md:py-5 overflow-x-auto hide-scrollbar px-4">
+	<!-- Slide indicators, pinned like a footer -->
+	<div
+		class="fixed bottom-0 inset-x-0 z-40 h-14 flex items-center justify-center gap-1.5 overflow-x-auto hide-scrollbar px-4 bg-[#0f172a]/95 backdrop-blur-md border-t border-white/10"
+	>
 		{#each slides as slide, i (slide.kind === 'profile' ? 'profile' : slide.year)}
 			<button
 				type="button"
