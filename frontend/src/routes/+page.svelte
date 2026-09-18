@@ -187,47 +187,47 @@
 
 							<div class="flex flex-wrap items-center justify-center gap-3">
 								<a
-									href="https://www.linkedin.com/in/mazharrasyad"
-									target="_blank"
-									rel="noopener noreferrer"
-									title="LinkedIn"
-									class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 hover:bg-blue-500/20 hover:scale-110 transition-all border border-blue-500/20"
-								>
-									<Icon name="linkedin" class="w-4 h-4" />
-								</a>
-								<a
 									href="https://github.com/mazharrasyad"
 									target="_blank"
 									rel="noopener noreferrer"
-									title="GitHub"
-									class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-300 hover:bg-white/10 hover:scale-110 transition-all border border-white/10"
+									class="flex items-center gap-2 pl-3 pr-4 h-10 rounded-xl bg-white/5 text-slate-300 hover:bg-white/10 hover:scale-105 transition-all border border-white/10"
 								>
 									<Icon name="github" class="w-4 h-4" />
+									<span class="text-xs font-bold">GitHub</span>
+								</a>
+								<a
+									href="https://www.linkedin.com/in/mazharrasyad"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="flex items-center gap-2 pl-3 pr-4 h-10 rounded-xl bg-blue-500/10 text-blue-400 hover:bg-blue-500/20 hover:scale-105 transition-all border border-blue-500/20"
+								>
+									<Icon name="linkedin" class="w-4 h-4" />
+									<span class="text-xs font-bold">LinkedIn</span>
 								</a>
 								<a
 									href="https://scholar.google.co.id/citations?user=TQn1C8IAAAAJ&hl=id"
 									target="_blank"
 									rel="noopener noreferrer"
-									title="Google Scholar"
-									class="w-10 h-10 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 hover:bg-sky-500/20 hover:scale-110 transition-all border border-sky-500/20"
+									class="flex items-center gap-2 pl-3 pr-4 h-10 rounded-xl bg-sky-500/10 text-sky-400 hover:bg-sky-500/20 hover:scale-105 transition-all border border-sky-500/20"
 								>
 									<Icon name="google-scholar" class="w-4 h-4" />
+									<span class="text-xs font-bold">Google Scholar</span>
 								</a>
 								<a
 									href="https://wa.me/+6281290351971"
 									target="_blank"
 									rel="noopener noreferrer"
-									title="WhatsApp"
-									class="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center text-green-400 hover:bg-green-500/20 hover:scale-110 transition-all border border-green-500/20"
+									class="flex items-center gap-2 pl-3 pr-4 h-10 rounded-xl bg-green-500/10 text-green-400 hover:bg-green-500/20 hover:scale-105 transition-all border border-green-500/20"
 								>
 									<Icon name="whatsapp" class="w-4 h-4" />
+									<span class="text-xs font-bold">WhatsApp</span>
 								</a>
 								<a
 									href="mailto:muhazharrasyad@gmail.com"
-									title="Email"
-									class="w-10 h-10 rounded-xl bg-rose-500/10 flex items-center justify-center text-rose-400 hover:bg-rose-500/20 hover:scale-110 transition-all border border-rose-500/20"
+									class="flex items-center gap-2 pl-3 pr-4 h-10 rounded-xl bg-rose-500/10 text-rose-400 hover:bg-rose-500/20 hover:scale-105 transition-all border border-rose-500/20"
 								>
 									<Icon name="mail" class="w-4 h-4" />
+									<span class="text-xs font-bold">Email</span>
 								</a>
 								<a
 									href="/cv.pdf"
