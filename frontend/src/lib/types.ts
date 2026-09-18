@@ -30,3 +30,11 @@ export interface ScholarData {
 	i10Index: number;
 	publications: Publication[];
 }
+
+export interface Education {
+	field: string;
+	degree: string;
+	institution: string;
+	year: string;
+	highlights: string[];
+}

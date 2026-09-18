@@ -1,0 +1,33 @@
+[
+	{
+		"field": "Computer Science",
+		"degree": "Master of Computer Science",
+		"institution": "Universitas Budi Luhur",
+		"year": "2024 - 2026",
+		"highlights": [
+			"Advanced Data Modeling with Kimball Methodology — Systematic Literature Review, published in Jurnal Sosial dan Teknologi (SOSTECH)",
+			"Gaps and solutions in Enterprise Architecture implementation for healthcare facility digitalization in Indonesia, published in DIJEMSS",
+			"Digital record classification model using SVM integrated with Hyperledger Fabric blockchain, published in Jurnal Inovtek Polbeng",
+			"Thesis: comparative performance analysis of Raft and SmartBFT consensus algorithms in Hyperledger Fabric"
+		]
+	},
+	{
+		"field": "Information Technology",
+		"degree": "Bachelor of Computer Science",
+		"institution": "Sekolah Tinggi Teknologi Terpadu Nurul Fikri",
+		"year": "2017 - 2021",
+		"highlights": [
+			"2nd and 3rd place, Smart City Web Development at STTNF",
+			"3rd place, Web Design at Astro STTNF",
+			"Finalist, Hackathon Web Development at Jamkrindo",
+			"1st place, Hackathon Web Development at Astro II STTNF"
+		]
+	},
+	{
+		"field": "Computer Software Engineering",
+		"degree": "High School Diploma",
+		"institution": "SMKN 1 Cibinong",
+		"year": "2014 - 2017",
+		"highlights": []
+	}
+]

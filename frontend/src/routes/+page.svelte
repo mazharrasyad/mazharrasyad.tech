@@ -3,12 +3,14 @@
 	import ProjectRow from '$lib/components/ProjectRow.svelte';
 	import yearsData from '$lib/data/projects.json';
 	import scholarData from '$lib/data/scholar.json';
-	import type { YearData, ScholarData } from '$lib/types';
+	import educationData from '$lib/data/education.json';
+	import type { YearData, ScholarData, Education } from '$lib/types';
 
 	const years = yearsData as YearData[];
 	const totalProjects = years.reduce((sum, y) => sum + y.projects.length, 0);
 	const allProjects = years.flatMap((y) => y.projects.map((project) => ({ project, year: y.year })));
 	const scholar = scholarData as ScholarData;
+	const education = educationData as Education[];
 
 	const categoryCounts = allProjects.reduce<Record<string, number>>((acc, { project }) => {
 		acc[project.category] = (acc[project.category] ?? 0) + 1;
@@ -52,7 +54,8 @@
 			'https://www.linkedin.com/in/mazharrasyad',
 			'https://github.com/mazharrasyad',
 			'https://scholar.google.co.id/citations?user=TQn1C8IAAAAJ&hl=id'
-		]
+		],
+		alumniOf: education.map((edu) => ({ '@type': 'EducationalOrganization', name: edu.institution }))
 	};
 </script>
 
@@ -79,6 +82,32 @@
 
 <main class="flex-1 w-full px-4 md:px-8 py-12">
 	<div class="max-w-6xl mx-auto w-full flex flex-col gap-10 md:gap-12">
+		<!-- Education -->
+		<section>
+			<h2 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-5">Education</h2>
+			<div class="card-glass rounded-2xl px-4 md:px-6 divide-y divide-white/5">
+				{#each education as edu (edu.institution + edu.year)}
+					<div class="py-4 md:py-5 flex flex-col md:flex-row md:items-start gap-2 md:gap-6">
+						<span class="text-xs font-bold text-slate-500 shrink-0 md:w-28 tabular-nums">{edu.year}</span>
+						<div class="flex-1 min-w-0">
+							<h3 class="text-sm md:text-base font-bold text-white leading-snug">{edu.field}</h3>
+							<p class="text-xs text-slate-500 mt-1">{edu.institution} <span class="text-slate-700 mx-1">·</span> {edu.degree}</p>
+							{#if edu.highlights.length > 0}
+								<ul class="mt-2 space-y-1">
+									{#each edu.highlights as h (h)}
+										<li class="text-xs text-slate-500 flex gap-2">
+											<span class="text-slate-700 shrink-0">•</span>
+											<span>{h}</span>
+										</li>
+									{/each}
+								</ul>
+							{/if}
+						</div>
+					</div>
+				{/each}
+			</div>
+		</section>
+
 		<!-- Hero -->
 		<section class="flex flex-col md:flex-row md:items-center gap-8 md:gap-10">
 			<div class="relative shrink-0 mx-auto md:mx-0">
