@@ -28,7 +28,16 @@ func LoadCSP(hashesPath string) (string, error) {
 	directives := []string{
 		"default-src 'self'",
 		"script-src 'self' " + hashes,
-		"style-src 'self'",
+		// SvelteKit's own client runtime creates a visually-hidden
+		// #svelte-announcer div (screen-reader route-change announcements)
+		// with a hardcoded inline style attribute -- it never appears in the
+		// prerendered HTML (only after hydration), so csphash can't pick it
+		// up. The value is fixed by SvelteKit's source, not user content, so
+		// it's pinned here by hash instead of falling back to unsafe-inline.
+		// 'unsafe-hashes' is required for a hash to match an attribute
+		// (rather than a <style> block). Re-verify this hash if a SvelteKit
+		// upgrade changes internal/kit/src/core/sync/write_root.js.
+		"style-src 'self' 'unsafe-hashes' 'sha256-S8qMpvofolR8Mpjy4kQvEm7m1q8clzU4dfDH0AmvZjo='",
 		"img-src 'self' data:",
 		"font-src 'self'",
 		"connect-src 'self'",
