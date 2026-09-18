@@ -10,19 +10,28 @@
 	const allProjects = years.flatMap((y) => y.projects.map((project) => ({ project, year: y.year })));
 	const scholar = scholarData as ScholarData;
 
+	const categoryCounts = allProjects.reduce<Record<string, number>>((acc, { project }) => {
+		acc[project.category] = (acc[project.category] ?? 0) + 1;
+		return acc;
+	}, {});
+	const categories = ['All', ...Object.keys(categoryCounts).sort((a, b) => categoryCounts[b] - categoryCounts[a])];
+
 	let imgError = $state(false);
 	let search = $state('');
+	let activeCategory = $state('All');
 
 	let filteredProjects = $derived.by(() => {
 		const q = search.trim().toLowerCase();
-		if (!q) return allProjects;
-		return allProjects.filter(
-			({ project, year }) =>
+		return allProjects.filter(({ project, year }) => {
+			if (activeCategory !== 'All' && project.category !== activeCategory) return false;
+			if (!q) return true;
+			return (
 				project.title.toLowerCase().includes(q) ||
 				project.category.toLowerCase().includes(q) ||
 				project.tools.toLowerCase().includes(q) ||
 				String(year).includes(q)
-		);
+			);
+		});
 	});
 
 	const title = 'Muhammad Azhar Rasyad - Software Engineer';
@@ -183,6 +192,21 @@
 				<span class="text-xs bg-blue-500/10 border border-blue-500/20 text-blue-400 px-3 py-1 rounded-full font-bold">
 					{totalProjects}+ Projects
 				</span>
+			</div>
+
+			<div class="flex gap-2 overflow-x-auto hide-scrollbar mb-4 pb-1">
+				{#each categories as cat (cat)}
+					<button
+						type="button"
+						onclick={() => (activeCategory = cat)}
+						class="shrink-0 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all border {activeCategory === cat
+							? 'bg-blue-500/20 text-blue-300 border-blue-500/40'
+							: 'bg-white/5 text-slate-400 border-white/10 hover:bg-white/10 hover:text-slate-200'}"
+					>
+						{cat}
+						<span class="opacity-60">{cat === 'All' ? totalProjects : categoryCounts[cat]}</span>
+					</button>
+				{/each}
 			</div>
 
 			<div class="relative mb-5">
