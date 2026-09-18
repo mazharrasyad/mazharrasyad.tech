@@ -76,7 +76,7 @@
 			</div>
 		</div>
 		<span
-			class="mb-4 whitespace-nowrap bg-emerald-500/20 backdrop-blur-md border border-emerald-500/30 text-emerald-400 text-[9px] px-2.5 py-1 rounded-full font-bold uppercase tracking-widest flex items-center gap-1 shadow-lg shadow-emerald-500/10 animate-pulse"
+			class="mb-4 whitespace-nowrap bg-emerald-500/20 backdrop-blur-md border border-emerald-500/30 text-emerald-400 text-xs px-2.5 py-1 rounded-full font-bold uppercase tracking-widest flex items-center gap-1 shadow-lg shadow-emerald-500/10 animate-pulse"
 		>
 			<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Open to Remote Work
 		</span>
@@ -86,7 +86,7 @@
 		>
 			Muhammad Azhar Rasyad
 		</h1>
-		<p class="text-slate-300 text-sm font-medium mb-7 flex items-center gap-2">
+		<p class="text-slate-300 text-base font-medium mb-7 flex items-center gap-2">
 			Software Engineer <span class="text-slate-400">|</span>
 			<Icon name="map-pin" class="w-3 h-3 text-blue-500/70" /> Jakarta, Indonesia
 		</p>
@@ -98,7 +98,7 @@
 				class="flex items-center gap-2 pl-3 pr-4 h-10 rounded-xl bg-white/5 text-slate-300 hover:bg-white/10 hover:scale-105 transition-all border border-white/10"
 			>
 				<Icon name="github" class="w-4 h-4" />
-				<span class="text-xs font-bold">GitHub</span>
+				<span class="text-sm font-bold">GitHub</span>
 			</a>
 			<a
 				href="https://www.linkedin.com/in/mazharrasyad"
@@ -107,7 +107,7 @@
 				class="flex items-center gap-2 pl-3 pr-4 h-10 rounded-xl bg-blue-500/10 text-blue-400 hover:bg-blue-500/20 hover:scale-105 transition-all border border-blue-500/20"
 			>
 				<Icon name="linkedin" class="w-4 h-4" />
-				<span class="text-xs font-bold">LinkedIn</span>
+				<span class="text-sm font-bold">LinkedIn</span>
 			</a>
 			<a
 				href="https://scholar.google.co.id/citations?user=TQn1C8IAAAAJ&hl=id"
@@ -116,7 +116,7 @@
 				class="flex items-center gap-2 pl-3 pr-4 h-10 rounded-xl bg-sky-500/10 text-sky-400 hover:bg-sky-500/20 hover:scale-105 transition-all border border-sky-500/20"
 			>
 				<Icon name="google-scholar" class="w-4 h-4" />
-				<span class="text-xs font-bold">Google Scholar</span>
+				<span class="text-sm font-bold">Google Scholar</span>
 			</a>
 			<a
 				href="https://wa.me/+6281290351971"
@@ -125,14 +125,14 @@
 				class="flex items-center gap-2 pl-3 pr-4 h-10 rounded-xl bg-green-500/10 text-green-400 hover:bg-green-500/20 hover:scale-105 transition-all border border-green-500/20"
 			>
 				<Icon name="whatsapp" class="w-4 h-4" />
-				<span class="text-xs font-bold">WhatsApp</span>
+				<span class="text-sm font-bold">WhatsApp</span>
 			</a>
 			<a
 				href="mailto:muhazharrasyad@gmail.com"
 				class="flex items-center gap-2 pl-3 pr-4 h-10 rounded-xl bg-rose-500/10 text-rose-400 hover:bg-rose-500/20 hover:scale-105 transition-all border border-rose-500/20"
 			>
 				<Icon name="mail" class="w-4 h-4" />
-				<span class="text-xs font-bold">Email</span>
+				<span class="text-sm font-bold">Email</span>
 			</a>
 			<a
 				href="/cv.pdf"
@@ -141,22 +141,22 @@
 				class="link-btn px-5 py-2.5 shadow-md shadow-blue-500/5 rounded-xl"
 			>
 				<Icon name="file-text" class="w-4 h-4 text-rose-400" />
-				<span class="text-xs font-bold normal-case">View CV</span>
+				<span class="text-sm font-bold normal-case">View CV</span>
 			</a>
 		</div>
 
 		<div class="mt-10 flex flex-wrap items-center justify-center gap-3">
 			<a href="/education" class="link-btn px-4 py-2 rounded-xl">
 				<Icon name="graduation-cap" class="w-4 h-4 text-emerald-400" />
-				<span class="text-xs font-bold normal-case">Education</span>
+				<span class="text-sm font-bold normal-case">Education</span>
 			</a>
 			<a href="/experience" class="link-btn px-4 py-2 rounded-xl">
 				<Icon name="briefcase" class="w-4 h-4 text-blue-400" />
-				<span class="text-xs font-bold normal-case">Experience</span>
+				<span class="text-sm font-bold normal-case">Experience</span>
 			</a>
 			<a href="/timeline" class="link-btn px-4 py-2 rounded-xl">
 				<Icon name="chevron-right" class="w-4 h-4 text-indigo-300" />
-				<span class="text-xs font-bold normal-case">Timeline</span>
+				<span class="text-sm font-bold normal-case">Timeline</span>
 			</a>
 		</div>
 	</div>

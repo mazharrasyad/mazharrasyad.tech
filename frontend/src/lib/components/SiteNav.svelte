@@ -24,7 +24,7 @@
 		<a
 			href={link.href}
 			aria-current={isActive(link.href) ? 'page' : undefined}
-			class="shrink-0 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all {isActive(
+			class="shrink-0 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider transition-all {isActive(
 				link.href
 			)
 				? 'bg-blue-500 text-white'

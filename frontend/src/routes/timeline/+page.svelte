@@ -100,7 +100,7 @@
 				type="button"
 				onclick={() => goToSlide(i)}
 				aria-label={String(slide.year)}
-				class="shrink-0 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider tabular-nums transition-all {activeIndex === i
+				class="shrink-0 px-2.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider tabular-nums transition-all {activeIndex === i
 					? 'bg-blue-500 text-white'
 					: 'bg-white/5 text-slate-300 hover:bg-white/10 hover:text-white'}"
 			>
@@ -125,11 +125,11 @@
 						{#each slide.milestones as m, mi (m.sortKey + '-' + mi)}
 							<div class="card-glass rounded-2xl p-4 md:p-5">
 								<div class="flex items-center gap-2 mb-1.5 flex-wrap">
-									<span class="text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-sky-500/15 text-sky-400">
+									<span class="text-xs px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-sky-500/15 text-sky-400">
 										Journal
 									</span>
 									{#if m.data.citations !== null}
-										<span class="text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-indigo-500/15 text-indigo-300">
+										<span class="text-xs px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-indigo-500/15 text-indigo-300">
 											{m.data.citations} {m.data.citations === 1 ? 'Citation' : 'Citations'}
 										</span>
 									{/if}
@@ -138,7 +138,7 @@
 									href={m.data.url}
 									target="_blank"
 									rel="noopener noreferrer"
-									class="group/pub inline-flex items-start gap-1.5 text-base md:text-lg font-bold text-white leading-snug hover:text-blue-300 transition-colors"
+									class="group/pub inline-flex items-start gap-1.5 text-lg md:text-xl font-bold text-white leading-snug hover:text-blue-300 transition-colors"
 								>
 									<span>{m.data.title}</span>
 									<Icon
@@ -146,14 +146,14 @@
 										class="w-3 h-3 mt-1.5 shrink-0 text-slate-400 group-hover/pub:text-blue-400 transition-colors"
 									/>
 								</a>
-								<p class="text-xs text-slate-300 mt-1">{m.data.authors}</p>
-								<p class="text-xs text-slate-400 italic mt-0.5">{m.data.venue}</p>
+								<p class="text-sm text-slate-300 mt-1">{m.data.authors}</p>
+								<p class="text-sm text-slate-400 italic mt-0.5">{m.data.venue}</p>
 							</div>
 						{/each}
 
 						{#if slide.projects.length > 0}
 							<span
-								class="w-fit text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-indigo-500/15 text-indigo-300"
+								class="w-fit text-xs px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-indigo-500/15 text-indigo-300"
 							>
 								{slide.projects.length}
 								{slide.projects.length === 1 ? 'Project' : 'Projects'} Shipped
@@ -166,7 +166,7 @@
 						{/if}
 
 						{#if slide.milestones.length === 0 && slide.projects.length === 0}
-							<p class="text-slate-400 italic text-sm">Nothing recorded for {slide.year} yet.</p>
+							<p class="text-slate-400 italic text-base">Nothing recorded for {slide.year} yet.</p>
 						{/if}
 					</div>
 				</section>

@@ -37,14 +37,14 @@
 	</header>
 
 	<main class="max-w-5xl mx-auto w-full flex-1">
-		<h1 class="text-xl font-bold mb-8 flex justify-between items-center">
+		<h1 class="text-2xl font-bold mb-8 flex justify-between items-center">
 			<div class="flex items-center gap-3">
-				<span class="px-3 py-1 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-400 text-sm font-bold">
+				<span class="px-3 py-1 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-400 text-base font-bold">
 					{data.year}
 				</span>
 				<span>Project List</span>
 			</div>
-			<span class="text-xs bg-white/5 border border-white/10 text-slate-300 px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">
+			<span class="text-sm bg-white/5 border border-white/10 text-slate-300 px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">
 				{data.projects.length} Projects
 			</span>
 		</h1>

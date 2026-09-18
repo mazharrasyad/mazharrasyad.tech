@@ -24,29 +24,29 @@
 
 		<div class="flex-1 min-w-0">
 			<div class="flex items-center gap-2 flex-wrap">
-				<h3 class="text-base md:text-lg font-bold text-white leading-snug">
+				<h3 class="text-lg md:text-xl font-bold text-white leading-snug">
 					{project.title}
 				</h3>
 				{#if year}
-					<span class="bg-white/5 text-slate-300 text-[10px] px-2 py-0.5 rounded-full font-bold whitespace-nowrap border border-white/10">
+					<span class="bg-white/5 text-slate-300 text-xs px-2 py-0.5 rounded-full font-bold whitespace-nowrap border border-white/10">
 						{year}
 					</span>
 				{/if}
-				<span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">
+				<span class="bg-indigo-500/20 text-indigo-300 text-xs px-2 py-0.5 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">
 					{project.category}
 				</span>
 				<span
-					class="text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider whitespace-nowrap {project.visibility === 'Public'
+					class="text-xs px-2 py-0.5 rounded-full font-bold uppercase tracking-wider whitespace-nowrap {project.visibility === 'Public'
 						? 'bg-emerald-500/20 text-emerald-400'
 						: 'bg-rose-500/20 text-rose-400'}"
 				>
 					{project.visibility}
 				</span>
 				{#if project.updated}
-					<span class="text-xs text-slate-300">{project.updated}</span>
+					<span class="text-sm text-slate-300">{project.updated}</span>
 				{/if}
 			</div>
-			<p class="text-xs text-slate-300 mt-1">{project.tools}</p>
+			<p class="text-sm text-slate-300 mt-1">{project.tools}</p>
 
 			{#if project.images.length > 0}
 				<div class="relative group/gallery mt-3 mb-3">
@@ -82,7 +82,7 @@
 				</div>
 			{/if}
 
-			<p class="text-slate-300 text-sm leading-relaxed mt-2 max-w-2xl">
+			<p class="text-slate-300 text-base leading-relaxed mt-2 max-w-2xl">
 				{project.description}
 			</p>
 

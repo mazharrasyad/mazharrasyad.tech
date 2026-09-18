@@ -36,15 +36,15 @@
 		<div class="flex flex-col gap-4 md:gap-5">
 			{#each entries as exp (exp.sortKey)}
 				<div class="card-glass rounded-2xl p-4 md:p-5">
-					<span class="text-xs font-bold text-blue-400 tabular-nums">{exp.period}</span>
-					<h2 class="text-base md:text-lg font-bold text-white leading-snug">{exp.title}</h2>
-					<p class="text-xs text-slate-300 mt-1">
+					<span class="text-sm font-bold text-blue-400 tabular-nums">{exp.period}</span>
+					<h2 class="text-lg md:text-xl font-bold text-white leading-snug">{exp.title}</h2>
+					<p class="text-sm text-slate-300 mt-1">
 						{exp.company} <span class="text-slate-500 mx-1">·</span>
 						{exp.type}
 					</p>
 					<ul class="mt-2.5 space-y-1">
 						{#each exp.bullets as b (b)}
-							<li class="text-xs text-slate-300 flex gap-2">
+							<li class="text-base text-slate-300 flex gap-2">
 								<span class="text-slate-500 shrink-0">•</span>
 								<span>{b}</span>
 							</li>
