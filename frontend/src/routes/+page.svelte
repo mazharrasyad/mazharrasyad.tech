@@ -144,20 +144,5 @@
 				<span class="text-sm font-bold normal-case">View CV</span>
 			</a>
 		</div>
-
-		<div class="mt-10 flex flex-wrap items-center justify-center gap-3">
-			<a href="/education" class="link-btn px-4 py-2 rounded-xl">
-				<Icon name="graduation-cap" class="w-4 h-4 text-emerald-400" />
-				<span class="text-sm font-bold normal-case">Education</span>
-			</a>
-			<a href="/experience" class="link-btn px-4 py-2 rounded-xl">
-				<Icon name="briefcase" class="w-4 h-4 text-blue-400" />
-				<span class="text-sm font-bold normal-case">Experience</span>
-			</a>
-			<a href="/timeline" class="link-btn px-4 py-2 rounded-xl">
-				<Icon name="chevron-right" class="w-4 h-4 text-indigo-300" />
-				<span class="text-sm font-bold normal-case">Timeline</span>
-			</a>
-		</div>
 	</div>
 </main>
