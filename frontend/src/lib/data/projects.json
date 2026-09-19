@@ -15,7 +15,7 @@
       {
         "title": "Sudinsos Portal",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Portal publik pengajuan bantuan sosial dan permohonan bantuan untuk Suku Dinas Sosial Jakarta Selatan.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -50,7 +50,7 @@
       {
         "title": "E-Kinerja PJLP Pasar Minggu",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Sistem pencatatan aktivitas dan pemantauan kinerja untuk staf PJLP Pasar Minggu.",
         "tools": "PHP, Laravel, MySQL",
@@ -60,7 +60,7 @@
       {
         "title": "SINOMARI",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Sistem informasi terintegrasi untuk mendukung tugas administrasi pemerintahan dan kemasyarakatan tingkat lokal.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -70,7 +70,7 @@
       {
         "title": "Arsip",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Repositori arsip digital yang dirancang untuk penyimpanan dokumen yang aman dan terindeks bagi ASTIK Jakarta Selatan.",
         "tools": "Laravel, MySQL",
@@ -80,7 +80,7 @@
       {
         "title": "SIPETRUK",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Pelacak tugas kemunisipalan dan antarmuka pelaporan proyek untuk meningkatkan akuntabilitas operasional.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -90,7 +90,7 @@
       {
         "title": "E-RKBU",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Portal pengajuan elektronik untuk rencana pengadaan barang milik instansi atau daerah.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
@@ -110,7 +110,7 @@
       {
         "title": "Penataan",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Platform pemantauan tata ruang dan penataan kawasan yang memungkinkan petugas menginput hasil survei struktur.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -130,7 +130,7 @@
       {
         "title": "SIPERA",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Portal data terintegrasi yang mendukung perencanaan umum masyarakat dan partisipasi program lokal.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -140,7 +140,7 @@
       {
         "title": "E-Contract",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Portal alur penyusunan dan penandatanganan kontrak digital yang melacak progres perjanjian vendor.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
@@ -150,7 +150,7 @@
       {
         "title": "E-Kinerja PJLP Wilayah Jaksel",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Sistem penilaian kinerja terpadu untuk tenaga kontrak di seluruh kantor wilayah Jakarta Selatan.",
         "tools": "PHP, Laravel, MySQL",
@@ -160,7 +160,7 @@
       {
         "title": "Metagov JS Care",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Portal bantuan sosial dan lingkungan yang memantau kegiatan kepedulian komunitas dan penyaluran bantuan.",
         "tools": "Laravel, Bootstrap, MySQL",
@@ -170,7 +170,7 @@
       {
         "title": "DBD",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Platform pemantauan Demam Berdarah yang memetakan kasus kesehatan dan kampanye pemberantasan.",
         "tools": "Laravel, Chart.js, Tailwind CSS",
@@ -180,7 +180,7 @@
       {
         "title": "PAMOR",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Sistem pelaporan publik untuk pemantauan infrastruktur dan layanan daerah.",
         "tools": "Laravel, Tailwind CSS",
@@ -190,7 +190,7 @@
       {
         "title": "SIP",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Pelacak konsolidasi pengajuan izin dan perizinan publik.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -200,7 +200,7 @@
       {
         "title": "E-Kinerja PJLP Kominfo Part 2",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Portal pemantauan kinerja lanjutan untuk tenaga kontrak Kominfo dengan alur pelaporan yang lebih baik.",
         "tools": "Laravel, MySQL",
@@ -220,7 +220,7 @@
       {
         "title": "E-Kinerja Wilayah",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Portal perencanaan tenaga kerja wilayah dan pelacakan target bulanan.",
         "tools": "PHP, Laravel, MySQL",
@@ -230,7 +230,7 @@
       {
         "title": "Posyandu",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Sistem pencatatan kesehatan ibu dan anak yang merekam grafik pertumbuhan anak dan jadwal imunisasi.",
         "tools": "Laravel, Tailwind CSS",
@@ -240,7 +240,7 @@
       {
         "title": "E-Kinerja PJLP Kominfo Part 1",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Modul alur kerja inti dan pencatatan awal untuk pelaporan kinerja tenaga kontrak Kominfo.",
         "tools": "PHP, Laravel, MySQL",
@@ -355,7 +355,7 @@
       {
         "title": "Balkot Farm",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Sistem manajemen pertanian perkotaan yang dibangun untuk mencatat dan memvisualisasikan tanaman, hasil panen, dan data pertanian.",
         "tools": "PHP, Laravel, MySQL",
@@ -365,7 +365,7 @@
       {
         "title": "ESETKO PJLP",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Sistem evaluasi dan pelaporan kinerja yang dikembangkan untuk tenaga kontrak PJLP secara umum.",
         "tools": "PHP, Laravel, MySQL",
@@ -375,7 +375,7 @@
       {
         "title": "PPID",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Portal layanan informasi dan dokumentasi publik (PPID) yang mendukung standar transparansi pemerintahan.",
         "tools": "Laravel, Livewire, MySQL",
@@ -405,7 +405,7 @@
       {
         "title": "Subanpenda",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Platform pemantauan pajak dan pendapatan daerah yang dirancang untuk mengagregasi data evaluasi administratif.",
         "tools": "Laravel, MySQL",
@@ -465,7 +465,7 @@
       {
         "title": "Pendaftaran PJLP Kominfo",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Portal rekrutmen dan pendaftaran terpusat untuk calon tenaga kontrak (PJLP) di Dinas Kominfo.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
@@ -475,7 +475,7 @@
       {
         "title": "Pasar Minggu Sinobi",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Portal layanan administrasi dan kemasyarakatan lokal yang disesuaikan untuk layanan kelurahan Pasar Minggu.",
         "tools": "Laravel, MySQL",
@@ -485,7 +485,7 @@
       {
         "title": "KKPP",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Alat pelacakan indeks kinerja korporat dan institusional menggunakan pelaporan metrik utama secara kolaboratif.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -495,7 +495,7 @@
       {
         "title": "SINOLI",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Sistem informasi terintegrasi yang memfasilitasi logistik korporat, pendaftaran, dan perencanaan inventaris.",
         "tools": "Laravel, MySQL",
@@ -505,7 +505,7 @@
       {
         "title": "PSN",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Portal pemantauan pemberantasan sarang nyamuk yang memungkinkan petugas kesehatan mencatat data langsung dari lapangan.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
@@ -515,7 +515,7 @@
       {
         "title": "SIDANRU",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Penjadwal alokasi ruang rapat dan reservasi fasilitas dengan pencegahan konflik otomatis.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -525,7 +525,7 @@
       {
         "title": "SIPP",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Platform manajemen proposal proyek terpusat yang memungkinkan pengajuan, review, dan pencatatan progres secara sederhana.",
         "tools": "Laravel, Bootstrap, MySQL",
@@ -545,7 +545,7 @@
       {
         "title": "SIARIS",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Aplikasi manajemen arsip publik dan pengindeksan catatan yang dirancang untuk instansi kemunisipalan.",
         "tools": "PHP, Laravel, MySQL",
@@ -555,7 +555,7 @@
       {
         "title": "Layanan",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Dasbor layanan publik yang memusatkan berbagai modul permohonan warga dan formulir yang dapat dilacak.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
@@ -565,7 +565,7 @@
       {
         "title": "SINERBAST",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Portal administrasi serah terima (Berita Acara Serah Terima) yang memastikan catatan aset organisasi dapat diverifikasi.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -585,7 +585,7 @@
       {
         "title": "SIVERJAB",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Sistem verifikasi untuk lamaran kerja dan posisi kontrak, mengotomatisasi pemeriksaan latar belakang dan audit dokumen.",
         "tools": "Laravel, MySQL",
@@ -620,7 +620,7 @@
       {
         "title": "Go Rakamin",
         "category": "Web Dev",
-        "group": "Diklat",
+        "group": "Learning",
         "images": [],
         "description": "Tugas edukatif dan implementasi sistem dalam bahasa Go yang dikembangkan pada program Rakamin Academy.",
         "tools": "Go, Gin, PostgreSQL",
@@ -630,7 +630,7 @@
       {
         "title": "Go Digitalent",
         "category": "Web Dev",
-        "group": "Diklat",
+        "group": "Learning",
         "images": [],
         "description": "Proyek dan berkas latihan berbasis Go yang dibuat untuk program pelatihan Digitalent.",
         "tools": "Go, Gin, MySQL",
@@ -705,7 +705,7 @@
       {
         "title": "PKK E-Report",
         "category": "Web Dev",
-        "group": "Company",
+        "group": "Diklat",
         "images": [
           "/projects/2022/p47/1.png",
           "/projects/2022/p47/2.png",
@@ -756,7 +756,7 @@
       {
         "title": "SINOBI-DATIN",
         "category": "Web Dev",
-        "group": "Company",
+        "group": "Diklat",
         "images": [
           "/projects/2022/p50/1.png",
           "/projects/2022/p50/2.png",
@@ -776,7 +776,7 @@
       {
         "title": "SITEMAN-NIB",
         "category": "Web Dev",
-        "group": "Company",
+        "group": "Diklat",
         "images": [
           "/projects/2022/p51/1.png",
           "/projects/2022/p51/2.png",
@@ -797,7 +797,7 @@
       {
         "title": "SILOTANG",
         "category": "Web Dev",
-        "group": "Company",
+        "group": "Diklat",
         "images": [
           "/projects/2022/p52/1.png"
         ],
@@ -838,7 +838,7 @@
       {
         "title": "TerbaikTUFJ",
         "category": "Web Dev",
-        "group": "Company",
+        "group": "Diklat",
         "images": [
           "/projects/2022/p55/1.jpeg",
           "/projects/2022/p55/2.jpeg",
@@ -854,7 +854,7 @@
       {
         "title": "UP3D Setiabudi",
         "category": "Web Dev",
-        "group": "Company",
+        "group": "Diklat",
         "images": [
           "/projects/2022/p56/1.png",
           "/projects/2022/p56/2.png",
@@ -872,7 +872,7 @@
       {
         "title": "Sisirteco",
         "category": "Web Dev",
-        "group": "Company",
+        "group": "Diklat",
         "images": [
           "/projects/2022/p57/1.png",
           "/projects/2022/p57/2.png",
@@ -889,7 +889,7 @@
       {
         "title": "Sudinbud",
         "category": "Web Dev",
-        "group": "Company",
+        "group": "Diklat",
         "images": [
           "/projects/2022/p58/1.png",
           "/projects/2022/p58/2.png",
@@ -906,7 +906,7 @@
       {
         "title": "Germor Sedekah",
         "category": "Web Dev",
-        "group": "Company",
+        "group": "Diklat",
         "images": [
           "/projects/2022/p59/1.png",
           "/projects/2022/p59/2.png"
@@ -920,7 +920,7 @@
       {
         "title": "SI UCI",
         "category": "Web Dev",
-        "group": "Company",
+        "group": "Diklat",
         "images": [
           "/projects/2022/p60/1.png",
           "/projects/2022/p60/2.png",
@@ -936,7 +936,7 @@
       {
         "title": "Pencatatan HI",
         "category": "Web Dev",
-        "group": "Company",
+        "group": "Diklat",
         "images": [
           "/projects/2022/p61/1.png",
           "/projects/2022/p61/2.png",
@@ -953,7 +953,7 @@
       {
         "title": "Situs Resmi Web Jakarta Selatan",
         "category": "Web Dev",
-        "group": "Company",
+        "group": "Diklat",
         "images": [
           "/projects/2022/p62/1.png",
           "/projects/2022/p62/2.png",
@@ -980,7 +980,7 @@
       {
         "title": "IPTM",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [
           "/projects/2022/p63/1.png",
           "/projects/2022/p63/2.png",
@@ -1025,7 +1025,7 @@
       {
         "title": "Angkutan Umum Bandung",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [
           "/projects/2021/p35/1.png",
           "/projects/2021/p35/2.png",
@@ -1323,7 +1323,7 @@
       {
         "title": "Learn Data Security",
         "category": "Programming",
-        "group": "Diklat",
+        "group": "Learning",
         "images": [
           "/projects/2020/p28/1.png",
           "/projects/2020/p28/2.png",
@@ -1339,7 +1339,7 @@
       {
         "title": "Learn Data Science",
         "category": "Data Science",
-        "group": "Diklat",
+        "group": "Learning",
         "images": [
           "/projects/2020/p29/1.png"
         ],
@@ -1583,7 +1583,7 @@
       {
         "title": "Learn Django",
         "category": "Web Dev",
-        "group": "Diklat",
+        "group": "Learning",
         "images": [
           "/projects/2019/p17/1.png"
         ],
@@ -1596,7 +1596,7 @@
       {
         "title": "Learn Laravel",
         "category": "Web Dev",
-        "group": "Diklat",
+        "group": "Learning",
         "images": [
           "/projects/2019/p18/1.png"
         ],

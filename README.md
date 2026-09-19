@@ -6,7 +6,7 @@ Live: [mazharrasyad.tech](https://mazharrasyad.tech)
 
 ## Stack
 
-- **Frontend:** [SvelteKit](https://kit.svelte.dev) (Svelte 5, TypeScript, Tailwind CSS v4), prerendered to static HTML via `adapter-static`. Project archive lives in `frontend/src/lib/data/projects.json` and is grouped by year on disk but rendered by category (`group` field: Company, Freelance, Organization, Research, Campus, Diklat, Learning) at `/projects` and `/projects/[category]`.
+- **Frontend:** [SvelteKit](https://kit.svelte.dev) (Svelte 5, TypeScript, Tailwind CSS v4), prerendered to static HTML via `adapter-static`. Project archive lives in `frontend/src/lib/data/projects.json` and is grouped by year on disk but rendered by category (`group` field: Diklat, Company, Freelance, Organization, Research, Campus, Learning) at `/projects` and `/projects/[category]`.
 - **Backend:** Go. Serves the prerendered build and a small read-only JSON API (`GET /api/projects`, `GET /api/projects/{year}`), and sets the `Content-Security-Policy` header (built from this build's inline-script hashes — see `backend/cmd/csphash`).
 - **Ops:** nginx (TLS via Certbot) reverse-proxies to the Go service, which runs as a hardened, fully read-only systemd unit (`systemd/mazharrasyad-web.service`) under a dedicated unprivileged user.
 

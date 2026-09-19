@@ -16,8 +16,13 @@ export interface Category {
 // match one of these names.
 const DEFINITIONS = [
 	{
+		name: 'Diklat',
+		description:
+			'Government information systems: municipal and local-government agencies, public services and civil-service tooling.'
+	},
+	{
 		name: 'Company',
-		description: 'Products built as an employee and during internships.'
+		description: 'Products built for private companies as an employee and during internships.'
 	},
 	{
 		name: 'Freelance',
@@ -37,12 +42,9 @@ const DEFINITIONS = [
 		description: 'Coursework, prototypes and hackathon entries from my bachelor studies.'
 	},
 	{
-		name: 'Diklat',
-		description: 'Projects from formal training programs, bootcamps and open classes.'
-	},
-	{
 		name: 'Learning',
-		description: 'Self-paced practice: online courses, tutorials and experiments.'
+		description:
+			'Bootcamps, open classes, online courses, tutorials and experiments made while learning.'
 	}
 ] as const;
 
