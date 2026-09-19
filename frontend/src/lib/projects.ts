@@ -47,11 +47,11 @@ const years = yearsData as YearData[];
 
 const MONTH_INDEX = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
 
-/** Parses "25 May 2022" into { month: 5, day: 25 }; anything else has no month. */
+/** Parses "25 May 2022" or "Jun 2026" into { month, day }; anything else has no month. */
 function parseUpdated(updated?: string): { month: number | null; day: number } {
-	const m = updated?.match(/^(\d{1,2})\s+([A-Za-z]{3})[a-z]*\s+\d{4}$/);
+	const m = updated?.match(/^(?:(\d{1,2})\s+)?([A-Za-z]{3})[a-z]*\s+\d{4}$/);
 	const month = m ? MONTH_INDEX.indexOf(m[2].toLowerCase()) + 1 : 0;
-	return month > 0 ? { month, day: Number(m![1]) } : { month: null, day: 0 };
+	return month > 0 ? { month, day: Number(m![1] ?? 0) } : { month: null, day: 0 };
 }
 
 // Newest first: year, then month, then day. Projects without a date keep

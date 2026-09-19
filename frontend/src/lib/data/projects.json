@@ -3,6 +3,48 @@
     "year": 2026,
     "projects": [
       {
+        "title": "Kin Baja Suksestama",
+        "category": "Web Dev",
+        "group": "Company",
+        "images": [],
+        "description": "Situs company profile PT Kin Baja Suksestama, perusahaan trading material baja konstruksi (besi beton, siku, plate, WF, H-Beam), memuat profil perusahaan, visi & misi, keunggulan, katalog produk, artikel, testimoni, dan konsultasi via WhatsApp.",
+        "tools": "PHP, Bootstrap",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/herakarmila19/company-profile",
+        "updated": "Jun 2026"
+      },
+      {
+        "title": "Web Security Log Dashboard",
+        "category": "Web Dev",
+        "group": "Campus",
+        "images": [],
+        "description": "Proyek tesis berupa dashboard web untuk memantau dan menganalisis keamanan web berdasarkan log server Apache.",
+        "tools": "Apache Log, Web Security",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/herakarmila19/tesis_hera",
+        "updated": "Jul 2026"
+      },
+      {
+        "title": "JOIN PKS API",
+        "category": "Web Dev",
+        "group": "Organization",
+        "images": [],
+        "description": "Backend REST API platform manajemen relawan JOIN PKS yang mengelola data relawan dari tingkat provinsi hingga kelurahan untuk aplikasi web dan mobile.",
+        "tools": "Go, REST API, Docker",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/brsndpsn-connect/join-pks-api"
+      },
+      {
+        "title": "JOIN PKS Web",
+        "category": "Web Dev",
+        "group": "Organization",
+        "images": [],
+        "description": "Aplikasi web JOIN PKS untuk manajemen relawan, mencakup pendaftaran, profil relawan, hierarki wilayah, dan pelaporan.",
+        "tools": "Svelte",
+        "visibility": "Private",
+        "sourceUrl": "https://github.com/brsndpsn-connect/join-pks-web"
+      },
+      {
         "title": "Betawi Academia",
         "category": "Web Dev",
         "group": "Organization",
