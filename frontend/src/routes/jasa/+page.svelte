@@ -9,7 +9,7 @@
 	const image = 'https://mazharrasyad.tech/logo.png';
 
 	const waText = encodeURIComponent(
-		'Halo Mas Azhar, saya menemukan layanan pembuatan website/aplikasi di mazharrasyad.tech dan ingin berkonsultasi mengenai kebutuhan saya. Kapan Mas Azhar ada waktu untuk berdiskusi?'
+		'Halo, saya menemukan layanan pembuatan website/aplikasi di mazharrasyad.tech dan ingin berkonsultasi mengenai kebutuhan saya. Kapan ada waktu untuk berdiskusi?'
 	);
 	const waUrl = `https://wa.me/6281290351971?text=${waText}`;
 
