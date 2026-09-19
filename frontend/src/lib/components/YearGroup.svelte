@@ -10,12 +10,15 @@
 		count,
 		months,
 		last = false,
+		unit = 'project',
 		item
 	}: {
 		year: number;
 		count: number;
 		months: { month: number | null; items: T[] }[];
 		last?: boolean;
+		/** Singular noun for the count under the year. */
+		unit?: string;
 		item: Snippet<[T]>;
 	} = $props();
 
@@ -33,7 +36,7 @@
 				<div class="text-2xl md:text-4xl font-black leading-tight text-blue-400">{year}</div>
 				<div class="text-xs md:text-sm font-bold text-slate-400 leading-tight">
 					{count}
-					{count === 1 ? 'project' : 'projects'}
+					{count === 1 ? unit : `${unit}s`}
 				</div>
 			{/if}
 			{#if block.month !== null}
