@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Icon from '$lib/components/Icon.svelte';
 	import { reveal } from '$lib/actions/reveal';
+	import { categories } from '$lib/projects';
 
 	const title = 'Jasa Pembuatan Website & Sistem Informasi - Muhammad Azhar Rasyad';
 	const description =
@@ -100,6 +101,39 @@
 			text: 'Awal belajar membangun perangkat lunak, dengan tugas akhir berupa plugin WordPress untuk multiposting.'
 		}
 	];
+
+	// Learning and Campus work is left out on purpose: this page is about client work.
+	const categoryInfo = [
+		{
+			slug: 'government',
+			icon: 'landmark',
+			label: 'Instansi Pemerintah',
+			text: 'Sistem informasi untuk dinas dan pemerintah daerah, layanan publik, dan aplikasi kepegawaian.'
+		},
+		{
+			slug: 'company',
+			icon: 'briefcase',
+			label: 'Company',
+			text: 'Produk untuk perusahaan dan klien, sebagai karyawan, magang, maupun freelance.'
+		},
+		{
+			slug: 'organization',
+			icon: 'users',
+			label: 'Organisasi',
+			text: 'Sistem untuk komunitas, organisasi politik, dan organisasi kampus.'
+		},
+		{
+			slug: 'research',
+			icon: 'flask',
+			label: 'Riset',
+			text: 'Pengembangan berbasis blockchain, data, dan IoT dari riset pascasarjana.'
+		}
+	] as const;
+
+	const projectCategories = categoryInfo.map((c) => ({
+		...c,
+		count: categories.find((cat) => cat.slug === c.slug)?.projects.length ?? 0
+	}));
 
 	const projects = [
 		{
@@ -293,8 +327,25 @@
 		<section use:reveal>
 			<h2 class="text-2xl md:text-3xl font-black mb-2">Proyek yang Pernah Dikerjakan</h2>
 			<p class="text-sm text-slate-400 mb-6">
-				Gambaran jenis sistem yang telah saya bangun untuk perusahaan, instansi, dan pelaku usaha.
+				Dari 130+ proyek yang telah saya kerjakan, berikut sebarannya berdasarkan kategori.
 			</p>
+			<ul class="grid grid-cols-2 gap-3 mb-10">
+				{#each projectCategories as c (c.slug)}
+					<li class="rounded-2xl bg-white/5 border border-white/10 p-4 md:p-5">
+						<div class="flex items-center justify-between">
+							<div
+								class="w-10 h-10 rounded-xl bg-blue-500/15 border border-blue-400/30 text-blue-300 flex items-center justify-center"
+							>
+								<Icon name={c.icon} class="w-5 h-5" />
+							</div>
+							<span class="text-3xl md:text-4xl font-black text-blue-300">{c.count}</span>
+						</div>
+						<h3 class="mt-3 font-bold text-white">{c.label}</h3>
+						<p class="mt-1 text-xs md:text-sm text-slate-300 leading-relaxed">{c.text}</p>
+					</li>
+				{/each}
+			</ul>
+			<h3 class="text-lg font-bold mb-3">Beberapa di antaranya</h3>
 			<ul class="grid gap-3 md:grid-cols-2">
 				{#each projects as p (p.name)}
 					<li class="rounded-2xl bg-white/5 border border-white/10 p-5">
