@@ -158,10 +158,7 @@
 				<Icon name="tag" class="w-5 h-5" />
 			</span>
 			<span class="min-w-0 flex-1">
-				<span class="block text-[10px] font-bold uppercase tracking-widest text-violet-300">
-					Promo · Rekomendasi
-				</span>
-				<span class="block text-sm font-bold text-white">Diskon Hostinger</span>
+				<span class="block text-sm font-bold text-white">Promo Hostinger</span>
 				<span class="block text-xs text-slate-400">
 					Hosting, VPS, domain, dan email untuk berbagai kebutuhan digital
 				</span>
