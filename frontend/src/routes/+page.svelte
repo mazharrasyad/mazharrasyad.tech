@@ -163,7 +163,7 @@
 				</span>
 				<span class="block text-sm font-bold text-white">Diskon Hostinger</span>
 				<span class="block text-xs text-slate-400">
-					Hosting &amp; domain untuk aplikasi atau website Anda
+					Hosting, VPS, domain, dan email untuk berbagai kebutuhan digital
 				</span>
 			</span>
 			<Icon
