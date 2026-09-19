@@ -23,7 +23,7 @@
 	}
 
 	const title = 'Projects - Muhammad Azhar Rasyad';
-	const description = `${totalProjects}+ software projects by Muhammad Azhar Rasyad, grouped by where they came from: Diklat (government), Company, Freelance, Organization, Research, Campus and Learning.`;
+	const description = `${totalProjects}+ software projects by Muhammad Azhar Rasyad, grouped by where they came from: Government, Company, Freelance, Organization, Research, Campus and Learning.`;
 	const url = 'https://mazharrasyad.tech/projects';
 	const image = 'https://mazharrasyad.tech/logo.png';
 </script>

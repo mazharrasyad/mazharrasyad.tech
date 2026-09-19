@@ -14,7 +14,7 @@ export interface Category {
 // match one of these names.
 const DEFINITIONS = [
 	{
-		name: 'Diklat',
+		name: 'Government',
 		description:
 			'Government information systems: municipal and local-government agencies, public services and civil-service tooling.'
 	},
