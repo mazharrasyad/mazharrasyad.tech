@@ -40,13 +40,15 @@
 
 <svelte:window onscroll={onScroll} onclick={onClick} />
 
-<SiteNav />
+<div class="min-h-dvh flex flex-col">
+	<SiteNav />
 
-{@render children()}
+	{@render children()}
 
-{#if showFooter}
-	<SiteFooter />
-{/if}
+	{#if showFooter}
+		<SiteFooter />
+	{/if}
+</div>
 
 {#if showBackToTop}
 	<button

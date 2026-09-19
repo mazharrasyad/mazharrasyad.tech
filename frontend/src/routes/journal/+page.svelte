@@ -49,7 +49,7 @@
 	<meta name="twitter:image" content={image} />
 </svelte:head>
 
-<div class="min-h-[calc(100dvh-3.5rem)] text-white flex flex-col p-4 md:p-8 w-full">
+<div class="flex-1 text-white flex flex-col p-4 md:p-8 w-full">
 	<main class="max-w-4xl mx-auto w-full flex-1 pt-4 md:pt-8">
 		<h1 class="text-4xl md:text-6xl font-black text-white mb-6">Journal</h1>
 
