@@ -6,7 +6,7 @@
 <footer
 	class="h-[3.25rem] flex items-center justify-center gap-3 px-4 border-t border-white/10 bg-[#0f172a]/95"
 >
-	<p class="text-sm text-slate-300">Jika tertarik, silakan hubungi</p>
+	<p class="text-sm leading-tight text-slate-300">Interested in working together? Get in touch.</p>
 	<a
 		href="https://wa.me/+6281290351971"
 		target="_blank"
