@@ -21,10 +21,6 @@
 		unit?: string;
 		item: Snippet<[T]>;
 	} = $props();
-
-	// "Undated" only makes sense next to dated rows; a year with no dates at
-	// all just shows its projects.
-	const hasDated = $derived(months.some((m) => m.month !== null));
 </script>
 
 {#each months as block, bi (block.month ?? 'none')}
@@ -44,8 +40,6 @@
 					<span class="md:hidden">{MONTH_NAMES[block.month - 1].slice(0, 3)}</span>
 					<span class="hidden md:inline">{MONTH_NAMES[block.month - 1]}</span>
 				</div>
-			{:else if hasDated}
-				<div class="{first ? 'mt-2' : ''} text-sm font-bold text-slate-400 leading-tight">Undated</div>
 			{/if}
 		</div>
 
