@@ -185,7 +185,7 @@
 			</h1>
 			<p class="mt-4 text-base md:text-lg text-slate-300 max-w-2xl">
 				Website perusahaan, aplikasi internal, atau sistem untuk merapikan pekerjaan yang masih
-				manual. Saya temani dari memahami kebutuhan sampai sistemnya siap dipakai.
+				manual, didampingi dari memahami kebutuhan sampai sistemnya siap dipakai.
 			</p>
 			<div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
 				<a
@@ -204,7 +204,7 @@
 		<!-- Services -->
 		<section>
 			<h2 class="text-2xl md:text-3xl font-black mb-2">Layanan</h2>
-			<p class="text-sm text-slate-400 mb-6">Apa saja yang bisa saya kerjakan untuk Anda.</p>
+			<p class="text-sm text-slate-400 mb-6">Apa saja yang bisa dikerjakan untuk Anda.</p>
 			<ul class="grid gap-3 md:grid-cols-2">
 				{#each services as s (s.title)}
 					<li class="rounded-2xl bg-white/5 border border-white/10 p-5">
@@ -270,7 +270,7 @@
 		<section>
 			<h2 class="text-2xl md:text-3xl font-black mb-2">Proyek yang Pernah Dikerjakan</h2>
 			<p class="text-sm text-slate-400 mb-6">
-				Dari 130+ proyek yang telah saya kerjakan, berikut sebarannya berdasarkan kategori.
+				Dari 130+ proyek yang telah dikerjakan, berikut sebarannya berdasarkan kategori.
 			</p>
 			<ul class="grid grid-cols-2 gap-3 mb-4">
 				{#each projectCategories as c (c.slug)}
