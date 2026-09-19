@@ -135,39 +135,6 @@
 		count: categories.find((cat) => cat.slug === c.slug)?.projects.length ?? 0
 	}));
 
-	const projects = [
-		{
-			name: 'Kin Baja Suksestama',
-			type: 'Company profile',
-			text: 'Situs perusahaan trading material baja dengan katalog produk, artikel, dan testimoni.'
-		},
-		{
-			name: 'Folio POS',
-			type: 'Aplikasi kasir',
-			text: 'Point of Sale untuk ritel dan usaha lokal: transaksi penjualan, inventaris dan stok, serta laporan penjualan.'
-		},
-		{
-			name: 'Recerva',
-			type: 'Reservasi hotel',
-			text: 'Platform manajemen properti dan mesin pemesanan hotel dengan dukungan multi-tenant untuk banyak hotel.'
-		},
-		{
-			name: 'Putra Jasa V2',
-			type: 'Manajemen rental',
-			text: 'Sistem rental kendaraan dengan pemesanan otomatis, kalkulator harga sewa, dan pengelolaan data kendaraan.'
-		},
-		{
-			name: 'Insight Hub',
-			type: 'Dashboard data',
-			text: 'Dashboard analitik yang menyajikan grafik dan ringkasan visual kinerja bisnis.'
-		},
-		{
-			name: 'SIDANRU',
-			type: 'Sistem pemesanan',
-			text: 'Reservasi ruang rapat dan fasilitas dengan pencegahan jadwal bentrok otomatis.'
-		}
-	];
-
 	const stack = ['Laravel', 'Livewire', 'Tailwind CSS', 'MySQL', 'PostgreSQL', 'Vue.js', 'React', 'Python'];
 
 	const jsonLd = {
@@ -329,7 +296,7 @@
 			<p class="text-sm text-slate-400 mb-6">
 				Dari 130+ proyek yang telah saya kerjakan, berikut sebarannya berdasarkan kategori.
 			</p>
-			<ul class="grid grid-cols-2 gap-3 mb-10">
+			<ul class="grid grid-cols-2 gap-3 mb-4">
 				{#each projectCategories as c (c.slug)}
 					<li class="rounded-2xl bg-white/5 border border-white/10 p-4 md:p-5">
 						<div class="flex items-center justify-between">
@@ -345,16 +312,13 @@
 					</li>
 				{/each}
 			</ul>
-			<h3 class="text-lg font-bold mb-3">Beberapa di antaranya</h3>
-			<ul class="grid gap-3 md:grid-cols-2">
-				{#each projects as p (p.name)}
-					<li class="rounded-2xl bg-white/5 border border-white/10 p-5">
-						<p class="text-[11px] font-bold uppercase tracking-wider text-blue-300">{p.type}</p>
-						<h3 class="mt-1 font-bold text-white">{p.name}</h3>
-						<p class="mt-2 text-sm text-slate-300 leading-relaxed">{p.text}</p>
-					</li>
-				{/each}
-			</ul>
+			<a
+				href="/projects"
+				class="inline-flex items-center gap-1.5 text-sm text-blue-300 hover:text-blue-200"
+			>
+				Lihat proyek lengkap
+				<Icon name="arrow-right" class="w-4 h-4" />
+			</a>
 		</section>
 
 		<!-- Stack -->
