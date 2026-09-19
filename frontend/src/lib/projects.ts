@@ -87,3 +87,9 @@ export const categories: Category[] = DEFINITIONS.map((def) => ({
 }));
 
 export const totalProjects = all.length;
+
+/** Category tabs that have no page of their own: /projects/<slug> redirects to /projects. */
+export const TAB_ONLY_SLUGS = ['government', 'company'];
+
+/** Categories that are served at /projects/<slug>. */
+export const pageCategories = categories.filter((c) => !TAB_ONLY_SLUGS.includes(c.slug));

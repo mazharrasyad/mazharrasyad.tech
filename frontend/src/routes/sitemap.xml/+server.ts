@@ -1,4 +1,4 @@
-import { categories } from '$lib/projects';
+import { pageCategories } from '$lib/projects';
 import type { RequestHandler } from './$types';
 
 export const prerender = true;
@@ -13,7 +13,7 @@ export const GET: RequestHandler = () => {
 		{ loc: `${SITE}/experience`, priority: '0.8' },
 		{ loc: `${SITE}/projects`, priority: '0.8' },
 		{ loc: `${SITE}/journal`, priority: '0.8' },
-		...categories.map((c) => ({ loc: `${SITE}/projects/${c.slug}`, priority: '0.7' }))
+		...pageCategories.map((c) => ({ loc: `${SITE}/projects/${c.slug}`, priority: '0.7' }))
 	];
 
 	const body = `<?xml version="1.0" encoding="UTF-8"?>

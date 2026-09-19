@@ -202,16 +202,11 @@
 					</li>
 				{/each}
 			</ul>
-			<div class="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+			<div class="mt-4 text-sm">
 				<a
-					href="/projects/company"
+					href="/projects"
 					class="text-blue-300 underline underline-offset-2 hover:text-blue-200"
-					>Proyek perusahaan &rarr;</a
-				>
-				<a
-					href="/projects/government"
-					class="text-blue-300 underline underline-offset-2 hover:text-blue-200"
-					>Proyek instansi pemerintah &rarr;</a
+					>Lihat semua proyek &rarr;</a
 				>
 			</div>
 		</section>
