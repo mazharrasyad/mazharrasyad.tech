@@ -38,7 +38,7 @@
 	<meta name="twitter:image" content={image} />
 </svelte:head>
 
-<main class="w-full flex flex-col h-[calc(100dvh-3.5rem)]">
+<main class="w-full flex flex-col h-[calc(100dvh-6.75rem)]">
 	<!-- Category tabs -->
 	<div
 		class="shrink-0 flex items-center justify-start md:justify-center gap-1.5 overflow-x-auto hide-scrollbar px-4 py-3 border-b border-white/10"
