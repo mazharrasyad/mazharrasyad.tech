@@ -34,6 +34,7 @@ export interface ScholarData {
 export interface Education {
 	sortKey: number;
 	field: string;
+	level: string;
 	degree: string;
 	institution: string;
 	year: string;

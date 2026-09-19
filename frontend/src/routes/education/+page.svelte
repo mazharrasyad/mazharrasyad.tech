@@ -37,6 +37,11 @@
 		<div>
 			{#each entries as edu, i (edu.institution)}
 				<TimelineEntry period={edu.year} accent="emerald" last={i === entries.length - 1}>
+					<span
+						class="inline-block mb-2 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-sm font-black uppercase tracking-wider"
+					>
+						{edu.level}
+					</span>
 					<h2 class="text-lg md:text-xl font-bold text-white leading-snug">{edu.field}</h2>
 					<p class="text-sm text-slate-300 mt-1">
 						{edu.institution} <span class="text-slate-500 mx-1">·</span>
