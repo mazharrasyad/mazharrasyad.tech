@@ -96,22 +96,24 @@
 						href={project.sourceUrl}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="link-btn w-full sm:w-auto"
+						class="link-btn w-full sm:w-auto flex-col sm:flex-row"
 					>
-						<span>View Source</span>
+						<span class="flex items-center gap-2 sm:contents">
+							<span>View Source</span>
+							<Icon name="external-link" class="w-3.5 h-3.5 sm:order-3" />
+						</span>
 						<span
-							class="text-xs px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400"
+							class="text-xs px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 sm:order-2"
 						>
 							Public
 						</span>
-						<Icon name="external-link" class="w-3.5 h-3.5" />
 					</a>
 				{:else}
 					<button
 						type="button"
 						disabled
 						title="Source code is private"
-						class="link-btn w-full sm:w-auto opacity-60 cursor-not-allowed hover:transform-none!"
+						class="link-btn w-full sm:w-auto flex-col sm:flex-row opacity-60 cursor-not-allowed hover:transform-none!"
 					>
 						<span>View Source</span>
 						<span
