@@ -1,6 +1,6 @@
 <script lang="ts">
 	import CategoryList from '$lib/components/CategoryList.svelte';
-	import { categories, totalProjects } from '$lib/projects';
+	import { categories, projectCountLabel } from '$lib/projects';
 
 	// Tabs are the only way to switch category: no horizontal swiping, so a
 	// stray touch/drag can't jump to another category.
@@ -14,7 +14,7 @@
 	}
 
 	const title = 'Projects - Muhammad Azhar Rasyad';
-	const description = `${totalProjects}+ software projects by Muhammad Azhar Rasyad, grouped by where they came from: Government, Company, Organization, Research, Campus and Learning.`;
+	const description = `${projectCountLabel} software projects by Muhammad Azhar Rasyad, grouped by where they came from: Government, Company, Organization, Research, Campus and Learning.`;
 	const url = 'https://mazharrasyad.tech/projects';
 	const image = 'https://mazharrasyad.tech/logo.png';
 </script>

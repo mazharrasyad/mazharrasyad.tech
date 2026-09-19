@@ -1,10 +1,9 @@
 <script lang="ts">
 	import Icon from '$lib/components/Icon.svelte';
-	import { categories } from '$lib/projects';
+	import { categories, projectCountLabel } from '$lib/projects';
 
 	const title = 'Jasa Pembuatan Website & Sistem Informasi - Muhammad Azhar Rasyad';
-	const description =
-		'Jasa pembuatan sistem informasi, aplikasi web, dan website company profile oleh Software Engineer dengan 8+ tahun pengalaman dan 130+ proyek. Konsultasi langsung via WhatsApp.';
+	const description = `Jasa pembuatan sistem informasi, aplikasi web, dan website company profile oleh Software Engineer dengan 8+ tahun pengalaman dan ${projectCountLabel} proyek. Konsultasi langsung via WhatsApp.`;
 	const url = 'https://mazharrasyad.tech/jasa';
 	const image = 'https://mazharrasyad.tech/logo.png';
 
@@ -303,7 +302,7 @@
 		<section>
 			<h2 class="text-2xl md:text-3xl font-black mb-2">Proyek yang Pernah Dikerjakan</h2>
 			<p class="text-sm text-slate-400 mb-6">
-				Dari 130+ proyek yang telah dikerjakan, berikut sebarannya berdasarkan kategori.
+				Dari {projectCountLabel} proyek yang telah dikerjakan, berikut sebarannya berdasarkan kategori.
 			</p>
 			<ul class="grid grid-cols-2 gap-3 mb-4">
 				{#each projectCategories as c (c.slug)}

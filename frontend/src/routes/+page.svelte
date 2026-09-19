@@ -2,6 +2,7 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import { reveal } from '$lib/actions/reveal';
 	import educationData from '$lib/data/education.json';
+	import { projectCountLabel } from '$lib/projects';
 	import type { Education } from '$lib/types';
 
 	const education = educationData as Education[];
@@ -9,7 +10,7 @@
 	let imgError = $state(false);
 
 	const title = 'Muhammad Azhar Rasyad - Software Engineer';
-	const description = `Software Engineer dengan 8+ tahun pengalaman (2018–sekarang). Portofolio 130+ proyek di bidang pengembangan web, blockchain, dan rekayasa data. Berbasis di Jakarta, Indonesia.`;
+	const description = `Software Engineer dengan 8+ tahun pengalaman (2018–sekarang). Portofolio ${projectCountLabel} proyek di bidang pengembangan web, blockchain, dan rekayasa data. Berbasis di Jakarta, Indonesia.`;
 	const url = 'https://mazharrasyad.tech/';
 	const image = 'https://mazharrasyad.tech/logo.png';
 

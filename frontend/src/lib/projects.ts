@@ -88,6 +88,9 @@ export const categories: Category[] = DEFINITIONS.map((def) => ({
 
 export const totalProjects = all.length;
 
+/** Total rounded down to the nearest ten, e.g. "130+", so it stays true as projects are added. */
+export const projectCountLabel = `${Math.floor(totalProjects / 10) * 10}+`;
+
 /** Category tabs that have no page of their own: /projects/<slug> redirects to /projects. */
 export const TAB_ONLY_SLUGS = ['government', 'company'];
 
