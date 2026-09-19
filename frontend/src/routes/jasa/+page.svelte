@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Icon from '$lib/components/Icon.svelte';
-	import { reveal } from '$lib/actions/reveal';
 	import { categories } from '$lib/projects';
 
 	const title = 'Jasa Pembuatan Website & Sistem Informasi - Muhammad Azhar Rasyad';
@@ -172,7 +171,7 @@
 	<div aria-hidden="true" class="grid-bg pointer-events-none absolute inset-x-0 top-0 h-[900px]"></div>
 	<main class="relative max-w-3xl mx-auto w-full space-y-14 md:space-y-20 pt-4 md:pt-10">
 		<!-- Hero -->
-		<section use:reveal class="text-center md:text-left">
+		<section class="text-center md:text-left">
 			<span
 				class="inline-flex items-center gap-1.5 mb-4 bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 text-xs px-2.5 py-1 rounded-full font-bold uppercase tracking-widest"
 			>
@@ -203,7 +202,7 @@
 		</section>
 
 		<!-- Services -->
-		<section use:reveal>
+		<section>
 			<h2 class="text-2xl md:text-3xl font-black mb-2">Layanan</h2>
 			<p class="text-sm text-slate-400 mb-6">Apa saja yang bisa saya kerjakan untuk Anda.</p>
 			<ul class="grid gap-3 md:grid-cols-2">
@@ -230,7 +229,7 @@
 		</section>
 
 		<!-- Education -->
-		<section use:reveal>
+		<section>
 			<div class="flex items-center gap-3 mb-2">
 				<div
 					class="w-11 h-11 shrink-0 rounded-xl bg-indigo-500/15 border border-indigo-400/30 text-indigo-300 flex items-center justify-center"
@@ -268,7 +267,7 @@
 		</section>
 
 		<!-- Projects -->
-		<section use:reveal>
+		<section>
 			<h2 class="text-2xl md:text-3xl font-black mb-2">Proyek yang Pernah Dikerjakan</h2>
 			<p class="text-sm text-slate-400 mb-6">
 				Dari 130+ proyek yang telah saya kerjakan, berikut sebarannya berdasarkan kategori.
@@ -300,7 +299,6 @@
 
 		<!-- Final CTA -->
 		<section
-			use:reveal
 			class="rounded-3xl bg-gradient-to-br from-blue-500/15 to-indigo-500/15 border border-blue-400/30 p-6 md:p-10 text-center"
 		>
 			<h2 class="text-2xl md:text-3xl font-black">Ceritakan kebutuhan Anda</h2>
