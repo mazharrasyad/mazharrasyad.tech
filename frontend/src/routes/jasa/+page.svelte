@@ -14,12 +14,6 @@
 	);
 	const waUrl = `https://wa.me/6281290351971?text=${waText}`;
 
-	const stats = [
-		{ value: '8+', label: 'Tahun pengalaman' },
-		{ value: '130+', label: 'Proyek dikerjakan' },
-		{ value: '50+', label: 'Sistem untuk instansi pemerintah' }
-	];
-
 	const services = [
 		{
 			icon: 'monitor',
@@ -206,21 +200,6 @@
 					Konsultasi via WhatsApp
 				</a>
 			</div>
-		</section>
-
-		<!-- Stats -->
-		<section use:reveal aria-label="Ringkasan pengalaman">
-			<dl class="grid grid-cols-3 gap-3">
-				{#each stats as s (s.label)}
-					<div class="rounded-2xl bg-white/5 border border-white/10 p-4 text-center">
-						<dt class="sr-only">{s.label}</dt>
-						<dd class="text-2xl md:text-4xl font-black text-blue-300">{s.value}</dd>
-						<p class="mt-1 text-[11px] md:text-xs text-slate-400 leading-tight" aria-hidden="true">
-							{s.label}
-						</p>
-					</div>
-				{/each}
-			</dl>
 		</section>
 
 		<!-- Services -->
