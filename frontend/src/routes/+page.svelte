@@ -140,10 +140,10 @@
 				href="/cv.pdf"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="link-btn px-5 py-2.5 shadow-md shadow-blue-500/5 rounded-xl"
+				class="flex items-center gap-2 pl-3 pr-4 h-10 rounded-xl bg-white/5 text-slate-300 hover:bg-white/10 hover:scale-105 transition-all border border-white/10"
 			>
 				<Icon name="file-text" class="w-4 h-4 text-rose-400" />
-				<span class="text-sm font-bold normal-case">View CV</span>
+				<span class="text-sm font-bold">View CV</span>
 			</a>
 		</div>
 	</div>
