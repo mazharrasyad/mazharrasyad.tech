@@ -210,7 +210,7 @@
       {
         "title": "Serambi 06",
         "category": "Web Dev",
-        "group": "Organization",
+        "group": "Government",
         "images": [],
         "description": "Dasbor kemasyarakatan RT/RW yang mendukung digitalisasi administrasi lokal dan pengumuman warga.",
         "tools": "Laravel, Bootstrap, MySQL",
@@ -395,7 +395,7 @@
       {
         "title": "Lentera Cendikia",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Organization",
         "images": [],
         "description": "Platform edukasi dan portal pembelajaran untuk mengelola konten kursus, basis data siswa, dan jadwal.",
         "tools": "PHP, Laravel, MySQL",
@@ -535,7 +535,7 @@
       {
         "title": "Jurnal",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Government",
         "images": [],
         "description": "Dasbor pencatatan aktivitas atau akademik yang dibangun untuk membuat dan mengarsipkan ringkasan kerja harian.",
         "tools": "Laravel, MySQL",
@@ -1627,7 +1627,7 @@
       {
         "title": "Basmalah",
         "category": "Web Dev",
-        "group": "Organization",
+        "group": "Campus",
         "images": [
           "/projects/2019/p20/1.png",
           "/projects/2019/p20/2.png",
