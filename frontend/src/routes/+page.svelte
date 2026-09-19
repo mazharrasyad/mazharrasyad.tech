@@ -84,7 +84,7 @@
 		</span>
 
 		<h1
-			class="text-3xl md:text-5xl font-black mb-3 bg-gradient-to-r from-white via-white to-blue-200 bg-clip-text text-transparent"
+			class="text-[clamp(1.25rem,6vw,1.875rem)] md:text-5xl whitespace-nowrap font-black mb-3 bg-gradient-to-r from-white via-white to-blue-200 bg-clip-text text-transparent"
 		>
 			Muhammad Azhar Rasyad
 		</h1>
