@@ -35,13 +35,6 @@
 				<span class="bg-indigo-500/20 text-indigo-300 text-xs px-2 py-0.5 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">
 					{project.category}
 				</span>
-				{#if project.visibility === 'Public'}
-					<span
-						class="text-xs px-2 py-0.5 rounded-full font-bold uppercase tracking-wider whitespace-nowrap bg-emerald-500/20 text-emerald-400"
-					>
-						Public
-					</span>
-				{/if}
 				{#if project.updated}
 					<span class="text-sm text-slate-300">{project.updated}</span>
 				{/if}
@@ -94,6 +87,11 @@
 					class="link-btn inline-flex w-auto px-5 mt-4"
 				>
 					<span>View Source</span>
+					<span
+						class="text-xs px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400"
+					>
+						Public
+					</span>
 					<Icon name="external-link" class="w-3.5 h-3.5" />
 				</a>
 			{:else}
