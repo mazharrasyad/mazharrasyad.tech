@@ -3,11 +3,11 @@
 
 	const links = [
 		{ href: '/', label: 'Profile' },
+		{ href: '/jasa', label: 'Jasa' },
 		{ href: '/education', label: 'Education' },
 		{ href: '/experience', label: 'Experience' },
 		{ href: '/projects', label: 'Projects' },
-		{ href: '/journal', label: 'Journal' },
-		{ href: '/jasa', label: 'Jasa' }
+		{ href: '/journal', label: 'Journal' }
 	];
 
 	// Category pages under /projects/ belong to the Projects tab.
