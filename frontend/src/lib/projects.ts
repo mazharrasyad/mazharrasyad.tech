@@ -20,11 +20,8 @@ const DEFINITIONS = [
 	},
 	{
 		name: 'Company',
-		description: 'Products built for private companies as an employee and during internships.'
-	},
-	{
-		name: 'Freelance',
-		description: 'Client work delivered as an independent software engineer.'
+		description:
+			'Products built for companies and clients: as an employee, during internships and as a freelancer.'
 	},
 	{
 		name: 'Organization',

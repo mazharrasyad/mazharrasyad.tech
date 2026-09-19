@@ -35,7 +35,7 @@
       {
         "title": "Putra Jasa V2",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Company",
         "images": [],
         "description": "Pembaruan sistem manajemen rental kendaraan dan jasa transportasi dengan otomasi pemesanan dan kalkulator harga.",
         "tools": "PHP, Laravel, Bootstrap",
@@ -250,7 +250,7 @@
       {
         "title": "Daxtro",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Company",
         "images": [],
         "description": "Sistem dasbor pusat untuk pelacakan aset digital dan integrasi log.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
@@ -340,7 +340,7 @@
       {
         "title": "Folio POS",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Company",
         "images": [],
         "description": "Aplikasi Point of Sale (POS) modern dan responsif untuk manajemen inventaris ritel dan bisnis lokal.",
         "tools": "React.js, Laravel, Tailwind CSS",
