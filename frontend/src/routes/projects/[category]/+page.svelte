@@ -33,13 +33,13 @@
 </svelte:head>
 
 <div class="min-h-[calc(100dvh-3.5rem)] text-white flex flex-col p-4 md:p-8 w-full">
-	<header class="max-w-3xl mx-auto w-full mb-8 flex justify-between items-center">
+	<header class="max-w-4xl mx-auto w-full mb-8 flex justify-between items-center">
 		<a href="/projects" class="link-btn">
 			<Icon name="arrow-left" class="w-4 h-4" /> <span>Projects</span>
 		</a>
 	</header>
 
-	<main class="max-w-3xl mx-auto w-full flex-1">
+	<main class="max-w-4xl mx-auto w-full flex-1">
 		<h1 class="text-4xl md:text-6xl font-black text-white mb-6">{category.name}</h1>
 		<CategoryList {category} />
 	</main>

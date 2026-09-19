@@ -1,8 +1,23 @@
 <script lang="ts">
 	import ProjectRow from './ProjectRow.svelte';
+	import YearGroup from './YearGroup.svelte';
 	import type { Category } from '$lib/projects';
 
 	let { category }: { category: Category } = $props();
+
+	// Projects arrive newest year first; number them continuously across years.
+	const groups = $derived.by(() => {
+		const byYear: { year: number; items: { project: Category['projects'][number]; index: number }[] }[] = [];
+		category.projects.forEach((project, i) => {
+			let group = byYear[byYear.length - 1];
+			if (!group || group.year !== project.year) {
+				group = { year: project.year, items: [] };
+				byYear.push(group);
+			}
+			group.items.push({ project, index: i + 1 });
+		});
+		return byYear;
+	});
 </script>
 
 <div class="flex flex-col gap-4 md:gap-5">
@@ -15,9 +30,13 @@
 			{category.projects.length}
 			{category.projects.length === 1 ? 'Project' : 'Projects'}
 		</span>
-		<div class="flex flex-col gap-3">
-			{#each category.projects as project, i (project.title)}
-				<ProjectRow {project} year={project.year} index={i + 1} />
+		<div class="mt-2">
+			{#each groups as group, gi (group.year)}
+				<YearGroup year={group.year} count={group.items.length} last={gi === groups.length - 1}>
+					{#each group.items as { project, index } (project.title)}
+						<ProjectRow {project} {index} />
+					{/each}
+				</YearGroup>
 			{/each}
 		</div>
 	{:else}

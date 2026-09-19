@@ -80,7 +80,7 @@
 				<section
 					class="w-full h-full shrink-0 snap-center overflow-y-auto [content-visibility:auto] px-4 md:px-8 py-8 md:py-12"
 				>
-					<div class="max-w-3xl mx-auto w-full flex flex-col gap-4 md:gap-5">
+					<div class="max-w-4xl mx-auto w-full flex flex-col gap-4 md:gap-5">
 						<h2 class="text-4xl md:text-6xl font-black text-white">{category.name}</h2>
 						<CategoryList {category} />
 					</div>
