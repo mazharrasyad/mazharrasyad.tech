@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ProjectRow from './ProjectRow.svelte';
 	import YearGroup from './YearGroup.svelte';
-	import { MONTH_NAMES, type Category } from '$lib/projects';
+	import type { Category } from '$lib/projects';
 
 	let { category }: { category: Category } = $props();
 
@@ -42,21 +42,15 @@
 		</span>
 		<div class="mt-2">
 			{#each groups as group, gi (group.year)}
-				<YearGroup year={group.year} count={group.count} last={gi === groups.length - 1}>
-					{#each group.months as block (block.month ?? 'none')}
-						<!-- Month labels only where the year has at least one dated project. -->
-						{#if group.months.length > 1 || block.month !== null}
-							<div
-								class="flex items-center gap-3 text-sm font-bold uppercase tracking-wider text-slate-300"
-							>
-								{block.month ? MONTH_NAMES[block.month - 1] : 'Undated'}
-								<span class="h-px flex-1 bg-white/10"></span>
-							</div>
-						{/if}
-						{#each block.items as { project, index } (project.title)}
-							<ProjectRow {project} {index} />
-						{/each}
-					{/each}
+				<YearGroup
+					year={group.year}
+					count={group.count}
+					months={group.months}
+					last={gi === groups.length - 1}
+				>
+					{#snippet item({ project, index }: Item)}
+						<ProjectRow {project} {index} />
+					{/snippet}
 				</YearGroup>
 			{/each}
 		</div>
