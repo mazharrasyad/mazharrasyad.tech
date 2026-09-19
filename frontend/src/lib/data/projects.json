@@ -7,7 +7,7 @@
         "category": "Web Dev",
         "group": "Company",
         "images": [],
-        "description": "Situs company profile PT Kin Baja Suksestama, perusahaan trading material baja konstruksi (besi beton, siku, plate, WF, H-Beam), memuat profil perusahaan, visi & misi, keunggulan, katalog produk, artikel, testimoni, dan konsultasi via WhatsApp.",
+        "description": "Situs company profile PT Kin Baja Suksestama, perusahaan trading material baja konstruksi (besi beton, siku, plate, WF, H-Beam). Fungsi: menampilkan profil perusahaan, visi dan misi, keunggulan, katalog produk, artikel, dan testimoni, serta menyediakan konsultasi langsung melalui WhatsApp.",
         "tools": "PHP, Bootstrap",
         "visibility": "Private",
         "sourceUrl": "https://github.com/herakarmila19/company-profile",
@@ -18,7 +18,7 @@
         "category": "Web Dev",
         "group": "Campus",
         "images": [],
-        "description": "Proyek tesis berupa dashboard web untuk memantau dan menganalisis keamanan web berdasarkan log server Apache.",
+        "description": "Dashboard web untuk penelitian tesis yang berfungsi memantau dan menganalisis keamanan web dari log server Apache. Fungsi: membaca dan mengolah data log, mengidentifikasi pola akses mencurigakan, serta menampilkannya dalam bentuk ringkasan dan visualisasi.",
         "tools": "Apache Log, Web Security",
         "visibility": "Private",
         "sourceUrl": "https://github.com/herakarmila19/tesis_hera",
@@ -29,7 +29,7 @@
         "category": "Web Dev",
         "group": "Organization",
         "images": [],
-        "description": "Backend REST API platform manajemen relawan JOIN PKS yang mengelola data relawan dari tingkat provinsi hingga kelurahan untuk aplikasi web dan mobile.",
+        "description": "Backend REST API untuk platform manajemen relawan JOIN PKS. Fungsi: menyediakan layanan data relawan, autentikasi, dan hierarki wilayah dari tingkat provinsi hingga kelurahan bagi aplikasi web dan mobile.",
         "tools": "Go, REST API, Docker",
         "visibility": "Private",
         "sourceUrl": "https://github.com/brsndpsn-connect/join-pks-api"
@@ -39,7 +39,7 @@
         "category": "Web Dev",
         "group": "Organization",
         "images": [],
-        "description": "Aplikasi web JOIN PKS untuk manajemen relawan, mencakup pendaftaran, profil relawan, hierarki wilayah, dan pelaporan.",
+        "description": "Aplikasi web manajemen relawan JOIN PKS. Fungsi: pendaftaran relawan, pengelolaan profil, pengelolaan hierarki wilayah, dan pelaporan.",
         "tools": "Svelte",
         "visibility": "Private",
         "sourceUrl": "https://github.com/brsndpsn-connect/join-pks-web",
@@ -50,7 +50,7 @@
         "category": "Web Dev",
         "group": "Organization",
         "images": [],
-        "description": "Repositori sumber belajar dan jaringan komunitas pembelajaran yang didedikasikan untuk kajian budaya Betawi.",
+        "description": "Platform sumber belajar dan jaringan komunitas untuk kajian budaya Betawi. Fungsi: menyediakan materi pembelajaran dan mewadahi interaksi antaranggota komunitas.",
         "tools": "Laravel, Tailwind CSS, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/herakarmila19/betawi_academia"
@@ -60,7 +60,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Portal publik pengajuan bantuan sosial dan permohonan bantuan untuk Suku Dinas Sosial Jakarta Selatan.",
+        "description": "Portal publik Suku Dinas Sosial Jakarta Selatan. Fungsi: pengajuan bantuan sosial oleh masyarakat, pencatatan permohonan bantuan, dan pemantauan status pengajuan.",
         "tools": "Laravel, Livewire, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/herakarmila19/sudinsos"
@@ -70,7 +70,7 @@
         "category": "Blockchain",
         "group": "Research",
         "images": [],
-        "description": "Rangkaian benchmark performa yang menganalisis throughput dan latensi transaksi pada jaringan Hyperledger Fabric berbasis Raft.",
+        "description": "Rangkaian pengujian performa jaringan Hyperledger Fabric dengan konsensus Raft. Fungsi: mengukur throughput dan latensi transaksi menggunakan Hyperledger Caliper serta membandingkan hasilnya pada beberapa skenario beban.",
         "tools": "Go, Raft, Hyperledger Fabric, Caliper",
         "visibility": "Public",
         "sourceUrl": "https://github.com/mazharrasyad/blockchain-benchmark-raft-hlf"
@@ -80,7 +80,7 @@
         "category": "Web Dev",
         "group": "Company",
         "images": [],
-        "description": "Pembaruan sistem manajemen rental kendaraan dan jasa transportasi dengan otomasi pemesanan dan kalkulator harga.",
+        "description": "Sistem manajemen rental kendaraan dan jasa transportasi (versi 2). Fungsi: pemesanan otomatis, kalkulator harga sewa, serta pengelolaan data kendaraan dan pelanggan.",
         "tools": "PHP, Laravel, Bootstrap",
         "visibility": "Private",
         "sourceUrl": "https://github.com/febrianmosii/putrajasa-v2"
@@ -95,7 +95,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Sistem pencatatan aktivitas dan pemantauan kinerja untuk staf PJLP Pasar Minggu.",
+        "description": "Sistem pemantauan kinerja tenaga PJLP di lingkungan Pasar Minggu. Fungsi: pencatatan aktivitas harian, pelaporan kinerja, dan pemantauan capaian oleh atasan.",
         "tools": "PHP, Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/herakarmila19/ekinpjlp"
@@ -105,7 +105,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Sistem informasi terintegrasi untuk mendukung tugas administrasi pemerintahan dan kemasyarakatan tingkat lokal.",
+        "description": "Sistem informasi terintegrasi untuk mendukung administrasi pemerintahan dan kemasyarakatan tingkat lokal. Fungsi: pengelolaan data layanan, pencatatan permohonan, dan pelaporan kegiatan.",
         "tools": "Laravel, Livewire, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/herakarmila19/sinomari"
@@ -115,7 +115,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Repositori arsip digital yang dirancang untuk penyimpanan dokumen yang aman dan terindeks bagi ASTIK Jakarta Selatan.",
+        "description": "Aplikasi arsip digital ASTIK Jakarta Selatan. Fungsi: mengunggah, menyimpan, mengindeks, dan mencari dokumen secara aman.",
         "tools": "Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/astikjaksel/arsip"
@@ -125,7 +125,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Pelacak tugas kemunisipalan dan antarmuka pelaporan proyek untuk meningkatkan akuntabilitas operasional.",
+        "description": "Aplikasi pelacakan tugas dan pelaporan proyek. Fungsi: pencatatan tugas, pemantauan progres pekerjaan, dan pelaporan untuk meningkatkan akuntabilitas operasional.",
         "tools": "Laravel, Livewire, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/astikjaksel/sipetruk"
@@ -135,7 +135,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Portal pengajuan elektronik untuk rencana pengadaan barang milik instansi atau daerah.",
+        "description": "Portal elektronik pengajuan Rencana Kebutuhan Barang Unit. Fungsi: penyusunan usulan pengadaan barang, pengajuan secara daring, dan pemantauan status persetujuan.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/astikjaksel/e-rkbu"
@@ -145,7 +145,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Asisten perhitungan dan pencatatan digital untuk pembagian warisan sesuai peraturan yang berlaku.",
+        "description": "Aplikasi perhitungan dan pencatatan pembagian warisan. Fungsi: menghitung bagian tiap ahli waris sesuai ketentuan yang berlaku dan menyimpan hasil perhitungannya.",
         "tools": "Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/astikjaksel/waris"
@@ -155,7 +155,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Platform pemantauan tata ruang dan penataan kawasan yang memungkinkan petugas menginput hasil survei struktur.",
+        "description": "Platform pemantauan penataan ruang dan kawasan. Fungsi: petugas menginput hasil survei struktur dan kondisi kawasan, serta memantau tindak lanjutnya.",
         "tools": "Laravel, Livewire, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/astikjaksel/penataan"
@@ -165,7 +165,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Sistem manajemen rumah kost yang melacak ketersediaan kamar, tagihan sewa, dan tanggal check-in.",
+        "description": "Sistem manajemen rumah kost. Fungsi: pemantauan ketersediaan kamar, pencatatan tanggal check-in, serta pengelolaan tagihan dan pembayaran sewa.",
         "tools": "Laravel, Vue.js, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/astikjaksel/sistem-kost"
@@ -175,7 +175,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Portal data terintegrasi yang mendukung perencanaan umum masyarakat dan partisipasi program lokal.",
+        "description": "Portal data terintegrasi untuk perencanaan dan partisipasi masyarakat. Fungsi: mengelola data perencanaan dan program lokal serta mencatat partisipasi warga.",
         "tools": "Laravel, Livewire, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/astikjaksel/sipera"
@@ -185,7 +185,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Portal alur penyusunan dan penandatanganan kontrak digital yang melacak progres perjanjian vendor.",
+        "description": "Portal alur kontrak digital. Fungsi: penyusunan kontrak, proses penandatanganan, dan pemantauan progres perjanjian dengan vendor.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/astikjaksel/e-kontrack"
@@ -195,7 +195,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Sistem penilaian kinerja terpadu untuk tenaga kontrak di seluruh kantor wilayah Jakarta Selatan.",
+        "description": "Sistem penilaian kinerja terpadu untuk tenaga PJLP di seluruh kantor wilayah Jakarta Selatan. Fungsi: pencatatan aktivitas, penilaian, dan rekapitulasi kinerja per wilayah.",
         "tools": "PHP, Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/astikjaksel/ekinpjlp-wilayah"
@@ -205,7 +205,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Portal bantuan sosial dan lingkungan yang memantau kegiatan kepedulian komunitas dan penyaluran bantuan.",
+        "description": "Portal bantuan sosial dan lingkungan. Fungsi: mencatat kegiatan kepedulian komunitas, memantau penyaluran bantuan, dan menyusun laporannya.",
         "tools": "Laravel, Bootstrap, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/astikjaksel/metagov-js-care"
@@ -215,7 +215,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Platform pemantauan Demam Berdarah yang memetakan kasus kesehatan dan kampanye pemberantasan.",
+        "description": "Platform pemantauan kasus Demam Berdarah Dengue. Fungsi: pencatatan dan pemetaan kasus, pemantauan kampanye pemberantasan, serta penyajian grafik statistik.",
         "tools": "Laravel, Chart.js, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/astikjaksel/dbd"
@@ -225,7 +225,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Sistem pelaporan publik untuk pemantauan infrastruktur dan layanan daerah.",
+        "description": "Sistem pelaporan publik untuk infrastruktur dan layanan daerah. Fungsi: warga menyampaikan laporan, petugas menindaklanjuti, dan perkembangan penanganan dapat dipantau.",
         "tools": "Laravel, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/astikjaksel/pamor"
@@ -235,7 +235,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Pelacak konsolidasi pengajuan izin dan perizinan publik.",
+        "description": "Sistem pelacakan pengajuan izin dan perizinan publik. Fungsi: mengonsolidasikan berkas pengajuan, memantau tahapan proses, dan menampilkan status perizinan.",
         "tools": "Laravel, Livewire, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/astikjaksel/sip"
@@ -245,7 +245,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Portal pemantauan kinerja lanjutan untuk tenaga kontrak Kominfo dengan alur pelaporan yang lebih baik.",
+        "description": "Lanjutan portal kinerja tenaga PJLP Kominfo. Fungsi: penyempurnaan alur pelaporan, pemantauan capaian kinerja, dan rekapitulasi hasil penilaian.",
         "tools": "Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/astikjaksel/ekinerja-pjlp-kominfo"
@@ -255,7 +255,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Dasbor kemasyarakatan RT/RW yang mendukung digitalisasi administrasi lokal dan pengumuman warga.",
+        "description": "Dashboard kemasyarakatan tingkat RT/RW. Fungsi: digitalisasi administrasi lingkungan, pengelolaan data warga, dan penyampaian pengumuman kepada warga.",
         "tools": "Laravel, Bootstrap, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/serambi-06"
@@ -265,7 +265,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Portal perencanaan tenaga kerja wilayah dan pelacakan target bulanan.",
+        "description": "Portal perencanaan dan pemantauan kinerja tenaga kerja tingkat wilayah. Fungsi: penetapan target bulanan, pencatatan realisasi, dan pemantauan capaian.",
         "tools": "PHP, Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/ekin-wilayah"
@@ -275,7 +275,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Sistem pencatatan kesehatan ibu dan anak yang merekam grafik pertumbuhan anak dan jadwal imunisasi.",
+        "description": "Sistem pencatatan kesehatan ibu dan anak untuk Posyandu. Fungsi: merekam data pertumbuhan anak dalam bentuk grafik, mengelola jadwal imunisasi, dan menyimpan riwayat kunjungan.",
         "tools": "Laravel, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/posyandu"
@@ -285,7 +285,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Modul alur kerja inti dan pencatatan awal untuk pelaporan kinerja tenaga kontrak Kominfo.",
+        "description": "Modul awal sistem pelaporan kinerja tenaga PJLP Kominfo. Fungsi: alur kerja inti, pencatatan aktivitas, dan pelaporan kinerja.",
         "tools": "PHP, Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/ekinerja-pjlp"
@@ -295,7 +295,7 @@
         "category": "Web Dev",
         "group": "Company",
         "images": [],
-        "description": "Sistem dasbor pusat untuk pelacakan aset digital dan integrasi log.",
+        "description": "Dashboard pusat untuk pelacakan aset digital. Fungsi: mencatat dan memantau aset serta mengintegrasikan log aktivitas dalam satu tampilan.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/daxtro"
@@ -305,7 +305,7 @@
         "category": "Blockchain",
         "group": "Research",
         "images": [],
-        "description": "Implementasi node blockchain independen dengan konsensus ledger, pooling transaksi, dan API node.",
+        "description": "Implementasi node blockchain sederhana. Fungsi: pencatatan transaksi ke pool, penambangan blok, sinkronisasi ledger antarnode dengan konsensus rantai terpanjang, serta API untuk mengakses node.",
         "tools": "Python, Flask, Cryptography",
         "visibility": "Public",
         "sourceUrl": "https://github.com/mazharrasyad/blockchain-node-python"
@@ -315,7 +315,7 @@
         "category": "Blockchain",
         "group": "Research",
         "images": [],
-        "description": "Arsitektur smart contract yang aman untuk penyimpanan sertifikasi tanah pada blockchain Hyperledger.",
+        "description": "Smart contract berbasis Hyperledger Fabric untuk sertifikat hak milik (SHM) tanah. Fungsi: menyimpan data sertifikat di blockchain secara aman dan menjaga keutuhan datanya.",
         "tools": "Go, Hyperledger Fabric, Docker",
         "visibility": "Public",
         "sourceUrl": "https://github.com/mazharrasyad/blockchain-shm"
@@ -325,7 +325,7 @@
         "category": "Data",
         "group": "Research",
         "images": [],
-        "description": "Repositori data geolokasi GIS terstruktur yang berisi batas administrasi wilayah Indonesia.",
+        "description": "Repositori data GeoJSON batas administrasi wilayah Indonesia tahun 2021. Fungsi: menyediakan data geolokasi terstruktur untuk pemetaan dan analisis berbasis GIS.",
         "tools": "GeoJSON, GIS, JavaScript",
         "visibility": "Public",
         "sourceUrl": "https://github.com/mazharrasyad/indonesia-geojson-batas-admin-2021"
@@ -335,7 +335,7 @@
         "category": "Blockchain",
         "group": "Research",
         "images": [],
-        "description": "Asisten konsensus blockchain yang terintegrasi machine learning untuk mengklasifikasikan prioritas konsensus melalui SVM.",
+        "description": "Layanan machine learning untuk konsensus blockchain. Fungsi: mengklasifikasikan prioritas konsensus menggunakan Support Vector Machine (SVM) dan mengirim hasilnya ke jaringan blockchain.",
         "tools": "Python, AI, Scikit-learn, Web3",
         "visibility": "Public",
         "sourceUrl": "https://github.com/mazharrasyad/blockchain-svm-ai"
@@ -345,7 +345,7 @@
         "category": "Blockchain",
         "group": "Research",
         "images": [],
-        "description": "Dasbor pengguna dan konsol manajemen front-end untuk memvisualisasikan parameter blockchain-SVM.",
+        "description": "Antarmuka web untuk sistem blockchain-SVM. Fungsi: dashboard pengguna dan konsol manajemen untuk menampilkan serta mengatur parameter blockchain.",
         "tools": "React.js, Node.js, Tailwind CSS",
         "visibility": "Public",
         "sourceUrl": "https://github.com/mazharrasyad/blockchain-svm-web"
@@ -355,7 +355,7 @@
         "category": "Blockchain",
         "group": "Research",
         "images": [],
-        "description": "Implementasi chaincode untuk aturan konsensus terdesentralisasi yang dikendalikan oleh metrik SVM.",
+        "description": "Chaincode Hyperledger Fabric untuk sistem blockchain-SVM. Fungsi: menjalankan aturan konsensus terdesentralisasi berdasarkan metrik hasil klasifikasi SVM.",
         "tools": "Go, Smart Contract, Hyperledger",
         "visibility": "Public",
         "sourceUrl": "https://github.com/mazharrasyad/blockchain-svm-chaincode"
@@ -365,7 +365,7 @@
         "category": "Web Dev",
         "group": "Company",
         "images": [],
-        "description": "Portal landing page resmi dan katalog produk untuk layanan Tripa Systems Information.",
+        "description": "Situs resmi Tripa Systems Information. Fungsi: landing page perusahaan dan katalog produk serta layanan.",
         "tools": "Laravel, Tailwind CSS, Nuxt.js",
         "visibility": "Public",
         "sourceUrl": "https://tripasysfo.com/"
@@ -375,7 +375,7 @@
         "category": "Web Dev",
         "group": "Company",
         "images": [],
-        "description": "Dasbor internal ERP dan pelacakan operasional untuk kegiatan Tensindo.",
+        "description": "Dashboard internal ERP untuk operasional Tensindo. Fungsi: pengelolaan data operasional dan pelacakan kegiatan perusahaan.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://tripasysfo.com/tensindo"
@@ -385,7 +385,7 @@
         "category": "Web Dev",
         "group": "Company",
         "images": [],
-        "description": "Aplikasi Point of Sale (POS) modern dan responsif untuk manajemen inventaris ritel dan bisnis lokal.",
+        "description": "Aplikasi Point of Sale (POS) untuk ritel dan usaha lokal. Fungsi: pencatatan transaksi penjualan, pengelolaan inventaris dan stok, serta pelaporan penjualan.",
         "tools": "React.js, Laravel, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/febrianmosii/foliopos_app"
@@ -400,7 +400,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Sistem manajemen pertanian perkotaan yang dibangun untuk mencatat dan memvisualisasikan tanaman, hasil panen, dan data pertanian.",
+        "description": "Sistem manajemen pertanian perkotaan. Fungsi: mencatat data tanaman dan hasil panen, serta menampilkannya dalam bentuk visualisasi.",
         "tools": "PHP, Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/herakarmila19/balkotfarm"
@@ -410,7 +410,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Sistem evaluasi dan pelaporan kinerja yang dikembangkan untuk tenaga kontrak PJLP secara umum.",
+        "description": "Sistem evaluasi dan pelaporan kinerja tenaga PJLP. Fungsi: pengisian laporan kinerja, penilaian oleh atasan, dan rekapitulasi hasil evaluasi.",
         "tools": "PHP, Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/herakarmila19/esetko-pjlp"
@@ -420,7 +420,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Portal layanan informasi dan dokumentasi publik (PPID) yang mendukung standar transparansi pemerintahan.",
+        "description": "Portal Pejabat Pengelola Informasi dan Dokumentasi (PPID). Fungsi: menyediakan informasi publik, menerima permohonan informasi, dan mengelola dokumentasi sesuai standar keterbukaan informasi.",
         "tools": "Laravel, Livewire, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/herakarmila19/ppid"
@@ -430,7 +430,7 @@
         "category": "Web Dev",
         "group": "Organization",
         "images": [],
-        "description": "Platform web untuk polling, koordinasi jaringan pemilih, dan pelacakan statistik proses pemilu.",
+        "description": "Platform web untuk pemilu. Fungsi: polling, koordinasi jaringan pemilih, dan pelacakan statistik proses pemilihan.",
         "tools": "Laravel, Livewire, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/jaringansuaraindonesia"
@@ -440,7 +440,7 @@
         "category": "Web Dev",
         "group": "Organization",
         "images": [],
-        "description": "Platform edukasi dan portal pembelajaran untuk mengelola konten kursus, basis data siswa, dan jadwal.",
+        "description": "Platform edukasi dan portal pembelajaran. Fungsi: pengelolaan materi kursus, data siswa, dan jadwal belajar.",
         "tools": "PHP, Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/lenteracendikia"
@@ -450,7 +450,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Platform pemantauan pajak dan pendapatan daerah yang dirancang untuk mengagregasi data evaluasi administratif.",
+        "description": "Platform pemantauan pajak dan pendapatan daerah. Fungsi: mengumpulkan dan merekapitulasi data evaluasi administratif untuk pelaporan.",
         "tools": "Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/subanpenda"
@@ -460,7 +460,7 @@
         "category": "Web Dev",
         "group": "Campus",
         "images": [],
-        "description": "Portal manajemen kegiatan ekstrakurikuler sekolah, memungkinkan siswa mendaftar dan melacak prestasi.",
+        "description": "Portal manajemen ekstrakurikuler sekolah. Fungsi: pendaftaran siswa ke kegiatan ekstrakurikuler dan pencatatan prestasi.",
         "tools": "PHP, Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/webeskul"
@@ -470,7 +470,7 @@
         "category": "Web Dev",
         "group": "Campus",
         "images": [],
-        "description": "Sistem absensi karyawan ramah perangkat mobile dengan geolokasi dan pencatatan check-in/check-out otomatis.",
+        "description": "Sistem absensi karyawan berbasis web yang ramah perangkat mobile. Fungsi: pencatatan check-in dan check-out otomatis dengan geolokasi.",
         "tools": "Laravel, JavaScript, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/absen"
@@ -480,7 +480,7 @@
         "category": "Web Dev",
         "group": "Campus",
         "images": [],
-        "description": "Sistem bantuan pertanian yang menyediakan informasi, tips pertanian, dan sumber daya bagi komunitas petani lokal.",
+        "description": "Sistem bantuan bagi petani lokal. Fungsi: menyediakan informasi pertanian, tips budidaya, dan sumber daya pendukung.",
         "tools": "PHP, Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/bantutani"
@@ -490,7 +490,7 @@
         "category": "Web Dev",
         "group": "Campus",
         "images": [],
-        "description": "Platform perpustakaan digital dan komunitas membaca untuk mengelola inventaris buku, catatan peminjaman, dan acara.",
+        "description": "Aplikasi perpustakaan digital dan komunitas baca. Fungsi: pengelolaan inventaris buku, pencatatan peminjaman, dan pengelolaan acara.",
         "tools": "PHP, CodeIgniter, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/rumahbaca"
@@ -500,7 +500,7 @@
         "category": "IoT / Data",
         "group": "Research",
         "images": [],
-        "description": "Sistem pemantauan kualitas udara lingkungan yang membaca nilai partikulat via sensor dan memplot data historis.",
+        "description": "Sistem pemantauan kualitas udara berbasis IoT. Fungsi: membaca nilai partikulat (PM) dari sensor pada Raspberry Pi dan memplot data historisnya.",
         "tools": "Python, IoT, Raspberry Pi",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/particulate-matter"
@@ -510,7 +510,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Portal rekrutmen dan pendaftaran terpusat untuk calon tenaga kontrak (PJLP) di Dinas Kominfo.",
+        "description": "Portal rekrutmen calon tenaga PJLP di Dinas Kominfo. Fungsi: pendaftaran pelamar, pengunggahan berkas, dan pengelolaan data pendaftar terpusat.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/pendaftaran-pjlp"
@@ -520,7 +520,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Portal layanan administrasi dan kemasyarakatan lokal yang disesuaikan untuk layanan kelurahan Pasar Minggu.",
+        "description": "Portal layanan administrasi dan kemasyarakatan Kelurahan Pasar Minggu. Fungsi: pengelolaan layanan dan data warga serta pencatatan permohonan.",
         "tools": "Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/pasar-minggu-sinobi"
@@ -530,7 +530,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Alat pelacakan indeks kinerja korporat dan institusional menggunakan pelaporan metrik utama secara kolaboratif.",
+        "description": "Alat pelacakan indeks kinerja korporat dan institusional. Fungsi: pelaporan metrik kinerja utama secara kolaboratif.",
         "tools": "Laravel, Livewire, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/kkpp"
@@ -540,7 +540,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Sistem informasi terintegrasi yang memfasilitasi logistik korporat, pendaftaran, dan perencanaan inventaris.",
+        "description": "Sistem informasi terintegrasi untuk logistik korporat. Fungsi: pendaftaran, perencanaan inventaris, dan pencatatan pergerakan barang.",
         "tools": "Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/sinoli"
@@ -550,7 +550,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Portal pemantauan pemberantasan sarang nyamuk yang memungkinkan petugas kesehatan mencatat data langsung dari lapangan.",
+        "description": "Portal pemantauan Pemberantasan Sarang Nyamuk (PSN). Fungsi: petugas kesehatan mencatat hasil pemeriksaan langsung dari lapangan dan merekapitulasinya.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/psn"
@@ -560,7 +560,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Penjadwal alokasi ruang rapat dan reservasi fasilitas dengan pencegahan konflik otomatis.",
+        "description": "Sistem pemesanan ruang rapat dan fasilitas. Fungsi: penjadwalan alokasi ruang dan reservasi dengan pencegahan jadwal bentrok otomatis.",
         "tools": "Laravel, Livewire, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/sidanru"
@@ -570,7 +570,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Platform manajemen proposal proyek terpusat yang memungkinkan pengajuan, review, dan pencatatan progres secara sederhana.",
+        "description": "Platform manajemen proposal proyek. Fungsi: pengajuan proposal, proses review, dan pencatatan progres dalam satu sistem.",
         "tools": "Laravel, Bootstrap, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/sipp"
@@ -580,7 +580,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Dasbor pencatatan aktivitas atau akademik yang dibangun untuk membuat dan mengarsipkan ringkasan kerja harian.",
+        "description": "Dashboard pencatatan aktivitas harian atau akademik. Fungsi: membuat, menyimpan, dan mengarsipkan ringkasan kegiatan.",
         "tools": "Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/jurnal"
@@ -590,7 +590,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Aplikasi manajemen arsip publik dan pengindeksan catatan yang dirancang untuk instansi kemunisipalan.",
+        "description": "Aplikasi manajemen arsip publik. Fungsi: pencatatan arsip, pengindeksan, dan penelusuran dokumen untuk instansi pemerintah.",
         "tools": "PHP, Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/siaris"
@@ -600,7 +600,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Dasbor layanan publik yang memusatkan berbagai modul permohonan warga dan formulir yang dapat dilacak.",
+        "description": "Dashboard layanan publik terpusat. Fungsi: menghimpun modul permohonan dan formulir warga serta melacak status pengajuannya.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/layanan"
@@ -610,7 +610,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Portal administrasi serah terima (Berita Acara Serah Terima) yang memastikan catatan aset organisasi dapat diverifikasi.",
+        "description": "Portal administrasi Berita Acara Serah Terima (BAST). Fungsi: pembuatan BAST dan pencatatan aset yang dapat diverifikasi.",
         "tools": "Laravel, Livewire, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/sinerbast"
@@ -620,7 +620,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Dasbor data analitik yang menyediakan wawasan visual komprehensif dan grafik untuk kinerja bisnis.",
+        "description": "Dashboard analitik data. Fungsi: menyajikan grafik dan ringkasan visual kinerja bisnis untuk mendukung pengambilan keputusan.",
         "tools": "Laravel, Chart.js, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/insighthub"
@@ -630,7 +630,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Sistem verifikasi untuk lamaran kerja dan posisi kontrak, mengotomatisasi pemeriksaan latar belakang dan audit dokumen.",
+        "description": "Sistem verifikasi lamaran kerja dan posisi kontrak. Fungsi: pemeriksaan latar belakang pelamar dan audit kelengkapan dokumen secara otomatis.",
         "tools": "Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/siverjab"
@@ -640,7 +640,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Direktori e-commerce dan platform promosi yang dibangun untuk usaha mikro, kecil, dan menengah (UMKM) lokal.",
+        "description": "Direktori dan platform promosi UMKM lokal. Fungsi: menampilkan profil dan produk usaha serta mendukung penjualan secara daring.",
         "tools": "Laravel, Livewire, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/umkm"
@@ -650,7 +650,7 @@
         "category": "Web Dev",
         "group": "Organization",
         "images": [],
-        "description": "Portal resmi komunitas KAHMI Jaya, menampilkan berita, panel pendaftaran, dan direktori anggota.",
+        "description": "Portal resmi komunitas KAHMI Jaya. Fungsi: publikasi berita, pendaftaran anggota, dan direktori anggota.",
         "tools": "PHP, Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/kahmijaya"
@@ -665,7 +665,7 @@
         "category": "Web Dev",
         "group": "Learning",
         "images": [],
-        "description": "Tugas edukatif dan implementasi sistem dalam bahasa Go yang dikembangkan pada program Rakamin Academy.",
+        "description": "Proyek pembelajaran backend Go pada program Rakamin Academy. Fungsi: latihan pembuatan REST API dengan framework Gin dan basis data PostgreSQL.",
         "tools": "Go, Gin, PostgreSQL",
         "visibility": "Public",
         "sourceUrl": "https://github.com/mazharrasyad/go-rakamin"
@@ -675,7 +675,7 @@
         "category": "Web Dev",
         "group": "Learning",
         "images": [],
-        "description": "Proyek dan berkas latihan berbasis Go yang dibuat untuk program pelatihan Digitalent.",
+        "description": "Proyek pembelajaran backend Go pada program Digitalent. Fungsi: latihan pembuatan REST API dengan framework Gin dan basis data MySQL.",
         "tools": "Go, Gin, MySQL",
         "visibility": "Public",
         "sourceUrl": "https://github.com/mazharrasyad/go-digitalent"
@@ -685,7 +685,7 @@
         "category": "Web Dev",
         "group": "Organization",
         "images": [],
-        "description": "Sistem informasi yang dirancang untuk mengelola dan memantau calon legislatif serta koordinasi relawan pemilu.",
+        "description": "Sistem informasi calon legislatif. Fungsi: pengelolaan data calon, koordinasi relawan, dan pemantauan kegiatan pemilu.",
         "tools": "PHP, Laravel, MySQL",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/caleg-yasdar"
@@ -695,7 +695,7 @@
         "category": "Web Dev",
         "group": "Government",
         "images": [],
-        "description": "Situs curriculum vitae pribadi profesional yang menampilkan profil karier dan publikasi Bahrullah Akbar.",
+        "description": "Situs curriculum vitae pribadi Bahrullah Akbar. Fungsi: menampilkan profil, riwayat karier, dan publikasi.",
         "tools": "HTML, CSS, JavaScript",
         "visibility": "Private",
         "sourceUrl": "https://github.com/mazharrasyad/cv-bahrullah-akbar"
@@ -705,7 +705,7 @@
         "category": "Web Dev",
         "group": "Company",
         "images": [],
-        "description": "Situs resmi Hotel Horison Ultima Bandung, menampilkan informasi pemesanan kamar, fasilitas banquet, dan layanan.",
+        "description": "Situs resmi Hotel Horison Ultima Bandung. Fungsi: informasi kamar, fasilitas banquet, dan layanan, serta pemesanan kamar.",
         "tools": "WordPress, Elementor, PHP",
         "visibility": "Private",
         "sourceUrl": "https://www.horisonultimabandung.com/"
@@ -715,7 +715,7 @@
         "category": "Web Dev",
         "group": "Company",
         "images": [],
-        "description": "Platform manajemen properti hotel dan mesin pemesanan yang komprehensif, mendukung skema multi-tenant hotel.",
+        "description": "Platform manajemen properti hotel dan mesin pemesanan. Fungsi: pengelolaan kamar, reservasi, dan pemesanan, dengan dukungan multi-tenant untuk banyak hotel.",
         "tools": "Laravel, Vue.js, Tailwind CSS",
         "visibility": "Public",
         "sourceUrl": "https://tripasysfo.com/recerva"
@@ -725,7 +725,7 @@
         "category": "Web Dev",
         "group": "Company",
         "images": [],
-        "description": "Platform backend Administrative Operations Center (AOC) untuk mengelola instance hotel Recerva, pembayaran, dan pelaporan.",
+        "description": "Platform backend Administrative Operations Center (AOC). Fungsi: mengelola instance hotel Recerva, pembayaran, dan pelaporan.",
         "tools": "Laravel, Vue.js, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://tripasysfo.com/aoc"
@@ -735,7 +735,7 @@
         "category": "Web Dev",
         "group": "Company",
         "images": [],
-        "description": "Alat manajemen layanan dan administrasi terpadu yang dikembangkan untuk integrasi sistem hotel.",
+        "description": "Alat administrasi dan manajemen layanan untuk integrasi sistem hotel. Fungsi: mengelola layanan dan menghubungkannya dengan sistem hotel melalui API.",
         "tools": "Laravel, Tailwind CSS, API",
         "visibility": "Public",
         "sourceUrl": "https://tripasysfo.com/proxima"
@@ -758,7 +758,7 @@
           "/projects/2022/p47/6.png",
           "/projects/2022/p47/7.png"
         ],
-        "description": "PKK E-Report adalah situs web yang dirancang untuk mendokumentasikan kegiatan PKK di tingkat Kota Administrasi Jakarta Selatan. Fitur yang tersedia meliputi membuat, mengedit, melihat, menghapus, dan mengunduh laporan.",
+        "description": "Situs pelaporan kegiatan PKK Kota Administrasi Jakarta Selatan. Fungsi: membuat, mengubah, melihat, menghapus, dan mengunduh laporan kegiatan.",
         "tools": "Codeigniter PHP Framework, MySQL",
         "updated": "25 May 2022",
         "visibility": "Private",
@@ -772,7 +772,7 @@
           "/projects/2022/p48/1.png",
           "/projects/2022/p48/2.png"
         ],
-        "description": "Aplikasi ini digunakan untuk mengonversi berkas log yang dihasilkan oleh layanan Apache ke format CSV menggunakan bahasa pemrograman Python.",
+        "description": "Aplikasi Python untuk mengonversi berkas log Apache ke format CSV. Fungsi: mengurai baris log dan menyimpannya sebagai data tabular yang siap dianalisis.",
         "tools": "Python",
         "updated": "23 Jun 2022",
         "visibility": "Public",
@@ -790,7 +790,7 @@
           "/projects/2022/p49/5.jpeg",
           "/projects/2022/p49/6.jpeg"
         ],
-        "description": "Learn Midtrans mengeksplorasi cara mengintegrasikan fitur Midtrans, sebuah sistem Payment Gateway, menggunakan API-nya.",
+        "description": "Eksplorasi integrasi payment gateway Midtrans dengan PHP. Fungsi: membuat transaksi pembayaran melalui API Midtrans dan menerima status pembayarannya.",
         "tools": "Midtrans PHP",
         "updated": "24 Jun 2022",
         "visibility": "Public",
@@ -810,7 +810,7 @@
           "/projects/2022/p50/7.png",
           "/projects/2022/p50/8.png"
         ],
-        "description": "SINOBI-DATIN (Sistem Informasi Terintegrasi Satu Data Besar) adalah program dari Kelurahan Pasar Minggu yang digunakan sebagai portal layanan terpusat melalui situs web. Fiturnya mencakup informasi publik, berita, layanan daring, kontak, hingga akses ke sumber daya terkait Kelurahan Pasar Minggu di Kota Administrasi Jakarta Selatan.",
+        "description": "Sistem Informasi Terintegrasi Satu Data Besar milik Kelurahan Pasar Minggu. Fungsi: portal layanan terpusat yang memuat informasi publik, berita, layanan daring, kontak, dan akses ke sumber daya kelurahan.",
         "tools": "Codeigniter PHP Framework, MySQL",
         "updated": "05 Aug 2022",
         "visibility": "Private",
@@ -831,7 +831,7 @@
           "/projects/2022/p51/8.png",
           "/projects/2022/p51/9.png"
         ],
-        "description": "SITEMAN-NIB (Sistem Integrasi Layanan Perizinan Nomor Induk Berusaha Berbasis Risiko) dirancang untuk pelaku usaha di kawasan Pondok Labu, Jakarta Selatan. Fiturnya meliputi layanan pendampingan, layanan informasi, big data perizinan, regulasi NIB, FAQ, dan lainnya.",
+        "description": "Sistem layanan perizinan Nomor Induk Berusaha (NIB) berbasis risiko untuk pelaku usaha di Pondok Labu, Jakarta Selatan. Fungsi: layanan pendampingan, informasi, big data perizinan, regulasi NIB, dan FAQ.",
         "tools": "Codeigniter PHP Framework, MySQL",
         "updated": "15 Aug 2022",
         "visibility": "Private",
@@ -844,7 +844,7 @@
         "images": [
           "/projects/2022/p52/1.png"
         ],
-        "description": "SILOTANG adalah sistem pelaporan otomatis yang dirancang untuk mengonversi berkas terstruktur menjadi tampilan berbasis web, memudahkan pengelolaan dan pemrosesan menjadi data.",
+        "description": "Sistem pelaporan otomatis. Fungsi: mengonversi berkas terstruktur menjadi tampilan web sehingga data lebih mudah dikelola dan diproses.",
         "tools": "Codeigniter PHP Framework, MySQL",
         "updated": "22 Aug 2022",
         "visibility": "Private",
@@ -858,7 +858,7 @@
           "/projects/2022/p53/1.png",
           "/projects/2022/p53/2.png"
         ],
-        "description": "Mempelajari kembali dasar-dasar pemrograman aplikasi web, mencakup HTML, CSS, dan JavaScript secara bertahap.",
+        "description": "Latihan dasar pemrograman web. Fungsi: mempelajari HTML, CSS, dan JavaScript secara bertahap.",
         "tools": "HTML, CSS, JavaScript",
         "updated": "27 Aug 2022",
         "visibility": "Public",
@@ -872,7 +872,7 @@
           "/projects/2022/p54/1.png",
           "/projects/2022/p54/2.png"
         ],
-        "description": "Mempelajari konsep dasar frontend aplikasi web, berfokus pada interaksi antara pengguna dan sistem web, seperti perubahan UI secara real-time dan penyimpanan perubahan yang dibuat pengguna.",
+        "description": "Latihan dasar frontend web. Fungsi: mempelajari interaksi pengguna dengan sistem, seperti perubahan UI secara real-time dan penyimpanan perubahan data yang dibuat pengguna.",
         "tools": "HTML, CSS, JavaScript",
         "updated": "27 Aug 2022",
         "visibility": "Public",
@@ -888,7 +888,7 @@
           "/projects/2022/p55/3.jpeg",
           "/projects/2022/p55/4.jpeg"
         ],
-        "description": "TerbaikTUFJ adalah platform web e-commerce urban farming yang diinisiasi oleh Sudin KPKP Jakarta Selatan. Tanggung jawab meliputi pemeliharaan web seperti perbaikan konten tabel, slideshow khusus, penyematan video, dan integrasi fitur pengiriman GoSend baru.",
+        "description": "Platform e-commerce urban farming yang diinisiasi Sudin KPKP Jakarta Selatan. Kontribusi: pemeliharaan situs meliputi perbaikan konten tabel, slideshow khusus, penyematan video, dan integrasi pengiriman GoSend.",
         "tools": "Codeigniter PHP Framework, MySQL",
         "updated": "31 Aug 2022",
         "visibility": "Private",
@@ -906,7 +906,7 @@
           "/projects/2022/p56/5.png",
           "/projects/2022/p56/6.png"
         ],
-        "description": "UP3D Setiabudi adalah layanan yang disediakan oleh Kecamatan Setiabudi, Jakarta Selatan, kepada masyarakat, mencakup penyebaran informasi, pendaftaran, pelacakan permohonan, dan FAQ.",
+        "description": "Layanan Kecamatan Setiabudi, Jakarta Selatan. Fungsi: penyebaran informasi, pendaftaran, pelacakan permohonan, dan FAQ bagi masyarakat.",
         "tools": "Codeigniter PHP Framework, MySQL",
         "updated": "31 Aug 2022",
         "visibility": "Private",
@@ -923,7 +923,7 @@
           "/projects/2022/p57/4.png",
           "/projects/2022/p57/5.png"
         ],
-        "description": "Sisirteco adalah sistem yang dirancang untuk memeriksa kendaraan yang masuk ke Tebet Eco Park, Jakarta Selatan. Dikembangkan untuk mengatasi masalah kapasitas parkir yang mengganggu warga sekitar saat keluar-masuk.",
+        "description": "Sistem pemeriksaan kendaraan masuk Tebet Eco Park, Jakarta Selatan. Fungsi: mencatat kendaraan yang masuk dan memantau kapasitas parkir agar tidak mengganggu warga sekitar.",
         "tools": "Codeigniter PHP Framework, MySQL",
         "updated": "19 Sep 2022",
         "visibility": "Private",
@@ -940,7 +940,7 @@
           "/projects/2022/p58/4.png",
           "/projects/2022/p58/5.png"
         ],
-        "description": "Sudinbud adalah portal berita yang didedikasikan untuk Suku Dinas Kebudayaan Kota Administrasi Jakarta Selatan.",
+        "description": "Portal berita Suku Dinas Kebudayaan Kota Administrasi Jakarta Selatan. Fungsi: publikasi dan pengelolaan berita kegiatan kebudayaan.",
         "tools": "Codeigniter PHP Framework, MySQL",
         "updated": "25 Sep 2022",
         "visibility": "Private",
@@ -954,7 +954,7 @@
           "/projects/2022/p59/1.png",
           "/projects/2022/p59/2.png"
         ],
-        "description": "Germor Sedekah adalah program Pemerintah Kota Administrasi Jakarta Selatan yang bertujuan meningkatkan kesejahteraan masyarakat melalui penyaluran barang donasi.",
+        "description": "Program Pemerintah Kota Administrasi Jakarta Selatan untuk penyaluran barang donasi. Fungsi: pencatatan donasi dan penyalurannya kepada masyarakat yang membutuhkan.",
         "tools": "Codeigniter PHP Framework, MySQL",
         "updated": "31 Oct 2022",
         "visibility": "Private",
@@ -970,7 +970,7 @@
           "/projects/2022/p60/3.png",
           "/projects/2022/p60/4.png"
         ],
-        "description": "SI UCI (Sistem Informasi Layanan Utama Warga) adalah penyedia informasi 24 jam tentang Kota Administrasi Jakarta Selatan yang didukung oleh Chatbot.",
+        "description": "Sistem Informasi Layanan Utama Warga. Fungsi: informasi tentang Kota Administrasi Jakarta Selatan yang tersedia 24 jam melalui chatbot.",
         "tools": "Codeigniter PHP Framework, MySQL",
         "updated": "11 Nov 2022",
         "visibility": "Private",
@@ -987,7 +987,7 @@
           "/projects/2022/p61/4.png",
           "/projects/2022/p61/5.png"
         ],
-        "description": "Pencatatan Hubungan Industrial (HI) adalah layanan publik bagi individu yang menghadapi permasalahan ketenagakerjaan, meliputi pencatatan pengaduan, pelacakan laporan, dan koordinasi antar kedua belah pihak.",
+        "description": "Layanan publik Pencatatan Hubungan Industrial (HI). Fungsi: pencatatan pengaduan ketenagakerjaan, pelacakan laporan, dan koordinasi antara pihak yang berselisih.",
         "tools": "Codeigniter PHP Framework, MySQL",
         "updated": "14 Nov 2022",
         "visibility": "Private",
@@ -1014,7 +1014,7 @@
           "/projects/2022/p62/14.png",
           "/projects/2022/p62/15.png"
         ],
-        "description": "Situs resmi Jakarta Selatan, menyediakan berbagai informasi termasuk berita terkini, video, acara, profil, direktori resmi, data wilayah, akses dokumen publik (PPID), dan layanan publik.",
+        "description": "Situs resmi Kota Administrasi Jakarta Selatan. Fungsi: menyajikan berita, video, acara, profil, direktori resmi, data wilayah, akses dokumen publik (PPID), dan layanan publik.",
         "tools": "Codeigniter PHP Framework, MySQL",
         "updated": "12 Dec 2022",
         "visibility": "Private",
@@ -1031,7 +1031,7 @@
           "/projects/2022/p63/4.png",
           "/projects/2022/p63/5.png"
         ],
-        "description": "IPTM (Izin Pemanfaatan Tanah Makam) adalah layanan Pemerintah Kabupaten Tangerang yang membantu masyarakat memperoleh izin pemanfaatan tempat pemakaman umum.",
+        "description": "Layanan Izin Pemanfaatan Tanah Makam (IPTM) Pemerintah Kabupaten Tangerang. Fungsi: membantu masyarakat mengajukan dan memperoleh izin pemanfaatan tempat pemakaman umum.",
         "tools": "Laravel PHP Framework, MySQL",
         "updated": "23 Dec 2022",
         "visibility": "Private",
@@ -1054,7 +1054,7 @@
           "/projects/2022/p64/10.png",
           "/projects/2022/p64/11.png"
         ],
-        "description": "mazharrasyad.github.io adalah portofolio berbasis web milik Muhammad Azhar Rasyad.",
+        "description": "Portofolio web Muhammad Azhar Rasyad. Fungsi: menampilkan profil serta daftar proyek yang telah dikerjakan.",
         "tools": "AdminLTE, HTML, CSS, Javascript",
         "updated": "27 Dec 2022",
         "visibility": "Public",
@@ -1081,7 +1081,7 @@
           "/projects/2021/p35/9.png",
           "/projects/2021/p35/10.png"
         ],
-        "description": "Angkutan Umum Bandung adalah situs web Dinas Perhubungan Kota Bandung yang digunakan sebagai data informasi angkutan umum seperti angkot, taksi, bus, dan damri. Terdapat data penting meliputi nomor kendaraan, pemilik, nomor uji kendaraan, merek, tipe, dan status.",
+        "description": "Situs Dinas Perhubungan Kota Bandung tentang angkutan umum (angkot, taksi, bus, Damri). Fungsi: pengelolaan data nomor kendaraan, pemilik, nomor uji, merek, tipe, dan status.",
         "tools": "Laravel PHP Framework, MySQL",
         "updated": "23 Jan 2021",
         "visibility": "Private",
@@ -1103,7 +1103,7 @@
           "/projects/2021/p36/9.png",
           "/projects/2021/p36/10.png"
         ],
-        "description": "Covid-19 Prediction adalah studi yang dilakukan untuk memprediksi kasus Covid-19 di Indonesia dari dataset yang tersedia dalam periode waktu tertentu.",
+        "description": "Studi prediksi kasus Covid-19 di Indonesia. Fungsi: memodelkan data kasus pada periode tertentu untuk memperkirakan jumlah kasus berikutnya.",
         "tools": "Python, Google Colab, Jupyter Notebook",
         "updated": "24 Jan 2021",
         "visibility": "Private",
@@ -1124,7 +1124,7 @@
           "/projects/2021/p37/8.png",
           "/projects/2021/p37/9.png"
         ],
-        "description": "Pemira adalah situs web untuk pemilihan presiden dan wakil presiden badan eksekutif mahasiswa di STT-NF.",
+        "description": "Situs pemilihan presiden dan wakil presiden Badan Eksekutif Mahasiswa STT-NF. Fungsi: pemungutan suara daring dan rekapitulasi hasil pemilihan.",
         "tools": "PHP, MySQL, Bootstrap",
         "updated": "27 Jan 2021",
         "visibility": "Private",
@@ -1170,7 +1170,7 @@
           "/projects/2021/p38/33.png",
           "/projects/2021/p38/34.png"
         ],
-        "description": "Retech adalah analisis data produk perusahaan retech dan data angkutan umum Kota Bandung. Analisis dilakukan untuk memperoleh informasi yang akan dijadikan dasar perbaikan pengembangan di masa mendatang.",
+        "description": "Analisis data produk perusahaan Retech dan data angkutan umum Kota Bandung menggunakan Yellowfin BI. Fungsi: menghasilkan informasi sebagai dasar perbaikan dan pengembangan selanjutnya.",
         "tools": "Yellowfin BI",
         "updated": "22 Feb 2021",
         "visibility": "Public",
@@ -1183,7 +1183,7 @@
         "images": [
           "/projects/2021/p39/1.png"
         ],
-        "description": "Learn Kotlin adalah hasil pembelajaran bahasa pemrograman Kotlin mulai dari control flow, coroutine, data class, collection, functional, generic, fundamental, hingga object oriented.",
+        "description": "Hasil pembelajaran bahasa Kotlin. Cakupan: control flow, coroutine, data class, collection, functional, generic, fundamental, dan object oriented.",
         "tools": "Kotlin",
         "updated": "08 Mar 2021",
         "visibility": "Public",
@@ -1197,7 +1197,7 @@
           "/projects/2021/p40/1.png",
           "/projects/2021/p40/2.png"
         ],
-        "description": "Learn Android Kotlin adalah hasil pembelajaran yang mencakup materi Activity, Intent, Views, ViewGroup, Style, Theme, dan Recycler View.",
+        "description": "Hasil pembelajaran pengembangan Android dengan Kotlin. Cakupan: Activity, Intent, Views, ViewGroup, Style, Theme, dan RecyclerView.",
         "tools": "Android Studio, Kotlin",
         "updated": "08 Mar 2021",
         "visibility": "Public",
@@ -1211,7 +1211,7 @@
           "/projects/2021/p41/1.png",
           "/projects/2021/p41/2.png"
         ],
-        "description": "StayUp adalah contoh aplikasi yang memuat daftar startup di Indonesia.",
+        "description": "Aplikasi Android contoh berisi daftar startup di Indonesia. Fungsi: menampilkan daftar dan detail startup, menandai favorit, serta membagikan informasi.",
         "tools": "Android Studio, Kotlin",
         "updated": "11 Mar 2021",
         "visibility": "Public",
@@ -1228,7 +1228,7 @@
           "/projects/2021/p42/4.png",
           "/projects/2021/p42/5.png"
         ],
-        "description": "Learn Android Flutter adalah hasil pembelajaran dalam mengembangkan aplikasi android menggunakan Flutter dengan menerapkan beberapa hal termasuk Widget, Navigation, Routing, ConstrainedBox, Row, Column, State Management, HTTP, dan Shared Preferences.",
+        "description": "Hasil pembelajaran pengembangan Android dengan Flutter. Cakupan: Widget, Navigation, Routing, ConstrainedBox, Row, Column, State Management, HTTP, dan Shared Preferences.",
         "tools": "Android Studio, Flutter",
         "updated": "15 Apr 2021",
         "visibility": "Public",
@@ -1242,7 +1242,7 @@
           "/projects/2021/p43/1.png",
           "/projects/2021/p43/2.png"
         ],
-        "description": "Github Clone adalah hasil pembelajaran yang diambil dari referensi aplikasi Github dengan menerapkan Intent, Activity, Parcelable, RecyclerView, ConstraintLayout, SearchView, TabLayout, permintaan jaringan Retrofit, API, SQLite, Room, dan DataStore.",
+        "description": "Aplikasi Android tiruan GitHub sebagai latihan. Fungsi: pencarian pengguna, profil, dan pengaturan, dengan Intent, Parcelable, RecyclerView, Retrofit, SQLite, Room, dan DataStore.",
         "tools": "Android Studio, Kotlin, SQLite",
         "updated": "07 Jun 2021",
         "visibility": "Public",
@@ -1256,7 +1256,7 @@
           "/projects/2021/p44/1.png",
           "/projects/2021/p44/2.png"
         ],
-        "description": "Jetpack Movie adalah hasil pembelajaran yang menerapkan ViewModel, library testing, repository pattern, LiveData, Idling Resources, Room, dan Pagination.",
+        "description": "Aplikasi katalog film dan TV sebagai latihan Android Jetpack. Fungsi: daftar, detail, dan favorit, dengan ViewModel, LiveData, repository pattern, Room, Pagination, dan pengujian.",
         "tools": "Android Studio, Kotlin, SQLite",
         "updated": "20 Jun 2021",
         "visibility": "Public",
@@ -1270,7 +1270,7 @@
           "/projects/2021/p45/1.png",
           "/projects/2021/p45/2.png"
         ],
-        "description": "Capstone Expert adalah hasil pembelajaran yang menerapkan Clean Architecture, Coroutine Flow, Coins, Android Library, Dynamic Features, Continuous Integration, Leak Canary, obfuscation, enkripsi, dan certificate pinning.",
+        "description": "Aplikasi Android katalog olahraga sebagai proyek akhir kelas Expert. Fungsi: daftar, detail, dan favorit, dengan Clean Architecture, Coroutine Flow, Dynamic Features, CI, enkripsi, dan certificate pinning.",
         "tools": "Android Studio, Kotlin, SQLite",
         "updated": "24 Jun 2021",
         "visibility": "Public",
@@ -1323,7 +1323,7 @@
           "/projects/2021/p46/40.jpg",
           "/projects/2021/p46/41.jpg"
         ],
-        "description": "Link-Match STT-NF adalah situs web yang digunakan untuk melakukan manajemen proyek menggunakan metode Scrum yang diberikan oleh product owner kepada mahasiswa di STT-NF. Terdapat lima peran terkait meliputi Administrator, Dosen, Scrum Master, Mahasiswa, dan Product Owner. Fitur yang tersedia mencakup CRUD pada tabel User, Team, Team Member, Value Team Member, Project, dan Sprint.",
+        "description": "Situs manajemen proyek metode Scrum di STT-NF. Peran: Administrator, Dosen, Scrum Master, Mahasiswa, dan Product Owner. Fungsi: CRUD User, Team, Team Member, Value Team Member, Project, dan Sprint.",
         "tools": "Laravel PHP Framework, PostgreSQL",
         "updated": "06 Jul 2021",
         "visibility": "Public",
@@ -1357,7 +1357,7 @@
           "/projects/2020/p27/16.png",
           "/projects/2020/p27/17.png"
         ],
-        "description": "Link-Match Modul Project adalah salah satu bagian dari rancangan proyek Link-Match STT-NF dalam bentuk web. Modul proyek ini dikhususkan untuk menangani manajemen proyek, mulai dari pengelolaan proyek, tim, anggota, hingga minimum viable product.",
+        "description": "Modul manajemen proyek dari Link-Match STT-NF. Fungsi: pengelolaan proyek, tim, anggota, hingga minimum viable product.",
         "tools": "Laravel PHP Framework, MySQL",
         "updated": "06 Feb 2020",
         "visibility": "Public",
@@ -1373,7 +1373,7 @@
           "/projects/2020/p28/3.png",
           "/projects/2020/p28/4.png"
         ],
-        "description": "Learn Data Security adalah hasil pembelajaran pada acara Technofair dan menghasilkan beberapa teknik pengamanan data. Beberapa teknik yang dipelajari meliputi caesar, substitusi, vigenere, dan xor cipher.",
+        "description": "Hasil pembelajaran keamanan data dari acara Technofair. Fungsi: implementasi enkripsi dan dekripsi dengan Caesar, substitusi, Vigenere, dan XOR cipher dalam Python.",
         "tools": "Python",
         "updated": "15 Mar 2020",
         "visibility": "Public",
@@ -1386,7 +1386,7 @@
         "images": [
           "/projects/2020/p29/1.png"
         ],
-        "description": "Learn Data Science adalah hasil pelatihan bootcamp mengenai python dan data science. Materi utama yang diajarkan adalah python dasar, pandas, visualisasi, dan machine learning. Pada materi python dasar, dipelajari list, dictionary, method, dan function. Pada materi pandas, dipelajari akses/indexing data, transformasi data, reshaping data, pengelompokan data, dan penggabungan data. Materi visualisasi mencakup matplotlib, visualisasi kustom, multiple plot, dan perbandingan kuantitatif. Materi terakhir adalah machine learning mengenai scikit-learn, preprocessing data, pemilihan model, dan evaluasi performa model.",
+        "description": "Hasil bootcamp Python dan data science. Cakupan: Python dasar, pandas (indexing, transformasi, reshaping, pengelompokan, penggabungan), visualisasi matplotlib, dan machine learning scikit-learn (preprocessing, pemilihan model, evaluasi).",
         "tools": "Python, IPython Notebook, Google Colab",
         "updated": "08 June 2020",
         "visibility": "Public",
@@ -1399,7 +1399,7 @@
         "images": [
           "/projects/2020/p30/1.png"
         ],
-        "description": "Learn Data Visualization adalah hasil pembelajaran melatih cara memvisualisasikan data dengan baik. Latihan mencakup pengenalan data, visualisasi data, matematika dan statistika dasar, spreadsheet dasar, transformasi data menjadi diagram, kesalahan umum dalam visualisasi data, hingga dokumentasi data.",
+        "description": "Hasil pembelajaran visualisasi data. Cakupan: pengenalan data, matematika dan statistika dasar, spreadsheet, transformasi data menjadi diagram, kesalahan umum, dan dokumentasi data.",
         "tools": "Spreadsheet",
         "updated": "16 June 2020",
         "visibility": "Public",
@@ -1426,7 +1426,7 @@
           "/projects/2020/p31/14.png",
           "/projects/2020/p31/15.png"
         ],
-        "description": "Visualisasi Gempa Bumi adalah hasil riset untuk menggambarkan frekuensi dan magnitudo gempa bumi dalam periode waktu tertentu menggunakan data yang dipublikasikan secara umum.",
+        "description": "Riset visualisasi frekuensi dan magnitudo gempa bumi dalam periode tertentu dari data publik. Fungsi: mengolah dan menampilkan data dalam bentuk grafik menggunakan Hadoop, Hive, ELK, dan Jupyter Notebook.",
         "tools": "Python, Scrum, Google Drive, Hadoop, Hive, Linux, ELK, Jupyter Notebook",
         "updated": "15 Jul 2020",
         "visibility": "Public",
@@ -1439,7 +1439,7 @@
         "images": [
           "/projects/2020/p32/1.png"
         ],
-        "description": "Prediction Titanic adalah tantangan untuk memprediksi jumlah orang yang selamat dari insiden Titanic menggunakan machine learning dari data yang telah disediakan.",
+        "description": "Model machine learning untuk memprediksi penumpang Titanic yang selamat. Fungsi: melatih model KNeighborsClassifier pada data training dan mengujinya pada data test (skor 0,76555 di Kaggle).",
         "tools": "Python, Jupyter Notebook, Google Colab, CSV",
         "updated": "12 Sep 2020",
         "visibility": "Public",
@@ -1452,7 +1452,7 @@
         "images": [
           "/projects/2020/p33/1.png"
         ],
-        "description": "UI Login adalah aplikasi android sederhana yang berfokus pada tampilan antarmuka pengguna pada formulir login.",
+        "description": "Aplikasi Android sederhana berisi antarmuka formulir login. Fungsi: latihan perancangan tampilan login dengan Java.",
         "tools": "Java, Android Studio",
         "updated": "05 Dec 2020",
         "visibility": "Public",
@@ -1478,7 +1478,7 @@
           "/projects/2020/p34/13.png",
           "/projects/2020/p34/14.png"
         ],
-        "description": "ClickData adalah Desain UI/UX untuk aplikasi penyedia dataset, dengan tampilan yang tersedia meliputi splash screen, formulir login, tampilan beranda, forum diskusi, formulir permintaan data, dan tampilan profil.",
+        "description": "Desain UI/UX aplikasi penyedia dataset. Tampilan: splash screen, login, beranda, forum diskusi, formulir permintaan data, dan profil.",
         "tools": "Figma",
         "updated": "16 Dec 2020",
         "visibility": "Private",
@@ -1496,7 +1496,7 @@
         "images": [
           "/projects/2019/p8/1.png"
         ],
-        "description": "Design DB Olahraga adalah ilustrasi sebelum diimplementasikan ke dalam aplikasi yang memiliki beberapa fungsi meliputi transfer, pemesanan, pembatalan, dan penyelesaian booking.",
+        "description": "Rancangan basis data sistem pemesanan sarana olahraga. Fungsi: mendukung transfer, pemesanan, pembatalan, dan penyelesaian booking.",
         "tools": "PostgreSQL, MySQL Workbench",
         "updated": "11 Jan 2019",
         "visibility": "Public",
@@ -1513,7 +1513,7 @@
           "/projects/2019/p9/4.png",
           "/projects/2019/p9/5.png"
         ],
-        "description": "Pencarian Kata adalah program yang digunakan untuk mencari sebuah kata dalam berkas, dengan beberapa opsi tersedia meliputi pencarian menggunakan argumen, array, kondisi, atau hanya satu berkas.",
+        "description": "Program Java untuk mencari kata dalam berkas. Fungsi: pencarian dengan argumen, array, kondisi, atau pada satu berkas saja.",
         "tools": "Java",
         "updated": "21 Jan 2019",
         "visibility": "Public",
@@ -1526,7 +1526,7 @@
         "images": [
           "/projects/2019/p10/1.png"
         ],
-        "description": "Design DB Perpustakaan adalah ilustrasi sebelum diimplementasikan ke dalam aplikasi yang memuat fitur seperti peminjaman, pengembalian, dan inventaris.",
+        "description": "Rancangan basis data sistem perpustakaan. Fungsi: mendukung peminjaman, pengembalian, dan inventaris buku.",
         "tools": "PostgreSQL, MySQL Workbench",
         "updated": "29 Jan 2019",
         "visibility": "Public",
@@ -1539,7 +1539,7 @@
         "images": [
           "/projects/2019/p11/1.png"
         ],
-        "description": "Design DB Mushola adalah ilustrasi sebelum diimplementasikan ke dalam aplikasi yang memiliki fitur seperti inventaris, peminjaman, donasi, dan pelaporan.",
+        "description": "Rancangan basis data sistem mushola. Fungsi: mendukung inventaris, peminjaman prasarana, donasi, dan pelaporan.",
         "tools": "PostgreSQL, MySQL Workbench",
         "updated": "29 Jan 2019",
         "visibility": "Public",
@@ -1552,7 +1552,7 @@
         "images": [
           "/projects/2019/p12/1.png"
         ],
-        "description": "Design DB Kursus adalah gambaran sebelum diimplementasikan ke dalam aplikasi yang memiliki fitur seperti pendaftaran, pembayaran, komisi, penambahan peserta, dan penyelesaian kursus.",
+        "description": "Rancangan basis data sistem kursus. Fungsi: mendukung pendaftaran, pembayaran, komisi, penambahan peserta, dan penyelesaian kursus.",
         "tools": "PostgreSQL, MySQL Workbench",
         "updated": "29 Jan 2019",
         "visibility": "Public",
@@ -1574,7 +1574,7 @@
           "/projects/2019/p13/9.png",
           "/projects/2019/p13/10.png"
         ],
-        "description": "BaseNF adalah prototipe web yang digunakan untuk menginformasikan beban kerja dosen di STT-NF, memuat informasi terkait dosen, pengajaran, penelitian, PKM, jabatan, dan kontak.",
+        "description": "Prototipe web informasi beban kerja dosen STT-NF. Fungsi: menampilkan data dosen, pengajaran, penelitian, PKM, jabatan, dan kontak.",
         "tools": "HTML, CSS, JavaScript, PHP, Bootstrap, PostgreSQL",
         "updated": "29 Jan 2019",
         "visibility": "Public",
@@ -1587,7 +1587,7 @@
         "images": [
           "/projects/2019/p14/1.png"
         ],
-        "description": "Aritmatika Jam adalah program untuk melakukan perhitungan menggunakan satuan jam, menit, dan detik. Perhitungan yang tersedia hanya penjumlahan dan pengurangan, dan jika terjadi kesalahan akan menampilkan pesan error.",
+        "description": "Program Java untuk perhitungan satuan waktu. Fungsi: penjumlahan dan pengurangan jam, menit, dan detik, dengan pesan error jika input tidak valid.",
         "tools": "Java",
         "updated": "29 Jan 2019",
         "visibility": "Public",
@@ -1600,7 +1600,7 @@
         "images": [
           "/projects/2019/p15/1.png"
         ],
-        "description": "Tiket Pesawat adalah program untuk menguji validitas formulir yang diisi pengguna dalam pemesanan tiket pesawat, apakah sesuai format atau tidak sehingga terhindar dari human error.",
+        "description": "Program Java untuk validasi formulir pemesanan tiket pesawat. Fungsi: memeriksa format isian pengguna agar terhindar dari kesalahan input.",
         "tools": "Java",
         "updated": "30 Jan 2019",
         "visibility": "Public",
@@ -1617,7 +1617,7 @@
           "/projects/2019/p16/4.png",
           "/projects/2019/p16/5.png"
         ],
-        "description": "Game S.O.S adalah program yang menerapkan permainan S.O.S pada komputer. Tersedia opsi memilih papan dari 3x3, 5x5, 7x7, hingga custom. Selain itu, pemain dapat memilih untuk melawan pemain lain atau komputer yang telah diberi kecerdasan buatan sederhana.",
+        "description": "Permainan S.O.S berbasis Java. Fungsi: pilihan papan 3x3, 5x5, 7x7, atau ukuran kustom, dengan mode melawan pemain lain atau komputer berkecerdasan buatan sederhana.",
         "tools": "Java",
         "updated": "31 Jan 2019",
         "visibility": "Public",
@@ -1630,7 +1630,7 @@
         "images": [
           "/projects/2019/p17/1.png"
         ],
-        "description": "Open class Django adalah hasil penerapan pembelajaran mengenai framework web django, mulai dari pengenalan, views, template, apps, URL, variabel, hingga tag.",
+        "description": "Hasil pembelajaran framework Django. Cakupan: pengenalan, views, template, apps, URL, variabel, dan tag.",
         "tools": "Django Python Framework",
         "updated": "03 Feb 2019",
         "visibility": "Public",
@@ -1643,7 +1643,7 @@
         "images": [
           "/projects/2019/p18/1.png"
         ],
-        "description": "Learn Laravel adalah hasil penerapan pembelajaran mengenai framework web laravel, mulai dari instalasi, pembuatan CRUD, penerapan basis data, hingga deployment.",
+        "description": "Hasil pembelajaran framework Laravel. Cakupan: instalasi, pembuatan CRUD, penerapan basis data, dan deployment.",
         "tools": "Laravel PHP Framework",
         "updated": "22 Feb 2019",
         "visibility": "Public",
@@ -1661,7 +1661,7 @@
           "/projects/2019/p19/5.png",
           "/projects/2019/p19/6.png"
         ],
-        "description": "KNRP Depok adalah web informasi yang direncanakan untuk digunakan oleh organisasi KNRP di Depok sebagai situs resminya. Tersedia informasi seperti berita, tentang kartu identitas, donasi, media sosial, serta fitur pengelolaan berita sebagai admin.",
+        "description": "Situs resmi organisasi KNRP Depok. Fungsi: informasi berita, kartu identitas, donasi, dan media sosial, serta pengelolaan berita oleh admin.",
         "tools": "Laravel PHP Framework, MySQL",
         "updated": "10 Mar 2019",
         "visibility": "Private",
@@ -1696,7 +1696,7 @@
           "/projects/2019/p20/22.png",
           "/projects/2019/p20/23.png"
         ],
-        "description": "Basmalah adalah web yang digunakan untuk menanggulangi keluarga tidak mampu dengan menyalurkan bantuan materi melalui guru dari dewan kemakmuran masjid. Terdapat fitur pendaftaran untuk DKM, guru, dan pengangguran, serta fitur lain berupa donasi hingga laporan. Pada autentikasi terdapat tiga peran meliputi administrator, DKM, dan guru.",
+        "description": "Web penyaluran bantuan materi bagi keluarga tidak mampu melalui guru dari Dewan Kemakmuran Masjid (DKM). Peran: administrator, DKM, dan guru. Fungsi: pendaftaran DKM, guru, dan penerima, donasi, serta laporan.",
         "tools": "Laravel PHP Framework, MySQL",
         "updated": "14 Jun 2019",
         "visibility": "Public",
@@ -1716,7 +1716,7 @@
           "/projects/2019/p21/7.png",
           "/projects/2019/p21/8.png"
         ],
-        "description": "Ranah Guru adalah situs web lowongan kerja khusus untuk guru dan sekolah. Lowongan berisi mata pelajaran yang dibutuhkan sekolah untuk guru yang akan mengajar.",
+        "description": "Situs lowongan kerja khusus guru dan sekolah. Fungsi: sekolah memasang lowongan berdasarkan mata pelajaran yang dibutuhkan dan guru mencari lowongan tersebut.",
         "tools": "Yii PHP Framework, MySQL",
         "updated": "24 Jul 2019",
         "visibility": "Public",
@@ -1735,7 +1735,7 @@
           "/projects/2019/p22/6.png",
           "/projects/2019/p22/7.png"
         ],
-        "description": "Ops... adalah Desain UI/UX untuk Android sebagai wadah e-commerce bahan organik. Tampilan yang tersedia meliputi splash screen, halaman utama, detail produk, pemesanan, keranjang, dan pembayaran.",
+        "description": "Desain UI/UX aplikasi Android e-commerce bahan organik. Tampilan: splash screen, halaman utama, detail produk, pemesanan, keranjang, dan pembayaran.",
         "tools": "Figma",
         "updated": "25 Jul 2019",
         "visibility": "Private",
@@ -1753,7 +1753,7 @@
           "/projects/2019/p23/5.png",
           "/projects/2019/p23/6.png"
         ],
-        "description": "Hystech adalah prototipe web penjadwalan kegiatan khusus untuk perusahaan Jamkrindo, dengan fitur autentikasi, kalender, pengajuan acara, edit, dan hapus.",
+        "description": "Prototipe web penjadwalan kegiatan untuk Jamkrindo. Fungsi: autentikasi, kalender, pengajuan acara, serta pengubahan dan penghapusan jadwal.",
         "tools": "Easyappoinment PHP Framework, MySQL",
         "updated": "25 Jul 2019",
         "visibility": "Public",
@@ -1786,7 +1786,7 @@
           "/projects/2019/p24/20.png",
           "/projects/2019/p24/21.png"
         ],
-        "description": "StayUp adalah Desain UI/UX dalam bentuk android untuk merancang aplikasi investasi startup.",
+        "description": "Desain UI/UX aplikasi Android investasi startup.",
         "tools": "Figma",
         "updated": "25 Oct 2019",
         "visibility": "Private",
@@ -1815,7 +1815,7 @@
           "/projects/2019/p25/16.png",
           "/projects/2019/p25/17.png"
         ],
-        "description": "tapSehat adalah Desain UI/UX dalam bentuk android untuk merancang aplikasi layanan rumah sakit.",
+        "description": "Desain UI/UX aplikasi Android layanan rumah sakit.",
         "tools": "Figma",
         "updated": "11 Dec 2019",
         "visibility": "Private",
@@ -1841,7 +1841,7 @@
           "/projects/2019/p26/13.png",
           "/projects/2019/p26/14.png"
         ],
-        "description": "U-VEST adalah prototipe web yang digunakan untuk investasi bisnis oleh nasabah dan investor.",
+        "description": "Prototipe web investasi bisnis. Fungsi: mempertemukan nasabah dan investor untuk berinvestasi pada usaha.",
         "tools": "Laravel PHP Framework, MySQL",
         "updated": "14 Dec 2019",
         "visibility": "Public",
@@ -1861,7 +1861,7 @@
           "/projects/2018/p1/2.png",
           "/projects/2018/p1/3.png"
         ],
-        "description": "Dalam matematika diskrit terdapat algoritma Euclidean yang bertujuan mencari pembagi persekutuan terbesar dari dua bilangan bulat. Program ini dibuat untuk memudahkan perhitungan algoritma Euclidean hanya dengan memasukkan dua bilangan bulat, kemudian hasilnya akan diketahui dan terdapat opsi untuk melihat langkah-langkahnya atau tidak. (Referensi).",
+        "description": "Program C++ untuk menghitung pembagi persekutuan terbesar (PBB) dua bilangan bulat dengan algoritma Euclidean. Fungsi: menampilkan hasil dan langkah-langkah perhitungan secara opsional.",
         "tools": "C++",
         "updated": "27 Oct 2018",
         "visibility": "Private",
@@ -1887,7 +1887,7 @@
           "/projects/2018/p2/13.png",
           "/projects/2018/p2/14.png"
         ],
-        "description": "4 Pemulung adalah program pendataan dan transaksi yang ditujukan untuk pemulung. Terdapat beberapa fitur tersedia meliputi pendaftaran, pencarian, pengurutan, perhitungan, dan informasi.",
+        "description": "Program C++ pendataan dan transaksi untuk pemulung. Fungsi: pendaftaran, pencarian, pengurutan, perhitungan, dan informasi.",
         "tools": "C++",
         "updated": "27 Oct 2018",
         "visibility": "Public",
@@ -1900,7 +1900,7 @@
         "images": [
           "/projects/2018/p3/1.png"
         ],
-        "description": "Design DB Pasar bertujuan memberikan gambaran sebelum diimplementasikan ke dalam aplikasi dan terdapat fitur pemesanan serta transaksi menggunakan trigger.",
+        "description": "Rancangan basis data sistem pasar. Fungsi: mendukung pemesanan dan transaksi menggunakan trigger.",
         "tools": "PostgreSQL, MySQL Workbench",
         "updated": "27 Oct 2018",
         "visibility": "Public",
@@ -1913,7 +1913,7 @@
         "images": [
           "/projects/2018/p4/1.png"
         ],
-        "description": "Web Security adalah program yang dilakukan untuk memastikan keamanan sebuah situs web terlindungi dari ancaman atau peretasan.",
+        "description": "Pembelajaran keamanan situs web. Fungsi: memahami ancaman dan teknik peretasan agar situs dapat diamankan.",
         "tools": "Linux, Web Programming",
         "updated": "30 Oct 2018",
         "visibility": "Public",
@@ -1930,7 +1930,7 @@
           "/projects/2018/p5/4.png",
           "/projects/2018/p5/5.png"
         ],
-        "description": "TourlevarT adalah tugas mata kuliah pemrograman web yang menerapkan HTML, CSS, dan JavaScript. Terdapat beberapa fitur tersedia untuk menerapkan penggunaan tersebut, mulai dari landing page, formulir login, kurs rupiah, image picker, hingga validasi formulir.",
+        "description": "Tugas kuliah pemrograman web dengan HTML, CSS, dan JavaScript. Fitur: landing page, formulir login, kurs rupiah, image picker, dan validasi formulir.",
         "tools": "HTML, CSS, JavaScript",
         "updated": "31 Oct 2018",
         "visibility": "Public",
@@ -1953,7 +1953,7 @@
           "/projects/2018/p6/10.png",
           "/projects/2018/p6/11.png"
         ],
-        "description": "StikLe adalah desain web yang ditujukan untuk menilai dan menampilkan karakter pribadi, dengan fitur penilaian pribadi, penampilan, perbandingan, peringkat, dan pengelompokan (belum tersedia).",
+        "description": "Desain web Statistika Personal untuk kompetisi Web Design Astro 2018. Fungsi: penilaian karakter individu oleh banyak orang berdasarkan standar tertentu (Shiddiq, Fathanah, Amanah, Tabligh), dengan tampilan, perbandingan, dan peringkat. Fitur pengelompokan belum tersedia.",
         "tools": "HTML, CSS, JavaScript, PHP, Bootstrap",
         "updated": "02 Dec 2018",
         "visibility": "Public",
@@ -1977,7 +1977,7 @@
           "/projects/2018/p7/11.png",
           "/projects/2018/p7/12.png"
         ],
-        "description": "Dot adalah prototipe web yang digunakan untuk distribusi makanan, dengan 2 peran meliputi kontributor makanan dan administrator. Kontributor berperan sebagai pihak yang menyediakan makanan untuk didistribusikan ke wilayah, sementara administrator berperan memantau kegiatan antar kontributor makanan.",
+        "description": "Prototipe web distribusi makanan. Peran: kontributor makanan dan administrator. Fungsi: kontributor menyediakan makanan untuk wilayah tujuan, sedangkan administrator memantau kegiatan para kontributor.",
         "tools": "Yii PHP Framework, MySQL",
         "updated": "12 Dec 2018",
         "visibility": "Public",
