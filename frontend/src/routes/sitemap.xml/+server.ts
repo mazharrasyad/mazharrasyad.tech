@@ -1,5 +1,4 @@
-import yearsData from '$lib/data/projects.json';
-import type { YearData } from '$lib/types';
+import { categories } from '$lib/projects';
 import type { RequestHandler } from './$types';
 
 export const prerender = true;
@@ -7,14 +6,12 @@ export const prerender = true;
 const SITE = 'https://mazharrasyad.tech';
 
 export const GET: RequestHandler = () => {
-	const years = yearsData as YearData[];
-
 	const urls = [
 		{ loc: `${SITE}/`, priority: '1.0' },
 		{ loc: `${SITE}/education`, priority: '0.8' },
 		{ loc: `${SITE}/experience`, priority: '0.8' },
-		{ loc: `${SITE}/timeline`, priority: '0.8' },
-		...years.map((y) => ({ loc: `${SITE}/projects/${y.year}`, priority: '0.7' }))
+		{ loc: `${SITE}/projects`, priority: '0.8' },
+		...categories.map((c) => ({ loc: `${SITE}/projects/${c.slug}`, priority: '0.7' }))
 	];
 
 	const body = `<?xml version="1.0" encoding="UTF-8"?>

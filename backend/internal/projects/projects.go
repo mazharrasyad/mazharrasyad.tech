@@ -15,6 +15,7 @@ import (
 type Project struct {
 	Title       string   `json:"title"`
 	Category    string   `json:"category"`
+	Group       string   `json:"group"`
 	Images      []string `json:"images"`
 	Description string   `json:"description"`
 	Tools       string   `json:"tools"`

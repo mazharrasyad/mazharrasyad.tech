@@ -1,0 +1,67 @@
+import yearsData from '$lib/data/projects.json';
+import scholarData from '$lib/data/scholar.json';
+import type { Project, Publication, ScholarData, YearData } from '$lib/types';
+
+export type ProjectWithYear = Project & { year: number };
+
+export interface Category {
+	name: string;
+	slug: string;
+	description: string;
+	projects: ProjectWithYear[];
+	publications: Publication[];
+}
+
+// Ordered as they appear in the tabs. `Project.group` in projects.json must
+// match one of these names.
+const DEFINITIONS = [
+	{
+		name: 'Company',
+		description: 'Products built as an employee and during internships.'
+	},
+	{
+		name: 'Freelance',
+		description: 'Client work delivered as an independent software engineer.'
+	},
+	{
+		name: 'Organization',
+		description: 'Systems for communities, political groups and campus organizations.'
+	},
+	{
+		name: 'Research',
+		description:
+			'Blockchain, data and IoT work from graduate research, along with the resulting journal publications.'
+	},
+	{
+		name: 'Campus',
+		description: 'Coursework, prototypes and hackathon entries from my bachelor studies.'
+	},
+	{
+		name: 'Diklat',
+		description: 'Projects from formal training programs, bootcamps and open classes.'
+	},
+	{
+		name: 'Learning',
+		description: 'Self-paced practice: online courses, tutorials and experiments.'
+	}
+] as const;
+
+const years = yearsData as YearData[];
+const publications = (scholarData as ScholarData).publications;
+
+const all: ProjectWithYear[] = [...years]
+	.sort((a, b) => b.year - a.year)
+	.flatMap((y) => y.projects.map((p) => ({ ...p, year: y.year })));
+
+export const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+
+export const categories: Category[] = DEFINITIONS.map((def) => ({
+	...def,
+	slug: slugify(def.name),
+	projects: all.filter((p) => p.group === def.name),
+	// Journal papers come out of research, so they live with that category.
+	publications:
+		def.name === 'Research' ? [...publications].sort((a, b) => b.year - a.year) : []
+}));
+
+export const totalProjects = all.length;

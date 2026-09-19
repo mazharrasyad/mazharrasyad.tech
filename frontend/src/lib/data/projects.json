@@ -5,6 +5,7 @@
       {
         "title": "Betawi Academia",
         "category": "Web Dev",
+        "group": "Organization",
         "images": [],
         "description": "Repositori sumber belajar dan jaringan komunitas pembelajaran yang didedikasikan untuk kajian budaya Betawi.",
         "tools": "Laravel, Tailwind CSS, MySQL",
@@ -14,6 +15,7 @@
       {
         "title": "Sudinsos Portal",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Portal publik pengajuan bantuan sosial dan permohonan bantuan untuk Suku Dinas Sosial Jakarta Selatan.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -23,6 +25,7 @@
       {
         "title": "Blockchain Benchmark Raft HLF",
         "category": "Blockchain",
+        "group": "Research",
         "images": [],
         "description": "Rangkaian benchmark performa yang menganalisis throughput dan latensi transaksi pada jaringan Hyperledger Fabric berbasis Raft.",
         "tools": "Go, Raft, Hyperledger Fabric, Caliper",
@@ -32,6 +35,7 @@
       {
         "title": "Putra Jasa V2",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Pembaruan sistem manajemen rental kendaraan dan jasa transportasi dengan otomasi pemesanan dan kalkulator harga.",
         "tools": "PHP, Laravel, Bootstrap",
@@ -46,6 +50,7 @@
       {
         "title": "E-Kinerja PJLP Pasar Minggu",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Sistem pencatatan aktivitas dan pemantauan kinerja untuk staf PJLP Pasar Minggu.",
         "tools": "PHP, Laravel, MySQL",
@@ -55,6 +60,7 @@
       {
         "title": "SINOMARI",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Sistem informasi terintegrasi untuk mendukung tugas administrasi pemerintahan dan kemasyarakatan tingkat lokal.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -64,6 +70,7 @@
       {
         "title": "Arsip",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Repositori arsip digital yang dirancang untuk penyimpanan dokumen yang aman dan terindeks bagi ASTIK Jakarta Selatan.",
         "tools": "Laravel, MySQL",
@@ -73,6 +80,7 @@
       {
         "title": "SIPETRUK",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Pelacak tugas kemunisipalan dan antarmuka pelaporan proyek untuk meningkatkan akuntabilitas operasional.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -82,6 +90,7 @@
       {
         "title": "E-RKBU",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Portal pengajuan elektronik untuk rencana pengadaan barang milik instansi atau daerah.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
@@ -91,6 +100,7 @@
       {
         "title": "Waris",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Asisten perhitungan dan pencatatan digital untuk pembagian warisan sesuai peraturan yang berlaku.",
         "tools": "Laravel, MySQL",
@@ -100,6 +110,7 @@
       {
         "title": "Penataan",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Platform pemantauan tata ruang dan penataan kawasan yang memungkinkan petugas menginput hasil survei struktur.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -109,6 +120,7 @@
       {
         "title": "Sistem Kost",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Sistem manajemen rumah kost yang melacak ketersediaan kamar, tagihan sewa, dan tanggal check-in.",
         "tools": "Laravel, Vue.js, Tailwind CSS",
@@ -118,6 +130,7 @@
       {
         "title": "SIPERA",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Portal data terintegrasi yang mendukung perencanaan umum masyarakat dan partisipasi program lokal.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -127,6 +140,7 @@
       {
         "title": "E-Contract",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Portal alur penyusunan dan penandatanganan kontrak digital yang melacak progres perjanjian vendor.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
@@ -136,6 +150,7 @@
       {
         "title": "E-Kinerja PJLP Wilayah Jaksel",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Sistem penilaian kinerja terpadu untuk tenaga kontrak di seluruh kantor wilayah Jakarta Selatan.",
         "tools": "PHP, Laravel, MySQL",
@@ -145,6 +160,7 @@
       {
         "title": "Metagov JS Care",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Portal bantuan sosial dan lingkungan yang memantau kegiatan kepedulian komunitas dan penyaluran bantuan.",
         "tools": "Laravel, Bootstrap, MySQL",
@@ -154,6 +170,7 @@
       {
         "title": "DBD",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Platform pemantauan Demam Berdarah yang memetakan kasus kesehatan dan kampanye pemberantasan.",
         "tools": "Laravel, Chart.js, Tailwind CSS",
@@ -163,6 +180,7 @@
       {
         "title": "PAMOR",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Sistem pelaporan publik untuk pemantauan infrastruktur dan layanan daerah.",
         "tools": "Laravel, Tailwind CSS",
@@ -172,6 +190,7 @@
       {
         "title": "SIP",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Pelacak konsolidasi pengajuan izin dan perizinan publik.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -181,6 +200,7 @@
       {
         "title": "E-Kinerja PJLP Kominfo Part 2",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Portal pemantauan kinerja lanjutan untuk tenaga kontrak Kominfo dengan alur pelaporan yang lebih baik.",
         "tools": "Laravel, MySQL",
@@ -190,6 +210,7 @@
       {
         "title": "Serambi 06",
         "category": "Web Dev",
+        "group": "Organization",
         "images": [],
         "description": "Dasbor kemasyarakatan RT/RW yang mendukung digitalisasi administrasi lokal dan pengumuman warga.",
         "tools": "Laravel, Bootstrap, MySQL",
@@ -199,6 +220,7 @@
       {
         "title": "E-Kinerja Wilayah",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Portal perencanaan tenaga kerja wilayah dan pelacakan target bulanan.",
         "tools": "PHP, Laravel, MySQL",
@@ -208,6 +230,7 @@
       {
         "title": "Posyandu",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Sistem pencatatan kesehatan ibu dan anak yang merekam grafik pertumbuhan anak dan jadwal imunisasi.",
         "tools": "Laravel, Tailwind CSS",
@@ -217,6 +240,7 @@
       {
         "title": "E-Kinerja PJLP Kominfo Part 1",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Modul alur kerja inti dan pencatatan awal untuk pelaporan kinerja tenaga kontrak Kominfo.",
         "tools": "PHP, Laravel, MySQL",
@@ -226,6 +250,7 @@
       {
         "title": "Daxtro",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Sistem dasbor pusat untuk pelacakan aset digital dan integrasi log.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
@@ -235,6 +260,7 @@
       {
         "title": "Blockchain Node Python",
         "category": "Blockchain",
+        "group": "Research",
         "images": [],
         "description": "Implementasi node blockchain independen dengan konsensus ledger, pooling transaksi, dan API node.",
         "tools": "Python, Flask, Cryptography",
@@ -244,6 +270,7 @@
       {
         "title": "Blockchain SHM",
         "category": "Blockchain",
+        "group": "Research",
         "images": [],
         "description": "Arsitektur smart contract yang aman untuk penyimpanan sertifikasi tanah pada blockchain Hyperledger.",
         "tools": "Go, Hyperledger Fabric, Docker",
@@ -253,6 +280,7 @@
       {
         "title": "GeoJSON Boundary 2021",
         "category": "Data",
+        "group": "Research",
         "images": [],
         "description": "Repositori data geolokasi GIS terstruktur yang berisi batas administrasi wilayah Indonesia.",
         "tools": "GeoJSON, GIS, JavaScript",
@@ -262,6 +290,7 @@
       {
         "title": "Blockchain SVM AI",
         "category": "Blockchain",
+        "group": "Research",
         "images": [],
         "description": "Asisten konsensus blockchain yang terintegrasi machine learning untuk mengklasifikasikan prioritas konsensus melalui SVM.",
         "tools": "Python, AI, Scikit-learn, Web3",
@@ -271,6 +300,7 @@
       {
         "title": "Blockchain SVM Web",
         "category": "Blockchain",
+        "group": "Research",
         "images": [],
         "description": "Dasbor pengguna dan konsol manajemen front-end untuk memvisualisasikan parameter blockchain-SVM.",
         "tools": "React.js, Node.js, Tailwind CSS",
@@ -280,6 +310,7 @@
       {
         "title": "Blockchain SVM Chaincode",
         "category": "Blockchain",
+        "group": "Research",
         "images": [],
         "description": "Implementasi chaincode untuk aturan konsensus terdesentralisasi yang dikendalikan oleh metrik SVM.",
         "tools": "Go, Smart Contract, Hyperledger",
@@ -289,6 +320,7 @@
       {
         "title": "Tripa Sysfo",
         "category": "Web Dev",
+        "group": "Company",
         "images": [],
         "description": "Portal landing page resmi dan katalog produk untuk layanan Tripa Systems Information.",
         "tools": "Laravel, Tailwind CSS, Nuxt.js",
@@ -298,6 +330,7 @@
       {
         "title": "Tensindo (Internal)",
         "category": "Web Dev",
+        "group": "Company",
         "images": [],
         "description": "Dasbor internal ERP dan pelacakan operasional untuk kegiatan Tensindo.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
@@ -307,6 +340,7 @@
       {
         "title": "Folio POS",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Aplikasi Point of Sale (POS) modern dan responsif untuk manajemen inventaris ritel dan bisnis lokal.",
         "tools": "React.js, Laravel, Tailwind CSS",
@@ -321,6 +355,7 @@
       {
         "title": "Balkot Farm",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Sistem manajemen pertanian perkotaan yang dibangun untuk mencatat dan memvisualisasikan tanaman, hasil panen, dan data pertanian.",
         "tools": "PHP, Laravel, MySQL",
@@ -330,6 +365,7 @@
       {
         "title": "ESETKO PJLP",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Sistem evaluasi dan pelaporan kinerja yang dikembangkan untuk tenaga kontrak PJLP secara umum.",
         "tools": "PHP, Laravel, MySQL",
@@ -339,6 +375,7 @@
       {
         "title": "PPID",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Portal layanan informasi dan dokumentasi publik (PPID) yang mendukung standar transparansi pemerintahan.",
         "tools": "Laravel, Livewire, MySQL",
@@ -348,6 +385,7 @@
       {
         "title": "Jaringan Suara Indonesia",
         "category": "Web Dev",
+        "group": "Organization",
         "images": [],
         "description": "Platform web untuk polling, koordinasi jaringan pemilih, dan pelacakan statistik proses pemilu.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -357,6 +395,7 @@
       {
         "title": "Lentera Cendikia",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Platform edukasi dan portal pembelajaran untuk mengelola konten kursus, basis data siswa, dan jadwal.",
         "tools": "PHP, Laravel, MySQL",
@@ -366,6 +405,7 @@
       {
         "title": "Subanpenda",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Platform pemantauan pajak dan pendapatan daerah yang dirancang untuk mengagregasi data evaluasi administratif.",
         "tools": "Laravel, MySQL",
@@ -375,6 +415,7 @@
       {
         "title": "Web Eskul",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Portal manajemen kegiatan ekstrakurikuler sekolah, memungkinkan siswa mendaftar dan melacak prestasi.",
         "tools": "PHP, Laravel, MySQL",
@@ -384,6 +425,7 @@
       {
         "title": "Absen",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Sistem absensi karyawan ramah perangkat mobile dengan geolokasi dan pencatatan check-in/check-out otomatis.",
         "tools": "Laravel, JavaScript, MySQL",
@@ -393,6 +435,7 @@
       {
         "title": "BantuTani",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Sistem bantuan pertanian yang menyediakan informasi, tips pertanian, dan sumber daya bagi komunitas petani lokal.",
         "tools": "PHP, Laravel, MySQL",
@@ -402,6 +445,7 @@
       {
         "title": "Rumah Baca",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Platform perpustakaan digital dan komunitas membaca untuk mengelola inventaris buku, catatan peminjaman, dan acara.",
         "tools": "PHP, CodeIgniter, MySQL",
@@ -411,6 +455,7 @@
       {
         "title": "Particulate Matter Monitoring",
         "category": "IoT / Data",
+        "group": "Research",
         "images": [],
         "description": "Sistem pemantauan kualitas udara lingkungan yang membaca nilai partikulat via sensor dan memplot data historis.",
         "tools": "Python, IoT, Raspberry Pi",
@@ -420,6 +465,7 @@
       {
         "title": "Pendaftaran PJLP Kominfo",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Portal rekrutmen dan pendaftaran terpusat untuk calon tenaga kontrak (PJLP) di Dinas Kominfo.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
@@ -429,6 +475,7 @@
       {
         "title": "Pasar Minggu Sinobi",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Portal layanan administrasi dan kemasyarakatan lokal yang disesuaikan untuk layanan kelurahan Pasar Minggu.",
         "tools": "Laravel, MySQL",
@@ -438,6 +485,7 @@
       {
         "title": "KKPP",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Alat pelacakan indeks kinerja korporat dan institusional menggunakan pelaporan metrik utama secara kolaboratif.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -447,6 +495,7 @@
       {
         "title": "SINOLI",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Sistem informasi terintegrasi yang memfasilitasi logistik korporat, pendaftaran, dan perencanaan inventaris.",
         "tools": "Laravel, MySQL",
@@ -456,6 +505,7 @@
       {
         "title": "PSN",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Portal pemantauan pemberantasan sarang nyamuk yang memungkinkan petugas kesehatan mencatat data langsung dari lapangan.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
@@ -465,6 +515,7 @@
       {
         "title": "SIDANRU",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Penjadwal alokasi ruang rapat dan reservasi fasilitas dengan pencegahan konflik otomatis.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -474,6 +525,7 @@
       {
         "title": "SIPP",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Platform manajemen proposal proyek terpusat yang memungkinkan pengajuan, review, dan pencatatan progres secara sederhana.",
         "tools": "Laravel, Bootstrap, MySQL",
@@ -483,6 +535,7 @@
       {
         "title": "Jurnal",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Dasbor pencatatan aktivitas atau akademik yang dibangun untuk membuat dan mengarsipkan ringkasan kerja harian.",
         "tools": "Laravel, MySQL",
@@ -492,6 +545,7 @@
       {
         "title": "SIARIS",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Aplikasi manajemen arsip publik dan pengindeksan catatan yang dirancang untuk instansi kemunisipalan.",
         "tools": "PHP, Laravel, MySQL",
@@ -501,6 +555,7 @@
       {
         "title": "Layanan",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Dasbor layanan publik yang memusatkan berbagai modul permohonan warga dan formulir yang dapat dilacak.",
         "tools": "Laravel, Alpine.js, Tailwind CSS",
@@ -510,6 +565,7 @@
       {
         "title": "SINERBAST",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Portal administrasi serah terima (Berita Acara Serah Terima) yang memastikan catatan aset organisasi dapat diverifikasi.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -519,6 +575,7 @@
       {
         "title": "Insight Hub",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Dasbor data analitik yang menyediakan wawasan visual komprehensif dan grafik untuk kinerja bisnis.",
         "tools": "Laravel, Chart.js, Tailwind CSS",
@@ -528,6 +585,7 @@
       {
         "title": "SIVERJAB",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Sistem verifikasi untuk lamaran kerja dan posisi kontrak, mengotomatisasi pemeriksaan latar belakang dan audit dokumen.",
         "tools": "Laravel, MySQL",
@@ -537,6 +595,7 @@
       {
         "title": "UMKM",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Direktori e-commerce dan platform promosi yang dibangun untuk usaha mikro, kecil, dan menengah (UMKM) lokal.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -546,6 +605,7 @@
       {
         "title": "KAHMI Jaya",
         "category": "Web Dev",
+        "group": "Organization",
         "images": [],
         "description": "Portal resmi komunitas KAHMI Jaya, menampilkan berita, panel pendaftaran, dan direktori anggota.",
         "tools": "PHP, Laravel, MySQL",
@@ -560,6 +620,7 @@
       {
         "title": "Go Rakamin",
         "category": "Web Dev",
+        "group": "Diklat",
         "images": [],
         "description": "Tugas edukatif dan implementasi sistem dalam bahasa Go yang dikembangkan pada program Rakamin Academy.",
         "tools": "Go, Gin, PostgreSQL",
@@ -569,6 +630,7 @@
       {
         "title": "Go Digitalent",
         "category": "Web Dev",
+        "group": "Diklat",
         "images": [],
         "description": "Proyek dan berkas latihan berbasis Go yang dibuat untuk program pelatihan Digitalent.",
         "tools": "Go, Gin, MySQL",
@@ -578,6 +640,7 @@
       {
         "title": "Caleg Yasdar",
         "category": "Web Dev",
+        "group": "Organization",
         "images": [],
         "description": "Sistem informasi yang dirancang untuk mengelola dan memantau calon legislatif serta koordinasi relawan pemilu.",
         "tools": "PHP, Laravel, MySQL",
@@ -587,6 +650,7 @@
       {
         "title": "CV Bahrullah Akbar",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [],
         "description": "Situs curriculum vitae pribadi profesional yang menampilkan profil karier dan publikasi Bahrullah Akbar.",
         "tools": "HTML, CSS, JavaScript",
@@ -596,6 +660,7 @@
       {
         "title": "Horison Ultima Bandung",
         "category": "Web Dev",
+        "group": "Company",
         "images": [],
         "description": "Situs resmi Hotel Horison Ultima Bandung, menampilkan informasi pemesanan kamar, fasilitas banquet, dan layanan.",
         "tools": "WordPress, Elementor, PHP",
@@ -605,6 +670,7 @@
       {
         "title": "Recerva",
         "category": "Web Dev",
+        "group": "Company",
         "images": [],
         "description": "Platform manajemen properti hotel dan mesin pemesanan yang komprehensif, mendukung skema multi-tenant hotel.",
         "tools": "Laravel, Vue.js, Tailwind CSS",
@@ -614,6 +680,7 @@
       {
         "title": "AOC (Internal)",
         "category": "Web Dev",
+        "group": "Company",
         "images": [],
         "description": "Platform backend Administrative Operations Center (AOC) untuk mengelola instance hotel Recerva, pembayaran, dan pelaporan.",
         "tools": "Laravel, Vue.js, Tailwind CSS",
@@ -623,6 +690,7 @@
       {
         "title": "Proxima",
         "category": "Web Dev",
+        "group": "Company",
         "images": [],
         "description": "Alat manajemen layanan dan administrasi terpadu yang dikembangkan untuk integrasi sistem hotel.",
         "tools": "Laravel, Tailwind CSS, API",
@@ -637,6 +705,7 @@
       {
         "title": "PKK E-Report",
         "category": "Web Dev",
+        "group": "Company",
         "images": [
           "/projects/2022/p47/1.png",
           "/projects/2022/p47/2.png",
@@ -655,6 +724,7 @@
       {
         "title": "Apache Log Convert To CSV",
         "category": "Programming",
+        "group": "Company",
         "images": [
           "/projects/2022/p48/1.png",
           "/projects/2022/p48/2.png"
@@ -668,6 +738,7 @@
       {
         "title": "Learn Midtrans",
         "category": "Web Dev",
+        "group": "Learning",
         "images": [
           "/projects/2022/p49/1.jpeg",
           "/projects/2022/p49/2.jpeg",
@@ -685,6 +756,7 @@
       {
         "title": "SINOBI-DATIN",
         "category": "Web Dev",
+        "group": "Company",
         "images": [
           "/projects/2022/p50/1.png",
           "/projects/2022/p50/2.png",
@@ -704,6 +776,7 @@
       {
         "title": "SITEMAN-NIB",
         "category": "Web Dev",
+        "group": "Company",
         "images": [
           "/projects/2022/p51/1.png",
           "/projects/2022/p51/2.png",
@@ -724,6 +797,7 @@
       {
         "title": "SILOTANG",
         "category": "Web Dev",
+        "group": "Company",
         "images": [
           "/projects/2022/p52/1.png"
         ],
@@ -736,6 +810,7 @@
       {
         "title": "Learn Web Pemrograman Dasar",
         "category": "Web Dev",
+        "group": "Learning",
         "images": [
           "/projects/2022/p53/1.png",
           "/projects/2022/p53/2.png"
@@ -749,6 +824,7 @@
       {
         "title": "Learn Frontend Dasar",
         "category": "Web Dev",
+        "group": "Learning",
         "images": [
           "/projects/2022/p54/1.png",
           "/projects/2022/p54/2.png"
@@ -762,6 +838,7 @@
       {
         "title": "TerbaikTUFJ",
         "category": "Web Dev",
+        "group": "Company",
         "images": [
           "/projects/2022/p55/1.jpeg",
           "/projects/2022/p55/2.jpeg",
@@ -777,6 +854,7 @@
       {
         "title": "UP3D Setiabudi",
         "category": "Web Dev",
+        "group": "Company",
         "images": [
           "/projects/2022/p56/1.png",
           "/projects/2022/p56/2.png",
@@ -794,6 +872,7 @@
       {
         "title": "Sisirteco",
         "category": "Web Dev",
+        "group": "Company",
         "images": [
           "/projects/2022/p57/1.png",
           "/projects/2022/p57/2.png",
@@ -810,6 +889,7 @@
       {
         "title": "Sudinbud",
         "category": "Web Dev",
+        "group": "Company",
         "images": [
           "/projects/2022/p58/1.png",
           "/projects/2022/p58/2.png",
@@ -826,6 +906,7 @@
       {
         "title": "Germor Sedekah",
         "category": "Web Dev",
+        "group": "Company",
         "images": [
           "/projects/2022/p59/1.png",
           "/projects/2022/p59/2.png"
@@ -839,6 +920,7 @@
       {
         "title": "SI UCI",
         "category": "Web Dev",
+        "group": "Company",
         "images": [
           "/projects/2022/p60/1.png",
           "/projects/2022/p60/2.png",
@@ -854,6 +936,7 @@
       {
         "title": "Pencatatan HI",
         "category": "Web Dev",
+        "group": "Company",
         "images": [
           "/projects/2022/p61/1.png",
           "/projects/2022/p61/2.png",
@@ -870,6 +953,7 @@
       {
         "title": "Situs Resmi Web Jakarta Selatan",
         "category": "Web Dev",
+        "group": "Company",
         "images": [
           "/projects/2022/p62/1.png",
           "/projects/2022/p62/2.png",
@@ -896,6 +980,7 @@
       {
         "title": "IPTM",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [
           "/projects/2022/p63/1.png",
           "/projects/2022/p63/2.png",
@@ -912,6 +997,7 @@
       {
         "title": "mazharrasyad.github.io",
         "category": "Web Dev",
+        "group": "Learning",
         "images": [
           "/projects/2022/p64/1.png",
           "/projects/2022/p64/2.png",
@@ -939,6 +1025,7 @@
       {
         "title": "Angkutan Umum Bandung",
         "category": "Web Dev",
+        "group": "Freelance",
         "images": [
           "/projects/2021/p35/1.png",
           "/projects/2021/p35/2.png",
@@ -960,6 +1047,7 @@
       {
         "title": "Covid-19 Prediction",
         "category": "Data Science",
+        "group": "Research",
         "images": [
           "/projects/2021/p36/1.png",
           "/projects/2021/p36/2.png",
@@ -981,6 +1069,7 @@
       {
         "title": "Pemira",
         "category": "Web Dev",
+        "group": "Organization",
         "images": [
           "/projects/2021/p37/1.png",
           "/projects/2021/p37/2.png",
@@ -1001,6 +1090,7 @@
       {
         "title": "Retech",
         "category": "Data Science",
+        "group": "Company",
         "images": [
           "/projects/2021/p38/1.png",
           "/projects/2021/p38/2.png",
@@ -1046,6 +1136,7 @@
       {
         "title": "Learn Kotlin",
         "category": "Programming",
+        "group": "Learning",
         "images": [
           "/projects/2021/p39/1.png"
         ],
@@ -1058,6 +1149,7 @@
       {
         "title": "Learn Android Kotlin",
         "category": "Android Development",
+        "group": "Learning",
         "images": [
           "/projects/2021/p40/1.png",
           "/projects/2021/p40/2.png"
@@ -1071,6 +1163,7 @@
       {
         "title": "StayUp",
         "category": "Android Development",
+        "group": "Learning",
         "images": [
           "/projects/2021/p41/1.png",
           "/projects/2021/p41/2.png"
@@ -1084,6 +1177,7 @@
       {
         "title": "Learn Android Flutter",
         "category": "Android Development",
+        "group": "Learning",
         "images": [
           "/projects/2021/p42/1.png",
           "/projects/2021/p42/2.png",
@@ -1100,6 +1194,7 @@
       {
         "title": "Github Clone",
         "category": "Android Development",
+        "group": "Learning",
         "images": [
           "/projects/2021/p43/1.png",
           "/projects/2021/p43/2.png"
@@ -1113,6 +1208,7 @@
       {
         "title": "Jetpack Movie",
         "category": "Android Development",
+        "group": "Learning",
         "images": [
           "/projects/2021/p44/1.png",
           "/projects/2021/p44/2.png"
@@ -1126,6 +1222,7 @@
       {
         "title": "Capstone Expert",
         "category": "Android Development",
+        "group": "Learning",
         "images": [
           "/projects/2021/p45/1.png",
           "/projects/2021/p45/2.png"
@@ -1139,6 +1236,7 @@
       {
         "title": "Link-Match STT-NF",
         "category": "Web Dev",
+        "group": "Campus",
         "images": [
           "/projects/2021/p46/1.png",
           "/projects/2021/p46/2.jpg",
@@ -1196,6 +1294,7 @@
       {
         "title": "Link-Match Modul Project",
         "category": "Web Dev",
+        "group": "Campus",
         "images": [
           "/projects/2020/p27/1.png",
           "/projects/2020/p27/2.png",
@@ -1224,6 +1323,7 @@
       {
         "title": "Learn Data Security",
         "category": "Programming",
+        "group": "Diklat",
         "images": [
           "/projects/2020/p28/1.png",
           "/projects/2020/p28/2.png",
@@ -1239,6 +1339,7 @@
       {
         "title": "Learn Data Science",
         "category": "Data Science",
+        "group": "Diklat",
         "images": [
           "/projects/2020/p29/1.png"
         ],
@@ -1251,6 +1352,7 @@
       {
         "title": "Learn Data Visualization",
         "category": "Data Science",
+        "group": "Learning",
         "images": [
           "/projects/2020/p30/1.png"
         ],
@@ -1263,6 +1365,7 @@
       {
         "title": "Visualisasi Gempa Bumi",
         "category": "Data Science",
+        "group": "Research",
         "images": [
           "/projects/2020/p31/1.png",
           "/projects/2020/p31/2.png",
@@ -1289,6 +1392,7 @@
       {
         "title": "Prediction Titanic",
         "category": "Data Science",
+        "group": "Learning",
         "images": [
           "/projects/2020/p32/1.png"
         ],
@@ -1301,6 +1405,7 @@
       {
         "title": "UI Login",
         "category": "Android Development",
+        "group": "Learning",
         "images": [
           "/projects/2020/p33/1.png"
         ],
@@ -1313,6 +1418,7 @@
       {
         "title": "UI/UX Design ClickData",
         "category": "UI/UX Design",
+        "group": "Campus",
         "images": [
           "/projects/2020/p34/1.png",
           "/projects/2020/p34/2.png",
@@ -1343,6 +1449,7 @@
       {
         "title": "Design DB Olahraga",
         "category": "Data Science",
+        "group": "Campus",
         "images": [
           "/projects/2019/p8/1.png"
         ],
@@ -1355,6 +1462,7 @@
       {
         "title": "Pencarian Kata",
         "category": "Programming",
+        "group": "Campus",
         "images": [
           "/projects/2019/p9/1.png",
           "/projects/2019/p9/2.png",
@@ -1371,6 +1479,7 @@
       {
         "title": "Design DB Perpustakaan",
         "category": "Data Science",
+        "group": "Campus",
         "images": [
           "/projects/2019/p10/1.png"
         ],
@@ -1383,6 +1492,7 @@
       {
         "title": "Design DB Mushola",
         "category": "Data Science",
+        "group": "Campus",
         "images": [
           "/projects/2019/p11/1.png"
         ],
@@ -1395,6 +1505,7 @@
       {
         "title": "Design DB Kursus",
         "category": "Data Science",
+        "group": "Campus",
         "images": [
           "/projects/2019/p12/1.png"
         ],
@@ -1407,6 +1518,7 @@
       {
         "title": "BaseNF",
         "category": "Web Dev",
+        "group": "Campus",
         "images": [
           "/projects/2019/p13/1.png",
           "/projects/2019/p13/2.png",
@@ -1428,6 +1540,7 @@
       {
         "title": "Aritmatika Jam",
         "category": "Programming",
+        "group": "Campus",
         "images": [
           "/projects/2019/p14/1.png"
         ],
@@ -1440,6 +1553,7 @@
       {
         "title": "Tiket Pesawat",
         "category": "Programming",
+        "group": "Campus",
         "images": [
           "/projects/2019/p15/1.png"
         ],
@@ -1452,6 +1566,7 @@
       {
         "title": "Game S.O.S",
         "category": "Programming",
+        "group": "Campus",
         "images": [
           "/projects/2019/p16/1.png",
           "/projects/2019/p16/2.png",
@@ -1468,6 +1583,7 @@
       {
         "title": "Learn Django",
         "category": "Web Dev",
+        "group": "Diklat",
         "images": [
           "/projects/2019/p17/1.png"
         ],
@@ -1480,6 +1596,7 @@
       {
         "title": "Learn Laravel",
         "category": "Web Dev",
+        "group": "Diklat",
         "images": [
           "/projects/2019/p18/1.png"
         ],
@@ -1492,6 +1609,7 @@
       {
         "title": "KNRP Depok",
         "category": "Web Dev",
+        "group": "Organization",
         "images": [
           "/projects/2019/p19/1.png",
           "/projects/2019/p19/2.png",
@@ -1509,6 +1627,7 @@
       {
         "title": "Basmalah",
         "category": "Web Dev",
+        "group": "Organization",
         "images": [
           "/projects/2019/p20/1.png",
           "/projects/2019/p20/2.png",
@@ -1543,6 +1662,7 @@
       {
         "title": "Ranah Guru",
         "category": "Web Dev",
+        "group": "Campus",
         "images": [
           "/projects/2019/p21/1.png",
           "/projects/2019/p21/2.png",
@@ -1562,6 +1682,7 @@
       {
         "title": "UI/UX Design Ops...",
         "category": "UI/UX Design",
+        "group": "Campus",
         "images": [
           "/projects/2019/p22/1.png",
           "/projects/2019/p22/2.png",
@@ -1580,6 +1701,7 @@
       {
         "title": "Hystech",
         "category": "Web Dev",
+        "group": "Campus",
         "images": [
           "/projects/2019/p23/1.png",
           "/projects/2019/p23/2.png",
@@ -1597,6 +1719,7 @@
       {
         "title": "UI/UX Design StayUp",
         "category": "UI/UX Design",
+        "group": "Campus",
         "images": [
           "/projects/2019/p24/1.png",
           "/projects/2019/p24/2.png",
@@ -1629,6 +1752,7 @@
       {
         "title": "UI/UX Design tapSehat",
         "category": "UI/UX Design",
+        "group": "Campus",
         "images": [
           "/projects/2019/p25/1.png",
           "/projects/2019/p25/2.png",
@@ -1657,6 +1781,7 @@
       {
         "title": "U-VEST",
         "category": "Web Dev",
+        "group": "Campus",
         "images": [
           "/projects/2019/p26/1.png",
           "/projects/2019/p26/2.png",
@@ -1687,6 +1812,7 @@
       {
         "title": "PBB Euclidean",
         "category": "Programming",
+        "group": "Campus",
         "images": [
           "/projects/2018/p1/1.png",
           "/projects/2018/p1/2.png",
@@ -1701,6 +1827,7 @@
       {
         "title": "4 Pemulung",
         "category": "Programming",
+        "group": "Campus",
         "images": [
           "/projects/2018/p2/1.png",
           "/projects/2018/p2/2.png",
@@ -1726,6 +1853,7 @@
       {
         "title": "Design DB Pasar",
         "category": "Data Science",
+        "group": "Campus",
         "images": [
           "/projects/2018/p3/1.png"
         ],
@@ -1738,6 +1866,7 @@
       {
         "title": "Learn Web Security",
         "category": "Web Dev",
+        "group": "Learning",
         "images": [
           "/projects/2018/p4/1.png"
         ],
@@ -1750,6 +1879,7 @@
       {
         "title": "TourlevarT",
         "category": "Web Dev",
+        "group": "Campus",
         "images": [
           "/projects/2018/p5/1.png",
           "/projects/2018/p5/2.png",
@@ -1766,6 +1896,7 @@
       {
         "title": "StikLe",
         "category": "Web Dev",
+        "group": "Campus",
         "images": [
           "/projects/2018/p6/1.png",
           "/projects/2018/p6/2.png",
@@ -1788,6 +1919,7 @@
       {
         "title": "Dot",
         "category": "Web Dev",
+        "group": "Campus",
         "images": [
           "/projects/2018/p7/1.png",
           "/projects/2018/p7/2.png",

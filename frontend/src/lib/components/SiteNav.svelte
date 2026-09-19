@@ -5,13 +5,13 @@
 		{ href: '/', label: 'Profile' },
 		{ href: '/education', label: 'Education' },
 		{ href: '/experience', label: 'Experience' },
-		{ href: '/timeline', label: 'Timeline' }
+		{ href: '/projects', label: 'Projects' }
 	];
 
-	// Year pages under /projects/ belong to the Timeline tab.
+	// Category pages under /projects/ belong to the Projects tab.
 	function isActive(href: string) {
 		const path = page.url.pathname.replace(/\/$/, '') || '/';
-		if (href === '/timeline') return path === '/timeline' || path.startsWith('/projects');
+		if (href === '/projects') return path.startsWith('/projects');
 		return path === href;
 	}
 </script>

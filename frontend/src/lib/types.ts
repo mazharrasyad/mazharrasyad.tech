@@ -1,6 +1,8 @@
 export interface Project {
 	title: string;
 	category: string;
+	/** Where the work came from, e.g. Company, Freelance, Diklat. */
+	group: string;
 	images: string[];
 	description: string;
 	tools: string;
