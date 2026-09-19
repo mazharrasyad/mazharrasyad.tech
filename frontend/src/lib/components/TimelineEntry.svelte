@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import { parsePeriod } from '$lib/timeline';
+	import { onMount } from 'svelte';
+	import { formatDuration, parsePeriod } from '$lib/timeline';
 
 	let {
 		period,
@@ -10,6 +11,12 @@
 	}: { period: string; accent: 'emerald' | 'blue'; last?: boolean; children: Snippet } = $props();
 
 	const parts = $derived(parsePeriod(period));
+
+	// Prerendered with the build date; refreshed in the browser so an ongoing
+	// role's length doesn't go stale between deploys.
+	let now = $state(new Date());
+	onMount(() => (now = new Date()));
+	const duration = $derived(formatDuration(period, now));
 
 	const colors = {
 		emerald: { year: 'text-emerald-400', dot: 'bg-emerald-400 ring-emerald-400/25' },
@@ -26,6 +33,9 @@
 		<div class="text-2xl md:text-4xl font-black leading-tight {c.year}">{parts.year}</div>
 		{#if parts.end}
 			<div class="text-xs md:text-sm text-slate-400 leading-tight">→ {parts.end}</div>
+		{/if}
+		{#if duration}
+			<div class="mt-1.5 text-xs md:text-sm font-bold leading-tight {c.year}">{duration}</div>
 		{/if}
 	</div>
 
