@@ -146,5 +146,30 @@
 				<span class="text-sm font-bold">View CV</span>
 			</a>
 		</div>
+		<a
+			href="https://www.hostinger.com/id?REFERRALCODE=mazharrasyad"
+			target="_blank"
+			rel="sponsored noopener noreferrer"
+			class="mt-6 w-full group flex items-center gap-3 p-3 pr-4 rounded-2xl text-left bg-gradient-to-r from-violet-500/15 to-indigo-500/15 border border-violet-400/30 hover:border-violet-400/60 hover:scale-[1.02] transition-all shadow-lg shadow-violet-500/10"
+		>
+			<span
+				class="shrink-0 w-10 h-10 rounded-xl bg-violet-500/20 text-violet-300 flex items-center justify-center"
+			>
+				<Icon name="tag" class="w-5 h-5" />
+			</span>
+			<span class="min-w-0 flex-1">
+				<span class="block text-[10px] font-bold uppercase tracking-widest text-violet-300">
+					Promo · Rekomendasi
+				</span>
+				<span class="block text-sm font-bold text-white">Diskon Hostinger</span>
+				<span class="block text-xs text-slate-400">
+					Hosting &amp; domain untuk aplikasi atau website Anda
+				</span>
+			</span>
+			<Icon
+				name="external-link"
+				class="shrink-0 w-4 h-4 text-violet-300 group-hover:translate-x-0.5 transition-transform"
+			/>
+		</a>
 	</div>
 </main>
