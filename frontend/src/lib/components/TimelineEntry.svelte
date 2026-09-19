@@ -43,6 +43,10 @@
 		}
 	};
 	const c = $derived(colors[accent]);
+
+	// Finished periods go neutral so the ones still running stand out.
+	const yearColor = $derived(current ? c.year : 'text-slate-400');
+	const dotColor = $derived(current ? c.dot : 'bg-slate-500 ring-slate-500/25');
 </script>
 
 <div class="flex gap-3 md:gap-5">
@@ -50,12 +54,12 @@
 		{#if parts.month}
 			<div class="text-sm font-bold text-slate-300 leading-none">{parts.month}</div>
 		{/if}
-		<div class="text-2xl md:text-4xl font-black leading-tight {c.year}">{parts.year}</div>
+		<div class="text-2xl md:text-4xl font-black leading-tight {yearColor}">{parts.year}</div>
 		{#if parts.end}
 			<div class="text-xs md:text-sm text-slate-400 leading-tight">→ {parts.end}</div>
 		{/if}
 		{#if duration}
-			<div class="mt-1.5 text-xs md:text-sm font-bold leading-tight {c.year}">{duration}</div>
+			<div class="mt-1.5 text-xs md:text-sm font-bold leading-tight {yearColor}">{duration}</div>
 		{/if}
 	</div>
 
@@ -64,7 +68,7 @@
 			{#if current}
 				<span class="absolute inset-0 rounded-full animate-ping {c.dot.split(' ')[0]} opacity-60"></span>
 			{/if}
-			<span class="relative block w-3 h-3 rounded-full ring-4 {c.dot}"></span>
+			<span class="relative block w-3 h-3 rounded-full ring-4 {dotColor}"></span>
 		</span>
 		<span class="w-px flex-1 bg-white/15 {last ? 'opacity-0' : ''}"></span>
 	</div>
