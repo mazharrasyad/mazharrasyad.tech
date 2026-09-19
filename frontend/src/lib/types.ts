@@ -36,7 +36,7 @@ export interface Education {
 	field: string;
 	level: string;
 	degree: string;
-	institution: string;
+	institution?: string;
 	year: string;
 	highlights: string[];
 }

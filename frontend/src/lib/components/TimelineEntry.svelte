@@ -7,8 +7,18 @@
 		period,
 		accent,
 		last = false,
+		currentLabel,
 		children
-	}: { period: string; accent: 'emerald' | 'blue'; last?: boolean; children: Snippet } = $props();
+	}: {
+		period: string;
+		accent: 'emerald' | 'blue';
+		last?: boolean;
+		/** Badge text shown when the period is still running ("Present"). */
+		currentLabel: string;
+		children: Snippet;
+	} = $props();
+
+	const current = $derived(/present\s*$/i.test(period));
 
 	const parts = $derived(parsePeriod(period));
 
@@ -19,8 +29,18 @@
 	const duration = $derived(formatDuration(period, now));
 
 	const colors = {
-		emerald: { year: 'text-emerald-400', dot: 'bg-emerald-400 ring-emerald-400/25' },
-		blue: { year: 'text-blue-400', dot: 'bg-blue-400 ring-blue-400/25' }
+		emerald: {
+			year: 'text-emerald-400',
+			dot: 'bg-emerald-400 ring-emerald-400/25',
+			card: 'border-emerald-400/50 shadow-lg shadow-emerald-500/10',
+			badge: 'bg-emerald-500/20 border-emerald-500/40 text-emerald-300'
+		},
+		blue: {
+			year: 'text-blue-400',
+			dot: 'bg-blue-400 ring-blue-400/25',
+			card: 'border-blue-400/50 shadow-lg shadow-blue-500/10',
+			badge: 'bg-blue-500/20 border-blue-500/40 text-blue-300'
+		}
 	};
 	const c = $derived(colors[accent]);
 </script>
@@ -40,12 +60,25 @@
 	</div>
 
 	<div class="flex flex-col items-center shrink-0" aria-hidden="true">
-		<span class="mt-5 md:mt-6 w-3 h-3 rounded-full ring-4 {c.dot}"></span>
+		<span class="relative mt-5 md:mt-6 w-3 h-3 shrink-0">
+			{#if current}
+				<span class="absolute inset-0 rounded-full animate-ping {c.dot.split(' ')[0]} opacity-60"></span>
+			{/if}
+			<span class="relative block w-3 h-3 rounded-full ring-4 {c.dot}"></span>
+		</span>
 		<span class="w-px flex-1 bg-white/15 {last ? 'opacity-0' : ''}"></span>
 	</div>
 
 	<div class="flex-1 min-w-0 {last ? '' : 'pb-4 md:pb-6'}">
-		<div class="card-glass rounded-2xl p-4 md:p-5">
+		<div class="card-glass rounded-2xl p-4 md:p-5 {current ? c.card : ''}">
+			{#if current}
+				<span
+					class="inline-flex items-center gap-1.5 mb-2 px-2.5 py-0.5 rounded-full border text-xs font-black uppercase tracking-wider {c.badge}"
+				>
+					<span class="w-1.5 h-1.5 rounded-full animate-pulse {c.dot.split(' ')[0]}"></span>
+					{currentLabel}
+				</span>
+			{/if}
 			{@render children()}
 		</div>
 	</div>

@@ -7,7 +7,7 @@
 
 	const title = 'Education - Muhammad Azhar Rasyad';
 	const description =
-		'Educational background of Muhammad Azhar Rasyad, Software Engineer: Master of Computer Science at Universitas Budi Luhur, Bachelor of Computer Science at STT Terpadu Nurul Fikri, and a vocational high school diploma from SMKN 1 Cibinong.';
+		'Educational background of Muhammad Azhar Rasyad, Software Engineer: Master of Computer Science at Universitas Budi Luhur, an ongoing Doctor of Computer Science, Bachelor of Computer Science at STT Terpadu Nurul Fikri, and a vocational high school diploma from SMKN 1 Cibinong.';
 	const url = 'https://mazharrasyad.tech/education';
 	const image = 'https://mazharrasyad.tech/logo.png';
 </script>
@@ -35,8 +35,8 @@
 		<h1 class="text-4xl md:text-6xl font-black text-white mb-8">Education</h1>
 
 		<div>
-			{#each entries as edu, i (edu.institution)}
-				<TimelineEntry period={edu.year} accent="emerald" last={i === entries.length - 1}>
+			{#each entries as edu, i (edu.sortKey)}
+				<TimelineEntry period={edu.year} accent="emerald" currentLabel="On Going" last={i === entries.length - 1}>
 					<span
 						class="inline-block mb-2 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-sm font-black uppercase tracking-wider"
 					>
@@ -44,7 +44,9 @@
 					</span>
 					<h2 class="text-lg md:text-xl font-bold text-white leading-snug">{edu.field}</h2>
 					<p class="text-sm text-slate-300 mt-1">
-						{edu.institution} <span class="text-slate-500 mx-1">·</span>
+						{#if edu.institution}
+							{edu.institution} <span class="text-slate-500 mx-1">·</span>
+						{/if}
 						{edu.degree}
 					</p>
 					{#if edu.highlights.length > 0}

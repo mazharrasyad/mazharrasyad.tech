@@ -27,7 +27,9 @@
 			'https://github.com/mazharrasyad',
 			'https://scholar.google.co.id/citations?user=TQn1C8IAAAAJ&hl=id'
 		],
-		alumniOf: education.map((edu) => ({ '@type': 'EducationalOrganization', name: edu.institution }))
+		alumniOf: education
+			.filter((edu) => edu.institution)
+			.map((edu) => ({ '@type': 'EducationalOrganization', name: edu.institution }))
 	};
 </script>
 

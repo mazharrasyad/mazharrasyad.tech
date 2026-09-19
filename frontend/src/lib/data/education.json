@@ -36,5 +36,13 @@
 			"Developed a digital record classification model using SVM integrated with Hyperledger Fabric blockchain, published in Jurnal Inovtek Polbeng",
 			"Analyzed and compared the performance of Raft and SmartBFT consensus algorithms in Hyperledger Fabric as a thesis research"
 		]
+	},
+	{
+		"sortKey": 202708,
+		"field": "Computer Science",
+		"level": "S3",
+		"degree": "Doctor of Computer Science",
+		"year": "2027 - Present",
+		"highlights": []
 	}
 ]
