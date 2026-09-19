@@ -184,8 +184,8 @@
 				>
 			</h1>
 			<p class="mt-4 text-base md:text-lg text-slate-300 max-w-2xl">
-				Dari website perusahaan hingga aplikasi internal, saya bantu ubah proses kerja manual
-				menjadi sistem yang rapi dan efisien, mulai dari analisis kebutuhan sampai siap digunakan.
+				Website perusahaan, aplikasi internal, atau sistem untuk merapikan pekerjaan yang masih
+				manual. Saya temani dari memahami kebutuhan sampai sistemnya siap dipakai.
 			</p>
 			<div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
 				<a
