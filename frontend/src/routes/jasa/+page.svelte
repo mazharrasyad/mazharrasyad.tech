@@ -21,59 +21,61 @@
 
 	const services = [
 		{
+			icon: 'monitor',
 			title: 'Sistem Informasi & Aplikasi Web',
-			text: 'Aplikasi yang disesuaikan dengan alur kerja organisasi Anda: pencatatan data, pengajuan dan persetujuan, pelaporan, hingga hak akses per pengguna.'
+			text: 'Aplikasi yang disesuaikan dengan alur kerja organisasi Anda, menggantikan pencatatan manual di Excel atau kertas.',
+			points: [
+				'Pencatatan dan pengelolaan data',
+				'Pengajuan dan persetujuan berjenjang',
+				'Hak akses per pengguna dan peran',
+				'Pelaporan dan ekspor data'
+			]
 		},
 		{
+			icon: 'globe',
 			title: 'Website Company Profile',
-			text: 'Situs perusahaan yang menampilkan profil, produk atau layanan, artikel, dan testimoni.'
+			text: 'Situs perusahaan yang rapi dan mudah ditemukan di Google, tampil baik di ponsel maupun desktop.',
+			points: [
+				'Profil perusahaan, produk, dan layanan',
+				'Artikel dan testimoni',
+				'Formulir kontak dan tombol WhatsApp',
+				'Dasar SEO agar mudah ditemukan'
+			]
 		},
 		{
+			icon: 'bar-chart',
 			title: 'Dashboard & Laporan Data',
-			text: 'Ringkasan data dalam bentuk grafik dan rekapitulasi, sehingga pimpinan dapat memantau kinerja dan mengambil keputusan lebih cepat.'
+			text: 'Data yang tersebar dirangkum menjadi tampilan yang mudah dibaca, sehingga keputusan bisa diambil lebih cepat.',
+			points: [
+				'Grafik dan ringkasan kinerja',
+				'Rekapitulasi harian, bulanan, tahunan',
+				'Filter data sesuai kebutuhan',
+				'Unduh laporan'
+			]
 		},
 		{
+			icon: 'shopping-cart',
 			title: 'Aplikasi Operasional & Kasir (POS)',
-			text: 'Sistem untuk pemesanan, reservasi, stok, transaksi penjualan, dan pengelolaan operasional harian usaha.'
+			text: 'Sistem untuk menjalankan operasional harian usaha, dari pemesanan hingga laporan penjualan.',
+			points: [
+				'Transaksi penjualan dan kasir',
+				'Stok dan inventaris',
+				'Pemesanan dan reservasi',
+				'Laporan penjualan'
+			]
 		},
 		{
+			icon: 'server',
 			title: 'API & Integrasi Sistem',
-			text: 'Backend REST API, autentikasi, dan penghubungan aplikasi Anda dengan sistem lain yang sudah berjalan.'
+			text: 'Backend yang aman dan terstruktur, serta penghubung antara aplikasi Anda dengan sistem lain yang sudah berjalan.',
+			points: [
+				'REST API untuk web dan mobile',
+				'Autentikasi dan otorisasi',
+				'Integrasi dengan layanan pihak ketiga',
+				'Migrasi dan perapian data'
+			]
 		}
-	];
-
-	const projects = [
-		{
-			name: 'Kin Baja Suksestama',
-			type: 'Company profile',
-			text: 'Situs perusahaan trading material baja dengan katalog produk, artikel, dan testimoni.'
-		},
-		{
-			name: 'Folio POS',
-			type: 'Aplikasi kasir',
-			text: 'Point of Sale untuk ritel dan usaha lokal: transaksi penjualan, inventaris dan stok, serta laporan penjualan.'
-		},
-		{
-			name: 'Recerva',
-			type: 'Reservasi hotel',
-			text: 'Platform manajemen properti dan mesin pemesanan hotel dengan dukungan multi-tenant untuk banyak hotel.'
-		},
-		{
-			name: 'Putra Jasa V2',
-			type: 'Manajemen rental',
-			text: 'Sistem rental kendaraan dengan pemesanan otomatis, kalkulator harga sewa, dan pengelolaan data kendaraan.'
-		},
-		{
-			name: 'Insight Hub',
-			type: 'Dashboard data',
-			text: 'Dashboard analitik yang menyajikan grafik dan ringkasan visual kinerja bisnis.'
-		},
-		{
-			name: 'SIDANRU',
-			type: 'Sistem pemesanan',
-			text: 'Reservasi ruang rapat dan fasilitas dengan pencegahan jadwal bentrok otomatis.'
-		}
-	];
+	] as const;
 
 	const stack = ['Laravel', 'Livewire', 'Tailwind CSS', 'MySQL', 'PostgreSQL', 'Vue.js', 'React', 'Python'];
 
@@ -116,8 +118,9 @@
 	{@html `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, '\\u003c')}</script>`}
 </svelte:head>
 
-<div class="min-h-[calc(100dvh-3.5rem)] text-white p-4 md:p-8 w-full pb-28 md:pb-12">
-	<main class="max-w-3xl mx-auto w-full space-y-14 md:space-y-20 pt-4 md:pt-10">
+<div class="relative min-h-[calc(100dvh-3.5rem)] text-white p-4 md:p-8 w-full pb-28 md:pb-12">
+	<div aria-hidden="true" class="grid-bg pointer-events-none absolute inset-x-0 top-0 h-[900px]"></div>
+	<main class="relative max-w-3xl mx-auto w-full space-y-14 md:space-y-20 pt-4 md:pt-10">
 		<!-- Hero -->
 		<section use:reveal class="text-center md:text-left">
 			<span
@@ -146,12 +149,6 @@
 					<Icon name="whatsapp" class="w-5 h-5" />
 					Konsultasi via WhatsApp
 				</a>
-				<a
-					href="/projects"
-					class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-white/5 border border-white/10 text-slate-200 font-bold hover:bg-white/10 transition-all"
-				>
-					Lihat semua proyek
-				</a>
 			</div>
 		</section>
 
@@ -172,43 +169,56 @@
 
 		<!-- Services -->
 		<section use:reveal>
-			<h2 class="text-2xl md:text-3xl font-black mb-6">Layanan</h2>
+			<h2 class="text-2xl md:text-3xl font-black mb-2">Layanan</h2>
+			<p class="text-sm text-slate-400 mb-6">Apa saja yang bisa saya kerjakan untuk Anda.</p>
 			<ul class="grid gap-3 md:grid-cols-2">
 				{#each services as s (s.title)}
 					<li class="rounded-2xl bg-white/5 border border-white/10 p-5">
-						<h3 class="font-bold text-white">{s.title}</h3>
+						<div
+							class="w-11 h-11 rounded-xl bg-blue-500/15 border border-blue-400/30 text-blue-300 flex items-center justify-center"
+						>
+							<Icon name={s.icon} class="w-5 h-5" />
+						</div>
+						<h3 class="mt-4 font-bold text-white">{s.title}</h3>
 						<p class="mt-2 text-sm text-slate-300 leading-relaxed">{s.text}</p>
+						<ul class="mt-3 space-y-1.5">
+							{#each s.points as point (point)}
+								<li class="flex items-start gap-2 text-sm text-slate-300">
+									<Icon name="check" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" />
+									{point}
+								</li>
+							{/each}
+						</ul>
 					</li>
 				{/each}
 			</ul>
 		</section>
 
-		<!-- Projects -->
+		<!-- Education -->
 		<section use:reveal>
-			<h2 class="text-2xl md:text-3xl font-black mb-2">Contoh Hasil Kerja</h2>
-			<p class="text-sm text-slate-400 mb-6">
-				Sebagian dari proyek yang pernah saya kerjakan. Daftar lengkapnya ada di halaman
-				<a
-					href="/projects"
-					class="text-blue-300 underline underline-offset-2 hover:text-blue-200">Projects</a
-				>.
-			</p>
-			<ul class="grid gap-3 md:grid-cols-2">
-				{#each projects as p (p.name)}
-					<li class="rounded-2xl bg-white/5 border border-white/10 p-5">
-						<p class="text-[11px] font-bold uppercase tracking-wider text-blue-300">{p.type}</p>
-						<h3 class="mt-1 font-bold text-white">{p.name}</h3>
-						<p class="mt-2 text-sm text-slate-300 leading-relaxed">{p.text}</p>
-					</li>
-				{/each}
-			</ul>
-			<div class="mt-4 text-sm">
-				<a
-					href="/projects"
-					class="text-blue-300 underline underline-offset-2 hover:text-blue-200"
-					>Lihat semua proyek &rarr;</a
+			<a
+				href="/education"
+				class="group flex items-start gap-4 rounded-2xl bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition-all"
+			>
+				<div
+					class="w-11 h-11 shrink-0 rounded-xl bg-indigo-500/15 border border-indigo-400/30 text-indigo-300 flex items-center justify-center"
 				>
-			</div>
+					<Icon name="graduation-cap" class="w-5 h-5" />
+				</div>
+				<div class="min-w-0">
+					<h2 class="font-bold text-white">Dibangun di atas dasar keilmuan yang kuat</h2>
+					<p class="mt-1 text-sm text-slate-300 leading-relaxed">
+						Berlatar belakang pendidikan S1 dan S2 Ilmu Komputer, serta pernah juara di beberapa
+						kompetisi pengembangan web.
+					</p>
+					<span
+						class="mt-2 inline-flex items-center gap-1.5 text-sm text-blue-300 group-hover:text-blue-200"
+					>
+						Lihat riwayat pendidikan
+						<Icon name="arrow-right" class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+					</span>
+				</div>
+			</a>
 		</section>
 
 		<!-- Stack -->
@@ -256,5 +266,15 @@
 				</a>
 			</div>
 		</section>
+
+		<!-- Portfolio pointer -->
+		<p use:reveal class="text-center text-sm text-slate-400">
+			Ingin melihat hasil kerja sebelumnya?
+			<a
+				href="/projects"
+				class="text-blue-300 underline underline-offset-2 hover:text-blue-200"
+				>Lihat proyek yang pernah dikerjakan &rarr;</a
+			>
+		</p>
 	</main>
 </div>
