@@ -31,9 +31,32 @@ if (hashes.size === 0) {
 	process.exit(1);
 }
 
+// Analytics vendors are allowed only when their ID is set in
+// frontend/src/lib/tracking.json, so an unconfigured site keeps the tightest CSP.
+const tracking = JSON.parse(
+	readFileSync(new URL('../frontend/src/lib/tracking.json', import.meta.url), 'utf8')
+);
+const vendor = { script: [], connect: [], img: [] };
+if (tracking.ga4Id?.trim()) {
+	vendor.script.push('https://www.googletagmanager.com');
+	vendor.connect.push(
+		'https://www.googletagmanager.com',
+		'https://www.google-analytics.com',
+		'https://*.google-analytics.com',
+		'https://*.analytics.google.com'
+	);
+	vendor.img.push('https://www.googletagmanager.com', 'https://www.google-analytics.com');
+}
+if (tracking.metaPixelId?.trim()) {
+	vendor.script.push('https://connect.facebook.net');
+	vendor.connect.push('https://connect.facebook.net', 'https://www.facebook.com');
+	vendor.img.push('https://www.facebook.com');
+}
+const withVendors = (base, extra) => [base, ...extra].join(' ');
+
 const directives = [
 	"default-src 'self'",
-	`script-src 'self' ${[...hashes].sort().join(' ')}`,
+	`script-src ${withVendors(`'self' ${[...hashes].sort().join(' ')}`, vendor.script)}`,
 	// SvelteKit's client runtime creates a visually-hidden #svelte-announcer div
 	// (screen-reader route-change announcements) with a hardcoded inline style
 	// attribute. It never appears in the prerendered HTML (only after hydration),
@@ -43,9 +66,9 @@ const directives = [
 	// rather than a <style> block. Re-verify this hash after a SvelteKit upgrade
 	// (see internal/kit/src/core/sync/write_root.js).
 	"style-src 'self' 'unsafe-hashes' 'sha256-S8qMpvofolR8Mpjy4kQvEm7m1q8clzU4dfDH0AmvZjo='",
-	"img-src 'self' data:",
+	withVendors("img-src 'self' data:", vendor.img),
 	"font-src 'self'",
-	"connect-src 'self'",
+	withVendors("connect-src 'self'", vendor.connect),
 	"form-action 'self'",
 	"frame-ancestors 'none'",
 	"base-uri 'self'",

@@ -8,6 +8,7 @@ const SITE = 'https://mazharrasyad.tech';
 export const GET: RequestHandler = () => {
 	const urls = [
 		{ loc: `${SITE}/`, priority: '1.0' },
+		{ loc: `${SITE}/jasa`, priority: '0.9' },
 		{ loc: `${SITE}/education`, priority: '0.8' },
 		{ loc: `${SITE}/experience`, priority: '0.8' },
 		{ loc: `${SITE}/projects`, priority: '0.8' },
