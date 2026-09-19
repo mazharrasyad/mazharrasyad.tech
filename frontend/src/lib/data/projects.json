@@ -42,7 +42,8 @@
         "description": "Aplikasi web JOIN PKS untuk manajemen relawan, mencakup pendaftaran, profil relawan, hierarki wilayah, dan pelaporan.",
         "tools": "Svelte",
         "visibility": "Private",
-        "sourceUrl": "https://github.com/brsndpsn-connect/join-pks-web"
+        "sourceUrl": "https://github.com/brsndpsn-connect/join-pks-web",
+        "websiteUrl": "https://joinpks.id/"
       },
       {
         "title": "Betawi Academia",

@@ -9,6 +9,8 @@ export interface Project {
 	updated?: string;
 	visibility: 'Public' | 'Private';
 	sourceUrl: string;
+	/** Live website, when the project is publicly reachable. */
+	websiteUrl?: string;
 }
 
 export interface YearData {
@@ -47,6 +49,8 @@ export interface Experience {
 	sortKey: number;
 	title: string;
 	company: string;
+	/** Company website; turns the company name into a link. */
+	companyUrl?: string;
 	type: string;
 	period: string;
 	bullets: string[];

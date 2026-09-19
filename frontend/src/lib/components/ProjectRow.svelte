@@ -79,37 +79,50 @@
 				{project.description}
 			</p>
 
-			{#if project.visibility === 'Public'}
-				<a
-					href={project.sourceUrl}
-					target="_blank"
-					rel="noopener noreferrer"
-					class="link-btn inline-flex w-auto px-5 mt-4"
-				>
-					<span>View Source</span>
-					<span
-						class="text-xs px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400"
+			<div class="flex flex-wrap gap-3 mt-4">
+				{#if project.websiteUrl}
+					<a
+						href={project.websiteUrl}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="link-btn inline-flex w-auto px-5"
 					>
-						Public
-					</span>
-					<Icon name="external-link" class="w-3.5 h-3.5" />
-				</a>
-			{:else}
-				<button
-					type="button"
-					disabled
-					title="Source code is private"
-					class="link-btn inline-flex w-auto px-5 mt-4 opacity-60 cursor-not-allowed hover:transform-none!"
-				>
-					<span>View Source</span>
-					<span
-						class="flex items-center gap-1 text-xs px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-rose-500/20 text-rose-400"
+						<span>Visit Website</span>
+						<Icon name="external-link" class="w-3.5 h-3.5" />
+					</a>
+				{/if}
+				{#if project.visibility === 'Public'}
+					<a
+						href={project.sourceUrl}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="link-btn inline-flex w-auto px-5"
 					>
-						<Icon name="lock" class="w-3 h-3" />
-						Private
-					</span>
-				</button>
-			{/if}
+						<span>View Source</span>
+						<span
+							class="text-xs px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400"
+						>
+							Public
+						</span>
+						<Icon name="external-link" class="w-3.5 h-3.5" />
+					</a>
+				{:else}
+					<button
+						type="button"
+						disabled
+						title="Source code is private"
+						class="link-btn inline-flex w-auto px-5 opacity-60 cursor-not-allowed hover:transform-none!"
+					>
+						<span>View Source</span>
+						<span
+							class="flex items-center gap-1 text-xs px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-rose-500/20 text-rose-400"
+						>
+							<Icon name="lock" class="w-3 h-3" />
+							Private
+						</span>
+					</button>
+				{/if}
+			</div>
 		</div>
 	</div>
 </div>

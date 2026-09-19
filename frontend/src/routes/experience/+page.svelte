@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Icon from '$lib/components/Icon.svelte';
 	import TimelineEntry from '$lib/components/TimelineEntry.svelte';
 	import experienceData from '$lib/data/experience.json';
 	import type { Experience } from '$lib/types';
@@ -39,7 +40,20 @@
 				<TimelineEntry period={exp.period} accent="blue" currentLabel="Current" last={i === entries.length - 1}>
 					<h2 class="text-lg md:text-xl font-bold text-white leading-snug">{exp.title}</h2>
 					<p class="text-sm text-slate-300 mt-1">
-						{exp.company} <span class="text-slate-500 mx-1">·</span>
+						{#if exp.companyUrl}
+							<a
+								href={exp.companyUrl}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="inline-flex items-center gap-1 text-blue-300 hover:text-blue-200 underline underline-offset-2"
+							>
+								{exp.company}
+								<Icon name="external-link" class="w-3 h-3" />
+							</a>
+						{:else}
+							{exp.company}
+						{/if}
+						<span class="text-slate-500 mx-1">·</span>
 						{exp.type}
 					</p>
 					<ul class="mt-2.5 space-y-1">
