@@ -100,7 +100,7 @@
       {
         "title": "Waris",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Asisten perhitungan dan pencatatan digital untuk pembagian warisan sesuai peraturan yang berlaku.",
         "tools": "Laravel, MySQL",
@@ -120,7 +120,7 @@
       {
         "title": "Sistem Kost",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Sistem manajemen rumah kost yang melacak ketersediaan kamar, tagihan sewa, dan tanggal check-in.",
         "tools": "Laravel, Vue.js, Tailwind CSS",
@@ -575,7 +575,7 @@
       {
         "title": "Insight Hub",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Dasbor data analitik yang menyediakan wawasan visual komprehensif dan grafik untuk kinerja bisnis.",
         "tools": "Laravel, Chart.js, Tailwind CSS",
@@ -595,7 +595,7 @@
       {
         "title": "UMKM",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Direktori e-commerce dan platform promosi yang dibangun untuk usaha mikro, kecil, dan menengah (UMKM) lokal.",
         "tools": "Laravel, Livewire, Tailwind CSS",
@@ -650,7 +650,7 @@
       {
         "title": "CV Bahrullah Akbar",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Diklat",
         "images": [],
         "description": "Situs curriculum vitae pribadi profesional yang menampilkan profil karier dan publikasi Bahrullah Akbar.",
         "tools": "HTML, CSS, JavaScript",
