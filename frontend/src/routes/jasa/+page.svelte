@@ -26,7 +26,7 @@
 		},
 		{
 			title: 'Website Company Profile',
-			text: 'Situs perusahaan yang menampilkan profil, produk atau layanan, artikel, dan testimoni, dengan tombol konsultasi langsung ke WhatsApp.'
+			text: 'Situs perusahaan yang menampilkan profil, produk atau layanan, artikel, dan testimoni.'
 		},
 		{
 			title: 'Dashboard & Laporan Data',
@@ -46,7 +46,7 @@
 		{
 			name: 'Kin Baja Suksestama',
 			type: 'Company profile',
-			text: 'Situs perusahaan trading material baja dengan katalog produk, artikel, testimoni, dan konsultasi via WhatsApp.'
+			text: 'Situs perusahaan trading material baja dengan katalog produk, artikel, dan testimoni.'
 		},
 		{
 			name: 'Folio POS',
@@ -258,15 +258,3 @@
 		</section>
 	</main>
 </div>
-
-<!-- Sticky on phones, where most ad traffic lands. -->
-<a
-	href={waUrl}
-	target="_blank"
-	rel="noopener noreferrer"
-	data-track-location="jasa-sticky"
-	class="md:hidden fixed bottom-4 left-4 right-4 z-40 flex items-center justify-center gap-2 h-12 rounded-xl bg-green-500 text-white font-bold shadow-xl shadow-black/40 active:scale-[0.98] transition-transform"
->
-	<Icon name="whatsapp" class="w-5 h-5" />
-	Konsultasi via WhatsApp
-</a>
