@@ -79,13 +79,13 @@
 				{project.description}
 			</p>
 
-			<div class="flex flex-wrap gap-3 mt-4">
+			<div class="flex flex-wrap gap-2 sm:gap-3 mt-4">
 				{#if project.websiteUrl}
 					<a
 						href={project.websiteUrl}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="link-btn inline-flex w-auto px-5"
+						class="link-btn w-full sm:w-auto"
 					>
 						<span>Visit Website</span>
 						<Icon name="external-link" class="w-3.5 h-3.5" />
@@ -96,7 +96,7 @@
 						href={project.sourceUrl}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="link-btn inline-flex w-auto px-5"
+						class="link-btn w-full sm:w-auto"
 					>
 						<span>View Source</span>
 						<span
@@ -111,7 +111,7 @@
 						type="button"
 						disabled
 						title="Source code is private"
-						class="link-btn inline-flex w-auto px-5 opacity-60 cursor-not-allowed hover:transform-none!"
+						class="link-btn w-full sm:w-auto opacity-60 cursor-not-allowed hover:transform-none!"
 					>
 						<span>View Source</span>
 						<span
