@@ -32,13 +32,13 @@
 		emerald: {
 			year: 'text-emerald-400',
 			dot: 'bg-emerald-400 ring-emerald-400/25',
-			card: 'border-emerald-400/50 shadow-lg shadow-emerald-500/10',
+			card: 'bg-emerald-500/15! border-emerald-400/60! shadow-lg shadow-emerald-500/10',
 			badge: 'bg-emerald-500/20 border-emerald-500/40 text-emerald-300'
 		},
 		blue: {
 			year: 'text-blue-400',
 			dot: 'bg-blue-400 ring-blue-400/25',
-			card: 'border-blue-400/50 shadow-lg shadow-blue-500/10',
+			card: 'bg-blue-500/15! border-blue-400/60! shadow-lg shadow-blue-500/10',
 			badge: 'bg-blue-500/20 border-blue-500/40 text-blue-300'
 		}
 	};
