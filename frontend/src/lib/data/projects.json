@@ -3,6 +3,17 @@
     "year": 2026,
     "projects": [
       {
+        "title": "Sambel Pecel Cepu",
+        "category": "Web Dev",
+        "group": "Company",
+        "images": [],
+        "description": "Situs company profile Sambel Pecel Cepu, produk sambal pecel khas Cepu dari PT Nusantara Prima Internasional. Fungsi: memperkenalkan produk, bahan-bahan, testimoni, dan tim, serta menyediakan informasi kontak.",
+        "tools": "WordPress, Elementor",
+        "visibility": "Private",
+        "sourceUrl": "https://sambelpecelcepu.com/",
+        "websiteUrl": "https://sambelpecelcepu.com/"
+      },
+      {
         "title": "Kin Baja Suksestama",
         "category": "Web Dev",
         "group": "Company",
