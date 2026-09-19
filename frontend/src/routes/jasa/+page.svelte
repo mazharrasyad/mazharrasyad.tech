@@ -95,31 +95,10 @@
 		}
 	];
 
-	const experience = [
-		{
-			role: 'Software Engineer',
-			company: 'Join PKS',
-			period: '12/2025 - Sekarang',
-			text: 'Platform manajemen relawan skala nasional untuk 38 provinsi, dirancang untuk lebih dari 1 juta pengguna aktif, dengan REST API, CI/CD, dan deployment berbasis Docker.'
-		},
-		{
-			role: 'Intermediate Software Engineer',
-			company: 'Tripasysfo Techno Development',
-			period: '02/2023 - Sekarang',
-			text: 'Sistem akuntansi, platform reservasi hotel dengan booking engine, sistem pemesanan ruang, dan manajemen proyek konstruksi untuk berbagai klien perusahaan.'
-		},
-		{
-			role: 'Software Engineer (Freelance)',
-			company: 'Freelancer',
-			period: '01/2023 - Sekarang',
-			text: 'Lebih dari 50 proyek berbasis web: sistem informasi pemerintahan, e-commerce, pendidikan, kesehatan, dan layanan publik.'
-		},
-		{
-			role: 'Software Engineering Specialist',
-			company: 'Sudin Kominfotik Jakarta Selatan',
-			period: '01/2022 - 12/2022',
-			text: 'Membangun dan merawat 7 sistem informasi pemerintahan, termasuk platform e-commerce urban farming dan asisten virtual berbasis chatbot.'
-		}
+	const experienceHighlights = [
+		'8+ tahun pengalaman sebagai Software Engineer',
+		'Aktif di Tripasysfo dan Join PKS, serta menerima proyek freelance',
+		'Berpengalaman untuk instansi pemerintah, perusahaan, dan organisasi'
 	];
 
 	// Learning and Campus work is left out on purpose: this page is about client work.
@@ -295,7 +274,7 @@
 
 		<!-- Experience -->
 		<section>
-			<div class="flex items-center gap-3 mb-2">
+			<div class="flex items-center gap-3 mb-6">
 				<div
 					class="w-11 h-11 shrink-0 rounded-xl bg-blue-500/15 border border-blue-400/30 text-blue-300 flex items-center justify-center"
 				>
@@ -303,20 +282,11 @@
 				</div>
 				<h2 class="text-2xl md:text-3xl font-black">Pengalaman Kerja</h2>
 			</div>
-			<p class="text-sm text-slate-400 mb-6">
-				Lebih dari 8 tahun membangun sistem untuk instansi pemerintah, perusahaan, dan organisasi.
-			</p>
-			<ul class="space-y-3">
-				{#each experience as x (x.company + x.period)}
-					<li class="rounded-2xl bg-white/5 border border-white/10 p-5">
-						<div class="flex items-center justify-between gap-3">
-							<span class="text-xs font-bold uppercase tracking-wider text-blue-300"
-								>{x.company}</span
-							>
-							<span class="text-xs text-slate-400 shrink-0">{x.period}</span>
-						</div>
-						<h3 class="mt-2 font-bold text-white">{x.role}</h3>
-						<p class="mt-2 text-sm text-slate-300 leading-relaxed">{x.text}</p>
+			<ul class="rounded-2xl bg-white/5 border border-white/10 p-5 space-y-2.5">
+				{#each experienceHighlights as h (h)}
+					<li class="flex items-start gap-2 text-sm text-slate-300">
+						<Icon name="check" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" />
+						{h}
 					</li>
 				{/each}
 			</ul>
