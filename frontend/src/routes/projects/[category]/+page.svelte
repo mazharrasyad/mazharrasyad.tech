@@ -32,7 +32,7 @@
 	<meta name="twitter:image" content={image} />
 </svelte:head>
 
-<div class="min-h-[calc(100dvh-6.75rem)] text-white flex flex-col p-4 md:p-8 w-full">
+<div class="min-h-[calc(100dvh-3.5rem)] text-white flex flex-col p-4 md:p-8 w-full">
 	<header class="max-w-4xl mx-auto w-full mb-8 flex justify-between items-center">
 		<a href="/projects" class="link-btn">
 			<Icon name="arrow-left" class="w-4 h-4" /> <span>Projects</span>

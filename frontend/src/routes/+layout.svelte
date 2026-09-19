@@ -1,10 +1,14 @@
 <script lang="ts">
 	import './layout.css';
+	import { page } from '$app/state';
 	import Icon from '$lib/components/Icon.svelte';
 	import SiteNav from '$lib/components/SiteNav.svelte';
 	import SiteFooter from '$lib/components/SiteFooter.svelte';
 
 	let { children } = $props();
+
+	// The profile page is a single screen; the footer's contact prompt is redundant there.
+	const showFooter = $derived((page.url.pathname.replace(/\/$/, '') || '/') !== '/');
 
 	let showBackToTop = $state(false);
 
@@ -23,7 +27,9 @@
 
 {@render children()}
 
-<SiteFooter />
+{#if showFooter}
+	<SiteFooter />
+{/if}
 
 {#if showBackToTop}
 	<button

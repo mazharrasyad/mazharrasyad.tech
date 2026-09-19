@@ -1,4 +1,4 @@
-<!-- Height (3.25rem) is part of the 6.75rem the pages subtract along with the navbar. -->
+<!-- Sits after the page content; pages are at least one screen tall, so it only shows once you scroll to the end. -->
 <footer
 	class="h-[3.25rem] flex items-center justify-center gap-x-2 px-4 border-t border-white/10 bg-[#0f172a]/95"
 >
