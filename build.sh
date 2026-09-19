@@ -1,27 +1,17 @@
 #!/usr/bin/env bash
-# Builds the SvelteKit frontend and the Go backend, and stages the runtime
-# data the server needs. Run after `git pull` to deploy a new version, then
-# `systemctl restart mazharrasyad-web`.
+# Builds the prerendered SvelteKit site and reloads nginx, which serves
+# frontend/build directly. Run after `git pull` to deploy a new version.
 set -euo pipefail
 cd "$(dirname "$0")"
 
 echo "==> building frontend"
-cd frontend
-npm ci
-npm run build
-cd ..
-
-echo "==> staging project data for the server"
-mkdir -p data
-cp frontend/src/lib/data/projects.json data/projects.json
-
-echo "==> building backend"
-cd backend
-go build -o ../bin/server ./cmd/server
-go build -o ../bin/csphash ./cmd/csphash
-cd ..
+(cd frontend && npm ci && npm run build)
 
 echo "==> computing CSP script hashes for this build"
-./bin/csphash frontend/build data/csp-script-hashes.txt
+node scripts/csp-hashes.mjs frontend/build nginx/csp.conf
 
-echo "==> done. binary at ./bin/server"
+echo "==> reloading nginx"
+sudo nginx -t
+sudo systemctl reload nginx
+
+echo "==> done. nginx now serves frontend/build"
