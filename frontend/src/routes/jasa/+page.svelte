@@ -77,6 +77,63 @@
 		}
 	] as const;
 
+	const education = [
+		{
+			level: 'S2',
+			title: 'Master of Computer Science',
+			place: 'Universitas Budi Luhur',
+			year: '2024 - 2026',
+			text: 'Riset pemodelan data, arsitektur enterprise untuk digitalisasi layanan kesehatan, serta blockchain Hyperledger Fabric. Tiga artikel telah dipublikasikan di jurnal ilmiah.'
+		},
+		{
+			level: 'S1',
+			title: 'Bachelor of Computer Science',
+			place: 'STT Terpadu Nurul Fikri',
+			year: '2017 - 2021',
+			text: 'Juara 1 Hackathon Web Development Astro II, juara 2 dan 3 Smart City Web Development, juara 3 Web Design, dan finalis Hackathon Jamkrindo.'
+		},
+		{
+			level: 'SMK',
+			title: 'Rekayasa Perangkat Lunak',
+			place: 'SMKN 1 Cibinong',
+			year: '2014 - 2017',
+			text: 'Awal belajar membangun perangkat lunak, dengan tugas akhir berupa plugin WordPress untuk multiposting.'
+		}
+	];
+
+	const projects = [
+		{
+			name: 'Kin Baja Suksestama',
+			type: 'Company profile',
+			text: 'Situs perusahaan trading material baja dengan katalog produk, artikel, dan testimoni.'
+		},
+		{
+			name: 'Folio POS',
+			type: 'Aplikasi kasir',
+			text: 'Point of Sale untuk ritel dan usaha lokal: transaksi penjualan, inventaris dan stok, serta laporan penjualan.'
+		},
+		{
+			name: 'Recerva',
+			type: 'Reservasi hotel',
+			text: 'Platform manajemen properti dan mesin pemesanan hotel dengan dukungan multi-tenant untuk banyak hotel.'
+		},
+		{
+			name: 'Putra Jasa V2',
+			type: 'Manajemen rental',
+			text: 'Sistem rental kendaraan dengan pemesanan otomatis, kalkulator harga sewa, dan pengelolaan data kendaraan.'
+		},
+		{
+			name: 'Insight Hub',
+			type: 'Dashboard data',
+			text: 'Dashboard analitik yang menyajikan grafik dan ringkasan visual kinerja bisnis.'
+		},
+		{
+			name: 'SIDANRU',
+			type: 'Sistem pemesanan',
+			text: 'Reservasi ruang rapat dan fasilitas dengan pencegahan jadwal bentrok otomatis.'
+		}
+	];
+
 	const stack = ['Laravel', 'Livewire', 'Tailwind CSS', 'MySQL', 'PostgreSQL', 'Vue.js', 'React', 'Python'];
 
 	const jsonLd = {
@@ -196,29 +253,57 @@
 
 		<!-- Education -->
 		<section use:reveal>
-			<a
-				href="/education"
-				class="group flex items-start gap-4 rounded-2xl bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition-all"
-			>
+			<div class="flex items-center gap-3 mb-2">
 				<div
 					class="w-11 h-11 shrink-0 rounded-xl bg-indigo-500/15 border border-indigo-400/30 text-indigo-300 flex items-center justify-center"
 				>
 					<Icon name="graduation-cap" class="w-5 h-5" />
 				</div>
-				<div class="min-w-0">
-					<h2 class="font-bold text-white">Dibangun di atas dasar keilmuan yang kuat</h2>
-					<p class="mt-1 text-sm text-slate-300 leading-relaxed">
-						Berlatar belakang pendidikan S1 dan S2 Ilmu Komputer, serta pernah juara di beberapa
-						kompetisi pengembangan web.
-					</p>
-					<span
-						class="mt-2 inline-flex items-center gap-1.5 text-sm text-blue-300 group-hover:text-blue-200"
-					>
-						Lihat riwayat pendidikan
-						<Icon name="arrow-right" class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-					</span>
-				</div>
+				<h2 class="text-2xl md:text-3xl font-black">Latar Belakang Pendidikan</h2>
+			</div>
+			<p class="text-sm text-slate-400 mb-6">
+				Dikerjakan dengan dasar keilmuan yang kuat, bukan sekadar coba-coba.
+			</p>
+			<ul class="space-y-3">
+				{#each education as e (e.level)}
+					<li class="rounded-2xl bg-white/5 border border-white/10 p-5">
+						<div class="flex items-center justify-between gap-3">
+							<span
+								class="px-2 py-0.5 rounded-md bg-indigo-500/20 border border-indigo-400/30 text-indigo-300 text-xs font-bold"
+								>{e.level}</span
+							>
+							<span class="text-xs text-slate-400">{e.year}</span>
+						</div>
+						<h3 class="mt-2 font-bold text-white">{e.title}</h3>
+						<p class="text-sm text-slate-400">{e.place}</p>
+						<p class="mt-2 text-sm text-slate-300 leading-relaxed">{e.text}</p>
+					</li>
+				{/each}
+			</ul>
+			<a
+				href="/education"
+				class="mt-4 inline-flex items-center gap-1.5 text-sm text-blue-300 hover:text-blue-200"
+			>
+				Lihat riwayat pendidikan lengkap
+				<Icon name="arrow-right" class="w-4 h-4" />
 			</a>
+		</section>
+
+		<!-- Projects -->
+		<section use:reveal>
+			<h2 class="text-2xl md:text-3xl font-black mb-2">Proyek yang Pernah Dikerjakan</h2>
+			<p class="text-sm text-slate-400 mb-6">
+				Gambaran jenis sistem yang telah saya bangun untuk perusahaan, instansi, dan pelaku usaha.
+			</p>
+			<ul class="grid gap-3 md:grid-cols-2">
+				{#each projects as p (p.name)}
+					<li class="rounded-2xl bg-white/5 border border-white/10 p-5">
+						<p class="text-[11px] font-bold uppercase tracking-wider text-blue-300">{p.type}</p>
+						<h3 class="mt-1 font-bold text-white">{p.name}</h3>
+						<p class="mt-2 text-sm text-slate-300 leading-relaxed">{p.text}</p>
+					</li>
+				{/each}
+			</ul>
 		</section>
 
 		<!-- Stack -->
@@ -266,15 +351,5 @@
 				</a>
 			</div>
 		</section>
-
-		<!-- Portfolio pointer -->
-		<p use:reveal class="text-center text-sm text-slate-400">
-			Ingin melihat hasil kerja sebelumnya?
-			<a
-				href="/projects"
-				class="text-blue-300 underline underline-offset-2 hover:text-blue-200"
-				>Lihat proyek yang pernah dikerjakan &rarr;</a
-			>
-		</p>
 	</main>
 </div>
