@@ -135,8 +135,6 @@
 		count: categories.find((cat) => cat.slug === c.slug)?.projects.length ?? 0
 	}));
 
-	const stack = ['Laravel', 'Livewire', 'Tailwind CSS', 'MySQL', 'PostgreSQL', 'Vue.js', 'React', 'Python'];
-
 	const jsonLd = {
 		'@context': 'https://schema.org',
 		'@type': 'ProfessionalService',
@@ -319,20 +317,6 @@
 				Lihat proyek lengkap
 				<Icon name="arrow-right" class="w-4 h-4" />
 			</a>
-		</section>
-
-		<!-- Stack -->
-		<section use:reveal>
-			<h2 class="text-2xl md:text-3xl font-black mb-4">Teknologi</h2>
-			<ul class="flex flex-wrap gap-2">
-				{#each stack as t (t)}
-					<li
-						class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-slate-200"
-					>
-						{t}
-					</li>
-				{/each}
-			</ul>
 		</section>
 
 		<!-- Final CTA -->
