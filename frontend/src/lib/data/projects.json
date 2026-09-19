@@ -415,7 +415,7 @@
       {
         "title": "Web Eskul",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Campus",
         "images": [],
         "description": "Portal manajemen kegiatan ekstrakurikuler sekolah, memungkinkan siswa mendaftar dan melacak prestasi.",
         "tools": "PHP, Laravel, MySQL",
@@ -425,7 +425,7 @@
       {
         "title": "Absen",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Campus",
         "images": [],
         "description": "Sistem absensi karyawan ramah perangkat mobile dengan geolokasi dan pencatatan check-in/check-out otomatis.",
         "tools": "Laravel, JavaScript, MySQL",
@@ -435,7 +435,7 @@
       {
         "title": "BantuTani",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Campus",
         "images": [],
         "description": "Sistem bantuan pertanian yang menyediakan informasi, tips pertanian, dan sumber daya bagi komunitas petani lokal.",
         "tools": "PHP, Laravel, MySQL",
@@ -445,7 +445,7 @@
       {
         "title": "Rumah Baca",
         "category": "Web Dev",
-        "group": "Freelance",
+        "group": "Campus",
         "images": [],
         "description": "Platform perpustakaan digital dan komunitas membaca untuk mengelola inventaris buku, catatan peminjaman, dan acara.",
         "tools": "PHP, CodeIgniter, MySQL",
@@ -1025,7 +1025,7 @@
       {
         "title": "Angkutan Umum Bandung",
         "category": "Web Dev",
-        "group": "Diklat",
+        "group": "Company",
         "images": [
           "/projects/2021/p35/1.png",
           "/projects/2021/p35/2.png",
