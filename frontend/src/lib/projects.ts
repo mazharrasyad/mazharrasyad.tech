@@ -1,6 +1,5 @@
 import yearsData from '$lib/data/projects.json';
-import scholarData from '$lib/data/scholar.json';
-import type { Project, Publication, ScholarData, YearData } from '$lib/types';
+import type { Project, YearData } from '$lib/types';
 
 export type ProjectWithYear = Project & { year: number };
 
@@ -9,7 +8,6 @@ export interface Category {
 	slug: string;
 	description: string;
 	projects: ProjectWithYear[];
-	publications: Publication[];
 }
 
 // Ordered as they appear in the tabs. `Project.group` in projects.json must
@@ -34,8 +32,7 @@ const DEFINITIONS = [
 	},
 	{
 		name: 'Research',
-		description:
-			'Blockchain, data and IoT work from graduate research, along with the resulting journal publications.'
+		description: 'Blockchain, data and IoT work from graduate research.'
 	},
 	{
 		name: 'Campus',
@@ -49,7 +46,6 @@ const DEFINITIONS = [
 ] as const;
 
 const years = yearsData as YearData[];
-const publications = (scholarData as ScholarData).publications;
 
 const all: ProjectWithYear[] = [...years]
 	.sort((a, b) => b.year - a.year)
@@ -60,10 +56,7 @@ export const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/
 export const categories: Category[] = DEFINITIONS.map((def) => ({
 	...def,
 	slug: slugify(def.name),
-	projects: all.filter((p) => p.group === def.name),
-	// Journal papers come out of research, so they live with that category.
-	publications:
-		def.name === 'Research' ? [...publications].sort((a, b) => b.year - a.year) : []
+	projects: all.filter((p) => p.group === def.name)
 }));
 
 export const totalProjects = all.length;

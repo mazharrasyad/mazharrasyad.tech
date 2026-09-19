@@ -64,7 +64,7 @@
 			>
 				{category.name}
 				<span class="tabular-nums {activeIndex === i ? 'text-blue-100' : 'text-slate-500'}">
-					{category.projects.length + category.publications.length}
+					{category.projects.length}
 				</span>
 			</button>
 		{/each}

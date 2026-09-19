@@ -11,6 +11,7 @@ export const GET: RequestHandler = () => {
 		{ loc: `${SITE}/education`, priority: '0.8' },
 		{ loc: `${SITE}/experience`, priority: '0.8' },
 		{ loc: `${SITE}/projects`, priority: '0.8' },
+		{ loc: `${SITE}/journal`, priority: '0.8' },
 		...categories.map((c) => ({ loc: `${SITE}/projects/${c.slug}`, priority: '0.7' }))
 	];
 
