@@ -84,15 +84,5 @@
 				</div>
 			{/each}
 		</div>
-
-		<a
-			href={scholar.profileUrl}
-			target="_blank"
-			rel="noopener noreferrer"
-			class="link-btn mt-8 w-fit rounded-xl px-5 py-2.5"
-		>
-			<Icon name="google-scholar" class="w-4 h-4 text-sky-400" />
-			<span class="text-sm font-bold normal-case">View on Google Scholar</span>
-		</a>
 	</main>
 </div>
