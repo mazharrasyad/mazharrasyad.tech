@@ -342,8 +342,8 @@
 		>
 			<h2 class="text-2xl md:text-3xl font-black">Ceritakan kebutuhan Anda</h2>
 			<p class="mt-3 text-slate-300 max-w-xl mx-auto">
-				Jelaskan singkat apa yang ingin dibuat. Saya akan membalas dengan gambaran solusi dan
-				langkah selanjutnya.
+				Hubungi saya sekarang untuk mendiskusikan proyek Anda. Anda akan menerima rekomendasi
+				solusi yang tepat beserta langkah selanjutnya.
 			</p>
 			<div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
 				<a
