@@ -487,7 +487,8 @@
 			<h2 class="text-2xl md:text-3xl font-black">Ceritakan kebutuhan Anda</h2>
 			<p class="mt-3 text-slate-300 max-w-xl mx-auto">
 				Instansi, organisasi, atau usaha Anda masih mencatat manual? Ceritakan alur kerjanya dulu,
-				nanti kita diskusikan bersama sistem yang paling cocok.
+				nanti kita diskusikan bersama sistem yang paling cocok. Biaya menyesuaikan kebutuhan dan
+				anggaran Anda, jadi tidak ada paket baku.
 			</p>
 			<div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
 				<a
