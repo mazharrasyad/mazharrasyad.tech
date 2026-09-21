@@ -7,7 +7,7 @@
 	const image = 'https://mazharrasyad.tech/logo.png';
 
 	const waText = encodeURIComponent(
-		'Halo, saya menemukan layanan pembuatan website/aplikasi di mazharrasyad.tech dan ingin berkonsultasi mengenai kebutuhan saya. Kapan ada waktu untuk berdiskusi?'
+		'Halo, saya menemukan layanan pembuatan sistem informasi/website di mazharrasyad.tech dan ingin berkonsultasi mengenai kebutuhan instansi/organisasi/usaha saya. Kapan ada waktu untuk berdiskusi?'
 	);
 	const waUrl = `https://wa.me/6281290351971?text=${waText}`;
 
@@ -15,9 +15,9 @@
 		{
 			icon: 'monitor',
 			title: 'Sistem Informasi & Aplikasi Web',
-			text: 'Aplikasi yang disesuaikan dengan alur kerja organisasi Anda, menggantikan pencatatan manual di Excel atau kertas.',
+			text: 'Aplikasi untuk instansi dan organisasi yang mengikuti alur kerja Anda, menggantikan pencatatan manual di Excel atau kertas.',
 			points: [
-				'Pencatatan dan pengelolaan data',
+				'Pencatatan data dan dokumen digital',
 				'Pengajuan dan persetujuan berjenjang',
 				'Hak akses per pengguna dan peran',
 				'Pelaporan dan ekspor data'
@@ -107,7 +107,7 @@
 	const experienceHighlights = [
 		'8+ tahun pengalaman sebagai Software Engineer',
 		'Aktif di Tripasysfo dan Join PKS, serta menerima proyek freelance',
-		'Berpengalaman untuk instansi pemerintah, perusahaan, dan organisasi'
+		'Berpengalaman membangun sistem untuk kelurahan, kecamatan, suku dinas, dan pemerintah daerah'
 	];
 
 	// Learning and Campus work is left out on purpose: this page is about client work.
@@ -452,7 +452,8 @@
 		<section>
 			<h2 class="text-2xl md:text-3xl font-black mb-2">Proyek yang Pernah Dikerjakan</h2>
 			<p class="text-sm text-slate-400 mb-6">
-				Dari {projectCountLabel} proyek yang telah dikerjakan, berikut sebarannya berdasarkan kategori.
+				Dari {projectCountLabel} proyek yang telah dikerjakan, {governmentCount} di antaranya untuk instansi
+				pemerintah. Berikut sebarannya berdasarkan kategori.
 			</p>
 			<ul class="grid grid-cols-2 gap-3 mb-4">
 				{#each projectCategories as c (c.slug)}
@@ -485,8 +486,8 @@
 		>
 			<h2 class="text-2xl md:text-3xl font-black">Ceritakan kebutuhan Anda</h2>
 			<p class="mt-3 text-slate-300 max-w-xl mx-auto">
-				Punya rencana membuat website atau sistem? Silakan ceritakan dulu, nanti kita diskusikan
-				bersama solusi yang paling cocok.
+				Instansi, organisasi, atau usaha Anda masih mencatat manual? Ceritakan alur kerjanya dulu,
+				nanti kita diskusikan bersama sistem yang paling cocok.
 			</p>
 			<div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
 				<a
