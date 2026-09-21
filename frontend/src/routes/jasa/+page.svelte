@@ -2,8 +2,7 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import { categories, projectCountLabel } from '$lib/projects';
 
-	const title = 'Jasa Pembuatan Website & Sistem Informasi - Muhammad Azhar Rasyad';
-	const description = `Jasa pembuatan sistem informasi, aplikasi web, dan website company profile oleh Software Engineer dengan 8+ tahun pengalaman dan ${projectCountLabel} proyek. Konsultasi langsung via WhatsApp.`;
+	const title = 'Jasa Pembuatan Website & Sistem Informasi Instansi - Muhammad Azhar Rasyad';
 	const url = 'https://mazharrasyad.tech/jasa';
 	const image = 'https://mazharrasyad.tech/logo.png';
 
@@ -66,6 +65,17 @@
 				'Autentikasi dan otorisasi',
 				'Integrasi dengan layanan pihak ketiga',
 				'Migrasi dan perapian data'
+			]
+		},
+		{
+			icon: 'lock',
+			title: 'Blockchain & Verifikasi Dokumen',
+			text: 'Untuk data yang harus tahan manipulasi, seperti sertifikat dan catatan resmi. Berbasis riset Hyperledger Fabric, bukan sekadar tren.',
+			points: [
+				'Smart contract dan chaincode',
+				'Pencatatan yang tidak bisa diubah diam-diam',
+				'Jaringan dengan konsensus Raft',
+				'Antarmuka web untuk pengguna non-teknis'
 			]
 		}
 	] as const;
@@ -133,6 +143,69 @@
 		count: categories.find((cat) => cat.slug === c.slug)?.projects.length ?? 0
 	}));
 
+	const governmentCount = categories.find((c) => c.slug === 'government')?.projects.length ?? 0;
+
+	const description = `Jasa website & sistem informasi untuk instansi, organisasi, dan perusahaan. ${governmentCount} sistem pemerintah, ${projectCountLabel} proyek, engineer 8+ tahun. Konsultasi via WhatsApp.`;
+
+	const stats = [
+		{ value: String(governmentCount), label: 'sistem instansi pemerintah' },
+		{ value: projectCountLabel, label: 'proyek dikerjakan' },
+		{ value: '8+', label: 'tahun pengalaman' },
+		{ value: 'S2', label: 'Ilmu Komputer' }
+	];
+
+	// Every claim here is backed by something on /projects, /experience or /education.
+	const differentiators = [
+		{
+			icon: 'landmark',
+			title: 'Paham cara kerja instansi',
+			text: `${governmentCount} sistem untuk kelurahan, kecamatan, dan suku dinas sudah dikerjakan. Alur berjenjang, laporan berkala, dan hak akses per peran bukan hal baru bagi saya.`
+		},
+		{
+			icon: 'users',
+			title: 'Langsung dengan engineernya',
+			text: 'Anda berdiskusi dengan orang yang menulis kodenya, tanpa lapisan sales atau project manager yang menerjemahkan kebutuhan.'
+		},
+		{
+			icon: 'graduation-cap',
+			title: 'Dasar keilmuan, bukan coba-coba',
+			text: 'Lulusan S2 Ilmu Komputer dengan riset data dan blockchain, serta tiga artikel jurnal ilmiah. Cocok untuk kebutuhan yang tidak standar.'
+		},
+		{
+			icon: 'lock',
+			title: 'Dibuat sesuai alur Anda',
+			text: 'Bukan template yang dipaksakan. Sistem mengikuti cara kerja organisasi Anda, sehingga tim tidak perlu mengubah kebiasaan hanya untuk menyesuaikan aplikasi.'
+		}
+	] as const;
+
+	// Real systems from /projects, grouped by the problem they solve.
+	const useCases = [
+		{
+			icon: 'users',
+			title: 'Kinerja & kepegawaian',
+			text: 'Pencatatan aktivitas harian, penilaian atasan, dan rekap kinerja tenaga kerja.',
+			examples: ['E-Kinerja PJLP', 'ESETKO PJLP', 'SIVERJAB']
+		},
+		{
+			icon: 'file-text',
+			title: 'Perizinan & layanan publik',
+			text: 'Pengajuan warga, pelacakan status berkas, dan pelaporan dari masyarakat.',
+			examples: ['SIP', 'SITEMAN-NIB', 'PAMOR', 'PPID']
+		},
+		{
+			icon: 'search',
+			title: 'Arsip, kontrak & pengadaan',
+			text: 'Dokumen digital yang terindeks dan mudah dicari, alur kontrak, serta pengajuan kebutuhan barang.',
+			examples: ['Arsip', 'SIARIS', 'E-Contract', 'E-RKBU']
+		},
+		{
+			icon: 'map-pin',
+			title: 'Kesehatan & lingkungan',
+			text: 'Pencatatan lapangan oleh petugas dan pemantauan kasus atau kondisi wilayah.',
+			examples: ['Posyandu', 'DBD', 'PSN', 'Penataan']
+		}
+	] as const;
+
 	const jsonLd = {
 		'@context': 'https://schema.org',
 		'@type': 'ProfessionalService',
@@ -142,6 +215,13 @@
 		email: 'mailto:muhazharrasyad@gmail.com',
 		telephone: '+6281290351971',
 		areaServed: { '@type': 'Country', name: 'Indonesia' },
+		knowsAbout: [
+			'Sistem informasi pemerintah',
+			'Aplikasi web',
+			'Website company profile',
+			'Migrasi data dari Excel',
+			'Blockchain Hyperledger Fabric'
+		],
 		address: { '@type': 'PostalAddress', addressLocality: 'Jakarta', addressCountry: 'ID' },
 		founder: { '@type': 'Person', name: 'Muhammad Azhar Rasyad', url: 'https://mazharrasyad.tech/' },
 		makesOffer: services.map((s) => ({
@@ -189,8 +269,9 @@
 				>
 			</h1>
 			<p class="mt-4 text-base md:text-lg text-slate-300 max-w-2xl">
-				Website perusahaan, aplikasi internal, atau sistem untuk merapikan pekerjaan yang masih
-				manual, didampingi dari memahami kebutuhan sampai sistemnya siap dipakai.
+				Spesialis sistem untuk instansi, organisasi, dan perusahaan yang ingin beralih dari Excel
+				dan kertas ke aplikasi yang benar-benar dipakai. Didampingi dari memahami kebutuhan sampai
+				sistemnya siap berjalan.
 			</p>
 			<div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
 				<a
@@ -204,6 +285,75 @@
 					Konsultasi via WhatsApp
 				</a>
 			</div>
+			<dl class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3">
+				{#each stats as st (st.label)}
+					<div class="rounded-2xl bg-white/5 border border-white/10 p-4 text-center md:text-left">
+						<dt class="sr-only">{st.label}</dt>
+						<dd class="text-2xl md:text-3xl font-black text-blue-300">{st.value}</dd>
+						<dd class="mt-0.5 text-xs text-slate-400">{st.label}</dd>
+					</div>
+				{/each}
+			</dl>
+		</section>
+
+		<!-- Why me -->
+		<section>
+			<h2 class="text-2xl md:text-3xl font-black mb-2">Kenapa memilih saya</h2>
+			<p class="text-sm text-slate-400 mb-6">
+				Bukan agensi besar dan bukan template siap pakai.
+			</p>
+			<ul class="grid gap-3 md:grid-cols-2">
+				{#each differentiators as d (d.title)}
+					<li class="rounded-2xl bg-white/5 border border-white/10 p-5">
+						<div
+							class="w-11 h-11 rounded-xl bg-emerald-500/15 border border-emerald-400/30 text-emerald-300 flex items-center justify-center"
+						>
+							<Icon name={d.icon} class="w-5 h-5" />
+						</div>
+						<h3 class="mt-4 font-bold text-white">{d.title}</h3>
+						<p class="mt-2 text-sm text-slate-300 leading-relaxed">{d.text}</p>
+					</li>
+				{/each}
+			</ul>
+		</section>
+
+		<!-- Use cases -->
+		<section>
+			<h2 class="text-2xl md:text-3xl font-black mb-2">Masalah yang sudah saya selesaikan</h2>
+			<p class="text-sm text-slate-400 mb-6">
+				Sistem nyata yang sudah berjalan, dikelompokkan menurut kebutuhannya.
+			</p>
+			<ul class="grid gap-3 md:grid-cols-2">
+				{#each useCases as u (u.title)}
+					<li class="rounded-2xl bg-white/5 border border-white/10 p-5">
+						<div class="flex items-center gap-3">
+							<div
+								class="w-10 h-10 shrink-0 rounded-xl bg-blue-500/15 border border-blue-400/30 text-blue-300 flex items-center justify-center"
+							>
+								<Icon name={u.icon} class="w-5 h-5" />
+							</div>
+							<h3 class="font-bold text-white">{u.title}</h3>
+						</div>
+						<p class="mt-3 text-sm text-slate-300 leading-relaxed">{u.text}</p>
+						<ul class="mt-3 flex flex-wrap gap-1.5">
+							{#each u.examples as ex (ex)}
+								<li
+									class="px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300"
+								>
+									{ex}
+								</li>
+							{/each}
+						</ul>
+					</li>
+				{/each}
+			</ul>
+			<a
+				href="/projects"
+				class="mt-4 inline-flex items-center gap-1.5 text-sm text-blue-300 hover:text-blue-200"
+			>
+				Lihat semua proyek
+				<Icon name="arrow-right" class="w-4 h-4" />
+			</a>
 		</section>
 
 		<!-- Services -->
