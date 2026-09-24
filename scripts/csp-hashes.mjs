@@ -36,9 +36,11 @@ if (hashes.size === 0) {
 const tracking = JSON.parse(
 	readFileSync(new URL('../frontend/src/lib/tracking.json', import.meta.url), 'utf8')
 );
-const vendor = { script: [], connect: [], img: [] };
-if (tracking.ga4Id?.trim()) {
+const vendor = { script: [], connect: [], img: [], frame: [] };
+if (tracking.ga4Id?.trim() || tracking.googleAdsId?.trim()) {
 	vendor.script.push('https://www.googletagmanager.com');
+}
+if (tracking.ga4Id?.trim()) {
 	vendor.connect.push(
 		'https://www.googletagmanager.com',
 		'https://www.google-analytics.com',
@@ -46,6 +48,28 @@ if (tracking.ga4Id?.trim()) {
 		'https://*.analytics.google.com'
 	);
 	vendor.img.push('https://www.googletagmanager.com', 'https://www.google-analytics.com');
+}
+// Google Ads conversion tracking, per Google's CSP guide for gtag.js.
+if (tracking.googleAdsId?.trim()) {
+	vendor.script.push(
+		'https://www.googleadservices.com',
+		'https://googleads.g.doubleclick.net',
+		'https://www.google.com'
+	);
+	vendor.connect.push(
+		'https://www.googleadservices.com',
+		'https://googleads.g.doubleclick.net',
+		'https://pagead2.googlesyndication.com',
+		'https://www.google.com',
+		'https://www.google.co.id'
+	);
+	vendor.img.push(
+		'https://www.googleadservices.com',
+		'https://googleads.g.doubleclick.net',
+		'https://www.google.com',
+		'https://www.google.co.id'
+	);
+	vendor.frame.push('https://td.doubleclick.net', 'https://www.googletagmanager.com');
 }
 if (tracking.metaPixelId?.trim()) {
 	vendor.script.push('https://connect.facebook.net');
@@ -69,6 +93,8 @@ const directives = [
 	withVendors("img-src 'self' data:", vendor.img),
 	"font-src 'self'",
 	withVendors("connect-src 'self'", vendor.connect),
+	// Omitted when empty so frames fall back to default-src 'self'.
+	...(vendor.frame.length ? [withVendors("frame-src 'self'", vendor.frame)] : []),
 	"form-action 'self'",
 	"frame-ancestors 'none'",
 	"base-uri 'self'",

@@ -5,6 +5,9 @@ import tracking from '$lib/tracking.json';
 // open the CSP for exactly these vendors). Leave an ID empty to disable that
 // vendor: nothing is loaded and no request leaves the page.
 const GA4_ID = tracking.ga4Id.trim();
+const ADS_ID = tracking.googleAdsId.trim();
+// Conversion label of the Google Ads "lead" action, fired by trackContact().
+const ADS_LEAD = ADS_ID && tracking.googleAdsLeadLabel.trim() ? `${ADS_ID}/${tracking.googleAdsLeadLabel.trim()}` : '';
 const PIXEL_ID = tracking.metaPixelId.trim();
 
 type Gtag = (...args: unknown[]) => void;
@@ -39,7 +42,9 @@ export function initAnalytics() {
 	if (!browser || started) return;
 	started = true;
 
-	if (GA4_ID) {
+	// GA4 and Google Ads share one gtag.js; it is loaded once with whichever ID is set.
+	const gtagId = GA4_ID || ADS_ID;
+	if (gtagId) {
 		window.dataLayer = window.dataLayer || [];
 		window.gtag = function () {
 			// gtag.js requires the `arguments` object itself, not an array.
@@ -48,8 +53,9 @@ export function initAnalytics() {
 		};
 		window.gtag('js', new Date());
 		// Page views are sent per route change by trackPageView().
-		window.gtag('config', GA4_ID, { send_page_view: false });
-		loadScript(`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(GA4_ID)}`);
+		if (GA4_ID) window.gtag('config', GA4_ID, { send_page_view: false });
+		if (ADS_ID) window.gtag('config', ADS_ID);
+		loadScript(`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(gtagId)}`);
 	}
 
 	if (PIXEL_ID) {
@@ -84,5 +90,6 @@ export function trackPageView(path: string, title: string) {
 export function trackContact(method: 'whatsapp' | 'email', location: string) {
 	if (!browser) return;
 	window.gtag?.('event', 'generate_lead', { method, location });
+	if (ADS_LEAD) window.gtag?.('event', 'conversion', { send_to: ADS_LEAD, value: 1.0, currency: 'IDR' });
 	window.fbq?.('track', 'Contact', { method, location });
 }
