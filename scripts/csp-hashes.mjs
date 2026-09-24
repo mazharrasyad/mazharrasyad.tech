@@ -59,6 +59,7 @@ if (tracking.googleAdsId?.trim()) {
 	vendor.connect.push(
 		'https://www.googleadservices.com',
 		'https://googleads.g.doubleclick.net',
+		'https://ad.doubleclick.net',
 		'https://pagead2.googlesyndication.com',
 		'https://www.google.com',
 		'https://www.google.co.id'
@@ -66,6 +67,7 @@ if (tracking.googleAdsId?.trim()) {
 	vendor.img.push(
 		'https://www.googleadservices.com',
 		'https://googleads.g.doubleclick.net',
+		'https://ad.doubleclick.net',
 		'https://www.google.com',
 		'https://www.google.co.id'
 	);
