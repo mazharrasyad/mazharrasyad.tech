@@ -51,7 +51,7 @@
 		"bullets": [
 			"Developed and maintained multiple government web information systems across 7 projects, including CRUD operations, role-based authentication, and data management features",
 			"Built and maintained TerbaikTUFJ, an urban farming e-commerce platform, with additional feature development and Gosend API shipping integration",
-			"Developed Sisirteco, a vehicle data management system with inbound and outbound tracking and role-based authentication for Kecamatan, Kelurahan, and field officers",
+			"Developed Sisirteco, a vehicle data management system with inbound and outbound tracking and role-based authentication for district (kecamatan) and urban village (kelurahan) offices and field officers",
 			"Built SI UCI, a chatbot-based virtual assistant web application with QnA database management and optimized conversation algorithm",
 			"Built a labor dispute tracking system with public case submission and mediation progress tracking"
 		]
@@ -64,7 +64,7 @@
 		"period": "01/2023 - Present",
 		"bullets": [
 			"Developed 50+ web-based projects covering government information systems, e-commerce, education, health, and public service platforms over 3 years",
-			"Built various government systems including attendance management, posyandu tracking, UMKM directories, DBD monitoring, e-kinerja, PPID portals, and regional administrative systems",
+			"Built various government systems including attendance management, community health post (posyandu) records, small business (UMKM) directories, dengue fever (DBD) monitoring, staff performance (e-kinerja) tracking, public information (PPID) portals, and regional administrative systems",
 			"Developed public service platforms such as electronic performance tracking, social service management, archive systems, contract management, and community health monitoring"
 		]
 	},

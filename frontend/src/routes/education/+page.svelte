@@ -7,7 +7,7 @@
 
 	const title = 'Education - Muhammad Azhar Rasyad';
 	const description =
-		'Educational background of Muhammad Azhar Rasyad, Software Engineer: Master of Computer Science at Universitas Budi Luhur, an ongoing Doctor of Computer Science, Bachelor of Computer Science at STT Terpadu Nurul Fikri, and a vocational high school diploma from SMKN 1 Cibinong.';
+		'Education of Muhammad Azhar Rasyad: Master of Computer Science (Universitas Budi Luhur) and Bachelor of Computer Science (STT Terpadu Nurul Fikri).';
 	const url = 'https://mazharrasyad.tech/education';
 	const image = 'https://mazharrasyad.tech/logo.png';
 </script>
@@ -23,6 +23,7 @@
 	<meta property="og:description" content={description} />
 	<meta property="og:url" content={url} />
 	<meta property="og:image" content={image} />
+	<meta property="og:locale" content="en_US" />
 
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content={title} />

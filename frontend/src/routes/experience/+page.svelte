@@ -8,7 +8,7 @@
 
 	const title = 'Experience - Muhammad Azhar Rasyad';
 	const description =
-		'Professional experience of Muhammad Azhar Rasyad, Software Engineer with 8+ years in full-stack web development across government information systems, public health platforms, and commercial applications.';
+		'Experience of Muhammad Azhar Rasyad, Software Engineer with 8+ years of full-stack web development for government, public health and commercial clients.';
 	const url = 'https://mazharrasyad.tech/experience';
 	const image = 'https://mazharrasyad.tech/logo.png';
 </script>
@@ -24,6 +24,7 @@
 	<meta property="og:description" content={description} />
 	<meta property="og:url" content={url} />
 	<meta property="og:image" content={image} />
+	<meta property="og:locale" content="en_US" />
 
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content={title} />

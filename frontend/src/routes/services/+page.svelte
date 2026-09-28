@@ -2,7 +2,7 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import { categories, projectCountLabel } from '$lib/projects';
 
-	const title = 'Freelance Software Engineer for Hire - Web Apps, Dashboards & APIs | Muhammad Azhar Rasyad';
+	const title = 'Freelance Web App Developer for Hire - Muhammad Azhar Rasyad';
 	const url = 'https://mazharrasyad.tech/services';
 	const image = 'https://mazharrasyad.tech/logo.png';
 
@@ -145,12 +145,12 @@
 
 	const governmentCount = categories.find((c) => c.slug === 'government')?.projects.length ?? 0;
 
-	const description = `Hire a remote freelance software engineer for custom web apps, dashboards, APIs and blockchain. ${projectCountLabel} projects, 8+ years of experience, based in Jakarta (UTC+7). Contact via WhatsApp or email.`;
+	const description = `Remote freelance software engineer for custom web apps, dashboards, APIs and blockchain. ${projectCountLabel} projects, 8+ years, based in Jakarta (UTC+7).`;
 
 	const stats = [
-		{ value: String(governmentCount), label: 'government systems built' },
 		{ value: projectCountLabel, label: 'projects delivered' },
 		{ value: '8+', label: 'years of experience' },
+		{ value: String(governmentCount), label: 'government systems built' },
 		{ value: 'MSc', label: 'Computer Science' }
 	];
 
@@ -184,25 +184,25 @@
 			icon: 'users',
 			title: 'Performance & staffing',
 			text: 'Daily activity logs, supervisor appraisals and workforce performance recaps.',
-			examples: ['E-Kinerja PJLP', 'ESETKO PJLP', 'SIVERJAB']
+			examples: ['Staff performance tracking', 'Performance appraisals', 'Job application checks']
 		},
 		{
 			icon: 'file-text',
 			title: 'Permits & public services',
 			text: 'Citizen applications, file status tracking and public reporting.',
-			examples: ['SIP', 'SITEMAN-NIB', 'PAMOR', 'PPID']
+			examples: ['Permit tracking', 'Business license portal', 'Public issue reporting', 'Information requests']
 		},
 		{
 			icon: 'search',
 			title: 'Archives, contracts & procurement',
 			text: 'Indexed, searchable digital documents, contract workflows and goods requisitions.',
-			examples: ['Digital Archive', 'SIARIS', 'E-Contract', 'E-RKBU']
+			examples: ['Digital archive', 'Public records search', 'Contract workflow', 'Procurement requests']
 		},
 		{
 			icon: 'map-pin',
 			title: 'Health & environment',
 			text: 'Field data entry by officers and monitoring of cases or area conditions.',
-			examples: ['Posyandu', 'Dengue Monitoring', 'PSN Monitoring', 'Area Planning Monitoring']
+			examples: ['Child health records', 'Dengue case monitoring', 'Field inspections', 'Area planning']
 		}
 	] as const;
 

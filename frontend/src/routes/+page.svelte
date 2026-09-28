@@ -10,7 +10,7 @@
 	let imgError = $state(false);
 
 	const title = 'Muhammad Azhar Rasyad - Software Engineer';
-	const description = `Software Engineer with 8+ years of experience (2018–present). Portfolio of ${projectCountLabel} projects in web development, blockchain and data engineering. Based in Jakarta, Indonesia.`;
+	const description = `Software Engineer with 8+ years of experience and ${projectCountLabel} projects in web apps, blockchain and data engineering. Based in Jakarta, working remotely.`;
 	const url = 'https://mazharrasyad.tech/';
 	const image = 'https://mazharrasyad.tech/logo.png';
 
@@ -26,7 +26,7 @@
 		sameAs: [
 			'https://www.linkedin.com/in/mazharrasyad',
 			'https://github.com/mazharrasyad',
-			'https://scholar.google.co.id/citations?user=TQn1C8IAAAAJ&hl=id'
+			'https://scholar.google.com/citations?user=TQn1C8IAAAAJ&hl=en'
 		],
 		alumniOf: education
 			.filter((edu) => edu.institution)
@@ -113,7 +113,7 @@
 				<span class="text-sm font-bold">LinkedIn</span>
 			</a>
 			<a
-				href="https://scholar.google.co.id/citations?user=TQn1C8IAAAAJ&hl=id"
+				href="https://scholar.google.com/citations?user=TQn1C8IAAAAJ&hl=en"
 				target="_blank"
 				rel="noopener noreferrer"
 				class="flex items-center gap-2 pl-3 pr-4 h-10 rounded-xl bg-sky-500/10 text-sky-400 hover:bg-sky-500/20 hover:scale-105 transition-all border border-sky-500/20"
@@ -148,10 +148,17 @@
 			</a>
 		</div>
 		<a
+			href="/services"
+			class="mt-6 w-full group flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-blue-500 text-white font-bold hover:bg-blue-400 hover:scale-[1.02] transition-all shadow-lg shadow-blue-500/20"
+		>
+			Hire me for a project
+			<Icon name="arrow-right" class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+		</a>
+		<a
 			href="https://www.hostinger.com/id?REFERRALCODE=mazharrasyad"
 			target="_blank"
 			rel="sponsored noopener noreferrer"
-			class="mt-6 w-full group flex items-center gap-3 p-3 pr-4 rounded-2xl text-left bg-gradient-to-r from-violet-500/15 to-indigo-500/15 border border-violet-400/30 hover:border-violet-400/60 hover:scale-[1.02] transition-all shadow-lg shadow-violet-500/10"
+			class="mt-3 w-full group flex items-center gap-3 p-3 pr-4 rounded-2xl text-left bg-gradient-to-r from-violet-500/15 to-indigo-500/15 border border-violet-400/30 hover:border-violet-400/60 hover:scale-[1.02] transition-all shadow-lg shadow-violet-500/10"
 		>
 			<span
 				class="shrink-0 w-10 h-10 rounded-xl bg-violet-500/20 text-violet-300 flex items-center justify-center"
