@@ -2,12 +2,12 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import { categories, projectCountLabel } from '$lib/projects';
 
-	const title = 'Website & Information System Development for Organizations - Muhammad Azhar Rasyad';
-	const url = 'https://mazharrasyad.tech/jasa';
+	const title = 'Freelance Software Engineer for Hire - Web Apps, Dashboards & APIs | Muhammad Azhar Rasyad';
+	const url = 'https://mazharrasyad.tech/services';
 	const image = 'https://mazharrasyad.tech/logo.png';
 
 	const waText = encodeURIComponent(
-		'Hi, I found your information system/website development service on mazharrasyad.tech and would like to consult about my agency/organization/business needs. When are you available to discuss?'
+		'Hi Azhar, I found your services on mazharrasyad.tech and would like to discuss a project. When are you available?'
 	);
 	const waUrl = `https://wa.me/6281290351971?text=${waText}`;
 
@@ -15,7 +15,7 @@
 		{
 			icon: 'monitor',
 			title: 'Information Systems & Web Apps',
-			text: 'Applications for agencies and organizations that follow your workflow, replacing manual record-keeping in Excel or on paper.',
+			text: 'Custom applications that follow your workflow instead of forcing a template, replacing manual record-keeping in spreadsheets or on paper.',
 			points: [
 				'Digital data and document records',
 				'Multi-level submissions and approvals',
@@ -25,7 +25,7 @@
 		},
 		{
 			icon: 'globe',
-			title: 'Website Company Profile',
+			title: 'Company Websites',
 			text: 'A clean company site that is easy to find on Google and looks good on both mobile and desktop.',
 			points: [
 				'Company profile, products and services',
@@ -106,8 +106,8 @@
 
 	const experienceHighlights = [
 		'8+ years of experience as a Software Engineer',
-		'Currently at Tripasysfo and Join PKS, and taking freelance projects',
-		'Experienced in building systems for urban villages, districts, city agencies and local governments'
+		'Working remotely since 2023, currently at Tripasysfo and Join PKS alongside freelance clients',
+		'Built information systems for Jakarta local government agencies, from urban villages to city-level offices'
 	];
 
 	// Learning and Campus work is left out on purpose: this page is about client work.
@@ -145,10 +145,10 @@
 
 	const governmentCount = categories.find((c) => c.slug === 'government')?.projects.length ?? 0;
 
-	const description = `Website & information system development for agencies, organizations and companies. ${governmentCount} government systems, ${projectCountLabel} projects, 8+ years of engineering. Consult via WhatsApp.`;
+	const description = `Hire a remote freelance software engineer for custom web apps, dashboards, APIs and blockchain. ${projectCountLabel} projects, 8+ years of experience, based in Jakarta (UTC+7). Contact via WhatsApp or email.`;
 
 	const stats = [
-		{ value: String(governmentCount), label: 'government systems' },
+		{ value: String(governmentCount), label: 'government systems built' },
 		{ value: projectCountLabel, label: 'projects delivered' },
 		{ value: '8+', label: 'years of experience' },
 		{ value: 'MSc', label: 'Computer Science' }
@@ -157,9 +157,9 @@
 	// Every claim here is backed by something on /projects, /experience or /education.
 	const differentiators = [
 		{
-			icon: 'landmark',
-			title: 'I know how agencies work',
-			text: `${governmentCount} systems delivered for urban villages, districts and city agencies. Multi-level workflows, periodic reports and role-based access are nothing new to me.`
+			icon: 'globe',
+			title: 'Remote-ready',
+			text: 'Working remotely since 2023, both full-time and freelance. Based in Jakarta (UTC+7), with working hours that overlap Asia, Australia and Europe.'
 		},
 		{
 			icon: 'users',
@@ -172,9 +172,9 @@
 			text: 'Master of Computer Science with research in data and blockchain, and three journal articles. A good fit for non-standard requirements.'
 		},
 		{
-			icon: 'lock',
-			title: 'Built around your workflow',
-			text: 'No forced templates. The system follows how your organization works, so your team does not have to change its habits just to fit the app.'
+			icon: 'landmark',
+			title: 'Proven on complex workflows',
+			text: `${governmentCount} systems built for government agencies: multi-level approvals, periodic reporting and role-based access. The system follows how your team works, not the other way around.`
 		}
 	] as const;
 
@@ -209,18 +209,18 @@
 	const jsonLd = {
 		'@context': 'https://schema.org',
 		'@type': 'ProfessionalService',
-		name: 'Muhammad Azhar Rasyad - Website & Information System Development',
+		name: 'Muhammad Azhar Rasyad - Freelance Software Engineer',
 		url,
 		image,
 		email: 'mailto:muhazharrasyad@gmail.com',
 		telephone: '+6281290351971',
-		areaServed: { '@type': 'Country', name: 'Indonesia' },
+		areaServed: 'Worldwide',
 		knowsAbout: [
+			'Custom web applications',
+			'Dashboards and reporting',
+			'REST APIs',
 			'Government information systems',
-			'Web applications',
-			'Website company profile',
-			'Data migration from Excel',
-			'Blockchain Hyperledger Fabric'
+			'Hyperledger Fabric blockchain'
 		],
 		address: { '@type': 'PostalAddress', addressLocality: 'Jakarta', addressCountry: 'ID' },
 		founder: { '@type': 'Person', name: 'Muhammad Azhar Rasyad', url: 'https://mazharrasyad.tech/' },
@@ -260,29 +260,37 @@
 			<span
 				class="inline-flex items-center gap-1.5 mb-4 bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 text-xs px-2.5 py-1 rounded-full font-bold uppercase tracking-widest"
 			>
-				<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Taking new projects
+				<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Available for remote projects
 			</span>
 			<h1 class="text-3xl md:text-5xl font-black leading-tight">
-				<span
+				Custom <span
 					class="bg-gradient-to-r from-blue-300 to-indigo-400 bg-clip-text text-transparent"
-					>Website &amp; Information System</span
-				> Development
+					>Web Apps &amp; Business Systems</span
+				>
 			</h1>
 			<p class="mt-4 text-base md:text-lg text-slate-300 max-w-2xl">
-				Specializing in systems for agencies, organizations and companies that want to move from Excel
-				and paper to applications people actually use. With you from understanding your needs until
-				the system is up and running.
+				Freelance software engineer based in Jakarta, working remotely with clients worldwide. I turn
+				spreadsheet- and paper-based processes into web apps, dashboards and APIs that people actually
+				use, from scoping to launch.
 			</p>
 			<div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
 				<a
 					href={waUrl}
 					target="_blank"
 					rel="noopener noreferrer"
-					data-track-location="jasa-hero"
+					data-track-location="services-hero"
 					class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-green-500 text-white font-bold hover:bg-green-400 hover:scale-105 transition-all shadow-lg shadow-green-500/20"
 				>
 					<Icon name="whatsapp" class="w-5 h-5" />
-					Consult via WhatsApp
+					Chat on WhatsApp
+				</a>
+				<a
+					href="mailto:muhazharrasyad@gmail.com?subject=Project%20inquiry"
+					data-track-location="services-hero"
+					class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-white/5 border border-white/10 text-slate-200 font-bold hover:bg-white/10 transition-all"
+				>
+					<Icon name="mail" class="w-5 h-5" />
+					Send Email
 				</a>
 			</div>
 			<dl class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -321,7 +329,7 @@
 		<section>
 			<h2 class="text-2xl md:text-3xl font-black mb-2">Problems I have solved</h2>
 			<p class="text-sm text-slate-400 mb-6">
-				Real systems already in use, grouped by the need they serve.
+				Real systems in production for Jakarta government agencies. The same patterns fit any team that runs on approvals, records and reports.
 			</p>
 			<ul class="grid gap-3 md:grid-cols-2">
 				{#each useCases as u (u.title)}
@@ -484,26 +492,26 @@
 		<section
 			class="rounded-3xl bg-gradient-to-br from-blue-500/15 to-indigo-500/15 border border-blue-400/30 p-6 md:p-10 text-center"
 		>
-			<h2 class="text-2xl md:text-3xl font-black">Tell me what you need</h2>
+			<h2 class="text-2xl md:text-3xl font-black">Tell me about your project</h2>
 			<p class="mt-3 text-slate-300 max-w-xl mx-auto">
-				Is your agency, organization or business still keeping records by hand? Walk me through the
-				workflow first, and we will work out the system that fits best. Pricing is tailored to your
-				needs and budget, so there are no fixed packages.
+				Still running a process on spreadsheets, or need an existing system extended? Walk me through
+				it and I will suggest the approach that fits. I work remotely from Jakarta (UTC+7). Pricing is
+				quoted per project based on scope and budget, so there are no fixed packages.
 			</p>
 			<div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
 				<a
 					href={waUrl}
 					target="_blank"
 					rel="noopener noreferrer"
-					data-track-location="jasa-footer"
+					data-track-location="services-footer"
 					class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-green-500 text-white font-bold hover:bg-green-400 hover:scale-105 transition-all shadow-lg shadow-green-500/20"
 				>
 					<Icon name="whatsapp" class="w-5 h-5" />
-					Chat WhatsApp
+					Chat on WhatsApp
 				</a>
 				<a
-					href="mailto:muhazharrasyad@gmail.com?subject=Website%2FApp%20Development%20Consultation"
-					data-track-location="jasa-footer"
+					href="mailto:muhazharrasyad@gmail.com?subject=Project%20inquiry"
+					data-track-location="services-footer"
 					class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-white/5 border border-white/10 text-slate-200 font-bold hover:bg-white/10 transition-all"
 				>
 					<Icon name="mail" class="w-5 h-5" />

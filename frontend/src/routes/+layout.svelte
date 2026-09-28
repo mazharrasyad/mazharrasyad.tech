@@ -9,8 +9,8 @@
 
 	let { children } = $props();
 
-	// The profile page is a single screen and /jasa has its own contact CTAs; the footer's prompt is redundant on both.
-	const showFooter = $derived(!['/', '/jasa'].includes(page.url.pathname.replace(/\/$/, '') || '/'));
+	// The profile page is a single screen and /services has its own contact CTAs; the footer's prompt is redundant on both.
+	const showFooter = $derived(!['/', '/services'].includes(page.url.pathname.replace(/\/$/, '') || '/'));
 
 	let showBackToTop = $state(false);
 
