@@ -196,13 +196,13 @@
 			icon: 'search',
 			title: 'Archives, contracts & procurement',
 			text: 'Indexed, searchable digital documents, contract workflows and goods requisitions.',
-			examples: ['Arsip', 'SIARIS', 'E-Contract', 'E-RKBU']
+			examples: ['Digital Archive', 'SIARIS', 'E-Contract', 'E-RKBU']
 		},
 		{
 			icon: 'map-pin',
 			title: 'Health & environment',
 			text: 'Field data entry by officers and monitoring of cases or area conditions.',
-			examples: ['Posyandu', 'DBD', 'PSN', 'Penataan']
+			examples: ['Posyandu', 'Dengue Monitoring', 'PSN Monitoring', 'Area Planning Monitoring']
 		}
 	] as const;
 

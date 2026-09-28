@@ -122,7 +122,7 @@
         "sourceUrl": "https://github.com/herakarmila19/sinomari"
       },
       {
-        "title": "Arsip",
+        "title": "Digital Archive",
         "category": "Web Dev",
         "group": "Government",
         "images": [],
@@ -152,7 +152,7 @@
         "sourceUrl": "https://github.com/astikjaksel/e-rkbu"
       },
       {
-        "title": "Waris",
+        "title": "Inheritance Calculator",
         "category": "Web Dev",
         "group": "Government",
         "images": [],
@@ -162,7 +162,7 @@
         "sourceUrl": "https://github.com/astikjaksel/waris"
       },
       {
-        "title": "Penataan",
+        "title": "Area Planning Monitoring",
         "category": "Web Dev",
         "group": "Government",
         "images": [],
@@ -172,7 +172,7 @@
         "sourceUrl": "https://github.com/astikjaksel/penataan"
       },
       {
-        "title": "Sistem Kost",
+        "title": "Boarding House Management",
         "category": "Web Dev",
         "group": "Government",
         "images": [],
@@ -202,7 +202,7 @@
         "sourceUrl": "https://github.com/astikjaksel/e-kontrack"
       },
       {
-        "title": "E-Kinerja PJLP Wilayah Jaksel",
+        "title": "E-Kinerja PJLP South Jakarta",
         "category": "Web Dev",
         "group": "Government",
         "images": [],
@@ -222,7 +222,7 @@
         "sourceUrl": "https://github.com/astikjaksel/metagov-js-care"
       },
       {
-        "title": "DBD",
+        "title": "Dengue Monitoring",
         "category": "Web Dev",
         "group": "Government",
         "images": [],
@@ -272,7 +272,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/serambi-06"
       },
       {
-        "title": "E-Kinerja Wilayah",
+        "title": "E-Kinerja Regional",
         "category": "Web Dev",
         "group": "Government",
         "images": [],
@@ -467,7 +467,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/subanpenda"
       },
       {
-        "title": "Web Eskul",
+        "title": "School Extracurricular Portal",
         "category": "Web Dev",
         "group": "Campus",
         "images": [],
@@ -477,7 +477,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/webeskul"
       },
       {
-        "title": "Absen",
+        "title": "Attendance System",
         "category": "Web Dev",
         "group": "Campus",
         "images": [],
@@ -497,7 +497,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/bantutani"
       },
       {
-        "title": "Rumah Baca",
+        "title": "Community Library",
         "category": "Web Dev",
         "group": "Campus",
         "images": [],
@@ -517,7 +517,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/particulate-matter"
       },
       {
-        "title": "Pendaftaran PJLP Kominfo",
+        "title": "PJLP Kominfo Recruitment",
         "category": "Web Dev",
         "group": "Government",
         "images": [],
@@ -557,7 +557,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/sinoli"
       },
       {
-        "title": "PSN",
+        "title": "PSN Monitoring",
         "category": "Web Dev",
         "group": "Government",
         "images": [],
@@ -587,7 +587,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/sipp"
       },
       {
-        "title": "Jurnal",
+        "title": "Activity Journal",
         "category": "Web Dev",
         "group": "Government",
         "images": [],
@@ -607,7 +607,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/siaris"
       },
       {
-        "title": "Layanan",
+        "title": "Public Services Dashboard",
         "category": "Web Dev",
         "group": "Government",
         "images": [],
@@ -647,7 +647,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/siverjab"
       },
       {
-        "title": "UMKM",
+        "title": "Small Business Directory",
         "category": "Web Dev",
         "group": "Government",
         "images": [],
@@ -692,7 +692,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/go-digitalent"
       },
       {
-        "title": "Caleg Yasdar",
+        "title": "Yasdar Campaign System",
         "category": "Web Dev",
         "group": "Organization",
         "images": [],
@@ -702,7 +702,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/caleg-yasdar"
       },
       {
-        "title": "CV Bahrullah Akbar",
+        "title": "Bahrullah Akbar CV",
         "category": "Web Dev",
         "group": "Government",
         "images": [],
@@ -776,7 +776,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/ereport"
       },
       {
-        "title": "Apache Log Convert To CSV",
+        "title": "Apache Log to CSV Converter",
         "category": "Programming",
         "group": "Learning",
         "images": [
@@ -862,7 +862,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/silotang"
       },
       {
-        "title": "Learn Web Pemrograman Dasar",
+        "title": "Learn Basic Web Programming",
         "category": "Web Dev",
         "group": "Learning",
         "images": [
@@ -876,7 +876,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/web-pemrograman-dasar"
       },
       {
-        "title": "Learn Frontend Dasar",
+        "title": "Learn Basic Frontend",
         "category": "Web Dev",
         "group": "Learning",
         "images": [
@@ -988,7 +988,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/siuci"
       },
       {
-        "title": "Pencatatan HI",
+        "title": "Industrial Relations Records",
         "category": "Web Dev",
         "group": "Government",
         "images": [
@@ -1005,7 +1005,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/pencatatan_hi"
       },
       {
-        "title": "Situs Resmi Web Jakarta Selatan",
+        "title": "South Jakarta Official Website",
         "category": "Web Dev",
         "group": "Government",
         "images": [
@@ -1077,7 +1077,7 @@
     "year": 2021,
     "projects": [
       {
-        "title": "Angkutan Umum Bandung",
+        "title": "Bandung Public Transport",
         "category": "Web Dev",
         "group": "Company",
         "images": [
@@ -1121,7 +1121,7 @@
         "sourceUrl": "https://colab.research.google.com/drive/1kwGQfWOINsSBR37JhkdstCGfOF81F13p?usp=sharing"
       },
       {
-        "title": "Pemira",
+        "title": "Student Election",
         "category": "Web Dev",
         "group": "Organization",
         "images": [
@@ -1346,7 +1346,7 @@
     "year": 2020,
     "projects": [
       {
-        "title": "Link-Match Modul Project",
+        "title": "Link-Match Project Module",
         "category": "Web Dev",
         "group": "Campus",
         "images": [
@@ -1417,7 +1417,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/data-visualization-learn"
       },
       {
-        "title": "Visualisasi Gempa Bumi",
+        "title": "Earthquake Visualization",
         "category": "Data Science",
         "group": "Research",
         "images": [
@@ -1444,7 +1444,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/data-visualisasi-gempa-bumi"
       },
       {
-        "title": "Prediction Titanic",
+        "title": "Titanic Survival Prediction",
         "category": "Data Science",
         "group": "Learning",
         "images": [
@@ -1501,7 +1501,7 @@
     "year": 2019,
     "projects": [
       {
-        "title": "Design DB Olahraga",
+        "title": "Sports Facility DB Design",
         "category": "Data Science",
         "group": "Campus",
         "images": [
@@ -1514,7 +1514,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/data-design-db-olahraga"
       },
       {
-        "title": "Pencarian Kata",
+        "title": "Word Search",
         "category": "Programming",
         "group": "Campus",
         "images": [
@@ -1531,7 +1531,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/program-pencarian-kata"
       },
       {
-        "title": "Design DB Perpustakaan",
+        "title": "Library DB Design",
         "category": "Data Science",
         "group": "Campus",
         "images": [
@@ -1544,7 +1544,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/data-design-db-perpustakaan"
       },
       {
-        "title": "Design DB Mushola",
+        "title": "Prayer Room DB Design",
         "category": "Data Science",
         "group": "Campus",
         "images": [
@@ -1557,7 +1557,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/data-design-db-mushola"
       },
       {
-        "title": "Design DB Kursus",
+        "title": "Course DB Design",
         "category": "Data Science",
         "group": "Campus",
         "images": [
@@ -1592,7 +1592,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/web-basenf"
       },
       {
-        "title": "Aritmatika Jam",
+        "title": "Clock Arithmetic",
         "category": "Programming",
         "group": "Campus",
         "images": [
@@ -1605,7 +1605,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/program-aritmatika-jam"
       },
       {
-        "title": "Tiket Pesawat",
+        "title": "Flight Ticket Validation",
         "category": "Programming",
         "group": "Campus",
         "images": [
@@ -1864,7 +1864,7 @@
     "year": 2018,
     "projects": [
       {
-        "title": "PBB Euclidean",
+        "title": "Euclidean GCD",
         "category": "Programming",
         "group": "Campus",
         "images": [
@@ -1879,7 +1879,7 @@
         "sourceUrl": "https://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2015-2016/Teori%20Bilangan%20(2015).pdf"
       },
       {
-        "title": "4 Pemulung",
+        "title": "Waste Picker Records",
         "category": "Programming",
         "group": "Campus",
         "images": [
@@ -1905,7 +1905,7 @@
         "sourceUrl": "https://github.com/mazharrasyad/program-4-pemulung"
       },
       {
-        "title": "Design DB Pasar",
+        "title": "Market DB Design",
         "category": "Data Science",
         "group": "Campus",
         "images": [
