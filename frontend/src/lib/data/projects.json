@@ -43,8 +43,7 @@
         "description": "REST API backend for the JOIN PKS volunteer management platform. Features: provides volunteer data, authentication and a regional hierarchy from province down to village level for the web and mobile apps.",
         "tools": "Go, REST API, Docker",
         "visibility": "Private",
-        "sourceUrl": "https://github.com/brsndpsn-connect/join-pks-api",
-        "bestPractice": "One Go backend serving both the web and mobile apps: authentication plus a province-to-village regional hierarchy behind a single REST API, shipped in Docker."
+        "sourceUrl": "https://github.com/brsndpsn-connect/join-pks-api"
       },
       {
         "title": "JOIN PKS Web",
@@ -56,7 +55,7 @@
         "visibility": "Private",
         "sourceUrl": "https://github.com/brsndpsn-connect/join-pks-web",
         "websiteUrl": "https://joinpks.id/",
-        "bestPractice": "Live in production at joinpks.id: a Svelte front end on top of the JOIN PKS API that covers the whole volunteer workflow, from registration to reporting."
+        "bestPractice": "Live in production at joinpks.id: the whole volunteer workflow, from registration to reporting, on a Svelte front end backed by a Go REST API that also serves the mobile app, with a province-to-village regional hierarchy."
       },
       {
         "title": "Betawi Academia",
