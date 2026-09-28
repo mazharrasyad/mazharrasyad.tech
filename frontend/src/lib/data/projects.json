@@ -57,6 +57,7 @@
         "visibility": "Private",
         "sourceUrl": "https://github.com/brsndpsn-connect/join-pks-web",
         "websiteUrl": "https://joinpks.id/",
+        "updated": "Jul 2026",
         "bestPractice": "Live in production at joinpks.id: the whole volunteer workflow, from registration to reporting, on a Svelte front end backed by a Go REST API that also serves the mobile app, with a province-to-village regional hierarchy."
       },
       {
