@@ -164,6 +164,9 @@
 					All {projectCountLabel} projects
 				</a>
 			</div>
+			<p class="text-xs text-slate-400 leading-relaxed mb-3">
+				A handful of projects I'd point to as reference work, each for a specific reason below.
+			</p>
 			<ul class="flex flex-col gap-2">
 				{#each bestPracticeProjects as project (project.title)}
 					{@const href = project.websiteUrl ?? (project.visibility === 'Public' ? project.sourceUrl : undefined)}
@@ -173,7 +176,7 @@
 							{href}
 							target={href ? '_blank' : undefined}
 							rel={href ? 'noopener noreferrer' : undefined}
-							class="group flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/10 {href ? 'hover:border-amber-400/40 hover:bg-white/10 transition-all' : ''}"
+							class="group flex items-start gap-3 p-3 rounded-xl bg-white/5 border border-white/10 {href ? 'hover:border-amber-400/40 hover:bg-white/10 transition-all' : ''}"
 						>
 							<span class="min-w-0 flex-1">
 								<span class="flex items-center gap-2">
@@ -181,14 +184,15 @@
 									<span class="shrink-0 text-[10px] text-slate-400 font-bold">{project.year}</span>
 								</span>
 								<span class="block text-xs text-slate-400 truncate">{project.tools}</span>
+								<span class="block text-xs text-slate-300 leading-relaxed mt-1.5">{project.bestPractice}</span>
 							</span>
 							{#if href}
 								<Icon
 									name="external-link"
-									class="shrink-0 w-3.5 h-3.5 text-slate-400 group-hover:text-amber-300 transition-colors"
+									class="shrink-0 mt-0.5 w-3.5 h-3.5 text-slate-400 group-hover:text-amber-300 transition-colors"
 								/>
 							{:else}
-								<Icon name="lock" class="shrink-0 w-3.5 h-3.5 text-slate-500" />
+								<Icon name="lock" class="shrink-0 mt-0.5 w-3.5 h-3.5 text-slate-500" />
 							{/if}
 						</svelte:element>
 					</li>

@@ -44,7 +44,7 @@
         "tools": "Go, REST API, Docker",
         "visibility": "Private",
         "sourceUrl": "https://github.com/brsndpsn-connect/join-pks-api",
-        "bestPractice": true
+        "bestPractice": "One Go backend serving both the web and mobile apps: authentication plus a province-to-village regional hierarchy behind a single REST API, shipped in Docker."
       },
       {
         "title": "JOIN PKS Web",
@@ -56,7 +56,7 @@
         "visibility": "Private",
         "sourceUrl": "https://github.com/brsndpsn-connect/join-pks-web",
         "websiteUrl": "https://joinpks.id/",
-        "bestPractice": true
+        "bestPractice": "Live in production at joinpks.id: a Svelte front end on top of the JOIN PKS API that covers the whole volunteer workflow, from registration to reporting."
       },
       {
         "title": "Betawi Academia",
@@ -87,7 +87,7 @@
         "tools": "Go, Raft, Hyperledger Fabric, Caliper",
         "visibility": "Public",
         "sourceUrl": "https://github.com/mazharrasyad/blockchain-benchmark-raft-hlf",
-        "bestPractice": true
+        "bestPractice": "Measures instead of guessing: throughput and latency are benchmarked with Hyperledger Caliper across several load scenarios, and the whole suite is open source."
       },
       {
         "title": "Putra Jasa V2",
@@ -333,7 +333,7 @@
         "tools": "Go, Hyperledger Fabric, Docker",
         "visibility": "Public",
         "sourceUrl": "https://github.com/mazharrasyad/blockchain-shm",
-        "bestPractice": true
+        "bestPractice": "Blockchain applied to a real problem: tamper-proof land ownership certificates, with the Go chaincode and Docker setup published as open source."
       },
       {
         "title": "GeoJSON Boundary 2021",
@@ -404,7 +404,7 @@
         "tools": "React.js, Laravel, Tailwind CSS",
         "visibility": "Private",
         "sourceUrl": "https://github.com/febrianmosii/foliopos_app",
-        "bestPractice": true
+        "bestPractice": "A complete retail workflow in one app (sales, inventory and reporting) built on React and Laravel for day-to-day use by local businesses."
       }
     ]
   },
@@ -735,7 +735,7 @@
         "tools": "Laravel, Vue.js, Tailwind CSS",
         "visibility": "Public",
         "sourceUrl": "https://tripasysfo.com/recerva",
-        "bestPractice": true
+        "bestPractice": "Multi-tenant by design: one platform runs property management and a booking engine for many hotels at once."
       },
       {
         "title": "AOC (Internal)",

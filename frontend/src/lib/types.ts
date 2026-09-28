@@ -11,8 +11,8 @@ export interface Project {
 	sourceUrl: string;
 	/** Live website, when the project is publicly reachable. */
 	websiteUrl?: string;
-	/** Highlighted on the profile page as a best-practice reference. */
-	bestPractice?: boolean;
+	/** Why this project is a best-practice reference; set to highlight it on the profile page. */
+	bestPractice?: string;
 }
 
 export interface YearData {

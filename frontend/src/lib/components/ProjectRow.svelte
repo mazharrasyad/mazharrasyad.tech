@@ -46,6 +46,12 @@
 				{/if}
 			</div>
 			<p class="text-sm text-slate-300 mt-1">{project.tools}</p>
+			{#if project.bestPractice}
+				<p class="mt-3 max-w-2xl rounded-xl border border-amber-400/20 bg-amber-500/10 px-3 py-2 text-sm text-amber-100 leading-relaxed">
+					<span class="font-bold text-amber-300">Why it's a best practice:</span>
+					{project.bestPractice}
+				</p>
+			{/if}
 
 			{#if project.images.length > 0}
 				<div class="relative group/gallery mt-3 mb-3">
