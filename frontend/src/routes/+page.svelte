@@ -10,7 +10,7 @@
 	let imgError = $state(false);
 
 	const title = 'Muhammad Azhar Rasyad - Software Engineer';
-	const description = `Software Engineer dengan 8+ tahun pengalaman (2018–sekarang). Portofolio ${projectCountLabel} proyek di bidang pengembangan web, blockchain, dan rekayasa data. Berbasis di Jakarta, Indonesia.`;
+	const description = `Software Engineer with 8+ years of experience (2018–present). Portfolio of ${projectCountLabel} projects in web development, blockchain and data engineering. Based in Jakarta, Indonesia.`;
 	const url = 'https://mazharrasyad.tech/';
 	const image = 'https://mazharrasyad.tech/logo.png';
 
@@ -161,7 +161,7 @@
 			<span class="min-w-0 flex-1">
 				<span class="block text-sm font-bold text-white">Promo Hostinger</span>
 				<span class="block text-xs text-slate-400">
-					Hosting, VPS, domain, dan email untuk berbagai kebutuhan digital
+					Hosting, VPS, domains and email for all your digital needs
 				</span>
 			</span>
 			<Icon

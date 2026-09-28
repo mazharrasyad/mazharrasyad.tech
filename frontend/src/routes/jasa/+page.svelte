@@ -2,112 +2,112 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import { categories, projectCountLabel } from '$lib/projects';
 
-	const title = 'Jasa Pembuatan Website & Sistem Informasi Instansi - Muhammad Azhar Rasyad';
+	const title = 'Website & Information System Development for Organizations - Muhammad Azhar Rasyad';
 	const url = 'https://mazharrasyad.tech/jasa';
 	const image = 'https://mazharrasyad.tech/logo.png';
 
 	const waText = encodeURIComponent(
-		'Halo, saya menemukan layanan pembuatan sistem informasi/website di mazharrasyad.tech dan ingin berkonsultasi mengenai kebutuhan instansi/organisasi/usaha saya. Kapan ada waktu untuk berdiskusi?'
+		'Hi, I found your information system/website development service on mazharrasyad.tech and would like to consult about my agency/organization/business needs. When are you available to discuss?'
 	);
 	const waUrl = `https://wa.me/6281290351971?text=${waText}`;
 
 	const services = [
 		{
 			icon: 'monitor',
-			title: 'Sistem Informasi & Aplikasi Web',
-			text: 'Aplikasi untuk instansi dan organisasi yang mengikuti alur kerja Anda, menggantikan pencatatan manual di Excel atau kertas.',
+			title: 'Information Systems & Web Apps',
+			text: 'Applications for agencies and organizations that follow your workflow, replacing manual record-keeping in Excel or on paper.',
 			points: [
-				'Pencatatan data dan dokumen digital',
-				'Pengajuan dan persetujuan berjenjang',
-				'Hak akses per pengguna dan peran',
-				'Pelaporan dan ekspor data'
+				'Digital data and document records',
+				'Multi-level submissions and approvals',
+				'Access rights per user and role',
+				'Reporting and data export'
 			]
 		},
 		{
 			icon: 'globe',
 			title: 'Website Company Profile',
-			text: 'Situs perusahaan yang rapi dan mudah ditemukan di Google, tampil baik di ponsel maupun desktop.',
+			text: 'A clean company site that is easy to find on Google and looks good on both mobile and desktop.',
 			points: [
-				'Profil perusahaan, produk, dan layanan',
-				'Artikel dan testimoni',
-				'Formulir kontak dan tombol WhatsApp',
-				'Dasar SEO agar mudah ditemukan'
+				'Company profile, products and services',
+				'Articles and testimonials',
+				'Contact form and WhatsApp button',
+				'SEO basics so you are easy to find'
 			]
 		},
 		{
 			icon: 'bar-chart',
-			title: 'Dashboard & Laporan Data',
-			text: 'Data yang tersebar dirangkum menjadi tampilan yang mudah dibaca, sehingga keputusan bisa diambil lebih cepat.',
+			title: 'Dashboards & Data Reports',
+			text: 'Scattered data summarized into an easy-to-read view, so decisions can be made faster.',
 			points: [
-				'Grafik dan ringkasan kinerja',
-				'Rekapitulasi harian, bulanan, tahunan',
-				'Filter data sesuai kebutuhan',
-				'Unduh laporan'
+				'Performance charts and summaries',
+				'Daily, monthly and yearly recaps',
+				'Data filters to fit your needs',
+				'Downloadable reports'
 			]
 		},
 		{
 			icon: 'shopping-cart',
-			title: 'Aplikasi Operasional & Kasir (POS)',
-			text: 'Sistem untuk menjalankan operasional harian usaha, dari pemesanan hingga laporan penjualan.',
+			title: 'Operations & Point of Sale (POS) Apps',
+			text: 'Systems to run day-to-day business operations, from orders to sales reports.',
 			points: [
-				'Transaksi penjualan dan kasir',
-				'Stok dan inventaris',
-				'Pemesanan dan reservasi',
-				'Laporan penjualan'
+				'Sales transactions and checkout',
+				'Stock and inventory',
+				'Orders and reservations',
+				'Sales reports'
 			]
 		},
 		{
 			icon: 'server',
-			title: 'API & Integrasi Sistem',
-			text: 'Backend yang aman dan terstruktur, serta penghubung antara aplikasi Anda dengan sistem lain yang sudah berjalan.',
+			title: 'APIs & System Integration',
+			text: 'Secure, well-structured backends that connect your application with the other systems you already run.',
 			points: [
-				'REST API untuk web dan mobile',
-				'Autentikasi dan otorisasi',
-				'Integrasi dengan layanan pihak ketiga',
-				'Migrasi dan perapian data'
+				'REST APIs for web and mobile',
+				'Authentication and authorization',
+				'Third-party service integration',
+				'Data migration and cleanup'
 			]
 		},
 		{
 			icon: 'lock',
-			title: 'Blockchain & Verifikasi Dokumen',
-			text: 'Untuk data yang harus tahan manipulasi, seperti sertifikat dan catatan resmi. Berbasis riset Hyperledger Fabric, bukan sekadar tren.',
+			title: 'Blockchain & Document Verification',
+			text: 'For data that must be tamper-proof, such as certificates and official records. Built on Hyperledger Fabric research, not just a trend.',
 			points: [
-				'Smart contract dan chaincode',
-				'Pencatatan yang tidak bisa diubah diam-diam',
-				'Jaringan dengan konsensus Raft',
-				'Antarmuka web untuk pengguna non-teknis'
+				'Smart contracts and chaincode',
+				'Records that cannot be silently altered',
+				'Networks with Raft consensus',
+				'Web interfaces for non-technical users'
 			]
 		}
 	] as const;
 
 	const education = [
 		{
-			level: 'S2',
+			level: "Master's",
 			title: 'Master of Computer Science',
 			place: 'Universitas Budi Luhur',
 			year: '2024 - 2026',
-			text: 'Riset pemodelan data, arsitektur enterprise untuk digitalisasi layanan kesehatan, serta blockchain Hyperledger Fabric. Tiga artikel telah dipublikasikan di jurnal ilmiah.'
+			text: 'Research on data modeling, enterprise architecture for healthcare digitalization, and Hyperledger Fabric blockchain. Three articles published in scientific journals.'
 		},
 		{
-			level: 'S1',
+			level: "Bachelor's",
 			title: 'Bachelor of Computer Science',
 			place: 'STT Terpadu Nurul Fikri',
 			year: '2017 - 2021',
-			text: 'Juara 1 Hackathon Web Development Astro II, juara 2 dan 3 Smart City Web Development, juara 3 Web Design, dan finalis Hackathon Jamkrindo.'
+			text: '1st place in the Astro II Web Development Hackathon, 2nd and 3rd place in Smart City Web Development, 3rd place in Web Design, and finalist in the Jamkrindo Hackathon.'
 		},
 		{
-			level: 'SMK',
-			title: 'Rekayasa Perangkat Lunak',
+			level: 'Vocational High School',
+			title: 'Software Engineering',
 			place: 'SMKN 1 Cibinong',
 			year: '2014 - 2017',
-			text: 'Awal belajar membangun perangkat lunak, dengan tugas akhir berupa plugin WordPress untuk multiposting.'
+			text: 'Where I started building software, with a WordPress multiposting plugin as the final project.'
 		}
 	];
 
 	const experienceHighlights = [
-		'8+ tahun pengalaman sebagai Software Engineer',
-		'Aktif di Tripasysfo dan Join PKS, serta menerima proyek freelance',
-		'Berpengalaman membangun sistem untuk kelurahan, kecamatan, suku dinas, dan pemerintah daerah'
+		'8+ years of experience as a Software Engineer',
+		'Currently at Tripasysfo and Join PKS, and taking freelance projects',
+		'Experienced in building systems for urban villages, districts, city agencies and local governments'
 	];
 
 	// Learning and Campus work is left out on purpose: this page is about client work.
@@ -115,26 +115,26 @@
 		{
 			slug: 'government',
 			icon: 'landmark',
-			label: 'Instansi Pemerintah',
-			text: 'Sistem informasi untuk dinas dan pemerintah daerah, layanan publik, dan aplikasi kepegawaian.'
+			label: 'Government Agencies',
+			text: 'Information systems for agencies and local governments, public services and civil-service apps.'
 		},
 		{
 			slug: 'company',
 			icon: 'briefcase',
 			label: 'Company',
-			text: 'Produk untuk perusahaan dan klien, sebagai karyawan, magang, maupun freelance.'
+			text: 'Products for companies and clients, as an employee, intern or freelancer.'
 		},
 		{
 			slug: 'organization',
 			icon: 'users',
-			label: 'Organisasi',
-			text: 'Sistem untuk komunitas, organisasi politik, dan organisasi kampus.'
+			label: 'Organization',
+			text: 'Systems for communities, political groups and campus organizations.'
 		},
 		{
 			slug: 'research',
 			icon: 'flask',
-			label: 'Riset',
-			text: 'Pengembangan berbasis blockchain, data, dan IoT dari riset pascasarjana.'
+			label: 'Research',
+			text: 'Blockchain, data and IoT development from graduate research.'
 		}
 	] as const;
 
@@ -145,36 +145,36 @@
 
 	const governmentCount = categories.find((c) => c.slug === 'government')?.projects.length ?? 0;
 
-	const description = `Jasa website & sistem informasi untuk instansi, organisasi, dan perusahaan. ${governmentCount} sistem pemerintah, ${projectCountLabel} proyek, engineer 8+ tahun. Konsultasi via WhatsApp.`;
+	const description = `Website & information system development for agencies, organizations and companies. ${governmentCount} government systems, ${projectCountLabel} projects, 8+ years of engineering. Consult via WhatsApp.`;
 
 	const stats = [
-		{ value: String(governmentCount), label: 'sistem instansi pemerintah' },
-		{ value: projectCountLabel, label: 'proyek dikerjakan' },
-		{ value: '8+', label: 'tahun pengalaman' },
-		{ value: 'S2', label: 'Ilmu Komputer' }
+		{ value: String(governmentCount), label: 'government systems' },
+		{ value: projectCountLabel, label: 'projects delivered' },
+		{ value: '8+', label: 'years of experience' },
+		{ value: 'MSc', label: 'Computer Science' }
 	];
 
 	// Every claim here is backed by something on /projects, /experience or /education.
 	const differentiators = [
 		{
 			icon: 'landmark',
-			title: 'Paham cara kerja instansi',
-			text: `${governmentCount} sistem untuk kelurahan, kecamatan, dan suku dinas sudah dikerjakan. Alur berjenjang, laporan berkala, dan hak akses per peran bukan hal baru bagi saya.`
+			title: 'I know how agencies work',
+			text: `${governmentCount} systems delivered for urban villages, districts and city agencies. Multi-level workflows, periodic reports and role-based access are nothing new to me.`
 		},
 		{
 			icon: 'users',
-			title: 'Langsung dengan engineernya',
-			text: 'Anda berdiskusi dengan orang yang menulis kodenya, tanpa lapisan sales atau project manager yang menerjemahkan kebutuhan.'
+			title: 'Work directly with the engineer',
+			text: 'You talk to the person who writes the code, with no layer of sales or project managers translating your needs.'
 		},
 		{
 			icon: 'graduation-cap',
-			title: 'Dasar keilmuan, bukan coba-coba',
-			text: 'Lulusan S2 Ilmu Komputer dengan riset data dan blockchain, serta tiga artikel jurnal ilmiah. Cocok untuk kebutuhan yang tidak standar.'
+			title: 'Grounded in computer science, not guesswork',
+			text: 'Master of Computer Science with research in data and blockchain, and three journal articles. A good fit for non-standard requirements.'
 		},
 		{
 			icon: 'lock',
-			title: 'Dibuat sesuai alur Anda',
-			text: 'Bukan template yang dipaksakan. Sistem mengikuti cara kerja organisasi Anda, sehingga tim tidak perlu mengubah kebiasaan hanya untuk menyesuaikan aplikasi.'
+			title: 'Built around your workflow',
+			text: 'No forced templates. The system follows how your organization works, so your team does not have to change its habits just to fit the app.'
 		}
 	] as const;
 
@@ -182,26 +182,26 @@
 	const useCases = [
 		{
 			icon: 'users',
-			title: 'Kinerja & kepegawaian',
-			text: 'Pencatatan aktivitas harian, penilaian atasan, dan rekap kinerja tenaga kerja.',
+			title: 'Performance & staffing',
+			text: 'Daily activity logs, supervisor appraisals and workforce performance recaps.',
 			examples: ['E-Kinerja PJLP', 'ESETKO PJLP', 'SIVERJAB']
 		},
 		{
 			icon: 'file-text',
-			title: 'Perizinan & layanan publik',
-			text: 'Pengajuan warga, pelacakan status berkas, dan pelaporan dari masyarakat.',
+			title: 'Permits & public services',
+			text: 'Citizen applications, file status tracking and public reporting.',
 			examples: ['SIP', 'SITEMAN-NIB', 'PAMOR', 'PPID']
 		},
 		{
 			icon: 'search',
-			title: 'Arsip, kontrak & pengadaan',
-			text: 'Dokumen digital yang terindeks dan mudah dicari, alur kontrak, serta pengajuan kebutuhan barang.',
+			title: 'Archives, contracts & procurement',
+			text: 'Indexed, searchable digital documents, contract workflows and goods requisitions.',
 			examples: ['Arsip', 'SIARIS', 'E-Contract', 'E-RKBU']
 		},
 		{
 			icon: 'map-pin',
-			title: 'Kesehatan & lingkungan',
-			text: 'Pencatatan lapangan oleh petugas dan pemantauan kasus atau kondisi wilayah.',
+			title: 'Health & environment',
+			text: 'Field data entry by officers and monitoring of cases or area conditions.',
 			examples: ['Posyandu', 'DBD', 'PSN', 'Penataan']
 		}
 	] as const;
@@ -209,17 +209,17 @@
 	const jsonLd = {
 		'@context': 'https://schema.org',
 		'@type': 'ProfessionalService',
-		name: 'Muhammad Azhar Rasyad - Jasa Pembuatan Website & Sistem Informasi',
+		name: 'Muhammad Azhar Rasyad - Website & Information System Development',
 		url,
 		image,
 		email: 'mailto:muhazharrasyad@gmail.com',
 		telephone: '+6281290351971',
 		areaServed: { '@type': 'Country', name: 'Indonesia' },
 		knowsAbout: [
-			'Sistem informasi pemerintah',
-			'Aplikasi web',
+			'Government information systems',
+			'Web applications',
 			'Website company profile',
-			'Migrasi data dari Excel',
+			'Data migration from Excel',
 			'Blockchain Hyperledger Fabric'
 		],
 		address: { '@type': 'PostalAddress', addressLocality: 'Jakarta', addressCountry: 'ID' },
@@ -242,7 +242,7 @@
 	<meta property="og:description" content={description} />
 	<meta property="og:url" content={url} />
 	<meta property="og:image" content={image} />
-	<meta property="og:locale" content="id_ID" />
+	<meta property="og:locale" content="en_US" />
 
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content={title} />
@@ -260,18 +260,18 @@
 			<span
 				class="inline-flex items-center gap-1.5 mb-4 bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 text-xs px-2.5 py-1 rounded-full font-bold uppercase tracking-widest"
 			>
-				<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Menerima proyek baru
+				<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Taking new projects
 			</span>
 			<h1 class="text-3xl md:text-5xl font-black leading-tight">
-				Jasa Pembuatan <span
+				<span
 					class="bg-gradient-to-r from-blue-300 to-indigo-400 bg-clip-text text-transparent"
-					>Website &amp; Sistem Informasi</span
-				>
+					>Website &amp; Information System</span
+				> Development
 			</h1>
 			<p class="mt-4 text-base md:text-lg text-slate-300 max-w-2xl">
-				Spesialis sistem untuk instansi, organisasi, dan perusahaan yang ingin beralih dari Excel
-				dan kertas ke aplikasi yang benar-benar dipakai. Didampingi dari memahami kebutuhan sampai
-				sistemnya siap berjalan.
+				Specializing in systems for agencies, organizations and companies that want to move from Excel
+				and paper to applications people actually use. With you from understanding your needs until
+				the system is up and running.
 			</p>
 			<div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
 				<a
@@ -282,7 +282,7 @@
 					class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-green-500 text-white font-bold hover:bg-green-400 hover:scale-105 transition-all shadow-lg shadow-green-500/20"
 				>
 					<Icon name="whatsapp" class="w-5 h-5" />
-					Konsultasi via WhatsApp
+					Consult via WhatsApp
 				</a>
 			</div>
 			<dl class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -298,9 +298,9 @@
 
 		<!-- Why me -->
 		<section>
-			<h2 class="text-2xl md:text-3xl font-black mb-2">Kenapa memilih saya</h2>
+			<h2 class="text-2xl md:text-3xl font-black mb-2">Why work with me</h2>
 			<p class="text-sm text-slate-400 mb-6">
-				Bukan agensi besar dan bukan template siap pakai.
+				Not a big agency, and not an off-the-shelf template.
 			</p>
 			<ul class="grid gap-3 md:grid-cols-2">
 				{#each differentiators as d (d.title)}
@@ -319,9 +319,9 @@
 
 		<!-- Use cases -->
 		<section>
-			<h2 class="text-2xl md:text-3xl font-black mb-2">Masalah yang sudah saya selesaikan</h2>
+			<h2 class="text-2xl md:text-3xl font-black mb-2">Problems I have solved</h2>
 			<p class="text-sm text-slate-400 mb-6">
-				Sistem nyata yang sudah berjalan, dikelompokkan menurut kebutuhannya.
+				Real systems already in use, grouped by the need they serve.
 			</p>
 			<ul class="grid gap-3 md:grid-cols-2">
 				{#each useCases as u (u.title)}
@@ -351,15 +351,15 @@
 				href="/projects"
 				class="mt-4 inline-flex items-center gap-1.5 text-sm text-blue-300 hover:text-blue-200"
 			>
-				Lihat semua proyek
+				See all projects
 				<Icon name="arrow-right" class="w-4 h-4" />
 			</a>
 		</section>
 
 		<!-- Services -->
 		<section>
-			<h2 class="text-2xl md:text-3xl font-black mb-2">Layanan</h2>
-			<p class="text-sm text-slate-400 mb-6">Apa saja yang bisa dikerjakan untuk Anda.</p>
+			<h2 class="text-2xl md:text-3xl font-black mb-2">Services</h2>
+			<p class="text-sm text-slate-400 mb-6">What I can build for you.</p>
 			<ul class="grid gap-3 md:grid-cols-2">
 				{#each services as s (s.title)}
 					<li class="rounded-2xl bg-white/5 border border-white/10 p-5">
@@ -391,10 +391,10 @@
 				>
 					<Icon name="graduation-cap" class="w-5 h-5" />
 				</div>
-				<h2 class="text-2xl md:text-3xl font-black">Latar Belakang Pendidikan</h2>
+				<h2 class="text-2xl md:text-3xl font-black">Educational Background</h2>
 			</div>
 			<p class="text-sm text-slate-400 mb-6">
-				Dikerjakan dengan dasar keilmuan yang kuat, bukan sekadar coba-coba.
+				Built on a solid academic foundation, not trial and error.
 			</p>
 			<ul class="space-y-3">
 				{#each education as e (e.level)}
@@ -416,7 +416,7 @@
 				href="/education"
 				class="mt-4 inline-flex items-center gap-1.5 text-sm text-blue-300 hover:text-blue-200"
 			>
-				Lihat riwayat pendidikan lengkap
+				See full education history
 				<Icon name="arrow-right" class="w-4 h-4" />
 			</a>
 		</section>
@@ -429,7 +429,7 @@
 				>
 					<Icon name="briefcase" class="w-5 h-5" />
 				</div>
-				<h2 class="text-2xl md:text-3xl font-black">Pengalaman Kerja</h2>
+				<h2 class="text-2xl md:text-3xl font-black">Work Experience</h2>
 			</div>
 			<ul class="rounded-2xl bg-white/5 border border-white/10 p-5 space-y-2.5">
 				{#each experienceHighlights as h (h)}
@@ -443,17 +443,17 @@
 				href="/experience"
 				class="mt-4 inline-flex items-center gap-1.5 text-sm text-blue-300 hover:text-blue-200"
 			>
-				Lihat pengalaman lengkap
+				See full experience
 				<Icon name="arrow-right" class="w-4 h-4" />
 			</a>
 		</section>
 
 		<!-- Projects -->
 		<section>
-			<h2 class="text-2xl md:text-3xl font-black mb-2">Proyek yang Pernah Dikerjakan</h2>
+			<h2 class="text-2xl md:text-3xl font-black mb-2">Past Projects</h2>
 			<p class="text-sm text-slate-400 mb-6">
-				Dari {projectCountLabel} proyek yang telah dikerjakan, {governmentCount} di antaranya untuk instansi
-				pemerintah. Berikut sebarannya berdasarkan kategori.
+				Of the {projectCountLabel} projects delivered, {governmentCount} were for government agencies.
+				Here is how they break down by category.
 			</p>
 			<ul class="grid grid-cols-2 gap-3 mb-4">
 				{#each projectCategories as c (c.slug)}
@@ -475,7 +475,7 @@
 				href="/projects"
 				class="inline-flex items-center gap-1.5 text-sm text-blue-300 hover:text-blue-200"
 			>
-				Lihat proyek lengkap
+				See all projects
 				<Icon name="arrow-right" class="w-4 h-4" />
 			</a>
 		</section>
@@ -484,11 +484,11 @@
 		<section
 			class="rounded-3xl bg-gradient-to-br from-blue-500/15 to-indigo-500/15 border border-blue-400/30 p-6 md:p-10 text-center"
 		>
-			<h2 class="text-2xl md:text-3xl font-black">Ceritakan kebutuhan Anda</h2>
+			<h2 class="text-2xl md:text-3xl font-black">Tell me what you need</h2>
 			<p class="mt-3 text-slate-300 max-w-xl mx-auto">
-				Instansi, organisasi, atau usaha Anda masih mencatat manual? Ceritakan alur kerjanya dulu,
-				nanti kita diskusikan bersama sistem yang paling cocok. Biaya menyesuaikan kebutuhan dan
-				anggaran Anda, jadi tidak ada paket baku.
+				Is your agency, organization or business still keeping records by hand? Walk me through the
+				workflow first, and we will work out the system that fits best. Pricing is tailored to your
+				needs and budget, so there are no fixed packages.
 			</p>
 			<div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
 				<a
@@ -502,12 +502,12 @@
 					Chat WhatsApp
 				</a>
 				<a
-					href="mailto:muhazharrasyad@gmail.com?subject=Konsultasi%20Jasa%20Pembuatan%20Website%2FAplikasi"
+					href="mailto:muhazharrasyad@gmail.com?subject=Website%2FApp%20Development%20Consultation"
 					data-track-location="jasa-footer"
 					class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-white/5 border border-white/10 text-slate-200 font-bold hover:bg-white/10 transition-all"
 				>
 					<Icon name="mail" class="w-5 h-5" />
-					Kirim Email
+					Send Email
 				</a>
 			</div>
 		</section>

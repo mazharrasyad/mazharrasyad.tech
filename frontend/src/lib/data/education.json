@@ -2,7 +2,7 @@
 	{
 		"sortKey": 201408,
 		"field": "Computer Software Engineering",
-		"level": "SMK",
+		"level": "Vocational High School",
 		"degree": "High School Diploma",
 		"institution": "SMKN 1 Cibinong",
 		"year": "2014 - 2017",
@@ -11,7 +11,7 @@
 	{
 		"sortKey": 201708,
 		"field": "Information Technology",
-		"level": "S1",
+		"level": "Bachelor's",
 		"degree": "Bachelor of Computer Science",
 		"institution": "Sekolah Tinggi Teknologi Terpadu Nurul Fikri",
 		"year": "2017 - 2021",
@@ -26,7 +26,7 @@
 	{
 		"sortKey": 202408,
 		"field": "Computer Science",
-		"level": "S2",
+		"level": "Master's",
 		"degree": "Master of Computer Science",
 		"institution": "Universitas Budi Luhur",
 		"year": "2024 - 2026",
@@ -40,7 +40,7 @@
 	{
 		"sortKey": 202708,
 		"field": "Computer Science",
-		"level": "S3",
+		"level": "Doctorate",
 		"degree": "Doctor of Computer Science",
 		"year": "2027 - Present",
 		"highlights": []
