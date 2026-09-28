@@ -22,7 +22,9 @@
         "tools": "PHP, Bootstrap",
         "visibility": "Private",
         "sourceUrl": "https://github.com/herakarmila19/company-profile",
-        "updated": "Jun 2026"
+        "websiteUrl": "https://kinbajasuksestama.com/",
+        "updated": "Jun 2026",
+        "bestPractice": "A company profile that sells: a catalog of 20+ construction products, articles and testimonials, with every page leading to a one-tap WhatsApp consultation."
       },
       {
         "title": "Web Security Log Dashboard",
@@ -85,8 +87,7 @@
         "description": "Performance test suite for a Hyperledger Fabric network with Raft consensus. Features: measures transaction throughput and latency with Hyperledger Caliper and compares results across several load scenarios.",
         "tools": "Go, Raft, Hyperledger Fabric, Caliper",
         "visibility": "Public",
-        "sourceUrl": "https://github.com/mazharrasyad/blockchain-benchmark-raft-hlf",
-        "bestPractice": "Measures instead of guessing: throughput and latency are benchmarked with Hyperledger Caliper across several load scenarios, and the whole suite is open source."
+        "sourceUrl": "https://github.com/mazharrasyad/blockchain-benchmark-raft-hlf"
       },
       {
         "title": "Putra Jasa V2",
@@ -331,8 +332,7 @@
         "description": "Hyperledger Fabric smart contract for land ownership certificates (SHM). Features: stores certificate data securely on the blockchain and preserves its integrity.",
         "tools": "Go, Hyperledger Fabric, Docker",
         "visibility": "Public",
-        "sourceUrl": "https://github.com/mazharrasyad/blockchain-shm",
-        "bestPractice": "Blockchain applied to a real problem: tamper-proof land ownership certificates, with the Go chaincode and Docker setup published as open source."
+        "sourceUrl": "https://github.com/mazharrasyad/blockchain-shm"
       },
       {
         "title": "GeoJSON Boundary 2021",
@@ -669,7 +669,9 @@
         "description": "Official portal of the KAHMI Jaya community. Features: news publishing, member registration and a member directory.",
         "tools": "PHP, Laravel, MySQL",
         "visibility": "Private",
-        "sourceUrl": "https://github.com/mazharrasyad/kahmijaya"
+        "sourceUrl": "https://github.com/mazharrasyad/kahmijaya",
+        "websiteUrl": "https://kahmijaya.com/",
+        "bestPractice": "Live and regularly updated: news, opinion pieces, photo albums and member registration for the KAHMI Jaya alumni community, all in one Laravel portal."
       }
     ]
   },
