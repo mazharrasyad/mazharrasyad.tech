@@ -382,7 +382,9 @@
         "description": "Official site of Tripa Systems Information. Features: company landing page and catalog of products and services.",
         "tools": "Laravel, Tailwind CSS, Nuxt.js",
         "visibility": "Public",
-        "sourceUrl": "https://tripasysfo.com/"
+        "sourceUrl": "https://tripasysfo.com/",
+        "websiteUrl": "https://tripasysfo.com/",
+        "bestPractice": "Live company site for Tripa Systems Information and the home of its product catalog, including Recerva, a multi-tenant property management and booking platform for hotels."
       },
       {
         "title": "Tensindo (Internal)",
@@ -402,8 +404,7 @@
         "description": "Point of Sale (POS) application for retail and local businesses. Features: sales transaction recording, inventory and stock management, and sales reporting.",
         "tools": "React.js, Laravel, Tailwind CSS",
         "visibility": "Private",
-        "sourceUrl": "https://github.com/febrianmosii/foliopos_app",
-        "bestPractice": "A complete retail workflow in one app (sales, inventory and reporting) built on React and Laravel for day-to-day use by local businesses."
+        "sourceUrl": "https://github.com/febrianmosii/foliopos_app"
       }
     ]
   },
@@ -733,8 +734,7 @@
         "description": "Hotel property management platform and booking engine. Features: room, reservation and booking management, with multi-tenant support for many hotels.",
         "tools": "Laravel, Vue.js, Tailwind CSS",
         "visibility": "Public",
-        "sourceUrl": "https://tripasysfo.com/recerva",
-        "bestPractice": "Multi-tenant by design: one platform runs property management and a booking engine for many hotels at once."
+        "sourceUrl": "https://tripasysfo.com/recerva"
       },
       {
         "title": "AOC (Internal)",
@@ -1034,7 +1034,9 @@
         "tools": "Codeigniter PHP Framework, MySQL",
         "updated": "12 Dec 2022",
         "visibility": "Private",
-        "sourceUrl": "https://github.com/mazharrasyad/selatan.jakarta.go.id"
+        "sourceUrl": "https://github.com/mazharrasyad/selatan.jakarta.go.id",
+        "websiteUrl": "https://selatan.jakarta.go.id/",
+        "bestPractice": "Still live as the official website of the South Jakarta Administrative City: news, events, an official directory, regional data, PPID public documents and public services in one portal."
       },
       {
         "title": "IPTM",
