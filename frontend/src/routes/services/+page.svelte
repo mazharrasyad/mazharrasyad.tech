@@ -206,6 +206,26 @@
 		}
 	] as const;
 
+	// How an engagement runs, from first message to launch.
+	const process = [
+		{
+			title: 'Tell me about your project',
+			text: 'Send a message on WhatsApp or email describing what you need and how your team works today.'
+		},
+		{
+			title: 'Scope & quote',
+			text: 'I review the requirements, ask questions where needed, and send a written proposal with scope, timeline and price.'
+		},
+		{
+			title: 'Build & review',
+			text: 'You see progress as it is built and give feedback along the way, so there are no surprises at the end.'
+		},
+		{
+			title: 'Launch & handover',
+			text: 'The system goes live and you get what your team needs to run it.'
+		}
+	];
+
 	const jsonLd = {
 		'@context': 'https://schema.org',
 		'@type': 'ProfessionalService',
@@ -223,6 +243,7 @@
 			'Hyperledger Fabric blockchain'
 		],
 		address: { '@type': 'PostalAddress', addressLocality: 'Jakarta', addressCountry: 'ID' },
+		paymentAccepted: 'PayPal',
 		founder: { '@type': 'Person', name: 'Muhammad Azhar Rasyad', url: 'https://mazharrasyad.tech/' },
 		makesOffer: services.map((s) => ({
 			'@type': 'Offer',
@@ -488,6 +509,28 @@
 			</a>
 		</section>
 
+		<!-- How we'll work together -->
+		<section>
+			<h2 class="text-2xl md:text-3xl font-black mb-2">How we'll work together</h2>
+			<p class="text-sm text-slate-400 mb-6">
+				Fully remote, from Jakarta (UTC+7). Payment via PayPal.
+			</p>
+			<ol class="grid gap-3 md:grid-cols-2">
+				{#each process as step, i (step.title)}
+					<li class="rounded-2xl bg-white/5 border border-white/10 p-5">
+						<div class="flex items-center gap-3">
+							<span
+								class="w-9 h-9 shrink-0 rounded-xl bg-blue-500/15 border border-blue-400/30 text-blue-300 flex items-center justify-center font-black tabular-nums"
+								>{i + 1}</span
+							>
+							<h3 class="font-bold text-white">{step.title}</h3>
+						</div>
+						<p class="mt-3 text-sm text-slate-300 leading-relaxed">{step.text}</p>
+					</li>
+				{/each}
+			</ol>
+		</section>
+
 		<!-- Final CTA -->
 		<section
 			class="rounded-3xl bg-gradient-to-br from-blue-500/15 to-indigo-500/15 border border-blue-400/30 p-6 md:p-10 text-center"
@@ -496,7 +539,8 @@
 			<p class="mt-3 text-slate-300 max-w-xl mx-auto">
 				Still running a process on spreadsheets, or need an existing system extended? Walk me through
 				it and I will suggest the approach that fits. I work remotely from Jakarta (UTC+7). Pricing is
-				quoted per project based on scope and budget, so there are no fixed packages.
+				quoted per project based on scope and budget, so there are no fixed packages, and paid via
+				PayPal.
 			</p>
 			<div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
 				<a
