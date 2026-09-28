@@ -35,6 +35,12 @@
 				<span class="bg-indigo-500/20 text-indigo-300 text-xs px-2 py-0.5 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">
 					{project.category}
 				</span>
+				{#if project.bestPractice}
+					<span class="flex items-center gap-1 bg-amber-500/20 text-amber-300 text-xs px-2 py-0.5 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">
+						<Icon name="star" class="w-3 h-3" />
+						Best Practice
+					</span>
+				{/if}
 				{#if project.updated}
 					<span class="text-sm text-slate-300">{project.updated}</span>
 				{/if}

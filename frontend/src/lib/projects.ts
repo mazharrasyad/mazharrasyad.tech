@@ -86,6 +86,9 @@ export const categories: Category[] = DEFINITIONS.map((def) => ({
 	projects: all.filter((p) => p.group === def.name)
 }));
 
+/** Projects flagged `bestPractice`, newest first. */
+export const bestPracticeProjects = all.filter((p) => p.bestPractice);
+
 export const totalProjects = all.length;
 
 /** Total rounded down to the nearest ten, e.g. "130+", so it stays true as projects are added. */

@@ -43,7 +43,8 @@
         "description": "REST API backend for the JOIN PKS volunteer management platform. Features: provides volunteer data, authentication and a regional hierarchy from province down to village level for the web and mobile apps.",
         "tools": "Go, REST API, Docker",
         "visibility": "Private",
-        "sourceUrl": "https://github.com/brsndpsn-connect/join-pks-api"
+        "sourceUrl": "https://github.com/brsndpsn-connect/join-pks-api",
+        "bestPractice": true
       },
       {
         "title": "JOIN PKS Web",
@@ -54,7 +55,8 @@
         "tools": "Svelte",
         "visibility": "Private",
         "sourceUrl": "https://github.com/brsndpsn-connect/join-pks-web",
-        "websiteUrl": "https://joinpks.id/"
+        "websiteUrl": "https://joinpks.id/",
+        "bestPractice": true
       },
       {
         "title": "Betawi Academia",
@@ -84,7 +86,8 @@
         "description": "Performance test suite for a Hyperledger Fabric network with Raft consensus. Features: measures transaction throughput and latency with Hyperledger Caliper and compares results across several load scenarios.",
         "tools": "Go, Raft, Hyperledger Fabric, Caliper",
         "visibility": "Public",
-        "sourceUrl": "https://github.com/mazharrasyad/blockchain-benchmark-raft-hlf"
+        "sourceUrl": "https://github.com/mazharrasyad/blockchain-benchmark-raft-hlf",
+        "bestPractice": true
       },
       {
         "title": "Putra Jasa V2",
@@ -329,7 +332,8 @@
         "description": "Hyperledger Fabric smart contract for land ownership certificates (SHM). Features: stores certificate data securely on the blockchain and preserves its integrity.",
         "tools": "Go, Hyperledger Fabric, Docker",
         "visibility": "Public",
-        "sourceUrl": "https://github.com/mazharrasyad/blockchain-shm"
+        "sourceUrl": "https://github.com/mazharrasyad/blockchain-shm",
+        "bestPractice": true
       },
       {
         "title": "GeoJSON Boundary 2021",
@@ -399,7 +403,8 @@
         "description": "Point of Sale (POS) application for retail and local businesses. Features: sales transaction recording, inventory and stock management, and sales reporting.",
         "tools": "React.js, Laravel, Tailwind CSS",
         "visibility": "Private",
-        "sourceUrl": "https://github.com/febrianmosii/foliopos_app"
+        "sourceUrl": "https://github.com/febrianmosii/foliopos_app",
+        "bestPractice": true
       }
     ]
   },
@@ -729,7 +734,8 @@
         "description": "Hotel property management platform and booking engine. Features: room, reservation and booking management, with multi-tenant support for many hotels.",
         "tools": "Laravel, Vue.js, Tailwind CSS",
         "visibility": "Public",
-        "sourceUrl": "https://tripasysfo.com/recerva"
+        "sourceUrl": "https://tripasysfo.com/recerva",
+        "bestPractice": true
       },
       {
         "title": "AOC (Internal)",
