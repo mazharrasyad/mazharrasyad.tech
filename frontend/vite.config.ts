@@ -11,7 +11,14 @@ export default defineConfig({
 				// Force runes mode for the project, except for libraries. Can be removed in svelte 6.
 				runes: ({ filename }) => filename.split(/[/\\]/).includes('node_modules') ? undefined : true
 			},
-			adapter: adapter()
+			adapter: adapter(),
+			prerender: {
+				handleHttpError: ({ path, message }) => {
+					// /stats is a GoAccess report served by nginx, not a page in this build.
+					if (path === '/stats') return;
+					throw new Error(message);
+				}
+			}
 		})
 	]
 });

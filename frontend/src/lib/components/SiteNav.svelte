@@ -7,7 +7,9 @@
 		{ href: '/education', label: 'Education' },
 		{ href: '/experience', label: 'Experience' },
 		{ href: '/projects', label: 'Projects' },
-		{ href: '/journal', label: 'Journal' }
+		{ href: '/journal', label: 'Journal' },
+		// Served by nginx (GoAccess report), not a SvelteKit route: needs a full page load.
+		{ href: '/stats', label: 'Stats', external: true }
 	];
 
 	// Category pages under /projects/ belong to the Projects tab.
@@ -25,6 +27,7 @@
 	{#each links as link (link.href)}
 		<a
 			href={link.href}
+			data-sveltekit-reload={'external' in link ? true : undefined}
 			aria-current={isActive(link.href) ? 'page' : undefined}
 			class="shrink-0 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider transition-all {isActive(
 				link.href
