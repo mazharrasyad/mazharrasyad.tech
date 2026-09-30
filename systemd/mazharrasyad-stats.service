@@ -1,0 +1,14 @@
+# Runs scripts/stats.sh once to regenerate the private /stats report.
+# Triggered by mazharrasyad-stats.timer -- not enabled directly.
+#
+# Install: copy both unit files to /etc/systemd/system/, then
+#   systemctl daemon-reload
+#   systemctl enable --now mazharrasyad-stats.timer
+[Unit]
+Description=mazharrasyad.tech /stats report
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/mazharrasyad.tech/scripts/stats.sh

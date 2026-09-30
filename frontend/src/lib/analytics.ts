@@ -29,6 +29,32 @@ declare global {
 }
 
 let started = false;
+let landed = false;
+
+/**
+ * First-party page/click log behind the private /stats report: nginx writes
+ * each /hit to its own log and GoAccess renders it. Client-side navigations
+ * never reach nginx otherwise. Only the landing hit carries a source, reduced
+ * to an origin (or a Google Ads marker) so nginx's allowlist can validate it.
+ */
+function sendHit(path: string) {
+	let query = `p=${path}`;
+	if (!landed) {
+		landed = true;
+		const params = new URLSearchParams(window.location.search);
+		if (['gclid', 'gbraid', 'wbraid'].some((key) => params.has(key))) {
+			query += '&r=https://google-ads/';
+		} else if (document.referrer) {
+			try {
+				const ref = new URL(document.referrer);
+				if (ref.host !== window.location.host) query += `&r=${ref.origin}/`;
+			} catch {
+				// Unparseable referrer (e.g. android-app://): log the hit without a source.
+			}
+		}
+	}
+	navigator.sendBeacon?.(`/hit?${query}`);
+}
 
 function loadScript(src: string) {
 	const el = document.createElement('script');
@@ -84,6 +110,7 @@ export function trackPageView(path: string, title: string) {
 		page_location: window.location.href
 	});
 	window.fbq?.('track', 'PageView');
+	sendHit(path);
 }
 
 /** A visitor tapped a way to contact you: the conversion you optimise ads for. */
@@ -92,4 +119,6 @@ export function trackContact(method: 'whatsapp' | 'email', location: string) {
 	window.gtag?.('event', 'generate_lead', { method, location });
 	if (ADS_LEAD) window.gtag?.('event', 'conversion', { send_to: ADS_LEAD, value: 1.0, currency: 'IDR' });
 	window.fbq?.('track', 'Contact', { method, location });
+	// Logged as a pseudo-page (/click/whatsapp/services-hero) so /stats lists clicks next to page views.
+	sendHit(`/click/${method}/${location.replace(/^\//, '') || 'home'}`);
 }

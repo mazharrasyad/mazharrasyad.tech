@@ -1,0 +1,11 @@
+# Regenerates the /stats report every 10 minutes. See
+# mazharrasyad-stats.service for install steps.
+[Unit]
+Description=Regenerate mazharrasyad.tech /stats every 10 minutes
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=10min
+
+[Install]
+WantedBy=timers.target
