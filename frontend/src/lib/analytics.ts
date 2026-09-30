@@ -32,7 +32,7 @@ let started = false;
 let landed = false;
 
 /**
- * First-party page/click log behind the private /stats report: nginx writes
+ * First-party page/click log behind the public /stats report: nginx writes
  * each /hit to its own log and GoAccess renders it. Client-side navigations
  * never reach nginx otherwise. Only the landing hit carries a source, reduced
  * to an origin (or a Google Ads marker) so nginx's allowlist can validate it.

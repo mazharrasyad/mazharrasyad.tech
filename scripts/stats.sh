@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Renders the private /stats report from the /hit beacon log (see the
+# Renders the public /stats report from the /hit beacon log (see the
 # mazharrasyad_hits log_format in nginx/mazharrasyad.tech.conf). Run by
 # mazharrasyad-stats.timer every 10 minutes.
 #

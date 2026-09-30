@@ -1,4 +1,4 @@
-# Runs scripts/stats.sh once to regenerate the private /stats report.
+# Runs scripts/stats.sh once to regenerate the public /stats report.
 # Triggered by mazharrasyad-stats.timer -- not enabled directly.
 #
 # Install: copy both unit files to /etc/systemd/system/, then
