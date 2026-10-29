@@ -119,6 +119,6 @@ export function trackContact(method: 'whatsapp' | 'email', location: string) {
 	window.gtag?.('event', 'generate_lead', { method, location });
 	if (ADS_LEAD) window.gtag?.('event', 'conversion', { send_to: ADS_LEAD, value: 1.0, currency: 'IDR' });
 	window.fbq?.('track', 'Contact', { method, location });
-	// Logged as a pseudo-page (/click/whatsapp/services-hero) so /stats lists clicks next to page views.
+	// Logged as a pseudo-page (/click/whatsapp/consult-hero) so /stats lists clicks next to page views.
 	sendHit(`/click/${method}/${location.replace(/^\//, '') || 'home'}`);
 }

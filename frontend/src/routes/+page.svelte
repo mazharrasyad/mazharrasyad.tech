@@ -148,10 +148,10 @@
 			</a>
 		</div>
 		<a
-			href="/services"
+			href="/consult"
 			class="mt-6 w-full group flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-blue-500 text-white font-bold hover:bg-blue-400 hover:scale-[1.02] transition-all shadow-lg shadow-blue-500/20"
 		>
-			Hire me for a project
+			Book an IT consultation
 			<Icon name="arrow-right" class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
 		</a>
 		<a

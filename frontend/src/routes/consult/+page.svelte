@@ -2,101 +2,101 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import { categories, projectCountLabel } from '$lib/projects';
 
-	// Google Ads landing page for the Indonesian "Konsultan IT" campaign; /services is the English page.
-	const title = 'Konsultan IT untuk Bisnis & Instansi - Muhammad Azhar Rasyad';
-	const url = 'https://mazharrasyad.tech/konsultan-it';
+	// Google Ads landing page for the IT consulting campaign.
+	const title = 'IT Consultant for Businesses & Institutions - Muhammad Azhar Rasyad';
+	const url = 'https://mazharrasyad.tech/consult';
 	const image = 'https://mazharrasyad.tech/logo.png';
 
 	const waText = encodeURIComponent(
-		'Halo Azhar, saya menemukan mazharrasyad.tech dan ingin konsultasi IT. Kapan bisa diskusi?'
+		'Hi Azhar, I found mazharrasyad.tech and would like an IT consultation. When are you available?'
 	);
 	const waUrl = `https://wa.me/6281290351971?text=${waText}`;
-	const mailUrl = 'mailto:muhazharrasyad@gmail.com?subject=Konsultasi%20IT';
+	const mailUrl = 'mailto:muhazharrasyad@gmail.com?subject=IT%20consultation';
 
 	const governmentCount = categories.find((c) => c.slug === 'government')?.projects.length ?? 0;
 
-	const description = `Konsultan IT independen di Jakarta: perencanaan sistem, audit aplikasi, pemilihan teknologi dan transformasi digital. S2 Ilmu Komputer, 8+ tahun, ${projectCountLabel} proyek.`;
+	const description = `Independent IT consultant based in Jakarta: system planning, application audits, technology selection and digital transformation. MSc in Computer Science, 8+ years, ${projectCountLabel} projects.`;
 
 	const stats = [
-		{ value: '8+', label: 'tahun pengalaman' },
-		{ value: projectCountLabel, label: 'proyek selesai' },
-		{ value: String(governmentCount), label: 'sistem instansi pemerintah' },
-		{ value: 'S2', label: 'Ilmu Komputer' }
+		{ value: '8+', label: 'years of experience' },
+		{ value: projectCountLabel, label: 'projects delivered' },
+		{ value: String(governmentCount), label: 'government systems built' },
+		{ value: 'MSc', label: 'Computer Science' }
 	];
 
-	// Pain points a prospect searching "konsultan IT" typically arrives with.
+	// Pain points a prospect searching "IT consultant" typically arrives with.
 	const problems = [
-		'Proses kerja masih di Excel, kertas atau grup WhatsApp, dan mulai berantakan',
-		'Ingin membuat aplikasi, tapi belum tahu mulai dari mana dan butuh biaya berapa',
-		'Sudah punya sistem, tapi lambat, sering error atau vendornya sudah tidak ada',
-		'Dapat beberapa penawaran vendor IT dan bingung mana yang masuk akal'
+		'Your processes still run on spreadsheets, paper or WhatsApp groups, and it is getting messy',
+		'You want to build an application but do not know where to start or what it should cost',
+		'You already have a system, but it is slow, keeps breaking, or the vendor is gone',
+		'You have several IT vendor quotes and cannot tell which one makes sense'
 	];
 
 	const services = [
 		{
 			icon: 'search',
-			title: 'Analisis Kebutuhan & Perencanaan Sistem',
-			text: 'Memetakan alur kerja tim Anda lalu menerjemahkannya menjadi rencana sistem yang jelas sebelum ada biaya pengembangan.',
+			title: 'Requirements Analysis & System Planning',
+			text: 'I map how your team works and turn it into a clear system plan before any development money is spent.',
 			points: [
-				'Pemetaan proses bisnis yang berjalan',
-				'Spesifikasi fitur dan prioritas',
-				'Estimasi waktu dan anggaran',
-				'Roadmap pengembangan bertahap'
+				'Mapping your current business processes',
+				'Feature specification and priorities',
+				'Time and budget estimates',
+				'A phased development roadmap'
 			]
 		},
 		{
 			icon: 'lock',
-			title: 'Audit & Review Aplikasi',
-			text: 'Pemeriksaan menyeluruh atas aplikasi yang sudah ada: apa yang bermasalah, apa yang berisiko, dan apa yang layak dipertahankan.',
+			title: 'Application Audit & Review',
+			text: 'A thorough review of your existing application: what is broken, what is risky, and what is worth keeping.',
 			points: [
-				'Review kode dan struktur database',
-				'Cek keamanan dasar dan hak akses',
-				'Analisis performa dan bottleneck',
-				'Rekomendasi: perbaiki atau bangun ulang'
+				'Code and database structure review',
+				'Basic security and access-control checks',
+				'Performance and bottleneck analysis',
+				'Recommendation: fix it or rebuild it'
 			]
 		},
 		{
 			icon: 'server',
-			title: 'Arsitektur & Pemilihan Teknologi',
-			text: 'Memilih teknologi, hosting dan pola integrasi yang sesuai skala dan anggaran, bukan sekadar yang sedang tren.',
+			title: 'Architecture & Technology Selection',
+			text: 'Choosing the technology, hosting and integration approach that fits your scale and budget, not whatever is trending.',
 			points: [
-				'Pemilihan stack dan framework',
-				'Hosting, server dan cloud',
-				'Integrasi antar sistem dan API',
-				'Beli aplikasi jadi atau bangun sendiri'
+				'Stack and framework selection',
+				'Hosting, servers and cloud',
+				'System and API integration',
+				'Buy off-the-shelf or build custom'
 			]
 		},
 		{
 			icon: 'landmark',
-			title: 'Transformasi Digital & Arsitektur Enterprise',
-			text: 'Mendigitalkan proses organisasi secara terarah, berbekal riset arsitektur enterprise untuk digitalisasi layanan.',
+			title: 'Digital Transformation & Enterprise Architecture',
+			text: 'Digitizing how your organization works in a structured way, backed by research in enterprise architecture for service digitalization.',
 			points: [
-				'Digitalisasi dari Excel dan kertas',
-				'Alur persetujuan bertingkat',
-				'Standarisasi data antar unit',
-				'Dashboard untuk pengambilan keputusan'
+				'Moving off spreadsheets and paper',
+				'Multi-level approval workflows',
+				'Consistent data across departments',
+				'Dashboards for decision-making'
 			]
 		},
 		{
 			icon: 'briefcase',
-			title: 'Pendampingan Proyek & Vendor IT',
-			text: 'Second opinion yang independen agar proyek IT Anda tidak salah arah dan anggaran tidak membengkak.',
+			title: 'IT Project & Vendor Oversight',
+			text: 'An independent second opinion so your IT project stays on course and the budget does not balloon.',
 			points: [
-				'Review penawaran dan proposal vendor',
-				'Penyusunan kebutuhan teknis (KAK/TOR)',
-				'Pengawasan progres pengembangan',
-				'Uji terima sebelum serah terima'
+				'Reviewing vendor quotes and proposals',
+				'Writing technical requirements and RFPs',
+				'Monitoring development progress',
+				'Acceptance testing before handover'
 			]
 		},
 		{
 			icon: 'monitor',
-			title: 'Implementasi Sampai Jadi',
-			text: 'Jika dibutuhkan, rekomendasi tidak berhenti di dokumen: saya juga bisa membangun sistemnya sampai berjalan.',
+			title: 'Implementation When You Need It',
+			text: 'Recommendations do not have to stop at a document: I can also build the system and get it running.',
 			points: [
-				'Aplikasi web dan sistem informasi',
-				'Dashboard dan laporan data',
-				'API untuk web dan mobile',
-				'Blockchain untuk verifikasi dokumen'
+				'Web apps and information systems',
+				'Dashboards and data reports',
+				'APIs for web and mobile',
+				'Blockchain for document verification'
 			]
 		}
 	] as const;
@@ -104,65 +104,65 @@
 	const differentiators = [
 		{
 			icon: 'users',
-			title: 'Langsung dengan konsultannya',
-			text: 'Anda berdiskusi langsung dengan orang yang memahami teknisnya sampai level kode, tanpa perantara sales.'
+			title: 'Talk directly to the consultant',
+			text: 'You work with someone who understands the technical side down to the code, with no sales layer in between.'
 		},
 		{
 			icon: 'graduation-cap',
-			title: 'Berbasis ilmu, bukan coba-coba',
-			text: 'Magister Ilmu Komputer dengan riset arsitektur enterprise, pemodelan data dan blockchain, serta tiga artikel jurnal ilmiah.'
+			title: 'Grounded in computer science, not guesswork',
+			text: 'Master of Computer Science with research in enterprise architecture, data modeling and blockchain, and three journal articles.'
 		},
 		{
 			icon: 'landmark',
-			title: 'Terbukti di proses yang kompleks',
-			text: `${governmentCount} sistem untuk instansi pemerintah di Jakarta, dari kelurahan sampai tingkat kota: persetujuan bertingkat, pelaporan berkala dan hak akses per peran.`
+			title: 'Proven on complex workflows',
+			text: `${governmentCount} systems built for Jakarta government agencies, from urban villages to city-level offices: multi-level approvals, periodic reporting and role-based access.`
 		},
 		{
 			icon: 'check',
-			title: 'Independen dan objektif',
-			text: 'Rekomendasi tidak terikat vendor atau produk tertentu, sehingga yang disarankan adalah yang paling sesuai kebutuhan Anda.'
+			title: 'Independent and objective',
+			text: 'Not tied to any vendor or product, so what I recommend is what actually fits your needs.'
 		}
 	] as const;
 
 	const process = [
 		{
-			title: 'Diskusi awal',
-			text: 'Ceritakan kondisi dan tujuan Anda lewat WhatsApp atau email. Kita petakan masalah utamanya bersama.'
+			title: 'Initial discussion',
+			text: 'Tell me about your situation and goals on WhatsApp or email, and we map out the core problem together.'
 		},
 		{
-			title: 'Analisis & rekomendasi',
-			text: 'Saya pelajari kebutuhan dan sistem yang ada, lalu memberikan rekomendasi tertulis beserta lingkup, waktu dan biaya.'
+			title: 'Analysis & recommendation',
+			text: 'I study your requirements and existing systems, then send a written recommendation with scope, timeline and cost.'
 		},
 		{
-			title: 'Eksekusi',
-			text: 'Rekomendasi dijalankan, baik saya bangun sendiri maupun mendampingi tim atau vendor Anda.'
+			title: 'Execution',
+			text: 'The recommendation is carried out, either built by me or with me guiding your team or vendor.'
 		},
 		{
-			title: 'Pendampingan',
-			text: 'Setelah sistem berjalan, tim Anda mendapat dokumentasi dan arahan untuk mengelolanya.'
+			title: 'Ongoing support',
+			text: 'Once the system is live, your team gets the documentation and guidance to run it.'
 		}
 	];
 
 	const faqs = [
 		{
-			q: 'Apa yang dikerjakan konsultan IT?',
-			a: 'Membantu Anda mengambil keputusan teknologi yang tepat: menganalisis kebutuhan, merancang sistem, memilih teknologi dan vendor, mengaudit aplikasi yang ada, sampai mendampingi implementasinya.'
+			q: 'What does an IT consultant do?',
+			a: 'Helps you make the right technology decisions: analyzing requirements, designing systems, choosing technology and vendors, auditing existing applications, and guiding the implementation.'
 		},
 		{
-			q: 'Berapa biaya konsultan IT?',
-			a: 'Biaya dihitung per kebutuhan berdasarkan lingkup dan durasi pekerjaan, bukan paket tetap. Setelah diskusi awal, Anda menerima rincian lingkup dan biaya tertulis sebelum pekerjaan dimulai.'
+			q: 'How much does an IT consultant cost?',
+			a: 'Pricing is quoted per engagement based on scope and duration, not fixed packages. After the initial discussion you receive a written scope and cost before any work starts.'
 		},
 		{
-			q: 'Apakah bisa sekaligus membuatkan aplikasinya?',
-			a: 'Bisa. Selain konsultasi, saya berpengalaman membangun aplikasi web, dashboard, API dan sistem informasi, jadi rekomendasi bisa langsung dieksekusi.'
+			q: 'Can you also build the application?',
+			a: 'Yes. Besides consulting, I build web apps, dashboards, APIs and information systems, so recommendations can be put into practice right away.'
 		},
 		{
-			q: 'Apakah melayani klien di luar Jakarta?',
-			a: 'Ya. Konsultasi dan pengerjaan dilakukan secara online, sehingga bisa melayani bisnis dan instansi di seluruh Indonesia.'
+			q: 'Do you work with clients outside Jakarta?',
+			a: 'Yes. Consulting and delivery are done online, so I work with businesses and institutions across Indonesia and abroad.'
 		},
 		{
-			q: 'Siapa yang cocok menggunakan layanan ini?',
-			a: 'UMKM dan perusahaan yang ingin mendigitalkan proses kerja, instansi yang merencanakan sistem informasi, serta tim yang membutuhkan second opinion atas proyek atau vendor IT.'
+			q: 'Who is this for?',
+			a: 'Small and growing businesses digitizing how they work, institutions planning an information system, and teams that need a second opinion on an IT project or vendor.'
 		}
 	];
 
@@ -170,13 +170,13 @@
 		{
 			'@context': 'https://schema.org',
 			'@type': 'ProfessionalService',
-			name: 'Muhammad Azhar Rasyad - Konsultan IT',
+			name: 'Muhammad Azhar Rasyad - IT Consultant',
 			url,
 			image,
 			description,
 			email: 'mailto:muhazharrasyad@gmail.com',
 			telephone: '+6281290351971',
-			areaServed: { '@type': 'Country', name: 'Indonesia' },
+			areaServed: 'Worldwide',
 			address: { '@type': 'PostalAddress', addressLocality: 'Jakarta', addressCountry: 'ID' },
 			founder: { '@type': 'Person', name: 'Muhammad Azhar Rasyad', url: 'https://mazharrasyad.tech/' },
 			makesOffer: services.map((s) => ({
@@ -207,7 +207,7 @@
 	<meta property="og:description" content={description} />
 	<meta property="og:url" content={url} />
 	<meta property="og:image" content={image} />
-	<meta property="og:locale" content="id_ID" />
+	<meta property="og:locale" content="en_US" />
 
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content={title} />
@@ -225,37 +225,36 @@
 			<span
 				class="inline-flex items-center gap-1.5 mb-4 bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 text-xs px-2.5 py-1 rounded-full font-bold uppercase tracking-widest"
 			>
-				<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Konsultan IT Independen
+				<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Independent IT Consultant
 			</span>
 			<h1 class="text-3xl md:text-5xl font-black leading-tight">
-				Konsultan IT untuk <span
+				IT Consultant for <span
 					class="bg-gradient-to-r from-blue-300 to-indigo-400 bg-clip-text text-transparent"
-					>Bisnis &amp; Instansi</span
+					>Businesses &amp; Institutions</span
 				>
 			</h1>
 			<p class="mt-4 text-base md:text-lg text-slate-300 max-w-2xl">
-				Bantu Anda mengambil keputusan teknologi yang tepat sebelum anggaran keluar: dari
-				perencanaan sistem, audit aplikasi, pemilihan teknologi dan vendor, sampai transformasi
-				digital proses kerja.
+				Make the right technology decisions before the budget is spent: from system planning and
+				application audits to choosing technology and vendors, and digitizing how your team works.
 			</p>
 			<div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
 				<a
 					href={waUrl}
 					target="_blank"
 					rel="noopener noreferrer"
-					data-track-location="konsultan-it-hero"
+					data-track-location="consult-hero"
 					class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-green-500 text-white font-bold hover:bg-green-400 hover:scale-105 transition-all shadow-lg shadow-green-500/20"
 				>
 					<Icon name="whatsapp" class="w-5 h-5" />
-					Konsultasi via WhatsApp
+					Consult on WhatsApp
 				</a>
 				<a
 					href={mailUrl}
-					data-track-location="konsultan-it-hero"
+					data-track-location="consult-hero"
 					class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-white/5 border border-white/10 text-slate-200 font-bold hover:bg-white/10 transition-all"
 				>
 					<Icon name="mail" class="w-5 h-5" />
-					Kirim Email
+					Send Email
 				</a>
 			</div>
 			<dl class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -271,8 +270,8 @@
 
 		<!-- Problems -->
 		<section>
-			<h2 class="text-2xl md:text-3xl font-black mb-2">Apakah ini kondisi Anda?</h2>
-			<p class="text-sm text-slate-400 mb-6">Masalah yang paling sering dibawa klien ke diskusi pertama.</p>
+			<h2 class="text-2xl md:text-3xl font-black mb-2">Sound familiar?</h2>
+			<p class="text-sm text-slate-400 mb-6">The problems clients most often bring to the first conversation.</p>
 			<ul class="rounded-2xl bg-white/5 border border-white/10 p-5 space-y-3">
 				{#each problems as p (p)}
 					<li class="flex items-start gap-2 text-sm md:text-base text-slate-300">
@@ -285,8 +284,8 @@
 
 		<!-- Services -->
 		<section>
-			<h2 class="text-2xl md:text-3xl font-black mb-2">Layanan Konsultasi IT</h2>
-			<p class="text-sm text-slate-400 mb-6">Dari perencanaan sampai sistem berjalan.</p>
+			<h2 class="text-2xl md:text-3xl font-black mb-2">IT Consulting Services</h2>
+			<p class="text-sm text-slate-400 mb-6">From planning to a system that runs.</p>
 			<ul class="grid gap-3 md:grid-cols-2">
 				{#each services as s (s.title)}
 					<li class="rounded-2xl bg-white/5 border border-white/10 p-5">
@@ -312,8 +311,8 @@
 
 		<!-- Why me -->
 		<section>
-			<h2 class="text-2xl md:text-3xl font-black mb-2">Kenapa konsultasi dengan saya</h2>
-			<p class="text-sm text-slate-400 mb-6">Bukan agensi besar, dan bukan jawaban template.</p>
+			<h2 class="text-2xl md:text-3xl font-black mb-2">Why consult with me</h2>
+			<p class="text-sm text-slate-400 mb-6">Not a big agency, and not template answers.</p>
 			<ul class="grid gap-3 md:grid-cols-2">
 				{#each differentiators as d (d.title)}
 					<li class="rounded-2xl bg-white/5 border border-white/10 p-5">
@@ -329,11 +328,11 @@
 			</ul>
 			<div class="mt-4 flex flex-wrap gap-x-5 gap-y-2">
 				<a href="/projects" class="inline-flex items-center gap-1.5 text-sm text-blue-300 hover:text-blue-200">
-					Lihat {projectCountLabel} proyek
+					See all {projectCountLabel} projects
 					<Icon name="arrow-right" class="w-4 h-4" />
 				</a>
 				<a href="/journal" class="inline-flex items-center gap-1.5 text-sm text-blue-300 hover:text-blue-200">
-					Lihat publikasi jurnal
+					See journal publications
 					<Icon name="arrow-right" class="w-4 h-4" />
 				</a>
 			</div>
@@ -341,8 +340,8 @@
 
 		<!-- Process -->
 		<section>
-			<h2 class="text-2xl md:text-3xl font-black mb-2">Alur konsultasi</h2>
-			<p class="text-sm text-slate-400 mb-6">Online dari Jakarta, melayani seluruh Indonesia.</p>
+			<h2 class="text-2xl md:text-3xl font-black mb-2">How it works</h2>
+			<p class="text-sm text-slate-400 mb-6">Online from Jakarta (UTC+7), for clients in Indonesia and abroad.</p>
 			<ol class="grid gap-3 md:grid-cols-2">
 				{#each process as step, i (step.title)}
 					<li class="rounded-2xl bg-white/5 border border-white/10 p-5">
@@ -361,7 +360,7 @@
 
 		<!-- FAQ -->
 		<section>
-			<h2 class="text-2xl md:text-3xl font-black mb-6">Pertanyaan yang sering diajukan</h2>
+			<h2 class="text-2xl md:text-3xl font-black mb-6">Frequently asked questions</h2>
 			<div class="space-y-3">
 				{#each faqs as f (f.q)}
 					<details class="group rounded-2xl bg-white/5 border border-white/10 p-5">
@@ -379,29 +378,29 @@
 		<section
 			class="rounded-3xl bg-gradient-to-br from-blue-500/15 to-indigo-500/15 border border-blue-400/30 p-6 md:p-10 text-center"
 		>
-			<h2 class="text-2xl md:text-3xl font-black">Diskusikan kebutuhan IT Anda</h2>
+			<h2 class="text-2xl md:text-3xl font-black">Let's talk about your IT needs</h2>
 			<p class="mt-3 text-slate-300 max-w-xl mx-auto">
-				Ceritakan kondisi sistem dan proses kerja Anda saat ini. Saya bantu petakan masalahnya dan
-				sarankan langkah yang paling masuk akal untuk anggaran Anda.
+				Tell me how your systems and processes work today. I will help you pin down the problem and
+				suggest the most sensible next step for your budget.
 			</p>
 			<div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
 				<a
 					href={waUrl}
 					target="_blank"
 					rel="noopener noreferrer"
-					data-track-location="konsultan-it-footer"
+					data-track-location="consult-footer"
 					class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-green-500 text-white font-bold hover:bg-green-400 hover:scale-105 transition-all shadow-lg shadow-green-500/20"
 				>
 					<Icon name="whatsapp" class="w-5 h-5" />
-					Konsultasi via WhatsApp
+					Consult on WhatsApp
 				</a>
 				<a
 					href={mailUrl}
-					data-track-location="konsultan-it-footer"
+					data-track-location="consult-footer"
 					class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-white/5 border border-white/10 text-slate-200 font-bold hover:bg-white/10 transition-all"
 				>
 					<Icon name="mail" class="w-5 h-5" />
-					Kirim Email
+					Send Email
 				</a>
 			</div>
 		</section>
@@ -413,9 +412,9 @@
 	href={waUrl}
 	target="_blank"
 	rel="noopener noreferrer"
-	data-track-location="konsultan-it-sticky"
+	data-track-location="consult-sticky"
 	class="md:hidden fixed bottom-4 inset-x-4 z-40 inline-flex items-center justify-center gap-2 h-12 rounded-xl bg-green-500 text-white font-bold shadow-lg shadow-black/40"
 >
 	<Icon name="whatsapp" class="w-5 h-5" />
-	Konsultasi via WhatsApp
+	Consult on WhatsApp
 </a>
