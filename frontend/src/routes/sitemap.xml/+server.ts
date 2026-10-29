@@ -9,6 +9,7 @@ export const GET: RequestHandler = () => {
 	const urls = [
 		{ loc: `${SITE}/`, priority: '1.0' },
 		{ loc: `${SITE}/services`, priority: '0.9' },
+		{ loc: `${SITE}/konsultan-it`, priority: '0.9' },
 		{ loc: `${SITE}/education`, priority: '0.8' },
 		{ loc: `${SITE}/experience`, priority: '0.8' },
 		{ loc: `${SITE}/projects`, priority: '0.8' },
