@@ -8,9 +8,7 @@
 		{ href: '/experience', label: 'Experience' },
 		{ href: '/projects', label: 'Projects' },
 		{ href: '/journal', label: 'Journal' },
-		{ href: '/hackathon', label: 'Hackathon' },
-		// Served by nginx (GoAccess report), not a SvelteKit route: needs a full page load.
-		{ href: '/stats', label: 'Stats', external: true }
+		{ href: '/hackathon', label: 'Hackathon' }
 	];
 
 	// Category pages under /projects/ belong to the Projects tab.

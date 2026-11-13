@@ -14,8 +14,6 @@ export default defineConfig({
 			adapter: adapter(),
 			prerender: {
 				handleHttpError: ({ path, message }) => {
-					// /stats is a GoAccess report served by nginx, not a page in this build.
-					if (path === '/stats') return;
 					throw new Error(message);
 				}
 			}

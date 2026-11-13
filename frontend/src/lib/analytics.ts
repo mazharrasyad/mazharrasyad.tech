@@ -32,8 +32,7 @@ let started = false;
 let landed = false;
 
 /**
- * First-party page/click log behind the public /stats report: nginx writes
- * each /hit to its own log and GoAccess renders it. Client-side navigations
+ * First-party page/click log: nginx writes each /hit to its own log. Client-side navigations
  * never reach nginx otherwise. Only the landing hit carries a source, reduced
  * to an origin (or a Google Ads marker) so nginx's allowlist can validate it.
  */
@@ -119,6 +118,6 @@ export function trackContact(method: 'whatsapp' | 'email', location: string) {
 	window.gtag?.('event', 'generate_lead', { method, location });
 	if (ADS_LEAD) window.gtag?.('event', 'conversion', { send_to: ADS_LEAD, value: 1.0, currency: 'IDR' });
 	window.fbq?.('track', 'Contact', { method, location });
-	// Logged as a pseudo-page (/click/whatsapp/consult-hero) so /stats lists clicks next to page views.
+	// Logged as a pseudo-page (/click/whatsapp/consult-hero) so clicks sit next to page views in the log.
 	sendHit(`/click/${method}/${location.replace(/^\//, '') || 'home'}`);
 }

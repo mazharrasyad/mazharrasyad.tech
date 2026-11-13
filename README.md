@@ -38,9 +38,9 @@ sudo cp nginx/mazharrasyad.tech.conf /etc/nginx/sites-available/mazharrasyad.tec
 sudo nginx -t && sudo systemctl reload nginx
 ```
 
-## Traffic stats
+## Traffic log
 
-`/stats` is a public [GoAccess](https://goaccess.io) report of aggregate traffic (no IPs; sources reduced to an origin). The frontend sends a beacon to `/hit` on every page view (client-side navigations included) and every WhatsApp/email click (logged as `/click/<method>/<location>`); nginx writes those to `/var/log/nginx/mazharrasyad.tech.hits.log`, and `scripts/stats.sh` renders them every 10 minutes via `systemd/mazharrasyad-stats.timer` (install steps in the unit file). Google Ads landings show up as the referrer `google-ads`.
+The frontend sends a beacon to `/hit` on every page view (client-side navigations included) and every WhatsApp/email click (logged as `/click/<method>/<location>`); nginx writes those to `/var/log/nginx/mazharrasyad.tech.hits.log`. Google Ads landings show up as the referrer `google-ads`.
 
 ## Project data
 
