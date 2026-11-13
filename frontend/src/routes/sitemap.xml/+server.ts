@@ -13,6 +13,7 @@ export const GET: RequestHandler = () => {
 		{ loc: `${SITE}/experience`, priority: '0.8' },
 		{ loc: `${SITE}/projects`, priority: '0.8' },
 		{ loc: `${SITE}/journal`, priority: '0.8' },
+		{ loc: `${SITE}/hackathon`, priority: '0.8' },
 		...pageCategories.map((c) => ({ loc: `${SITE}/projects/${c.slug}`, priority: '0.7' }))
 	];
 
