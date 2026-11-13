@@ -1,18 +1,277 @@
 [
-	{ "date": "2018-10", "category": "Smart City Web Development", "organizer": "STTNF", "result": "2nd Place" },
-	{ "date": "2018-10", "category": "Smart City Web Development", "organizer": "STTNF", "result": "3rd Place" },
-	{ "date": "2018-12", "category": "Web Design", "organizer": "Astro STTNF", "result": "3rd Place" },
-	{ "date": "2019-07", "category": "Hackathon Software Development", "organizer": "Jamkrindo", "result": "Finalist" },
-	{ "date": "2019-08", "category": "Innovate App Competition", "organizer": "Compfest 11", "result": "Participant" },
-	{ "date": "2019-08", "category": "Smart City", "organizer": "Depok Innovation Week", "result": "Participant" },
-	{ "date": "2019-08", "category": "Smart City (Kota Cerdas)", "organizer": "Gemastik 12", "result": "Participant" },
-	{ "date": "2019-08", "category": "ICT Business Development", "organizer": "Gemastik 12", "result": "Participant" },
-	{ "date": "2019-08", "category": "User Experience Design", "organizer": "Gemastik 12", "result": "Participant" },
-	{ "date": "2019-08", "category": "Programming", "organizer": "Gemastik 12", "result": "Participant" },
-	{ "date": "2019-11", "category": "Hackathon Software Development", "organizer": "Astro II STTNF", "result": "1st Place" },
-	{ "date": "2019-11", "category": "UI/UX Design", "organizer": "Astro II STTNF", "result": "1st Place" },
-	{ "date": "2020-01", "category": "Hackathon Software Development", "organizer": "Jenius", "result": "Participant" },
-	{ "date": "2020-08", "category": "Business IT", "organizer": "Compfest 12", "result": "Participant" },
-	{ "date": "2020-08", "category": "User Experience Design", "organizer": "Gemastik 13", "result": "Participant" },
-	{ "date": "2020-08", "category": "UI/UX Design", "organizer": "Astro III STTNF", "result": "1st Place" }
+	{
+		"date": "2018-10",
+		"category": "Smart City Web Development",
+		"organizer": "STTNF",
+		"result": "2nd Place",
+		"project": "Basmalah",
+		"description": "Web platform that channels material aid to low-income families through teachers of mosque prosperity councils (DKM), with registration for DKM, teachers and recipients, donations and reports.",
+		"team": "Basmalah",
+		"role": "Web Developer",
+		"links": [
+			{
+				"type": "repo",
+				"url": "https://github.com/mazharrasyad/web-basmalah"
+			},
+			{
+				"type": "archive",
+				"url": "https://github.com/mazharrasyad/document-competition/tree/master/2.%20Smart%20City%20STT%20NF%20-%20Web%20Development%20-%20Tim%20Basmalah"
+			}
+		]
+	},
+	{
+		"date": "2018-10",
+		"category": "Smart City Web Development",
+		"organizer": "STTNF",
+		"result": "3rd Place",
+		"project": "Dot",
+		"description": "Food availability web prototype: contributors pledge food for target areas and administrators monitor distribution on a map.",
+		"team": "Dot",
+		"role": "Web Developer",
+		"links": [
+			{
+				"type": "repo",
+				"url": "https://github.com/mazharrasyad/web-dot"
+			},
+			{
+				"type": "archive",
+				"url": "https://github.com/mazharrasyad/document-competition/tree/master/1.%20Smart%20City%20STT%20NF%20-%20Web%20Development%20-%20Tim%20Dot"
+			}
+		]
+	},
+	{
+		"date": "2018-12",
+		"category": "Web Design",
+		"organizer": "Astro STTNF",
+		"result": "3rd Place",
+		"project": "StikLe (Personal Statistics)",
+		"description": "Site where many people rate one person against set character standards (Shiddiq, Fathanah, Amanah, Tabligh), built for the theme \"Youth and Today's Social Technology\".",
+		"team": "A3",
+		"role": "Web Designer",
+		"links": [
+			{
+				"type": "repo",
+				"url": "https://github.com/mazharrasyad/web-stikle"
+			},
+			{
+				"type": "archive",
+				"url": "https://github.com/mazharrasyad/document-competition/tree/master/3.%20Astro%20STT%20NF%20-%20Web%20Design%20-%20Tim%20A3"
+			}
+		]
+	},
+	{
+		"date": "2019-07",
+		"category": "Hackathon Software Development",
+		"organizer": "Jamkrindo (Jahackathon)",
+		"result": "Finalist",
+		"project": "Hystech",
+		"description": "Event scheduling web app built to solve an internal Jamkrindo problem: authentication, a shared calendar, event submission, and editing and deleting schedules.",
+		"team": "aFa",
+		"role": "Web Developer",
+		"links": [
+			{
+				"type": "mockup",
+				"url": "https://www.figma.com/proto/QHdu9todyOK8IHq5By6Mf6pe/Jahackaton?node-id=58%3A0&scaling=scale-down"
+			},
+			{
+				"type": "archive",
+				"url": "https://github.com/mazharrasyad/document-competition/tree/master/4.%20Jahackathon%20-%20Web%20Development%20-%20Tim%20aFa"
+			}
+		]
+	},
+	{
+		"date": "2019-08",
+		"category": "Innovative App Competition",
+		"organizer": "Compfest 11",
+		"result": "Participant",
+		"project": "Sinfaq",
+		"description": "App concept and mockup for Sinfaq, submitted with a proposal to the Compfest 11 innovative app track.",
+		"team": "PencariGuru",
+		"role": "Conceptor",
+		"links": [
+			{
+				"type": "archive",
+				"url": "https://github.com/mazharrasyad/document-competition/tree/master/5.%20Compfest%2011%20-%20Innovative%20App%20Competition%20-%20Tim%20PencariGuru"
+			}
+		]
+	},
+	{
+		"date": "2019-08",
+		"category": "Smart City Ideathon",
+		"organizer": "Depok Innovation Week",
+		"result": "Participant",
+		"project": "Smart Vehicle Plates",
+		"description": "Proposal to optimise motor vehicle number plates (TNKB) so the Depok city government can deal with traffic violators.",
+		"team": "DIWxyz",
+		"role": "Project Manager",
+		"links": [
+			{
+				"type": "archive",
+				"url": "https://github.com/mazharrasyad/document-competition/tree/master/6.%20Depok%20Innovation%20Week%202019%20-%20Ideathon%20-%20Tim%20DIWxyz"
+			}
+		]
+	},
+	{
+		"date": "2019-08",
+		"category": "Smart City",
+		"organizer": "Gemastik 12",
+		"result": "Participant",
+		"project": "Clean Water Crisis Information System",
+		"description": "Information system that maps areas facing a clean water crisis and connects them to the nearest clean water sources.",
+		"team": "MengAlir",
+		"role": "Project Manager",
+		"links": [
+			{
+				"type": "archive",
+				"url": "https://github.com/mazharrasyad/document-competition/tree/master/7.%20Gemastik%2012%20-%20Smart%20City%20-%20Tim%20MengAlir"
+			}
+		]
+	},
+	{
+		"date": "2019-08",
+		"category": "ICT Business Development",
+		"organizer": "Gemastik 12",
+		"result": "Participant",
+		"project": "Sinfaq",
+		"description": "Business development proposal for Sinfaq, taking the Compfest app concept further as an ICT business.",
+		"team": "TikKom",
+		"role": "Project Manager",
+		"links": [
+			{
+				"type": "archive",
+				"url": "https://github.com/mazharrasyad/document-competition/tree/master/8.%20Gemastik%2012%20-%20ICT%20Business%20Development%20-%20Tim%20TikKom"
+			}
+		]
+	},
+	{
+		"date": "2019-08",
+		"category": "User Experience Design",
+		"organizer": "Gemastik 12",
+		"result": "Participant",
+		"project": "tapSehat",
+		"description": "Mobile app design that helps patients get healthcare services in real time, delivered with a proposal, poster and video.",
+		"team": "Setapak",
+		"role": "UX Engineer",
+		"links": [
+			{
+				"type": "mockup",
+				"url": "https://www.figma.com/proto/GVq8ZgQ9b5rQGCeXrBBbDJ/tapSehat?node-id=57%3A8&scaling=scale-down"
+			},
+			{
+				"type": "archive",
+				"url": "https://github.com/mazharrasyad/document-competition/tree/master/9.%20Gemastik%2012%20-%20UX%20Design%20-%20Tim%20Setapak"
+			}
+		]
+	},
+	{
+		"date": "2019-08",
+		"category": "Programming",
+		"organizer": "Gemastik 12",
+		"result": "Participant",
+		"description": "Competitive programming track: solving algorithmic problems under time limits."
+	},
+	{
+		"date": "2019-11",
+		"category": "Hackathon Software Development",
+		"organizer": "Astro II STTNF",
+		"result": "1st Place",
+		"project": "U-VEST (Micro Investment)",
+		"description": "Micro investment web platform that connects small business owners with investors who want to fund them.",
+		"team": "Aye",
+		"role": "Frontend Web Developer",
+		"links": [
+			{
+				"type": "repo",
+				"url": "https://github.com/mazharrasyad/web-u-vest"
+			},
+			{
+				"type": "archive",
+				"url": "https://github.com/mazharrasyad/document-competition/tree/master/12.%20Astro%202%20STT%20NF%20-%20Hackathon%20-%20Tim%20Y"
+			}
+		]
+	},
+	{
+		"date": "2019-11",
+		"category": "UI/UX Design",
+		"organizer": "Astro II STTNF",
+		"result": "1st Place",
+		"project": "tapSehat",
+		"description": "Mobile app design that helps patients get healthcare services in real time, presented with a proposal, poster and presentation.",
+		"team": "Setapak",
+		"role": "UX Engineer",
+		"links": [
+			{
+				"type": "mockup",
+				"url": "https://www.figma.com/proto/GVq8ZgQ9b5rQGCeXrBBbDJ/tapSehat?node-id=57%3A8&scaling=scale-down"
+			},
+			{
+				"type": "archive",
+				"url": "https://github.com/mazharrasyad/document-competition/tree/master/11.%20Astro%202%20STT%20NF%20-%20UX%20Design%20-%20Tim%20Setapak"
+			}
+		]
+	},
+	{
+		"date": "2020-01",
+		"category": "Hackathon Software Development",
+		"organizer": "Jenius",
+		"result": "Participant",
+		"project": "Statnius",
+		"description": "New feature concept for the Jenius digital banking app, built by a five-person team across Android, web, design and infrastructure.",
+		"team": "Skip",
+		"role": "System Analyst",
+		"links": [
+			{
+				"type": "archive",
+				"url": "https://github.com/mazharrasyad/document-competition/tree/master/13.%20Jenius%20Hackathon%20-%20Hackathon%20-%20Tim%20Skip"
+			}
+		]
+	},
+	{
+		"date": "2020-08",
+		"category": "Business IT Case",
+		"organizer": "Compfest 12",
+		"result": "Participant",
+		"project": "Micro-Insurance: Addressing Less Tapped Market",
+		"description": "Business IT case on bringing micro-insurance to underserved markets through a digital product.",
+		"team": "Stay Up",
+		"role": "Data Analyst",
+		"links": [
+			{
+				"type": "archive",
+				"url": "https://github.com/mazharrasyad/document-competition/tree/master/14.%20Compfest%2012%20-%20Business%20IT%20Case%20-%20Tim%20Stay%20Up"
+			}
+		]
+	},
+	{
+		"date": "2020-08",
+		"category": "User Experience Design",
+		"organizer": "Gemastik 13",
+		"result": "Participant",
+		"project": "Dataset Platform",
+		"description": "Platform for finding and requesting datasets, designed with the User-Centered Design method.",
+		"team": "Stay Up",
+		"role": "UX Researcher",
+		"links": [
+			{
+				"type": "archive",
+				"url": "https://github.com/mazharrasyad/document-competition/tree/master/15.%20Gemastik%2013%20-%20UX%20Design%20-%20Tim%20Stay%20Up"
+			}
+		]
+	},
+	{
+		"date": "2020-08",
+		"category": "UI/UX Design",
+		"organizer": "Astro III STTNF",
+		"result": "1st Place",
+		"project": "Dataset Platform",
+		"description": "Platform for finding and requesting datasets (splash, login, home, discussion forum, data request and profile), designed with the User-Centered Design method.",
+		"team": "Stay Up",
+		"role": "UX Engineer",
+		"links": [
+			{
+				"type": "archive",
+				"url": "https://github.com/mazharrasyad/document-competition/tree/master/16.%20GASIN%20-%20UIUX%20Design%20-%20Tim%20Stay%20Up"
+			}
+		]
+	}
 ]

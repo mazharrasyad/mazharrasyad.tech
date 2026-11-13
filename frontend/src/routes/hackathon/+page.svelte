@@ -1,8 +1,26 @@
 <script lang="ts">
+	import Icon from '$lib/components/Icon.svelte';
 	import TimelineEntry from '$lib/components/TimelineEntry.svelte';
 	import hackathonData from '$lib/data/hackathon.json';
 
-	type Competition = { date: string; category: string; organizer: string; result: string };
+	type LinkType = 'repo' | 'mockup' | 'archive';
+	type Competition = {
+		date: string;
+		category: string;
+		organizer: string;
+		result: string;
+		project?: string;
+		description?: string;
+		team?: string;
+		role?: string;
+		links?: { type: LinkType; url: string }[];
+	};
+
+	const linkMeta: Record<LinkType, { label: string; icon: 'github' | 'monitor' | 'file-text' }> = {
+		repo: { label: 'Source Code', icon: 'github' },
+		mockup: { label: 'Mockup', icon: 'monitor' },
+		archive: { label: 'Proposal & Docs', icon: 'file-text' }
+	};
 
 	// Newest first, like Education and Experience.
 	const entries = [...(hackathonData as Competition[])].sort((a, b) => b.date.localeCompare(a.date));
@@ -77,6 +95,34 @@
 					</span>
 					<h2 class="text-lg md:text-xl font-bold text-white leading-snug">{e.category}</h2>
 					<p class="text-sm text-slate-300 mt-1">{e.organizer}</p>
+					{#if e.project}
+						<p class="mt-3 text-base font-bold text-blue-200">{e.project}</p>
+					{/if}
+					{#if e.description}
+						<p class="mt-1 text-base text-slate-300 leading-relaxed">{e.description}</p>
+					{/if}
+					{#if e.team || e.role}
+						<p class="mt-2 text-sm text-slate-400">
+							{#if e.team}Team {e.team}{/if}
+							{#if e.team && e.role}<span class="text-slate-500 mx-1">·</span>{/if}
+							{#if e.role}{e.role}{/if}
+						</p>
+					{/if}
+					{#if e.links?.length}
+						<div class="mt-3 flex flex-wrap gap-2">
+							{#each e.links as l (l.url)}
+								<a
+									href={l.url}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-bold text-slate-300 hover:bg-white/10 hover:text-white hover:border-blue-400/40 transition-all"
+								>
+									<Icon name={linkMeta[l.type].icon} class="w-3.5 h-3.5" />
+									{linkMeta[l.type].label}
+								</a>
+							{/each}
+						</div>
+					{/if}
 				</TimelineEntry>
 			{/each}
 		</div>
