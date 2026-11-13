@@ -4,8 +4,8 @@
 
 	type Competition = { date: string; category: string; organizer: string; result: string };
 
-	// Oldest first, as a track record.
-	const entries = [...(hackathonData as Competition[])].sort((a, b) => a.date.localeCompare(b.date));
+	// Newest first, like Education and Experience.
+	const entries = [...(hackathonData as Competition[])].sort((a, b) => b.date.localeCompare(a.date));
 
 	// TimelineEntry reads "MM/YYYY" periods.
 	function toPeriod(d: string) {
