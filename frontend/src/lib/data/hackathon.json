@@ -307,10 +307,6 @@
 		"team": "altuhraK",
 		"links": [
 			{
-				"type": "live",
-				"url": "https://c05-frontend-723420820074.asia-southeast2.run.app"
-			},
-			{
 				"type": "repo",
 				"url": "https://github.com/noiz354/altuhraK-ai-builder-cup-2026"
 			}
