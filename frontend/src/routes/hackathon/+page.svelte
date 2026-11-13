@@ -1,4 +1,5 @@
 <script lang="ts">
+	import TimelineEntry from '$lib/components/TimelineEntry.svelte';
 	import hackathonData from '$lib/data/hackathon.json';
 
 	type Competition = { date: string; category: string; organizer: string; result: string };
@@ -6,10 +7,10 @@
 	// Oldest first, as a track record.
 	const entries = [...(hackathonData as Competition[])].sort((a, b) => a.date.localeCompare(b.date));
 
-	const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-	function formatDate(d: string) {
+	// TimelineEntry reads "MM/YYYY" periods.
+	function toPeriod(d: string) {
 		const [y, m] = d.split('-');
-		return `${MONTHS[Number(m) - 1]} ${y}`;
+		return `${m}/${y}`;
 	}
 
 	const count = (r: string) => entries.filter((e) => e.result === r).length;
@@ -54,7 +55,7 @@
 </svelte:head>
 
 <div class="flex-1 text-white flex flex-col p-4 md:p-8 w-full">
-	<main class="max-w-4xl mx-auto w-full flex-1 pt-4 md:pt-8">
+	<main class="max-w-3xl mx-auto w-full flex-1 pt-4 md:pt-8">
 		<h1 class="text-4xl md:text-6xl font-black text-white mb-6">Hackathon</h1>
 
 		<dl class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
@@ -66,24 +67,18 @@
 			{/each}
 		</dl>
 
-		<ol class="space-y-3">
+		<div>
 			{#each entries as e, i (i)}
-				<li class="card-glass rounded-2xl p-4 md:p-5 flex gap-4 items-center">
-					<span class="w-8 shrink-0 text-right text-slate-500 font-bold tabular-nums">{i + 1}</span>
-					<div class="flex-1 min-w-0">
-						<h2 class="text-base md:text-lg font-bold text-white leading-snug">{e.category}</h2>
-						<p class="text-sm text-slate-300 mt-0.5">
-							{e.organizer} <span class="text-slate-500 mx-1">·</span>
-							<span class="tabular-nums">{formatDate(e.date)}</span>
-						</p>
-					</div>
+				<TimelineEntry period={toPeriod(e.date)} accent="blue" currentLabel="" last={i === entries.length - 1}>
 					<span
-						class="shrink-0 px-2.5 py-0.5 rounded-full border text-xs font-black uppercase tracking-wider {badge(e.result)}"
+						class="inline-block mb-2 px-3 py-1 rounded-full border text-sm font-black uppercase tracking-wider {badge(e.result)}"
 					>
 						{e.result}
 					</span>
-				</li>
+					<h2 class="text-lg md:text-xl font-bold text-white leading-snug">{e.category}</h2>
+					<p class="text-sm text-slate-300 mt-1">{e.organizer}</p>
+				</TimelineEntry>
 			{/each}
-		</ol>
+		</div>
 	</main>
 </div>
