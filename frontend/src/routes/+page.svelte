@@ -81,7 +81,7 @@
 		<span
 			class="mb-4 whitespace-nowrap bg-emerald-500/20 backdrop-blur-md border border-emerald-500/30 text-emerald-400 text-xs px-2.5 py-1 rounded-full font-bold uppercase tracking-widest flex items-center gap-1 shadow-lg shadow-emerald-500/10 animate-pulse"
 		>
-			<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Open to Remote Work
+			<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Open to Collaboration
 		</span>
 
 		<h1
