@@ -2,7 +2,7 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import { reveal } from '$lib/actions/reveal';
 	import educationData from '$lib/data/education.json';
-	import { bestPracticeProjects, projectCountLabel } from '$lib/projects';
+	import { projectCountLabel } from '$lib/projects';
 	import type { Education } from '$lib/types';
 
 	const education = educationData as Education[];
@@ -176,50 +176,5 @@
 				class="shrink-0 w-4 h-4 text-violet-300 group-hover:translate-x-0.5 transition-transform"
 			/>
 		</a>
-		<section class="mt-8 w-full text-left">
-			<div class="flex items-center justify-between mb-3">
-				<h2 class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-300">
-					<Icon name="star" class="w-3.5 h-3.5" />
-					Best Practice Projects
-				</h2>
-				<a href="/projects" class="text-xs font-bold text-slate-400 hover:text-white transition-colors">
-					All {projectCountLabel} projects
-				</a>
-			</div>
-			<p class="text-xs text-slate-400 leading-relaxed mb-3">
-				A handful of projects I'd point to as reference work, each for a specific reason below.
-			</p>
-			<ul class="flex flex-col gap-2">
-				{#each bestPracticeProjects as project (project.title)}
-					{@const href = project.websiteUrl ?? (project.visibility === 'Public' ? project.sourceUrl : undefined)}
-					<li>
-						<svelte:element
-							this={href ? 'a' : 'div'}
-							{href}
-							target={href ? '_blank' : undefined}
-							rel={href ? 'noopener noreferrer' : undefined}
-							class="group flex items-start gap-3 p-3 rounded-xl bg-white/5 border border-white/10 {href ? 'hover:border-amber-400/40 hover:bg-white/10 transition-all' : ''}"
-						>
-							<span class="min-w-0 flex-1">
-								<span class="flex items-center gap-2">
-									<span class="text-sm font-bold text-white truncate">{project.title}</span>
-									<span class="shrink-0 text-[10px] text-slate-400 font-bold">{project.year}</span>
-								</span>
-								<span class="block text-xs text-slate-400 truncate">{project.tools}</span>
-								<span class="block text-xs text-slate-300 leading-relaxed mt-1.5">{project.bestPractice}</span>
-							</span>
-							{#if href}
-								<Icon
-									name="external-link"
-									class="shrink-0 mt-0.5 w-3.5 h-3.5 text-slate-400 group-hover:text-amber-300 transition-colors"
-								/>
-							{:else}
-								<Icon name="lock" class="shrink-0 mt-0.5 w-3.5 h-3.5 text-slate-500" />
-							{/if}
-						</svelte:element>
-					</li>
-				{/each}
-			</ul>
-		</section>
 	</div>
 </main>
