@@ -3,7 +3,7 @@
 	import TimelineEntry from '$lib/components/TimelineEntry.svelte';
 	import hackathonData from '$lib/data/hackathon.json';
 
-	type LinkType = 'repo' | 'mockup' | 'archive';
+	type LinkType = 'live' | 'video' | 'repo' | 'mockup' | 'archive';
 	type Competition = {
 		date: string;
 		category: string;
@@ -16,7 +16,9 @@
 		links?: { type: LinkType; url: string }[];
 	};
 
-	const linkMeta: Record<LinkType, { label: string; icon: 'github' | 'monitor' | 'file-text' }> = {
+	const linkMeta: Record<LinkType, { label: string; icon: 'globe' | 'github' | 'monitor' | 'file-text' }> = {
+		live: { label: 'Live Demo', icon: 'globe' },
+		video: { label: 'Demo Video', icon: 'monitor' },
 		repo: { label: 'Source Code', icon: 'github' },
 		mockup: { label: 'Mockup', icon: 'monitor' },
 		archive: { label: 'Proposal & Docs', icon: 'file-text' }
@@ -36,14 +38,14 @@
 		{ label: 'Competitions', value: entries.length },
 		{ label: '1st Place', value: count('1st Place') },
 		{ label: 'Podium', value: entries.filter((e) => /Place$/.test(e.result)).length },
-		{ label: 'Finalist', value: count('Finalist') }
+		{ label: 'Finalist / Top 50', value: entries.filter((e) => e.result === 'Finalist' || /^Top /.test(e.result)).length }
 	];
 
 	function badge(result: string) {
 		if (result === '1st Place') return 'bg-amber-500/20 border-amber-400/50 text-amber-300';
 		if (result === '2nd Place') return 'bg-slate-300/15 border-slate-300/40 text-slate-200';
 		if (result === '3rd Place') return 'bg-orange-700/25 border-orange-500/40 text-orange-300';
-		if (result === 'Finalist') return 'bg-sky-500/20 border-sky-400/40 text-sky-300';
+		if (result === 'Finalist' || /^Top /.test(result)) return 'bg-sky-500/20 border-sky-400/40 text-sky-300';
 		return 'bg-white/5 border-white/15 text-slate-400';
 	}
 

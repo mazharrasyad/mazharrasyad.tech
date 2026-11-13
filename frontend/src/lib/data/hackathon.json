@@ -273,5 +273,47 @@
 				"url": "https://github.com/mazharrasyad/document-competition/tree/master/16.%20GASIN%20-%20UIUX%20Design%20-%20Tim%20Stay%20Up"
 			}
 		]
+	},
+	{
+		"date": "2026-10",
+		"category": "Indie Developer Track",
+		"organizer": "Meta Global AI Developer Hackathon",
+		"result": "Participant",
+		"project": "Mabarint",
+		"description": "New reading format: Meta's Muse Spark reads the context of plain text and adds tajwid-like notation for stress, pauses, elongation, pitch, tempo, volume and emotion, so readers see how a passage should be read while authors keep writing plain text.",
+		"role": "Solo Developer",
+		"links": [
+			{
+				"type": "live",
+				"url": "https://mazharrasyad.tech/mabarint"
+			},
+			{
+				"type": "video",
+				"url": "https://youtu.be/K5aPK77hgPM"
+			},
+			{
+				"type": "repo",
+				"url": "https://github.com/mazharrasyad/mabarint"
+			}
+		]
+	},
+	{
+		"date": "2026-10",
+		"category": "Sustainability & Social Impact",
+		"organizer": "AI Builder Cup 2026 (Google Cloud JAPAC)",
+		"result": "Top 50",
+		"project": "Meal QC",
+		"description": "Food quality control and ingredient traceability for Indonesia's free school meal programme (MBG): Gemini on Vertex AI checks meal tray photos against the menu, supervisors approve or reject, ingredient lots track supplier, temperature and expiry, and illness reports are traced back to suppliers. Runs on Cloud Run and Firestore.",
+		"team": "altuhraK",
+		"links": [
+			{
+				"type": "live",
+				"url": "https://c05-frontend-723420820074.asia-southeast2.run.app"
+			},
+			{
+				"type": "repo",
+				"url": "https://github.com/noiz354/altuhraK-ai-builder-cup-2026"
+			}
+		]
 	}
 ]
