@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Trace-to-Handover</title><style>body{font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif;max-width:760px;margin:0 auto;padding:32px 16px;color:#172b4d;background:#fff}h1{font-size:28px}h2{font-size:20px;margin-top:28px}a{color:#0c66e4}code{background:#f1f2f4;padding:1px 4px;border-radius:3px}footer{margin-top:40px;font-size:14px;color:#626f86}@media(prefers-color-scheme:dark){body{background:#1d2125;color:#dee4ea}a{color:#579dff}code{background:#2c333a}}</style></head><body>
+<h1>Trace-to-Handover</h1>
+<p>A Forge app for Jira and Confluence that answers the question every fixed-scope project faces at handover: <em>was everything in the contract built and accepted, and nothing else billed?</em></p>
+<h2>What it does</h2>
+<ul>
+<li>Reads the requirement baseline (Terms of Reference, SRS, statement of work) from a Confluence page.</li>
+<li>Traces each requirement to Jira work items and UAT evidence, and suggests matches for untraced requirements.</li>
+<li>Flags work items that trace to no requirement (scope creep) and records baseline changes over time.</li>
+<li>Generates an acceptance report (handover document with sign-off block) in Confluence.</li>
+<li>Includes a Rovo agent, <strong>Handover Auditor</strong>, that answers "are we ready for handover?" with evidence.</li>
+</ul>
+<h2>Getting started</h2>
+<ol>
+<li>Install the app with the installation link (Jira is required; connect Confluence when prompted).</li>
+<li>Open any Jira project and select the <strong>Trace-to-Handover</strong> tab.</li>
+<li>Click <strong>Load demo data into this project</strong>, or search for your own TOR/SRS page and import it.</li>
+<li>Link suggested work items, review out-of-scope work, then click <strong>Generate acceptance report</strong>.</li>
+<li>Open Rovo chat, choose <strong>Handover Auditor</strong> and ask "Are we ready for handover?"</li>
+</ol>
+<h2>Support</h2>
+<p>Questions or problems: contact the developer through <a href="https://mazharrasyad.tech/consult">mazharrasyad.tech/consult</a>. Built by HackRasaz (Muhammad Azhar Rasyad) for Atlassian Codegeist 2026.</p>
+<p><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a></p>
+<footer>Trace-to-Handover · Runs on Atlassian Forge</footer></body></html>
